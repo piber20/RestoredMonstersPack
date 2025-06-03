@@ -9,7 +9,7 @@ local function fart(npc)
 	local player_position = npc:GetPlayerTarget().Position
 
 	-- Dumpling
-	if npc.Variant == EntityVariant.DUMPLING then
+	if npc.Variant == mod.ENTITY_INFO.DUMPLING.VARIANT then
 		visible = true
 
 	-- Skinling
@@ -167,22 +167,22 @@ function mod:dumplingUpdate(npc)
 			npc.State = NpcState.STATE_ATTACK
 			sprite:Play("Fart")
 
-		elseif (feared or npc.Variant == RestoredMonsterPack.ENTITY_INFO.GILDED_DUMPLING.VARIANT) and rng:RandomInt(16) == 1 then -- move feared
+		elseif (feared or npc.Variant == mod.ENTITY_INFO.GILDED_DUMPLING.VARIANT) and rng:RandomInt(16) == 1 then -- move feared
 			npc.State = NpcState.STATE_MOVE
 			add_velocity_and_flip(npc, Vector.FromAngle(player_angle + 180) * Vector(rng:RandomInt(3)+3, rng:RandomInt(3)+3))
 			sprite:Play("Move")
 
-		elseif (npc.Variant == EntityVariant.DUMPLING or npc.Variant == RestoredMonsterPack.ENTITY_INFO.SKINLING.VARIANT or npc.Variant == RestoredMonsterPack.ENTITY_INFO.SCORCHLING.VARIANT or npc.Variant == RestoredMonsterPack.ENTITY_INFO.GILDED_DUMPLING.VARIANT or npc.Variant == RestoredMonsterPack.ENTITY_INFO.SPORELING.VARIANT) and rng:RandomInt(20) == 1 and not feared then -- move toward player slow
+		elseif (npc.Variant == mod.ENTITY_INFO.DUMPLING.VARIANT or npc.Variant == mod.ENTITY_INFO.SKINLING.VARIANT or npc.Variant == mod.ENTITY_INFO.SCORCHLING.VARIANT or npc.Variant == RestoredMonsterPack.ENTITY_INFO.GILDED_DUMPLING.VARIANT or npc.Variant == RestoredMonsterPack.ENTITY_INFO.SPORELING.VARIANT) and rng:RandomInt(20) == 1 and not feared then -- move toward player slow
 			npc.State = NpcState.STATE_MOVE
 			add_velocity_and_flip(npc, Vector.FromAngle(player_angle + (rng:RandomInt(160) - 80)) * Vector(rng:RandomInt(3)+3, rng:RandomInt(3)+3))
 			sprite:Play("Move")
 
-		elseif (npc.Variant == RestoredMonsterPack.ENTITY_INFO.SCAB.VARIANT or npc.Variant == RestoredMonsterPack.ENTITY_INFO.MORTLING.VARIANT) and rng:RandomInt(12) == 1 and not feared then -- move towards player
+		elseif (npc.Variant == mod.ENTITY_INFO.SCAB.VARIANT or npc.Variant == mod.ENTITY_INFO.MORTLING.VARIANT) and rng:RandomInt(12) == 1 and not feared then -- move towards player
 			npc.State = NpcState.STATE_MOVE
 			add_velocity_and_flip(npc, Vector.FromAngle(player_angle + (rng:RandomInt(160) - 80)) * Vector(rng:RandomInt(3)+3, rng:RandomInt(3)+3))
 			sprite:Play("Move")
 
-		elseif npc.Variant == RestoredMonsterPack.ENTITY_INFO.TAINTED_DUMPLING.VARIANT and rng:RandomInt(3) == 1 and not feared then -- tainted aggressive move towards player
+		elseif npc.Variant == mod.ENTITY_INFO.TAINTED_DUMPLING.VARIANT and rng:RandomInt(3) == 1 and not feared then -- tainted aggressive move towards player
 			npc.State = NpcState.STATE_MOVE
 			add_velocity_and_flip(npc, Vector.FromAngle(player_angle + (rng:RandomInt(90) - 45)) * Vector(rng:RandomInt(3)+5, rng:RandomInt(3)+5))
 			sprite:Play("Move")

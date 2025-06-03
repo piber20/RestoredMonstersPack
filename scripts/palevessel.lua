@@ -52,7 +52,7 @@ function mod:palevesselInit(vessel)
 		MaggotCountdown = mathrandom(vessel:GetDropRNG(), Settings.AttackTime[1], Settings.AttackTime[2]),
     }
 end
-mod:AddCallback(ModCallbacks.MC_POST_NPC_INIT, mod.palevesselInit, EntityType.ENTITY_VESSEL)
+mod:AddCallback(ModCallbacks.MC_POST_NPC_INIT, mod.palevesselInit, VESSEL.ID)
 
 
 
@@ -260,7 +260,7 @@ function mod:palevesselUpdate(vessel)
 
 	if vessel:IsDead() then
 		if vessel.SubType == 0 then
-			local phase2 = Isaac.Spawn(EntityType.ENTITY_VESSEL, 1, 1, vessel.Position, Vector.Zero, vessel):ToNPC()
+			local phase2 = Isaac.Spawn(VESSEL.ID, 1, 1, vessel.Position, Vector.Zero, vessel):ToNPC()
 			phase2:ClearEntityFlags(EntityFlag.FLAG_APPEAR)
 			for i = 1, Settings.CreepsToSpawn do
 				table.insert(vesselData.CreepAngles, mathrandom(rng, 0, 360))
@@ -275,7 +275,7 @@ function mod:palevesselUpdate(vessel)
 			end
 		end
 		elseif vessel.SubType == 1 then
-			--local phase3 = Isaac.Spawn(EntityType.ENTITY_VESSEL, 1, 2, vessel.Position, Vector.Zero, vessel):ToNPC()
+			--local phase3 = Isaac.Spawn(VESSEL.ID, 1, 2, vessel.Position, Vector.Zero, vessel):ToNPC()
 			--phase3:ClearEntityFlags(EntityFlag.FLAG_APPEAR)
 			for i = 1, Settings.MaggotsToShoot do
 				if Isaac.CountEntities(vessel,EntityType.ENTITY_SMALL_MAGGOT) < Settings.MaxMaggots then
@@ -307,7 +307,7 @@ function mod:palevesselUpdate(vessel)
 	end
 end
 
-mod:AddCallback(ModCallbacks.MC_NPC_UPDATE, mod.palevesselUpdate, EntityType.ENTITY_VESSEL)
+mod:AddCallback(ModCallbacks.MC_NPC_UPDATE, mod.palevesselUpdate, VESSEL.ID)
 
 function mod:palevesselDeath(vessel)
 	if vessel.Variant ~= 1 or vessel.SubType ~= 2 then
@@ -322,7 +322,7 @@ function mod:palevesselDeath(vessel)
         maggot.State = NpcState.STATE_SPECIAL
     end
 end
-mod:AddCallback(ModCallbacks.MC_POST_NPC_DEATH, mod.palevesselDeath, EntityType.ENTITY_VESSEL)
+mod:AddCallback(ModCallbacks.MC_POST_NPC_DEATH, mod.palevesselDeath, VESSEL.ID)
 
 function mod:palevesselDamage(vessel, damageAmount, damageFlags, damageSource, damageCountdownFrames)
 	local vesselData = vessel:GetData().VesselData
@@ -351,7 +351,7 @@ function mod:palevesselDamage(vessel, damageAmount, damageFlags, damageSource, d
     maggot.State = NpcState.STATE_SPECIAL
 	vesselData.Maggots = vesselData.Maggots + 1
 end
-mod:AddCallback(ModCallbacks.MC_ENTITY_TAKE_DMG, mod.palevesselDamage, EntityType.ENTITY_VESSEL)
+mod:AddCallback(ModCallbacks.MC_ENTITY_TAKE_DMG, mod.palevesselDamage, VESSEL.ID)
 
 
 function mod:maggotDeathpale(maggot)
@@ -359,7 +359,7 @@ function mod:maggotDeathpale(maggot)
 		local spawner = maggot.SpawnerEntity
 		local vesselData = spawner:GetData().VesselData
 
-		if spawner.Type == EntityType.ENTITY_VESSEL and spawner.Variant == 1 and vesselData.Maggots then
+		if spawner.Type == VESSEL.ID and spawner.Variant == 1 and vesselData.Maggots then
 			vesselData.Maggots = vesselData.Maggots - 1
 		end
 	end
