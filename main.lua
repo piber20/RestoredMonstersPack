@@ -41,15 +41,65 @@ mod:GetEatenEffect(checkType, checkVariant, checkSubType)
 --[[--------------------------------------------------------
     Enums
 --]]--------------------------------------------------------
+---@display RestoredMonsterPack Enum Table
+---@class RMEnum
+---@field ID EntityType
+---@field VARIANT integer
+---@field SUBTYPE integer
+
+---@param name string
+---@param subtype integer | nil
+---@return RMEnum
+local function makeEnumTable(name, subtype)
+	if not subtype then subtype = 0 end
+	return {
+		ID = Isaac.GetEntityTypeByName(name),
+		VARIANT = Isaac.GetEntityVariantByName(name),
+		SUBTYPE = REPENTOGON and Isaac.GetEntitySubTypeByName(name) or subtype,
+	}
+end
 
 -- Monsters
-EntityType.ENTITY_CUTMONSTERS = 200
-EntityType.ENTITY_DUMPLING = 800
-EntityType.ENTITY_BLIND_BAT = 803
-EntityType.ENTITY_STRIFER = 839
-EntityType.ENTITY_NIGHTWATCH = 842
-EntityType.ENTITY_CANARY = 843
-EntityType.ENTITY_VESSEL = 858
+-- To get the information of an entity, type RestoredMonsterPack.ENTITY_INFO.NAME_OF_THE_MONSTER then ID for EntityType, VARIANT for EntityVariant and SUBTYPE for Subtype
+RestoredMonsterPack.ENTITY_INFO = {
+	DUMPLING = makeEnumTable("Dumpling"),
+	SKINLING = makeEnumTable("Skinling"),
+	SCAB = makeEnumTable("Scab"),
+	SCORCHLING = makeEnumTable("Scorchling"),
+	MORTLING = makeEnumTable("Mortling"),
+	TAINTED_DUMPLING = makeEnumTable("Tainted Dumpling"),
+	GILDED_DUMPLING = makeEnumTable("Gilded Dumpling"),
+	SPORELING = makeEnumTable("Sporeling"),
+	-- Already Existing Entities
+	FRACTURE = makeEnumTable("​Fracture", 801),
+	SWAPPER = makeEnumTable("Swapper"),
+	BARFY = makeEnumTable("Barfy"),
+	CORPSE_EATER = makeEnumTable("​Corpse Eater"),
+	CARRION_RIDER = makeEnumTable("​Carrion Rider"),
+	VANILLA_CORPSE_EATER = {VARIANT = 100},
+	VANILLA_CARRION_RIDER = {VARIANT = 101},
+	STRIFER = makeEnumTable("​Strifer"),
+	FIRE_GRIMACE = makeEnumTable("Fire Grimace"),
+	BEARD_BAT = makeEnumTable("Beard Bat"),
+	NIGHTWATCH = makeEnumTable("​Nightwatch"),
+	BLIND_BAT = makeEnumTable("​Blind Bat"),
+	VESSEL = makeEnumTable("Vessel (RM)"),
+	VESSEL_ANTIBIRTH = makeEnumTable("​Vessel (Antibirth)"),
+	-- New Entity Variants
+	ECHO_BAT = makeEnumTable("Echo Bat"),
+	CHUBBY_BUNNY = makeEnumTable("Chubby Bunny"),
+	STILLBORN = makeEnumTable("Stillborn"),
+	NECROMANCER = makeEnumTable("Necromancer"),
+	SCREAMER = makeEnumTable("Screamer"),
+	RED_TNT = makeEnumTable("Red TNT"),
+	CELL = makeEnumTable("Cell"),
+	FUSEDCELLS = makeEnumTable("Fused Cells"),
+	TISSUE = makeEnumTable("Tissue"),
+	GRAVEROBBER = makeEnumTable("Grave Robber"),
+	SPLASHY = makeEnumTable("Splashy Long Legs"),
+	STICKY = makeEnumTable("Sticky Long Legs"),
+	FOREVER_FRIEND = makeEnumTable("Forever Friend")
+}
 
 -- Variants of the cut monsters entity
 CutMonsterVariants = {
@@ -60,42 +110,6 @@ CutMonsterVariants = {
 	MORTLING = 2404, -- for backwards compatibility
 	GILDED_DUMPLING = 2405, -- for backwards compatibility
 	TAINTED_DUMPLING = 2399, -- for backwards compatibility
-
-	ECHO_BAT = 2407,
-  	CHUBBY_BUNNY = 2408,
-	STILLBORN = 2409,
-	NECROMANCER = 2410,
-	SCREAMER = 2411,
-	RED_TNT = 3400,
-	CELL = Isaac.GetEntityVariantByName("Cell"),
-	FUSEDCELLS = Isaac.GetEntityVariantByName("Fused Cells"),
-	TISSUE = Isaac.GetEntityVariantByName("Tissue"),
-	GRAVEROBBER = 2503,
-	SPLASHY = Isaac.GetEntityVariantByName("Splashy Long Legs"),
-	STICKY = Isaac.GetEntityVariantByName("Sticky Long Legs"),
-  FOREVER_FRIEND = Isaac.GetEntityVariantByName("Forever Friend"),
-}
-
--- Variants of already existing entities
-EntityVariant = {
-	DUMPLING = 0, -- for EntityType.ENTITY_DUMPLING
-    SKINLING = 1, -- for EntityType.ENTITY_DUMPLING
-    SCAB = 2, -- for EntityType.ENTITY_DUMPLING
-	SCORCHLING = 3, -- for EntityType.ENTITY_DUMPLING
-	MORTLING = 4, -- for EntityType.ENTITY_DUMPLING
-	TAINTED_DUMPLING = 5, -- for EntityType.ENTITY_DUMPLING
-	GILDED_DUMPLING = 6, -- for EntityType.ENTITY_DUMPLING
-	SPORELING = 7, -- for EntityType.ENTITY_DUMPLING
-	FRACTURE = 801, -- for EntityType.ENTITY_HOPPER (subType)
-	SWAPPER = 835, -- for EntityType.ENTITY_BABY
-	BARFY = 850, -- for EntityType.ENTITY_FATTY
-	VANILLA_CORPSE_EATER = 100, -- for EntityType.ENTITY_GRUB --100
-	VANILLA_CARRION_RIDER = 101, -- for EntityType.ENTITY_GRUB --101
-	CORPSE_EATER = Isaac.GetEntityVariantByName("​Corpse Eater"),
-	CARRION_RIDER = Isaac.GetEntityVariantByName("​Carrion Rider"),
-	STRIFER = Isaac.GetEntityVariantByName("​Strifer"), -- dummy strifer
-	FIRE_GRIMACE = Isaac.GetEntityVariantByName("Fire Grimace"), -- for EntityType.ENTITY_BRIMSTONE_HEAD
-	BEARD_BAT = Isaac.GetEntityVariantByName("Beard Bat"), -- for EntityType.ENTITY_BLIND_BAT
 }
 
 -- Projectile variants
@@ -181,9 +195,8 @@ end)
     Blacklists
 --]]--------------------------------------------------------
 
-
 local necromancer_blacklist = {
-	{EntityType.ENTITY_BONY, -1, CutMonsterVariants.NECROMANCER}, -- Bonys spawned by Necromancers
+	{EntityType.ENTITY_BONY, -1, mod.ENTITY_INFO.NECROMANCER.VARIANT}, -- Bonys spawned by Necromancers
 	{EntityType.ENTITY_GRUB, 0, -1},
 	{EntityType.ENTITY_GRUB, 100, 1}, -- Corpse eater body
 	{EntityType.ENTITY_LITTLE_HORN, 1, -1}, -- Dark ball
@@ -198,14 +211,14 @@ local corpse_eater_blacklist = {
 	{EntityType.ENTITY_SUCKER, 4, -1}, -- Bulb
 	{EntityType.ENTITY_SUCKER, 5, -1}, -- Bloodfly
 	{EntityType.ENTITY_SPIDER, -1, -1},
-	{EntityType.ENTITY_CUTMONSTERS, CutMonsterVariants.NECROMANCER, -1},
+	{mod.ENTITY_INFO.NECROMANCER.ID, mod.ENTITY_INFO.NECROMANCER.VARIANT, -1},
 	{EntityType.ENTITY_DIP, -1, -1},
 	{EntityType.ENTITY_RING_OF_FLIES, -1, -1},
 	{EntityType.ENTITY_BONY, -1, -1},
 	{EntityType.ENTITY_GRUB, 100, -1},
 	{EntityType.ENTITY_GRUB, 101, -1},
-	{EntityType.ENTITY_GRUB, EntityVariant.CORPSE_EATER, -1},
-	{EntityType.ENTITY_GRUB, EntityVariant.CARRION_RIDER, -1},
+	{EntityType.ENTITY_GRUB, mod.ENTITY_INFO.CORPSE_EATER.VARIANT, -1},
+	{EntityType.ENTITY_GRUB, mod.ENTITY_INFO.CARRION_RIDER.VARIANT, -1},
 	{EntityType.ENTITY_DART_FLY, -1, -1},
 	{EntityType.ENTITY_BLACK_BONY, -1, -1},
 	{EntityType.ENTITY_SWARM, -1, -1},
@@ -467,34 +480,34 @@ end
 
 function mod:replaceID(Type, Variant, SubType, GridIndex, Seed)
 	--[[ DUMPLINGS ]]--
-	if Type == EntityType.ENTITY_CUTMONSTERS and (Variant == CutMonsterVariants.DUMPLING or Variant == CutMonsterVariants.SKINLING or Variant == CutMonsterVariants.SCAB) then
-		return {EntityType.ENTITY_DUMPLING, Variant - 2401, SubType}
+	if Type == mod.ENTITY_INFO.STILLBORN.ID and (Variant == CutMonsterVariants.DUMPLING or Variant == CutMonsterVariants.SKINLING or Variant == CutMonsterVariants.SCAB) then
+		return {mod.ENTITY_INFO.DUMPLING.ID, Variant - 2401, SubType}
 
-	elseif Type == EntityType.ENTITY_CUTMONSTERS and Variant == CutMonsterVariants.DUMPLING then
-		return {EntityType.ENTITY_DUMPLING, EntityVariant.SCORCHLING, SubType}
+	elseif Type == mod.ENTITY_INFO.STILLBORN.ID and Variant == CutMonsterVariants.DUMPLING then
+		return {mod.ENTITY_INFO.SCORCHLING.ID, mod.ENTITY_INFO.SCORCHLING.VARIANT, SubType}
 
-	elseif Type == EntityType.ENTITY_CUTMONSTERS and Variant == CutMonsterVariants.MORTLING then
-		return {EntityType.ENTITY_DUMPLING, EntityVariant.MORTLING, SubType}
+	elseif Type == mod.ENTITY_INFO.STILLBORN.ID and Variant == CutMonsterVariants.MORTLING then
+		return {mod.ENTITY_INFO.MORTLING.ID, mod.ENTITY_INFO.MORTLING.VARIANT, SubType}
 
-	elseif Type == EntityType.ENTITY_CUTMONSTERS and Variant == CutMonsterVariants.TAINTED_DUMPLING then
-		return {EntityType.ENTITY_DUMPLING, EntityVariant.TAINTED_DUMPLING, SubType}
+	elseif Type == mod.ENTITY_INFO.STILLBORN.ID and Variant == CutMonsterVariants.TAINTED_DUMPLING then
+		return {mod.ENTITY_INFO.TAINTED_DUMPLING.ID, mod.ENTITY_INFO.TAINTED_DUMPLING.VARIANT, SubType}
 
-	elseif Type == EntityType.ENTITY_CUTMONSTERS and Variant == CutMonsterVariants.GILDED_DUMPLING then
-		return {EntityType.ENTITY_DUMPLING, EntityVariant.GILDED_DUMPLING, SubType}
+	elseif Type == mod.ENTITY_INFO.STILLBORN.ID and Variant == CutMonsterVariants.GILDED_DUMPLING then
+		return {mod.ENTITY_INFO.GILDED_DUMPLING.ID, mod.ENTITY_INFO.GILDED_DUMPLING.VARIANT, SubType}
 
 	--[[ FRACTURE ]]--
-	elseif Type == EntityVariant.FRACTURE and Variant == 0 and SubType == 0 then
-		return {EntityType.ENTITY_HOPPER, 1, EntityVariant.FRACTURE}
+	elseif Type == RestoredMonsterPack.ENTITY_INFO.FRACTURE.SUBTYPE and Variant == 0 and SubType == 0 then
+		return {EntityType.ENTITY_HOPPER, 1, RestoredMonsterPack.ENTITY_INFO.FRACTURE.SUBTYPE}
 
 	--[[ RED TNT ]]--
-	elseif Type == EntityType.ENTITY_CUTMONSTERS and Variant == CutMonsterVariants.RED_TNT then
-		return {EntityType.ENTITY_MOVABLE_TNT, CutMonsterVariants.RED_TNT}
+	elseif Type == mod.ENTITY_INFO.STILLBORN.ID and Variant == mod.ENTITY_INFO.RED_TNT.VARIANT then
+		return {EntityType.ENTITY_MOVABLE_TNT, mod.ENTITY_INFO.RED_TNT.VARIANT}
 	end
-	if EntityType.ENTITY_STRIFER == Type then
-		return {Type, EntityVariant.STRIFER, SubType}
+	if mod.ENTITY_INFO.STRIFER.ID == Type then
+		return {Type, mod.ENTITY_INFO.STRIFER.VARIANT, SubType}
 	end
 
-	if not FFGRACE and Type == EntityType.ENTITY_BLIND_BAT and Variant == EntityVariant.BEARD_BAT then
+	if not FFGRACE and Type == mod.ENTITY_INFO.BEARD_BAT.ID and Variant == mod.ENTITY_INFO.BEARD_BAT.VARIANT then
 		return {Type, 0, SubType}
 	end
 end
@@ -520,19 +533,21 @@ end
 mod:AddCallback(ModCallbacks.MC_PRE_ENTITY_SPAWN, mod.replaceByDummy)
 
 mod.DummyReplace = {
-	[EntityType.ENTITY_VESSEL] = {[0] = Isaac.GetEntityVariantByName("​Vessel (Antibirth)")}, --200},
-	[EntityType.ENTITY_BLIND_BAT] = {[0] = Isaac.GetEntityVariantByName("​Blind Bat")}, --200},
+	[mod.ENTITY_INFO.VESSEL.ID] = {[0] = mod.ENTITY_INFO.VESSEL_ANTIBIRTH.VARIANT}, --200},
+	[mod.ENTITY_INFO.BLIND_BAT.ID] = {[0] = mod.ENTITY_INFO.BLIND_BAT.VARIANT}, --200},
 	[EntityType.ENTITY_RAGE_CREEP] = {[1] = Isaac.GetEntityVariantByName("​Split Rage Creep")}, --200},
 	[EntityType.ENTITY_WALL_CREEP] = {[2] = Isaac.GetEntityVariantByName("​Rag Creep")}, --200},
-	[EntityType.ENTITY_NIGHTWATCH] = {[0] = Isaac.GetEntityVariantByName("​Nightwatch")},
-	--[EntityType.ENTITY_STRIFER] = {[0] = Isaac.GetEntityVariantByName("​Strifer")},
-	[EntityType.ENTITY_GRUB] = {[EntityVariant.CORPSE_EATER] = Isaac.GetEntityVariantByName("​Corpse Eater"),
-									[EntityVariant.CARRION_RIDER] = Isaac.GetEntityVariantByName("​Carrion Rider")},
+	[mod.ENTITY_INFO.NIGHTWATCH.ID] = {[0] = mod.ENTITY_INFO.NIGHTWATCH.VARIANT},
+	--[mod.ENTITY_INFO.STRIFER.ID] = {[0] = Isaac.GetEntityVariantByName("​Strifer")},
+	[EntityType.ENTITY_GRUB] = {
+		[mod.ENTITY_INFO.CORPSE_EATER.VARIANT] = Isaac.GetEntityVariantByName("​Corpse Eater"),
+		[mod.ENTITY_INFO.CARRION_RIDER.VARIANT] = Isaac.GetEntityVariantByName("​Carrion Rider")
+	},
 }
 
 mod.UnlockReplace = {
-	[EntityType.ENTITY_HOPPER.." ".. 1 .." "..EntityVariant.FRACTURE] = {EntityType.ENTITY_HOPPER, 1, -1}, --trite
-	[EntityVariant.FRACTURE.." ".. 0 .." ".. 0] = {EntityType.ENTITY_HOPPER, 1, -1}, --trite
+	[EntityType.ENTITY_HOPPER.." ".. 1 .." "..RestoredMonsterPack.ENTITY_INFO.FRACTURE.SUBTYPE] = {EntityType.ENTITY_HOPPER, 1, -1}, --trite
+	[RestoredMonsterPack.ENTITY_INFO.FRACTURE.SUBTYPE.." ".. 0 .." ".. 0] = {EntityType.ENTITY_HOPPER, 1, -1}, --trite
 }
 
 local ign = false

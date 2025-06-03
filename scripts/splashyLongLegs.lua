@@ -14,14 +14,14 @@ tarBulletColor:SetColorize(1, 1, 1, 1)
 
 
 function mod:splashyLongLegsInit(entity)
-	if entity.Variant == CutMonsterVariants.SPLASHY or entity.Variant == CutMonsterVariants.STICKY then
+	if entity.Variant == mod.ENTITY_INFO.SPLASHY.VARIANT or entity.Variant == mod.ENTITY_INFO.STICKY.VARIANT then
 		entity.EntityCollisionClass = EntityCollisionClass.ENTCOLL_ENEMIES
 	end
 end
-mod:AddCallback(ModCallbacks.MC_POST_NPC_INIT, mod.splashyLongLegsInit, EntityType.ENTITY_CUTMONSTERS)
+mod:AddCallback(ModCallbacks.MC_POST_NPC_INIT, mod.splashyLongLegsInit, mod.ENTITY_INFO.SPLASHY.ID)
 
 function mod:splashyLongLegsUpdate(entity)
-	if entity.Variant == CutMonsterVariants.SPLASHY or entity.Variant == CutMonsterVariants.STICKY then
+	if entity.Variant == mod.ENTITY_INFO.SPLASHY.VARIANT or entity.Variant == mod.ENTITY_INFO.STICKY.VARIANT then
 		local sprite = entity:GetSprite()
 		local target = entity:GetPlayerTarget()
 
@@ -125,7 +125,7 @@ function mod:splashyLongLegsUpdate(entity)
 
 			-- Head slam
 			if sprite:IsEventTriggered("Splash") then
-				if entity.Variant == CutMonsterVariants.SPLASHY then
+				if entity.Variant == mod.ENTITY_INFO.SPLASHY.VARIANT then
 					local splash = Isaac.Spawn(EntityType.ENTITY_EFFECT, EffectVariant.BIG_SPLASH, 2, entity.Position, Vector.Zero, entity)
 					splash.DepthOffset = entity.DepthOffset + 10
 					splash:GetSprite():ReplaceSpritesheet(0, "gfx/effects/big_splash02.png")
@@ -138,7 +138,7 @@ function mod:splashyLongLegsUpdate(entity)
 					params.FallingAccelModifier = 0.1
 					entity:FireBossProjectiles(9, Vector.Zero, 12, params)
 
-				elseif entity.Variant == CutMonsterVariants.STICKY then
+				elseif entity.Variant == mod.ENTITY_INFO.STICKY.VARIANT then
 					SFXManager():Play(SoundEffect.SOUND_MEAT_JUMPS)
 
 					-- Creep
@@ -149,9 +149,9 @@ function mod:splashyLongLegsUpdate(entity)
 			end
 
 			if sprite:IsFinished("Attack") then
-				if entity.Variant == CutMonsterVariants.SPLASHY then
+				if entity.Variant == mod.ENTITY_INFO.SPLASHY.VARIANT then
 					entity.State = NpcState.STATE_MOVE
-				elseif entity.Variant == CutMonsterVariants.STICKY then
+				elseif entity.Variant == mod.ENTITY_INFO.STICKY.VARIANT then
 					entity.State = NpcState.STATE_ATTACK
 					entity.ProjectileCooldown = Settings.DragTime
 				end
@@ -170,14 +170,14 @@ function mod:splashyLongLegsUpdate(entity)
 		end
 	end
 end
-mod:AddCallback(ModCallbacks.MC_NPC_UPDATE, mod.splashyLongLegsUpdate, EntityType.ENTITY_CUTMONSTERS)
+mod:AddCallback(ModCallbacks.MC_NPC_UPDATE, mod.splashyLongLegsUpdate, mod.ENTITY_INFO.SPLASHY.ID)
 
 function mod:splashyLongLegsRender(entity)
-	if entity.Variant == CutMonsterVariants.SPLASHY or entity.Variant == CutMonsterVariants.STICKY then
-		if entity.EntityCollisionClass == EntityCollisionClass.ENTCOLL_ENEMIES 
+	if entity.Variant == mod.ENTITY_INFO.SPLASHY.VARIANT or entity.Variant == mod.ENTITY_INFO.STICKY.VARIANT then
+		if entity.EntityCollisionClass == EntityCollisionClass.ENTCOLL_ENEMIES
 		and entity:HasEntityFlags(EntityFlag.FLAG_FREEZE) then
 			entity:AddEntityFlags(EntityFlag.FLAG_NO_STATUS_EFFECTS)
 		end
 	end
 end
-mod:AddCallback(ModCallbacks.MC_POST_NPC_RENDER, mod.splashyLongLegsRender, EntityType.ENTITY_CUTMONSTERS)
+mod:AddCallback(ModCallbacks.MC_POST_NPC_RENDER, mod.splashyLongLegsRender, mod.ENTITY_INFO.SPLASHY.ID)

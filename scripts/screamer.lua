@@ -18,7 +18,7 @@ local States = {
 
 
 function mod:screamerInit(entity)
-	if entity.Variant == CutMonsterVariants.SCREAMER then
+	if entity.Variant == mod.ENTITY_INFO.SCREAMER.VARIANT then
 		local data = entity:GetData()
 
 		entity:ToNPC()
@@ -30,10 +30,10 @@ function mod:screamerInit(entity)
 		data.soundTimer = (math.random(Settings.SoundTimer[1], Settings.SoundTimer[2])) / 2
 	end
 end
-mod:AddCallback(ModCallbacks.MC_POST_NPC_INIT, mod.screamerInit, EntityType.ENTITY_CUTMONSTERS)
+mod:AddCallback(ModCallbacks.MC_POST_NPC_INIT, mod.screamerInit, mod.ENTITY_INFO.SCREAMER.ID)
 
 function mod:screamerUpdate(entity)
-	if entity.Variant == CutMonsterVariants.SCREAMER then
+	if entity.Variant == mod.ENTITY_INFO.SCREAMER.VARIANT then
 		local sprite = entity:GetSprite()
 		local data = entity:GetData()
 		local target = entity:GetPlayerTarget()
@@ -164,7 +164,7 @@ function mod:screamerUpdate(entity)
 
 					-- Alert Nightwatches (state 2 = Alert, state 3 = AlertNoEffect)
 					for _,v in pairs(Isaac.GetRoomEntities()) do
-						if v.Type == EntityType.ENTITY_NIGHTWATCH and v:GetData().state ~= 2 and v:GetData().state ~= 3 then
+						if v.Type == mod.ENTITY_INFO.NIGHTWATCH.ID and v:GetData().state ~= 2 and v:GetData().state ~= 3 then
 							v:GetData().state = 2
 							break
 						end
@@ -188,7 +188,7 @@ function mod:screamerUpdate(entity)
 		end
 	end
 end
-mod:AddCallback(ModCallbacks.MC_NPC_UPDATE, mod.screamerUpdate, EntityType.ENTITY_CUTMONSTERS)
+mod:AddCallback(ModCallbacks.MC_NPC_UPDATE, mod.screamerUpdate, mod.ENTITY_INFO.SCREAMER.ID)
 
 
 

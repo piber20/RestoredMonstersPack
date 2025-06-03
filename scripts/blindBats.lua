@@ -2,6 +2,9 @@ local mod = RestoredMonsterPack
 local game = Game()
 local roomrng = RNG()
 
+local BLIND_BAT = mod.ENTITY_INFO.BLIND_BAT
+local BEARD_BAT = mod.ENTITY_INFO.BEARD_BAT
+
 local Settings = {
 	NumFollowerBats = 3, -- How many follower bats should spawn alongside the leader bat
 	ActivationRange = 110, -- Range that players or monsters must be to trigger the bat
@@ -34,7 +37,7 @@ local function VecLerp(vec1, vec2, percent)
 end
 
 local function alarmBats(var)
-	for _, bat in pairs(Isaac.FindByType(EntityType.ENTITY_BLIND_BAT, var, -1, false, false)) do
+	for _, bat in pairs(Isaac.FindByType(BLIND_BAT.ID, var, -1, false, false)) do
 		local data = bat:GetData().BlindBatData
 		if (data ~= nil and data.State == States.Hiding) then
 			if bat.SubType ~= 10 then --main bat
@@ -51,7 +54,7 @@ local function alarmBats(var)
 end
 
 local function awakenBats(var)
-	for _, bat in ipairs(Isaac.FindByType(EntityType.ENTITY_BLIND_BAT, var or 200 , -1, false, false)) do
+	for _, bat in ipairs(Isaac.FindByType(BLIND_BAT.ID, var or 200 , -1, false, false)) do
 		local batNpc = bat:ToNPC()
 		local batSprite = bat:GetSprite()
 		local batData = bat:GetData().BlindBatData
@@ -91,7 +94,7 @@ function mod:blindBatInit(bat)
 		ChargeTime = Settings.ChargeTime,
 	}
 
-	if FFGRACE and bat.Variant == EntityVariant.BEARD_BAT then
+	if FFGRACE and bat.Variant == BEARD_BAT.VARIANT then
 		bat:GetData().BlindBatData.ChargeTime = Settings.ChargeTime * 2
 		bat:GetData().BlindBatData.AttackRange = Settings.AttackRange * 2
 		bat.SplatColor = FFGRACE.ColorSporeSplat
@@ -112,7 +115,7 @@ function mod:blindBatInit(bat)
 		end
 
 		for i = 1, Settings.NumFollowerBats do
-			local sbat = Isaac.Spawn(EntityType.ENTITY_BLIND_BAT, bat.Variant, 10, bat.Position + RandomVector():Resized(mod:RandomIntBetween(rng, 1, 50)), bat.Velocity, bat)
+			local sbat = Isaac.Spawn(BLIND_BAT.ID, bat.Variant, 10, bat.Position + RandomVector():Resized(mod:RandomIntBetween(rng, 1, 50)), bat.Velocity, bat)
 			sbat:ClearEntityFlags(EntityFlag.FLAG_APPEAR)
 		end
 
@@ -121,7 +124,7 @@ function mod:blindBatInit(bat)
 		sprite:Play("IdleInvisible", true)
 	end
 end
-mod:AddCallback(ModCallbacks.MC_POST_NPC_INIT, mod.blindBatInit, EntityType.ENTITY_BLIND_BAT)
+mod:AddCallback(ModCallbacks.MC_POST_NPC_INIT, mod.blindBatInit, BLIND_BAT.ID)
 
 function mod:blindBatUpdate(bat)
 	local sprite = bat:GetSprite()
@@ -130,7 +133,7 @@ function mod:blindBatUpdate(bat)
 	local target = bat:GetPlayerTarget()
 	local rng = bat:GetDropRNG()
 
-	if FFGRACE and bat.Variant == EntityVariant.BEARD_BAT then
+	if FFGRACE and bat.Variant == BEARD_BAT.VARIANT then
 		if bat:GetData().SporeTransformed and not batData.Trans then
 			sprite:Play("Transform",true)
 			batData.Trans = true
@@ -152,12 +155,12 @@ function mod:blindBatUpdate(bat)
 			sprite:Play("IdleInvisible", true)
 
 			-- local noMainBats = true --theres probably a more efficient way to do this
-			-- for  _, ibat in ipairs(Isaac.FindByType(EntityType.ENTITY_BLIND_BAT, bat.Variant, -1, false, false)) do
+			-- for  _, ibat in ipairs(Isaac.FindByType(BLIND_BAT.ID, bat.Variant, -1, false, false)) do
 			-- 	if ibat.SubType ~= 10 then
 			-- 		noMainBats = false
 			-- 	end
 			-- end
-			if Isaac.CountEntities(nil, EntityType.ENTITY_BLIND_BAT, bat.Variant, -1) <= 0 then --if no main bats exist
+			if Isaac.CountEntities(nil, BLIND_BAT.ID, bat.Variant, -1) <= 0 then --if no main bats exist
 				bat:PlaySound(SoundEffect.SOUND_SHAKEY_KID_ROAR, 1, 0, false, 1.2)
 				sprite:Play("FlyDown", true)
 				batData.State = States.Spotted
@@ -204,7 +207,7 @@ function mod:blindBatUpdate(bat)
 			batData.State = States.Charging
 			sprite:Play("Dash", true)
 			bat:PlaySound(SoundEffect.SOUND_SHAKEY_KID_ROAR, 1, 0, false, 1.2)
-			if bat.Variant == EntityVariant.BEARD_BAT and FFGRACE then
+			if bat.Variant == BEARD_BAT.VARIANT and FFGRACE then
 				FFGRACE:MakeSporeExplosion(bat.Position, bat.SpawnerEntity, .5)
 				bat.Velocity = batData.ChargeDirection * Settings.ChargeSpeed * 2
 			end
@@ -223,7 +226,7 @@ function mod:blindBatUpdate(bat)
 
 	elseif batData.State == States.Charging then
 
-		if bat.Variant == EntityVariant.BEARD_BAT and FFGRACE then
+		if bat.Variant == BEARD_BAT.VARIANT and FFGRACE then
 			FFGRACE:MakeSporeTrail(bat, 0.25)
 
 			batData.ChargeDirection = VecLerp(batData.ChargeDirection, (target.Position - batPos):Normalized(), .15)
@@ -250,7 +253,7 @@ function mod:blindBatUpdate(bat)
 		end
 	end
 end
-mod:AddCallback(ModCallbacks.MC_NPC_UPDATE, mod.blindBatUpdate, EntityType.ENTITY_BLIND_BAT)
+mod:AddCallback(ModCallbacks.MC_NPC_UPDATE, mod.blindBatUpdate, BLIND_BAT.ID)
 
 function mod:onBatUpdate()
 	nextAlertTime = nextAlertTime - 1
@@ -281,7 +284,7 @@ function mod:onBatUpdate()
 	or sfx:IsPlaying(SoundEffect.SOUND_ROCKET_EXPLOSION) or sfx:IsPlaying(Isaac.GetSoundIdByName("Nightwatch Alert"))
 	or sfx:IsPlaying(Isaac.GetSoundIdByName("Screamer Scream"))) then
 		awakenBats()
-		awakenBats(EntityVariant.BEARD_BAT)
+		awakenBats(BEARD_BAT.VARIANT)
 	end
 end
 mod:AddCallback(ModCallbacks.MC_POST_UPDATE, mod.onBatUpdate)
@@ -294,22 +297,22 @@ function mod:batRemoval(bat)
 		end
 	end
 end
-mod:AddCallback(ModCallbacks.MC_POST_ENTITY_REMOVE, mod.batRemoval, EntityType.ENTITY_BLIND_BAT)
+mod:AddCallback(ModCallbacks.MC_POST_ENTITY_REMOVE, mod.batRemoval, BLIND_BAT.ID)
 
 function mod:batKill(bat)
-	if bat.Variant == EntityVariant.BEARD_BAT and FFGRACE then
+	if bat.Variant == BEARD_BAT.VARIANT and FFGRACE then
 		FFGRACE:MakeSporeExplosion(bat.Position, bat.SpawnerEntity, .75)
 	end
 end
-mod:AddCallback(ModCallbacks.MC_POST_NPC_DEATH, mod.batKill, EntityType.ENTITY_BLIND_BAT)
+mod:AddCallback(ModCallbacks.MC_POST_NPC_DEATH, mod.batKill, BLIND_BAT.ID)
 
 
 -- FFG compatibility
 if FFGRACE then
 	mod:AddCallback("POST_SPORE_INFECTION", function(_, npc, explosion)
-		if npc.Variant ~= EntityVariant.BEARD_BAT then
+		if npc.Variant ~= BEARD_BAT.VARIANT then
 			npc:ToNPC():PlaySound(SoundEffect.SOUND_VAMP_GULP, 1.25)
-			return {EntityType.ENTITY_BLIND_BAT, EntityVariant.BEARD_BAT, npc.Subtype}
+			return {BLIND_BAT.ID, BEARD_BAT.VARIANT, npc.Subtype}
 		end
-	end, EntityType.ENTITY_BLIND_BAT)
+	end, BLIND_BAT.ID)
 end

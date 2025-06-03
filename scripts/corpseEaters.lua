@@ -1,6 +1,12 @@
 local mod = RestoredMonsterPack
 local game = Game()
 
+local CORPSE_EATER = mod.ENTITY_INFO.CORPSE_EATER
+local CARRION_RIDER = mod.ENTITY_INFO.CARRION_RIDER
+
+local VANILLA_CORPSE_EATER = mod.ENTITY_INFO.VANILLA_CORPSE_EATER
+local VANILLA_CARRION_RIDER = mod.ENTITY_INFO.VANILLA_CARRION_RIDER
+
 local Settings = {
 	GiveUpTime = 120,
 	MaxHPMulti = 2,
@@ -18,7 +24,7 @@ local Settings = {
 
 -- For charmed and friendly Corpse Eaters
 function CorpseEaterIsFriendly(entity, target)
-	if target.Type == EntityType.ENTITY_GRUB and (target.Variant == EntityVariant.CORPSE_EATER or target.Variant == EntityVariant.CARRION_RIDER) then
+	if target.Type == EntityType.ENTITY_GRUB and (target.Variant == CORPSE_EATER.VARIANT or target.Variant == CARRION_RIDER.VARIANT) then
 		-- Non-friendly Corpse Eaters hurting charmed/baited ones
 		if not (entity:HasEntityFlags(EntityFlag.FLAG_CHARM) or entity:HasEntityFlags(EntityFlag.FLAG_FRIENDLY)) and target:GetData().headIndex ~= entity.Index
 		and (target:HasEntityFlags(EntityFlag.FLAG_CHARM) or target:HasEntityFlags(EntityFlag.FLAG_FRIENDLY) or target:HasEntityFlags(EntityFlag.FLAG_BAITED)) then
@@ -39,8 +45,10 @@ function CorpseEaterIsFriendly(entity, target)
 end
 
 local iscorpseeater = {
-	[EntityVariant.VANILLA_CORPSE_EATER]=true,[EntityVariant.VANILLA_CARRION_RIDER]=true,
-	[EntityVariant.CORPSE_EATER]=true,[EntityVariant.CARRION_RIDER]=true,
+	[VANILLA_CORPSE_EATER.VARIANT] = true,
+	[VANILLA_CARRION_RIDER.VARIANT] = true,
+	[CORPSE_EATER.VARIANT] = true,
+	[CARRION_RIDER.VARIANT] = true,
 }
 
 function mod:CorpseEaterInit(entity)
@@ -79,8 +87,9 @@ function mod:CorpseEaterInit(entity)
       sprite:LoadGraphics()
 		end
 
-		entity.Variant = entity.Variant == EntityVariant.VANILLA_CORPSE_EATER and EntityVariant.CORPSE_EATER
-			or entity.Variant == EntityVariant.VANILLA_CARRION_RIDER and EntityVariant.CARRION_RIDER
+		entity.Variant =
+			entity.Variant == VANILLA_CORPSE_EATER.VARIANT and CORPSE_EATER.VARIANT
+			or entity.Variant == VANILLA_CARRION_RIDER.VARIANT and CARRION_RIDER.VARIANT
 			or entity.Variant
 	end
 end
@@ -141,7 +150,7 @@ function mod:CorpseEaterUpdate(entity)
 		-- Spawn the body if it doesn't already have one
 		if not entity.Parent and not entity.Child then
 			if entity.FrameCount <= 1 then
-				Isaac.Spawn(EntityType.ENTITY_GRUB, EntityVariant.CORPSE_EATER, 1, entity.Position - Vector(30, 0), Vector.Zero, nil):GetData().headIndex = entity.Index
+				Isaac.Spawn(EntityType.ENTITY_GRUB, CORPSE_EATER.VARIANT, 1, entity.Position - Vector(30, 0), Vector.Zero, nil):GetData().headIndex = entity.Index
 
 			elseif entity.FrameCount > 1 then
 				entity:Remove()
@@ -193,7 +202,7 @@ function mod:CorpseEaterUpdate(entity)
 
 
 		-- Carrion Rider
-		if entity.Variant == EntityVariant.CARRION_RIDER then
+		if entity.Variant == CARRION_RIDER.VARIANT then
 			local player = game:GetNearestPlayer(entity.Position)
 
 			if entity.ProjectileCooldown > 0 then
@@ -255,7 +264,7 @@ end
 mod:AddCallback(ModCallbacks.MC_NPC_UPDATE, mod.CorpseEaterUpdate, EntityType.ENTITY_GRUB)
 
 function mod:CorpseEaterCollision(entity, target, cum)
-	if entity.Variant == EntityVariant.CORPSE_EATER or entity.Variant == EntityVariant.CARRION_RIDER then
+	if entity.Variant == CORPSE_EATER.VARIANT or entity.Variant == CARRION_RIDER.VARIANT then
 		local data = entity:GetData()
 
 		-- Players
@@ -351,9 +360,9 @@ end
 mod:AddCallback(ModCallbacks.MC_PRE_NPC_COLLISION, mod.CorpseEaterCollision, EntityType.ENTITY_GRUB)
 
 function mod:CorpseEaterDeath(entity)
-	if entity.Variant == EntityVariant.CORPSE_EATER or entity.Variant == EntityVariant.CARRION_RIDER then
+	if entity.Variant == CORPSE_EATER.VARIANT or entity.Variant == CARRION_RIDER.VARIANT then
 		-- Bony from Carrion Rider
-		if entity.Variant == EntityVariant.CARRION_RIDER and entity.Parent == nil then
+		if entity.Variant == CARRION_RIDER.VARIANT and entity.Parent == nil then
 			local bony = Isaac.Spawn(EntityType.ENTITY_BONY, 0, 0, entity.Position, Vector.Zero, entity)
 
 			if (game:GetLevel():GetStage() == LevelStage.STAGE4_1 or game:GetLevel():GetStage() == LevelStage.STAGE4_2) and game:GetLevel():GetStageType() == StageType.STAGETYPE_REPENTANCE then
@@ -365,7 +374,7 @@ function mod:CorpseEaterDeath(entity)
 
 		-- Remove the maggots that are spawned on death
 		for i, maggots in ipairs(Isaac.GetRoomEntities()) do
-			if maggots.SpawnerType == EntityType.ENTITY_GRUB and (maggots.SpawnerVariant == EntityVariant.CORPSE_EATER or maggots.SpawnerVariant == EntityVariant.CARRION_RIDER)
+			if maggots.SpawnerType == EntityType.ENTITY_GRUB and (maggots.SpawnerVariant == CORPSE_EATER.VARIANT or maggots.SpawnerVariant == CARRION_RIDER.VARIANT)
 			and maggots.Type == EntityType.ENTITY_MAGGOT or maggots.Type == EntityType.ENTITY_CHARGER or maggots.Type == EntityType.ENTITY_SPITTY then
 				maggots:Remove()
 			end

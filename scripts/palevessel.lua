@@ -2,6 +2,8 @@ local mod = RestoredMonsterPack
 local game = Game()
 local Isaac = Isaac
 
+local VESSEL = mod.ENTITY_INFO.VESSEL
+
 local Settings = {
 	MaxMaggots = 12,
 	MoveSpeed = 1.5,
@@ -149,7 +151,7 @@ function mod:palevesselUpdate(vessel)
             sprite:SetAnimation("WalkUp", false)
         elseif angle < -135 or angle > 135 then
             sprite:SetAnimation("WalkLeft", false)
-        end 
+        end
 
 		vesselData.AttackCountdown = vesselData.AttackCountdown - 1
 		if vesselData.AttackCountdown < 0 then
@@ -212,16 +214,16 @@ function mod:palevesselUpdate(vessel)
 
 
 	if vessel.SubType == 0 then
-		if sprite:GetFrame() == 16 and rng:RandomFloat() <= Settings.StepMaggotSpawnChance 
+		if sprite:GetFrame() == 16 and rng:RandomFloat() <= Settings.StepMaggotSpawnChance
 		and Isaac.CountEntities(vessel,EntityType.ENTITY_SMALL_MAGGOT) < Settings.MaxMaggots then
 			local maggot = Isaac.Spawn(EntityType.ENTITY_SMALL_MAGGOT, 0, 0, vessel.Position, Vector(0, 0), vessel)
             maggot:ClearEntityFlags(EntityFlag.FLAG_APPEAR)
 		end
 	elseif vessel.SubType == 1 then
 		--if sprite:GetFrame() == 16 and math.random() <= Settings.StepMaggotSpawnChance and vesselData.Maggots < Settings.MaxMaggots then
-		
+
 		vesselData.MaggotCountdown = vesselData.MaggotCountdown - 1
-		if vesselData.MaggotCountdown < 0    --sprite:GetFrame() == 16 and rng:RandomFloat() <= Settings.StepMaggotSpawnChance*10 
+		if vesselData.MaggotCountdown < 0    --sprite:GetFrame() == 16 and rng:RandomFloat() <= Settings.StepMaggotSpawnChance*10
 		and Isaac.CountEntities(vessel,EntityType.ENTITY_SMALL_MAGGOT) < Settings.MaxMaggots then
 			--local maggot = Isaac.Spawn(EntityType.ENTITY_SMALL_MAGGOT, 0, 0, vessel.Position, Vector.FromAngle(math.random(0, 360)):Normalized() * math.random(1, 2), vessel):ToNPC()
 			local maggot = Isaac.Spawn(EntityType.ENTITY_SMALL_MAGGOT, 0, 0, vessel.Position, Vector.FromAngle(rng:RandomInt(361)):Resized(rng:RandomInt(2)+1), vessel):ToNPC()
@@ -237,8 +239,8 @@ function mod:palevesselUpdate(vessel)
 			creep.SpriteScale = creep.SpriteScale * 0.5
 		end
 		--if vessel:IsFrame(math.ceil(8/1), 0) and math.random() <= Settings.StepMaggotSpawnChance and vesselData.Maggots < Settings.MaxMaggots then
-		--[[if vessel.FrameCount % 8 == 0 -- vessel:IsFrame(math.ceil(8/1), 0) 
-		and rng:RandomFloat() <= Settings.StepMaggotSpawnChance*3 
+		--[[if vessel.FrameCount % 8 == 0 -- vessel:IsFrame(math.ceil(8/1), 0)
+		and rng:RandomFloat() <= Settings.StepMaggotSpawnChance*3
 		and Isaac.CountEntities(vessel,EntityType.ENTITY_SMALL_MAGGOT) < Settings.MaxMaggots then
 			--local maggot = Isaac.Spawn(EntityType.ENTITY_SMALL_MAGGOT, 0, 0, vessel.Position, Vector.FromAngle(math.random(0, 360)):Normalized() * math.random(1, 2), vessel):ToNPC()
 			local maggot = Isaac.Spawn(EntityType.ENTITY_SMALL_MAGGOT, 0, 0, vessel.Position, Vector.FromAngle(rng:RandomInt(361)):Normalized() * (rng:RandomInt(2)+1), vessel):ToNPC()
@@ -330,7 +332,7 @@ function mod:palevesselDamage(vessel, damageAmount, damageFlags, damageSource, d
 	end
 
 
-	if Isaac.CountEntities(vessel,EntityType.ENTITY_SMALL_MAGGOT) >= Settings.MaxMaggots 
+	if Isaac.CountEntities(vessel,EntityType.ENTITY_SMALL_MAGGOT) >= Settings.MaxMaggots
 	or vessel:GetDropRNG():RandomFloat() < Settings.MaggotCounterChance then return end
 
 	if not damageSource.Entity then

@@ -1,6 +1,8 @@
 local mod = RestoredMonsterPack
 local game = Game()
 
+local ECHO_BAT = mod.ENTITY_INFO.ECHO_BAT
+
 local Settings = {
 	AttackTime = {30, 60}, -- The amount of frames between each bat charge
 	AttackRange = 280, -- Range players must be in to trigger the bat charging
@@ -29,7 +31,7 @@ end
 
 
 function mod:echoBatInit(entity)
-	if entity.Variant == CutMonsterVariants.ECHO_BAT then
+	if entity.Variant == ECHO_BAT.VARIANT then
 		local data = entity:GetData()
 		local rng = entity:GetDropRNG()
 
@@ -40,10 +42,10 @@ function mod:echoBatInit(entity)
 		data.angleDirection = "up"
 	end
 end
-mod:AddCallback(ModCallbacks.MC_POST_NPC_INIT, mod.echoBatInit, EntityType.ENTITY_CUTMONSTERS)
+mod:AddCallback(ModCallbacks.MC_POST_NPC_INIT, mod.echoBatInit, ECHO_BAT.ID)
 
 function mod:echoBatUpdate(entity)
-	if entity.Variant == CutMonsterVariants.ECHO_BAT then
+	if entity.Variant == ECHO_BAT.VARIANT then
 		local sprite = entity:GetSprite()
 		local data = entity:GetData()
 		local target = entity:GetPlayerTarget()
@@ -109,7 +111,7 @@ function mod:echoBatUpdate(entity)
 		end
 	end
 end
-mod:AddCallback(ModCallbacks.MC_NPC_UPDATE, mod.echoBatUpdate, EntityType.ENTITY_CUTMONSTERS)
+mod:AddCallback(ModCallbacks.MC_NPC_UPDATE, mod.echoBatUpdate, ECHO_BAT.ID)
 
 
 
@@ -278,11 +280,11 @@ mod:AddCallback(ModCallbacks.MC_ENTITY_TAKE_DMG, mod.endConfusionEarly)
 -- FFG compatibility
 if FFGRACE then
 	mod:AddCallback("POST_SPORE_INFECTION", function(_, npc, explosion)
-		if npc.Variant == CutMonsterVariants.ECHO_BAT then
+		if npc.Variant == ECHO_BAT.VARIANT then
 			npc:ToNPC():PlaySound(SoundEffect.SOUND_VAMP_GULP, 1.25)
-			return {EntityType.ENTITY_CUTMONSTERS, CutMonsterVariants.CHUBBY_BUNNY, 0}
+			return {ECHO_BAT.ID, mod.ENTITY_INFO.CHUBBY_BUNNY.VARIANT, 0}
 		end
-	end, EntityType.ENTITY_CUTMONSTERS)
+	end, ECHO_BAT.ID)
 end
 
 local function projectileKill(entity)
@@ -297,7 +299,7 @@ end
 function mod:chubbyBunnyInit(entity)
 	local data = entity:GetData()
 	local rng = entity:GetDropRNG()
-  if entity.Variant == CutMonsterVariants.CHUBBY_BUNNY then
+  if entity.Variant == mod.ENTITY_INFO.CHUBBY_BUNNY.VARIANT then
     entity.SplatColor = FFGRACE.ColorSporeSplat
 
 	data.cooldown = mod:RandomIntBetween(rng, Settings.AttackTime[1], Settings.AttackTime[2])
@@ -308,15 +310,15 @@ function mod:chubbyBunnyInit(entity)
   end
 end
 
-mod:AddCallback(ModCallbacks.MC_POST_NPC_INIT, mod.chubbyBunnyInit, EntityType.ENTITY_CUTMONSTERS)
+mod:AddCallback(ModCallbacks.MC_POST_NPC_INIT, mod.chubbyBunnyInit, ECHO_BAT.ID)
 
 function mod:chubbyBunnyUpdate(entity)
-	if entity.Variant == CutMonsterVariants.CHUBBY_BUNNY then
+	if entity.Variant == mod.ENTITY_INFO.CHUBBY_BUNNY.VARIANT then
 		local sprite = entity:GetSprite()
 		local data = entity:GetData()
 		local target = entity:GetPlayerTarget()
 		local rng = entity:GetDropRNG()
-  
+
     if data.SporeTransformed and (not data.Trans) then
       sprite:Play("Transform",true)
         data.Trans = true
@@ -327,7 +329,7 @@ function mod:chubbyBunnyUpdate(entity)
         sprite:Play("Idle", true)
       end
     end
-  
+
     if (not sprite:IsPlaying("Death")) and (not sprite:IsPlaying("Transform")) then
 		-- Movement
 		data.vector = ((target.Position - entity.Position):Normalized() * Settings.ChaseSpeed):Rotated(data.angleOffset)
@@ -407,10 +409,10 @@ function mod:chubbyBunnyUpdate(entity)
 		end
   	end
 end
-mod:AddCallback(ModCallbacks.MC_NPC_UPDATE, mod.chubbyBunnyUpdate, EntityType.ENTITY_CUTMONSTERS)
+mod:AddCallback(ModCallbacks.MC_NPC_UPDATE, mod.chubbyBunnyUpdate, ECHO_BAT.ID)
 
 function mod:chubbyBunnyDeath(target, damageAmount, damageFlags, damageSource, damageCountdownFrames)
-	if target.Variant == CutMonsterVariants.CHUBBY_BUNNY then
+	if target.Variant == mod.ENTITY_INFO.CHUBBY_BUNNY.VARIANT then
     if target.HitPoints <= damageAmount then
       if target:GetSprite():IsPlaying("Transform") then
         FFGRACE:MakeSporeExplosion(target.Position, target.SpawnerEntity, 1)
@@ -423,19 +425,19 @@ function mod:chubbyBunnyDeath(target, damageAmount, damageFlags, damageSource, d
     end
 	end
 end
-mod:AddCallback(ModCallbacks.MC_ENTITY_TAKE_DMG, mod.chubbyBunnyDeath, EntityType.ENTITY_CUTMONSTERS)
+mod:AddCallback(ModCallbacks.MC_ENTITY_TAKE_DMG, mod.chubbyBunnyDeath, ECHO_BAT.ID)
 
 function mod:chubbyBunnyProjectileUpdate(projectile)
-	if FFGRACE and projectile.SpawnerEntity and projectile.SpawnerType == EntityType.ENTITY_CUTMONSTERS and projectile.SpawnerVariant ==
-	CutMonsterVariants.CHUBBY_BUNNY then
+	if FFGRACE and projectile.SpawnerEntity and projectile.SpawnerType == ECHO_BAT.ID and projectile.SpawnerVariant ==
+	mod.ENTITY_INFO.CHUBBY_BUNNY.VARIANT then
 		FFGRACE:MakeSporeTrail(projectile, .75)
 	end
 end
 mod:AddCallback(ModCallbacks.MC_POST_PROJECTILE_UPDATE, mod.chubbyBunnyProjectileUpdate)
 
 function mod:chubbyBunnyProjectileCollision(projectile)
-	if FFGRACE and projectile.SpawnerEntity and projectile.SpawnerType == EntityType.ENTITY_CUTMONSTERS and projectile.SpawnerVariant ==
-	CutMonsterVariants.CHUBBY_BUNNY then
+	if FFGRACE and projectile.SpawnerEntity and projectile.SpawnerType == ECHO_BAT.ID and projectile.SpawnerVariant ==
+	mod.ENTITY_INFO.CHUBBY_BUNNY.VARIANT then
 		projectile:Remove()
 		FFGRACE:MakeSporeExplosion(projectile.Position, projectile.SpawnerEntity, .6)
 	end

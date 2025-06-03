@@ -4,7 +4,7 @@ if FFGRACE then
 
 
     --boiler
-    FFGRACE.StageSkins.Boiler[EntityType.ENTITY_DUMPLING.." "..0] = {
+    FFGRACE.StageSkins.Boiler[RestoredMonsterPack.ENTITY_INFO.DUMPLING.ID.." "..0] = {
                 {{0}, basepath.."boiler/dumpling_boiler"},
             }
 
@@ -38,8 +38,8 @@ if FFGRACE then
       {EntityType.ENTITY_FAT_BAT, -1, -1},
       {EntityType.ENTITY_BOOMFLY, 3, -1}, --dragon fly
 
-      {EntityType.ENTITY_CUTMONSTERS, CutMonsterVariants.ECHO_BAT, 0},
-      {EntityType.ENTITY_BLIND_BAT, 200, -1},
+      {mod.ENTITY_INFO.ECHO_BAT.ID, mod.ENTITY_INFO.ECHO_BAT.VARIANT, 0},
+      {mod.ENTITY_INFO.BLIND_BAT.ID, mod.ENTITY_INFO.BEARD_BAT.VARIANT, -1},
 
       {FFGRACE.ENT.POPCAP_CLUSTER.id, FFGRACE.ENT.POPCAP_CLUSTER.variant, -1},
       {FFGRACE.ENT.MUD_FLY.id, FFGRACE.ENT.MUD_FLY.variant, -1},
@@ -52,19 +52,19 @@ if FFGRACE then
     }
 
     FFGRACE.SkeeterEntData["RestoredMonsterPack"] = {
-      [EntityType.ENTITY_CUTMONSTERS.." "..CutMonsterVariants.STILLBORN] = "Hard",
-      [EntityType.ENTITY_BRIMSTONE_HEAD.." "..EntityVariant.FIRE_GRIMACE] = "Hard",
+      [mod.ENTITY_INFO.STILLBORN.ID.." "..mod.ENTITY_INFO.STILLBORN.VARIANT] = "Hard",
+      [EntityType.ENTITY_BRIMSTONE_HEAD.." "..mod.ENTITY_INFO.FIRE_GRIMACE.VARIANT] = "Hard",
 
-      [EntityType.ENTITY_CUTMONSTERS.." "..CutMonsterVariants.STICKY] = "Tar",
+      [mod.ENTITY_INFO.STICKY.ID.." "..mod.ENTITY_INFO.STICKY.VARIANT] = "Tar",
 
-      [EntityType.ENTITY_DUMPLING.." "..CutMonsterVariants.SCORCHLING] = "Fire",
+      [mod.ENTITY_INFO.DUMPLING.ID.." "..CutMonsterVariants.SCORCHLING] = "Fire",
 
-      [EntityType.ENTITY_CUTMONSTERS.." "..CutMonsterVariants.CHUBBY_BUNNY] = "Spore",
-      [EntityType.ENTITY_CUTMONSTERS.." "..CutMonsterVariants.ECHO_BAT] = "Spore",
-      [EntityType.ENTITY_BLIND_BAT.." "..EntityVariant.BEARD_BAT] = "Spore",
-      [EntityType.ENTITY_DUMPLING.." "..EntityVariant.SPORELING] = "Spore",
+      [mod.ENTITY_INFO.CHUBBY_BUNNY.ID.." "..mod.ENTITY_INFO.CHUBBY_BUNNY.VARIANT] = "Spore",
+      [mod.ENTITY_INFO.ECHO_BAT.ID.." "..mod.ENTITY_INFO.ECHO_BAT.VARIANT] = "Spore",
+      [mod.ENTITY_INFO.BLIND_BAT.ID.." "..mod.ENTITY_INFO.BEARD_BAT.VARIANT] = "Spore",
+      [mod.ENTITY_INFO.DUMPLING.ID.." "..mod.ENTITY_INFO.SPORELING.VARIANT] = "Spore",
 
-      [EntityType.ENTITY_CUTMONSTERS.." "..CutMonsterVariants.RED_TNT] = "Blacklisted",
+      [mod.ENTITY_INFO.RED_TNT.ID.." "..mod.ENTITY_INFO.RED_TNT.VARIANT] = "Blacklisted",
     }
     for key, entry in pairs(FFGRACE.SkeeterEntData["RestoredMonsterPack"]) do
       FFGRACE.SkeeterEntData[key] = entry
@@ -72,8 +72,8 @@ if FFGRACE then
 
   else
     mod.CompatibilityReplace = {
-      [EntityType.ENTITY_DUMPLING.." "..EntityVariant.SPORELING] = {EntityType.ENTITY_DUMPLING, EntityVariant.SKINLING, -1},
-      [EntityType.ENTITY_CUTMONSTERS.." "..CutMonsterVariants.ECHO_BAT.." "..CutMonsterVariants.CHUBBY_BUNNY] = {EntityType.ENTITY_CUTMONSTERS, CutMonsterVariants.ECHO_BAT, -1},
-      [EntityType.ENTITY_BLIND_BAT.." "..EntityVariant.BEARD_BAT] = {EntityType.ENTITY_BLIND_BAT, 200, -1},
+      [mod.ENTITY_INFO.DUMPLING.ID.." "..mod.ENTITY_INFO.SPORELING.VARIANT] = {mod.ENTITY_INFO.DUMPLING.ID, mod.ENTITY_INFO.SKINLING.VARIANT, -1},
+      [mod.ENTITY_INFO.ECHO_BAT.ID.." "..mod.ENTITY_INFO.ECHO_BAT.VARIANT.." "..mod.ENTITY_INFO.CHUBBY_BUNNY.VARIANT] = {mod.ENTITY_INFO.ECHO_BAT.ID, mod.ENTITY_INFO.ECHO_BAT.VARIANT, -1},
+      [mod.ENTITY_INFO.BLIND_BAT.ID.." "..mod.ENTITY_INFO.BEARD_BAT.VARIANT] = {mod.ENTITY_INFO.BLIND_BAT.ID, mod.ENTITY_INFO.BLIND_BAT.VARIANT, -1},
     }
   end

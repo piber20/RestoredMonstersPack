@@ -42,7 +42,7 @@ function mod:StriferInit(entity)
 		data.altSkin = "_gehenna"
 	end
 end
-mod:AddCallback(ModCallbacks.MC_POST_NPC_INIT, mod.StriferInit, EntityType.ENTITY_STRIFER)
+mod:AddCallback(ModCallbacks.MC_POST_NPC_INIT, mod.StriferInit, mod.ENTITY_INFO.STRIFER.ID)
 
 function mod:StriferUpdate(entity)
 	local data = entity:GetData()
@@ -58,7 +58,7 @@ function mod:StriferUpdate(entity)
 	if data.facing == nil or data.movetype == nil then
 		local ret
     --[[
-		if entity.Variant == 200 or entity.Variant == CutMonsterVariants.FOREVER_FRIEND then
+		if entity.Variant == 200 or entity.Variant == mod.ENTITY_INFO.FOREVER_FRIEND.VARIANT then
 			ret = entity.Variant
 			entity.Variant = entity.SubType
 			entity.SubType = 0
@@ -100,7 +100,7 @@ function mod:StriferUpdate(entity)
 		elseif entity.SubType == 2 then data.facing = "Right"
 		elseif entity.SubType == 3 then data.facing = "Down"
   end
-  
+
 		-- Set spritesheets
 		if data.altSkin ~= "" then
 			local ischamp = ""
@@ -113,7 +113,7 @@ function mod:StriferUpdate(entity)
 			end
 			sprite:LoadGraphics()
 		end
-		
+
     --[[
 		if ret then
 			entity.Variant = ret
@@ -153,15 +153,15 @@ function mod:StriferUpdate(entity)
 	elseif data.movetype == "horizontal" then
 		moveto = Vector(target.Position.X, entity.Position.Y)
 	end
-  
+
   -- Forever Friend target position
-  if TheFuture and entity.Variant == CutMonsterVariants.FOREVER_FRIEND then
+  if TheFuture and entity.Variant == mod.ENTITY_INFO.FOREVER_FRIEND.VARIANT then
     if data.movetype == "vertical" and TheFuture.ScreenwrapStatus == TheFuture.WrapType.VERT then
       local sign = 1
       if entity.Position.Y - target.Position.Y > 0 then
         sign = -1
       end
-      if math.abs(entity.Position.Y - target.Position.Y) < 
+      if math.abs(entity.Position.Y - target.Position.Y) <
       room:GetClampedPosition(Vector(entity.Position.X , entity.Position.Y + (room:GetGridHeight() * 40) * sign),0):Distance( room:GetClampedPosition(Vector(entity.Position.X, target.Position.Y - (room:GetGridHeight() * 40) * sign),0))
       then
         moveto = Vector(entity.Position.X, target.Position.Y)
@@ -173,7 +173,7 @@ function mod:StriferUpdate(entity)
       if entity.Position.X - target.Position.X > 0 then
         sign = -1
       end
-      if math.abs(entity.Position.X - target.Position.X) < 
+      if math.abs(entity.Position.X - target.Position.X) <
       room:GetClampedPosition(Vector(entity.Position.X + (room:GetGridWidth() * 40) * sign,entity.Position.Y),0):Distance( room:GetClampedPosition(Vector(target.Position.X - (room:GetGridWidth() * 40) * sign,entity.Position.Y),0))
       then
         moveto = Vector(target.Position.X, entity.Position.Y)
@@ -217,7 +217,7 @@ function mod:StriferUpdate(entity)
 		entity.ProjectileCooldown = entity.ProjectileCooldown - 1
 
 	else
-		if StriferInRange(Settings.SideRange,  entity.Variant == CutMonsterVariants.FOREVER_FRIEND) 
+		if StriferInRange(Settings.SideRange,  entity.Variant == mod.ENTITY_INFO.FOREVER_FRIEND.VARIANT)
     and game:GetRoom():CheckLine(entity.Position, target.Position, 3, 0, false, false)
     and room:IsPositionInRoom(entity.Position, -20) then
 			if not sprite:IsOverlayPlaying("Attack" .. data.facing) then
@@ -240,7 +240,7 @@ function mod:StriferUpdate(entity)
 				elseif data.facing == "Down"  then shooty =  Settings.ShotSpeed
 				end
         local params = ProjectileParams()
-        if entity.Variant == CutMonsterVariants.FOREVER_FRIEND then
+        if entity.Variant == mod.ENTITY_INFO.FOREVER_FRIEND.VARIANT then
 
          local proj = Isaac.Spawn(EntityType.ENTITY_PROJECTILE, ProjectileVariant.PROJECTILE_FCUK, 0, entity.Position, Vector(shootx,shooty),entity):ToProjectile()
             proj:AddProjectileFlags(ProjectileFlags.CONTINUUM)
@@ -253,7 +253,7 @@ function mod:StriferUpdate(entity)
         else
           entity:FireProjectiles(entity.Position, Vector(shootx, shooty), 0, params)
         end
-				
+
 				data.shot = sprite:GetOverlayFrame()
 			end
 
@@ -275,7 +275,7 @@ function mod:StriferUpdate(entity)
 
 	if not data.delay then
 		-- Move towards target if it's close enough
-		if StriferInRange(Settings.TargetRange,  entity.Variant == CutMonsterVariants.FOREVER_FRIEND) == true 
+		if StriferInRange(Settings.TargetRange,  entity.Variant == mod.ENTITY_INFO.FOREVER_FRIEND.VARIANT) == true
     and entity.Position:Distance(moveto) > 10 and not entity:HasEntityFlags(EntityFlag.FLAG_CONFUSION) then
 			if entity:HasEntityFlags(EntityFlag.FLAG_FEAR) or entity:HasEntityFlags(EntityFlag.FLAG_SHRINK) then
 				data.vector = (moveto - entity.Position):Normalized() * -speed
@@ -300,7 +300,7 @@ function mod:StriferUpdate(entity)
 	entity.Velocity = (entity.Velocity + (data.vector - entity.Velocity) * 0.25)
 
 end
-mod:AddCallback(ModCallbacks.MC_NPC_UPDATE, mod.StriferUpdate, EntityType.ENTITY_STRIFER)
+mod:AddCallback(ModCallbacks.MC_NPC_UPDATE, mod.StriferUpdate, mod.ENTITY_INFO.STRIFER.ID)
 
 function mod:StriferCollision(entity, target, cum)
 	local data = entity:GetData()
@@ -318,4 +318,4 @@ function mod:StriferCollision(entity, target, cum)
 		end
 	end
 end
-mod:AddCallback(ModCallbacks.MC_PRE_NPC_COLLISION, mod.StriferCollision, EntityType.ENTITY_STRIFER)
+mod:AddCallback(ModCallbacks.MC_PRE_NPC_COLLISION, mod.StriferCollision, mod.ENTITY_INFO.STRIFER.ID)
