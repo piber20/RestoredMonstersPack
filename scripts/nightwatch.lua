@@ -96,7 +96,7 @@ function mod:nightwatchNewRoom()
 
         for _,v in pairs(Isaac.GetRoomEntities()) do
 			-- Get Nightwatches
-            if v.Type == EntityType.ENTITY_NIGHTWATCH then
+            if v.Type == mod.ENTITY_INFO.NIGHTWATCH.ID then
 				local nw_data = {v.SubType, v.Position}
 				table.insert(nightwatch_table, nw_data)
 			end
@@ -107,7 +107,7 @@ function mod:nightwatchNewRoom()
 		-- Respawn Nightwatches
         if nightwatches[room_index] ~= nil then
 			for _,v in pairs(nightwatches[room_index]) do
-				Isaac.Spawn(EntityType.ENTITY_NIGHTWATCH, 0, v[1], v[2], Vector.Zero, nil)
+				Isaac.Spawn(mod.ENTITY_INFO.NIGHTWATCH.ID, 0, v[1], v[2], Vector.Zero, nil)
 			end
         end
 
@@ -235,7 +235,7 @@ local function nightwatchAlert()
 
 	for _,v in pairs(Isaac.GetRoomEntities()) do
 		-- Alert all other Nightwatches
-		if v.Type == EntityType.ENTITY_NIGHTWATCH and v:GetData().state ~= States.Alert and v:GetData().state ~= States.AlertNoEffect then
+		if v.Type == mod.ENTITY_INFO.NIGHTWATCH.ID and v:GetData().state ~= States.Alert and v:GetData().state ~= States.AlertNoEffect then
 			v:GetData().state = States.AlertNoEffect
 
 		-- Spawn event entities
@@ -265,7 +265,7 @@ function mod:nightwatchInit(entity)
 	data.state = States.Appear
 	data.rotateTimer = Settings.RotateTimer - 20
 end
-mod:AddCallback(ModCallbacks.MC_POST_NPC_INIT, mod.nightwatchInit, EntityType.ENTITY_NIGHTWATCH)
+mod:AddCallback(ModCallbacks.MC_POST_NPC_INIT, mod.nightwatchInit, mod.ENTITY_INFO.NIGHTWATCH.ID)
 
 function mod:nightwatchUpdate(entity)
 	local sprite = entity:GetSprite()
@@ -560,7 +560,7 @@ function mod:nightwatchUpdate(entity)
 		entity:Remove()
 	end
 end
-mod:AddCallback(ModCallbacks.MC_NPC_UPDATE, mod.nightwatchUpdate, EntityType.ENTITY_NIGHTWATCH)
+mod:AddCallback(ModCallbacks.MC_NPC_UPDATE, mod.nightwatchUpdate, mod.ENTITY_INFO.NIGHTWATCH.ID)
 
 -- Alert the Nightwatch if the player touches it
 function mod:nightwatchCollide(entity, target, cock) -- TODO: Boomerang shouldn't be able to move them but ignoring collision here doesn't seem to work
@@ -568,14 +568,14 @@ function mod:nightwatchCollide(entity, target, cock) -- TODO: Boomerang shouldn'
 		entity:GetData().state = States.Alert
 	end
 end
-mod:AddCallback(ModCallbacks.MC_PRE_NPC_COLLISION, mod.nightwatchCollide, EntityType.ENTITY_NIGHTWATCH)
+mod:AddCallback(ModCallbacks.MC_PRE_NPC_COLLISION, mod.nightwatchCollide, mod.ENTITY_INFO.NIGHTWATCH.ID)
 
 -- Turn transparent when hit
 function mod:nightwatchHit(target, damageAmount, damageFlags, damageSource, damageCountdownFrames)
 	target:GetData().transTimer = Settings.TransparencyTimer
 	return false
 end
-mod:AddCallback(ModCallbacks.MC_ENTITY_TAKE_DMG, mod.nightwatchHit, EntityType.ENTITY_NIGHTWATCH)
+mod:AddCallback(ModCallbacks.MC_ENTITY_TAKE_DMG, mod.nightwatchHit, mod.ENTITY_INFO.NIGHTWATCH.ID)
 
 
 

@@ -1,10 +1,10 @@
 local mod = RestoredMonsterPack
 local game = Game()
 
-
+local BARFY = mod.ENTITY_INFO.BARFY
 
 function mod:barfyInit(entity)
-	if entity.Variant == EntityVariant.BARFY then
+	if entity.Variant == BARFY.VARIANT then
 		local data = entity:GetData()
 
 		entity.SplatColor = Color(0.4,0.8,0.4, 1, 0,0.1,0)
@@ -19,7 +19,7 @@ end
 mod:AddCallback(ModCallbacks.MC_POST_NPC_INIT, mod.barfyInit, EntityType.ENTITY_FATTY)
 
 function mod:barfyUpdate(entity)
-	if entity.Variant == EntityVariant.BARFY then
+	if entity.Variant == BARFY.VARIANT then
 		local sprite = entity:GetSprite()
 		local data = entity:GetData()
 
@@ -76,7 +76,7 @@ mod:AddCallback(ModCallbacks.MC_NPC_UPDATE, mod.barfyUpdate, EntityType.ENTITY_F
 
 -- Projectiles
 function mod:vomitBulletInit(projectile)
-	if projectile.SpawnerEntity ~= nil and projectile.SpawnerEntity.Type == EntityType.ENTITY_FATTY and projectile.SpawnerEntity.Variant == EntityVariant.BARFY then
+	if projectile.SpawnerEntity ~= nil and projectile.SpawnerEntity.Type == EntityType.ENTITY_FATTY and projectile.SpawnerEntity.Variant == BARFY.VARIANT then
 		projectile:GetData().barfy = true
 	end
 end

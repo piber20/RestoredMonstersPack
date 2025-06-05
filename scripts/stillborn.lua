@@ -17,7 +17,7 @@ local States = {
 
 
 function mod:stillbornInit(entity)
-	if entity.Variant == CutMonsterVariants.STILLBORN then
+	if entity.Variant == mod.ENTITY_INFO.STILLBORN.VARIANT then
 		local sprite = entity:GetSprite()
 		local level = game:GetLevel()
 		local stage = level:GetStage()
@@ -56,10 +56,10 @@ function mod:stillbornInit(entity)
 		end
 	end
 end
-mod:AddCallback(ModCallbacks.MC_POST_NPC_INIT, mod.stillbornInit, EntityType.ENTITY_CUTMONSTERS)
+mod:AddCallback(ModCallbacks.MC_POST_NPC_INIT, mod.stillbornInit, mod.ENTITY_INFO.STILLBORN.ID)
 
 function mod:stillbornUpdate(entity)
-	if entity.Variant == CutMonsterVariants.STILLBORN then
+	if entity.Variant == mod.ENTITY_INFO.STILLBORN.VARIANT then
 		local sprite = entity:GetSprite()
 		local data = entity:GetData()
 		local target = entity:GetPlayerTarget()
@@ -132,4 +132,4 @@ function mod:stillbornUpdate(entity)
 		end
 	end
 end
-mod:AddCallback(ModCallbacks.MC_NPC_UPDATE, mod.stillbornUpdate, EntityType.ENTITY_CUTMONSTERS)
+mod:AddCallback(ModCallbacks.MC_NPC_UPDATE, mod.stillbornUpdate, mod.ENTITY_INFO.STILLBORN.ID)

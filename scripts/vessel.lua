@@ -21,6 +21,7 @@ local States = {
 
 local vesselvar = Isaac.GetEntityVariantByName("​Vessel (Antibirth)")
 local checkvar = Isaac.GetEntityVariantByName("​Vessel (Antibirth)")
+
 function mod:vesselCheckForLegOrWhateverTheFuckDSSSays()
     for i, entity in ipairs(Isaac.GetRoomEntities()) do
         if entity.Type == 858 then
@@ -31,7 +32,7 @@ function mod:vesselCheckForLegOrWhateverTheFuckDSSSays()
             end
             if entity.Variant ~= checkvar then
                 -- print("dammit")
-                Isaac.Spawn(EntityType.ENTITY_VESSEL, checkvar, 0, entity.Position, entity.Velocity, entity)
+                Isaac.Spawn(mod.ENTITY_INFO.VESSEL.ID, checkvar, 0, entity.Position, entity.Velocity, entity)
                 entity:Remove()
             end
         end
@@ -56,7 +57,7 @@ function mod:vesselInit(vessel)
         GrowlCountdown = Settings.GrowlCountdown
     }
 end
-mod:AddCallback(ModCallbacks.MC_POST_NPC_INIT, mod.vesselInit, EntityType.ENTITY_VESSEL)
+mod:AddCallback(ModCallbacks.MC_POST_NPC_INIT, mod.vesselInit, mod.ENTITY_INFO.VESSEL.ID)
 
 function mod:vesselUpdate(vessel)
     if vessel.Variant ~= vesselvar then
@@ -184,7 +185,7 @@ function mod:vesselUpdate(vessel)
         end
     end
 end
-mod:AddCallback(ModCallbacks.MC_NPC_UPDATE, mod.vesselUpdate, EntityType.ENTITY_VESSEL)
+mod:AddCallback(ModCallbacks.MC_NPC_UPDATE, mod.vesselUpdate, mod.ENTITY_INFO.VESSEL.ID)
 
 -- Spawn maggots when taking damage
 function mod:vesselDamage(vessel, damageAmount, damageFlags, damageSource, damageCountdownFrames)
@@ -214,7 +215,7 @@ function mod:vesselDamage(vessel, damageAmount, damageFlags, damageSource, damag
     maggot.State = NpcState.STATE_SPECIAL
 	vesselData.Maggots = vesselData.Maggots + 1
 end
-mod:AddCallback(ModCallbacks.MC_ENTITY_TAKE_DMG, mod.vesselDamage, EntityType.ENTITY_VESSEL)
+mod:AddCallback(ModCallbacks.MC_ENTITY_TAKE_DMG, mod.vesselDamage, mod.ENTITY_INFO.VESSEL.ID)
 
 -- Spawn maggots on death
 function mod:vesselDeath(vessel)
@@ -230,7 +231,7 @@ function mod:vesselDeath(vessel)
         maggot.State = NpcState.STATE_SPECIAL
     end
 end
-mod:AddCallback(ModCallbacks.MC_POST_NPC_DEATH, mod.vesselDeath, EntityType.ENTITY_VESSEL)
+mod:AddCallback(ModCallbacks.MC_POST_NPC_DEATH, mod.vesselDeath, mod.ENTITY_INFO.VESSEL.ID)
 
 
 
@@ -239,7 +240,7 @@ function mod:maggotDeath(maggot)
 		local spawner = maggot.SpawnerEntity
 		local vesselData = spawner:GetData().VesselData
 
-		if spawner.Type == EntityType.ENTITY_VESSEL and vesselData.Maggots then
+		if spawner.Type == mod.ENTITY_INFO.VESSEL.ID and vesselData.Maggots then
 			vesselData.Maggots = vesselData.Maggots - 1
 		end
 	end

@@ -22,7 +22,7 @@ local necromancerSpawns = {}
 
 
 function mod:necromancerInit(entity)
-	if entity.Variant == CutMonsterVariants.NECROMANCER then
+	if entity.Variant == mod.ENTITY_INFO.NECROMANCER.VARIANT then
 		local data = entity:GetData()
 
 		entity:ToNPC()
@@ -37,10 +37,10 @@ function mod:necromancerInit(entity)
 		mod:AddCallback(ModCallbacks.MC_POST_NPC_DEATH, mod.necromancerInRoom)
 	end
 end
-mod:AddCallback(ModCallbacks.MC_POST_NPC_INIT, mod.necromancerInit, EntityType.ENTITY_CUTMONSTERS)
+mod:AddCallback(ModCallbacks.MC_POST_NPC_INIT, mod.necromancerInit, mod.ENTITY_INFO.NECROMANCER.ID)
 
 function mod:necromancerUpdate(entity)
-	if entity.Variant == CutMonsterVariants.NECROMANCER then
+	if entity.Variant == mod.ENTITY_INFO.NECROMANCER.VARIANT then
 		local sprite = entity:GetSprite()
 		local data = entity:GetData()
 
@@ -143,7 +143,7 @@ function mod:necromancerUpdate(entity)
 				-- Spawn a Bony and set it as the Necromancer's child
 				elseif data.state == States.Spawn then
 					SFXManager():Play(SoundEffect.SOUND_SUMMONSOUND, 1, 0, false, 1, 0)
-					entity.Child = Isaac.Spawn(EntityType.ENTITY_BONY, 0, CutMonsterVariants.NECROMANCER, Vector(entity.Position.X, entity.Position.Y + 10), Vector.Zero, entity)
+					entity.Child = Isaac.Spawn(EntityType.ENTITY_BONY, 0, mod.ENTITY_INFO.NECROMANCER.VARIANT, Vector(entity.Position.X, entity.Position.Y + 10), Vector.Zero, entity)
 				end
 			end
 
@@ -154,7 +154,7 @@ function mod:necromancerUpdate(entity)
 		end
 	end
 end
-mod:AddCallback(ModCallbacks.MC_NPC_UPDATE, mod.necromancerUpdate, EntityType.ENTITY_CUTMONSTERS)
+mod:AddCallback(ModCallbacks.MC_NPC_UPDATE, mod.necromancerUpdate, mod.ENTITY_INFO.NECROMANCER.ID)
 
 
 
@@ -167,7 +167,7 @@ function mod:necromancerInRoom(entity)
 		local getSubType = entity.SubType
 
 		-- Necromancers and Exorcists turn into Bonys when revived
-		if (entity.Type == EntityType.ENTITY_CUTMONSTERS and entity.Variant == CutMonsterVariants.NECROMANCER) or (entity.Type == EntityType.ENTITY_EXORCIST and entity.Variant == 0) then
+		if (entity.Type == mod.ENTITY_INFO.NECROMANCER.ID and entity.Variant == mod.ENTITY_INFO.NECROMANCER.VARIANT) or (entity.Type == EntityType.ENTITY_EXORCIST and entity.Variant == 0) then
 			getType = EntityType.ENTITY_BONY
 			getVariant = 0
 			getSubType = 0
@@ -191,7 +191,7 @@ function mod:necromancerNewRoom()
 
 	-- Remove any existing callback and add a new one so they don't execute code in it multiple times
 	for _,v in pairs(Isaac.GetRoomEntities()) do
-		if v.Type == EntityType.ENTITY_CUTMONSTERS and v.Variant == CutMonsterVariants.NECROMANCER then
+		if v.Type == mod.ENTITY_INFO.NECROMANCER.ID and v.Variant == mod.ENTITY_INFO.NECROMANCER.VARIANT then
 			mod:AddCallback(ModCallbacks.MC_POST_NPC_DEATH, mod.necromancerInRoom)
 			break
 		end

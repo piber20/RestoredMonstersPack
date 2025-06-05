@@ -40,7 +40,7 @@ end
 
 
 function mod:cellsInit(entity)
-	if entity.Variant == CutMonsterVariants.CELL or entity.Variant == CutMonsterVariants.FUSEDCELLS or entity.Variant == CutMonsterVariants.TISSUE then
+	if entity.Variant == mod.ENTITY_INFO.CELL.VARIANT or entity.Variant == mod.ENTITY_INFO.FUSEDCELLS.VARIANT or entity.Variant == mod.ENTITY_INFO.TISSUE.VARIANT then
 		local data = entity:GetData()
 		local sprite = entity:GetSprite()
 
@@ -51,10 +51,10 @@ function mod:cellsInit(entity)
 		data.angleDirection = "up"
 	end
 end
-mod:AddCallback(ModCallbacks.MC_POST_NPC_INIT, mod.cellsInit, EntityType.ENTITY_CUTMONSTERS)
+mod:AddCallback(ModCallbacks.MC_POST_NPC_INIT, mod.cellsInit, mod.ENTITY_INFO.FUSEDCELLS.ID)
 
 function mod:cellsUpdate(entity)
-	if entity.Variant == CutMonsterVariants.CELL or entity.Variant == CutMonsterVariants.FUSEDCELLS or entity.Variant == CutMonsterVariants.TISSUE then
+	if entity.Variant == mod.ENTITY_INFO.CELL.VARIANT or entity.Variant == mod.ENTITY_INFO.FUSEDCELLS.VARIANT or entity.Variant == mod.ENTITY_INFO.TISSUE.VARIANT then
 		local sprite = entity:GetSprite()
 		local data = entity:GetData()
 		local target = entity:GetPlayerTarget()
@@ -66,9 +66,9 @@ function mod:cellsUpdate(entity)
 		-- Chasing
 		elseif data.state == States.Moving then
 			local speed = Settings.CellSpeed
-			if entity.Variant == CutMonsterVariants.FUSEDCELLS then
+			if entity.Variant == mod.ENTITY_INFO.FUSEDCELLS.VARIANT then
 				speed = Settings.FusedSpeed
-			elseif entity.Variant == CutMonsterVariants.TISSUE then
+			elseif entity.Variant == mod.ENTITY_INFO.TISSUE.VARIANT then
 				speed = Settings.TissueSpeed
 			end
 
@@ -103,10 +103,10 @@ function mod:cellsUpdate(entity)
 			end
 
 			-- Target another cell to fuse with
-			if entity.Variant ~= CutMonsterVariants.TISSUE then
+			if entity.Variant ~= mod.ENTITY_INFO.TISSUE.VARIANT then
 				if data.fuseCooldown <= 0 and noFriendlyCells(entity) == true then
 					for _,v in pairs(Isaac.GetRoomEntities()) do
-						if v.Type == EntityType.ENTITY_CUTMONSTERS and v.Variant == entity.Variant and v.Index ~= entity.Index then
+						if v.Type == mod.ENTITY_INFO.FUSEDCELLS.ID and v.Variant == entity.Variant and v.Index ~= entity.Index then
 							entity.Target = v
 						end
 					end
@@ -120,7 +120,7 @@ function mod:cellsUpdate(entity)
 		elseif data.state == States.FuseAppear then
 			data.fuseCooldown = Settings.FuseCooldown
 
-			if entity.Variant == CutMonsterVariants.CELL then
+			if entity.Variant == mod.ENTITY_INFO.CELL.VARIANT then
 				if not sprite:IsPlaying("SplitEnd") then
 					sprite:Play("SplitEnd", true)
 					entity:PlaySound(SoundEffect.SOUND_MEAT_IMPACTS, 1, 1, false, 1)
@@ -200,20 +200,20 @@ function mod:cellsUpdate(entity)
 
 
 		-- Death animation
-		if entity:HasMortalDamage() and entity.Variant ~= CutMonsterVariants.CELL then
+		if entity:HasMortalDamage() and entity.Variant ~= mod.ENTITY_INFO.CELL.VARIANT then
 			entity.State = NpcState.STATE_DEATH
 		end
 	end
 end
-mod:AddCallback(ModCallbacks.MC_NPC_UPDATE, mod.cellsUpdate, EntityType.ENTITY_CUTMONSTERS)
+mod:AddCallback(ModCallbacks.MC_NPC_UPDATE, mod.cellsUpdate, mod.ENTITY_INFO.FUSEDCELLS.ID)
 
 function mod:cellsCollide(entity, target, bool)
 	local data = entity:GetData()
 
-	if entity.Variant == CutMonsterVariants.CELL or entity.Variant == CutMonsterVariants.FUSEDCELLS and bool == true and data.fuseCooldown <= 0 and noFriendlyCells(entity) == true then
-		if target.Type == EntityType.ENTITY_CUTMONSTERS and target.Variant == entity.Variant and target:GetData().fuseCooldown <= 0 and noFriendlyCells(target) == true then
+	if entity.Variant == mod.ENTITY_INFO.CELL.VARIANT or entity.Variant == mod.ENTITY_INFO.FUSEDCELLS.VARIANT and bool == true and data.fuseCooldown <= 0 and noFriendlyCells(entity) == true then
+		if target.Type == mod.ENTITY_INFO.FUSEDCELLS.ID and target.Variant == entity.Variant and target:GetData().fuseCooldown <= 0 and noFriendlyCells(target) == true then
 			target:Remove()
-			entity:Morph(EntityType.ENTITY_CUTMONSTERS, entity.Variant + 1, 0, -1)
+			entity:Morph(mod.ENTITY_INFO.FUSEDCELLS.ID, entity.Variant + 1, 0, -1)
 			entity.HitPoints = ((entity.Variant % 10) * 2) * 16
 			entity.Position = (entity.Position + (target.Position - entity.Position) * 0.5)
 			data.state = States.FuseAppear
@@ -221,35 +221,35 @@ function mod:cellsCollide(entity, target, bool)
 		end
 	end
 end
-mod:AddCallback(ModCallbacks.MC_PRE_NPC_COLLISION, mod.cellsCollide, EntityType.ENTITY_CUTMONSTERS)
+mod:AddCallback(ModCallbacks.MC_PRE_NPC_COLLISION, mod.cellsCollide, mod.ENTITY_INFO.FUSEDCELLS.ID)
 
 -- Don't hurt the cell it's targeting
 function mod:cellsHit(target, damageAmount, damageFlags, damageSource, damageCountdownFrames)
-	if (target.Variant == CutMonsterVariants.CELL or target.Variant == CutMonsterVariants.FUSEDCELLS) and damageSource.Type == EntityType.ENTITY_CUTMONSTERS
-	and (damageSource.Variant == CutMonsterVariants.CELL or damageSource.Variant == CutMonsterVariants.FUSEDCELLS)
+	if (target.Variant == mod.ENTITY_INFO.CELL.VARIANT or target.Variant == mod.ENTITY_INFO.FUSEDCELLS.VARIANT) and damageSource.Type == mod.ENTITY_INFO.FUSEDCELLS.ID
+	and (damageSource.Variant == mod.ENTITY_INFO.CELL.VARIANT or damageSource.Variant == mod.ENTITY_INFO.FUSEDCELLS.VARIANT)
 	and noFriendlyCells(target) == true and noFriendlyCells(damageSource.Entity) == true then
 		return false
 	end
 end
-mod:AddCallback(ModCallbacks.MC_ENTITY_TAKE_DMG, mod.cellsHit, EntityType.ENTITY_CUTMONSTERS)
+mod:AddCallback(ModCallbacks.MC_ENTITY_TAKE_DMG, mod.cellsHit, mod.ENTITY_INFO.FUSEDCELLS.ID)
 
 -- Split on death
 function mod:cellsRender(entity)
 	local sprite = entity:GetSprite()
-	if (entity.Variant == CutMonsterVariants.FUSEDCELLS or entity.Variant == CutMonsterVariants.TISSUE) and sprite:IsEventTriggered("Explosion") and entity:GetData().state ~= States.Dead then
+	if (entity.Variant == mod.ENTITY_INFO.FUSEDCELLS.VARIANT or entity.Variant == mod.ENTITY_INFO.TISSUE.VARIANT) and sprite:IsEventTriggered("Explosion") and entity:GetData().state ~= States.Dead then
 		entity:GetData().state = States.Dead
 
 		-- Cells
 		local spawnedCells = {}
 		for i = 0, ((entity.Variant % 10) * 2) - 1 do
-			spawnedCells[i + 1] = Isaac.Spawn(EntityType.ENTITY_CUTMONSTERS, CutMonsterVariants.CELL, 0, entity.Position, Vector.Zero, entity)
+			spawnedCells[i + 1] = Isaac.Spawn(mod.ENTITY_INFO.FUSEDCELLS.ID, mod.ENTITY_INFO.CELL.VARIANT, 0, entity.Position, Vector.Zero, entity)
 			spawnedCells[i + 1]:ClearEntityFlags(EntityFlag.FLAG_APPEAR)
 			spawnedCells[i + 1]:GetData().state = States.SplitAppear
 			spawnedCells[i + 1]:GetData().splitToIdle = Settings.SplitToIdle
 			spawnedCells[i + 1].EntityCollisionClass = EntityCollisionClass.ENTCOLL_PLAYEROBJECTS
 		end
 
-		if entity.Variant == CutMonsterVariants.FUSEDCELLS then
+		if entity.Variant == mod.ENTITY_INFO.FUSEDCELLS.VARIANT then
 			-- Projectiles
 			local params = ProjectileParams()
 			params.CircleAngle = 0.52
@@ -259,7 +259,7 @@ function mod:cellsRender(entity)
 			spawnedCells[1]:GetData().splitDir = Vector(-9,0)
 			spawnedCells[2]:GetData().splitDir = Vector(9,0)
 
-		elseif entity.Variant == CutMonsterVariants.TISSUE then
+		elseif entity.Variant == mod.ENTITY_INFO.TISSUE.VARIANT then
 			-- Projectiles
 			local params1 = ProjectileParams()
 			params1.CircleAngle = 0.45
@@ -278,4 +278,4 @@ function mod:cellsRender(entity)
 		end
 	end
 end
-mod:AddCallback(ModCallbacks.MC_POST_NPC_RENDER, mod.cellsRender, EntityType.ENTITY_CUTMONSTERS)
+mod:AddCallback(ModCallbacks.MC_POST_NPC_RENDER, mod.cellsRender, mod.ENTITY_INFO.FUSEDCELLS.ID)

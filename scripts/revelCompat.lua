@@ -12,7 +12,7 @@ local function MixTables(ta, tb, recurse) --from Revelations
     end
 
     for k, v in pairs(tb) do
-        if recurse 
+        if recurse
         and type(ta[k]) == "table"
         and type(v) == "table"
         then
@@ -35,15 +35,15 @@ mod.BossRooms = {
   {Name = "Freezer Burn", Rooms = require("resources.luarooms.revelations.glacier_boss_rm")},
   {Name = "Wendy", Rooms = require("resources.luarooms.revelations.glacier_boss_rm")},
   {Name = "Williwaw", Rooms = require("resources.luarooms.revelations.glacier_boss_rm")},
-  
+
   {Name = "Chuck", Rooms = require("resources.luarooms.revelations.glacier_chuck_rm")},
-  
+
   {Name = "Punker", Rooms = require("resources.luarooms.revelations.punker_rm")},
-  {Name = "Raging Long Legs", Rooms = require("resources.luarooms.revelations.raging_long_legs_rm")}, 
+  {Name = "Raging Long Legs", Rooms = require("resources.luarooms.revelations.raging_long_legs_rm")},
 }
 
 function mod.RoomInit()
-	if REVEL then 
+	if REVEL then
     -- Add non-boss rooms
   for _,roomlist in ipairs(mod.Rooms) do
   REVEL.RoomLists[roomlist.Name]:AddRooms({Name = "[RM] " .. roomlist.Name, Rooms = roomlist.Rooms})
@@ -64,15 +64,15 @@ mod:AddPriorityCallback(ModCallbacks.MC_POST_GAME_STARTED, CallbackPriority.IMPO
 
 		[EntityType.ENTITY_HOPPER] = {
 			[1] = {
-				[EntityVariant.FRACTURE] = {
+				[RestoredMonsterPack.ENTITY_INFO.FRACTURE.SUBTYPE] = {
 					SPRITESHEET = {
 						[0] = "fracture_glacier",
 					}
 				}
 			}
 		},
-        [EntityType.ENTITY_CUTMONSTERS] = {
-            [CutMonsterVariants.GRAVEROBBER] = {
+        [mod.ENTITY_INFO.GRAVEROBBER.ID] = {
+            [mod.ENTITY_INFO.GRAVEROBBER.VARIANT] = {
                 SPRITESHEET = {
                     [0] = "graverobber_body_glacier",
                     [1] = "graverobber_body_glacier",
@@ -91,7 +91,7 @@ mod:AddPriorityCallback(ModCallbacks.MC_POST_GAME_STARTED, CallbackPriority.IMPO
 	}, true)
 
     MixTables(REVEL.EntityReplacements["Tomb"].Replacements, {
-        
+
         [800] = {
             [0] = {
                 SPRITESHEET = {
@@ -110,7 +110,7 @@ end)
 
 -- Ice Hazards
 function mod:DumplingIceHazards(npc)
-  if npc.Variant == EntityType.ENTITY_DUMPLING then
+  if npc.Variant == RestoredMonsterPack.ENTITY_INFO.DUMPLING.ID then
     local sprite = npc:GetSprite()
     local data = npc:GetData()
     if not data.RevIceHazard then
@@ -122,14 +122,14 @@ end
 mod:AddCallback(ModCallbacks.MC_NPC_UPDATE, mod.DumplingIceHazards, 481)
 
 function mod:RemoveIceHazards(npc)
-  if npc.Variant == EntityType.ENTITY_DUMPLING then
+  if npc.Variant == RestoredMonsterPack.ENTITY_INFO.DUMPLING.ID then
     local sprite = npc:GetSprite()
     local data = npc:GetData()
     if npc.FrameCount < 5 then
         return
     end
     if data.RevIceHazard then
-        local entity = Isaac.Spawn(EntityType.ENTITY_DUMPLING,0, 0, npc.Position, Vector(0,0), npc.SpawnerEntity or npc):ToNPC()
+        local entity = Isaac.Spawn(RestoredMonsterPack.ENTITY_INFO.DUMPLING.ID,0, 0, npc.Position, Vector(0,0), npc.SpawnerEntity or npc):ToNPC()
         entity:ClearEntityFlags(EntityFlag.FLAG_APPEAR)
         entity:Update()
         data.FromIceHazard = true

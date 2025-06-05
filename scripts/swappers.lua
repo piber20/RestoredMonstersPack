@@ -4,7 +4,7 @@ local game = Game()
 
 
 function mod:swapperUpdate(entity)
-	if entity.Variant == EntityVariant.SWAPPER then
+	if entity.Variant == RestoredMonsterPack.ENTITY_INFO.SWAPPER.VARIANT then
 		local sprite = entity:GetSprite()
 		local data = entity:GetData()
 		local stage = game:GetLevel():GetStage()
@@ -60,7 +60,7 @@ mod:AddCallback(ModCallbacks.MC_NPC_UPDATE, mod.swapperUpdate, EntityType.ENTITY
 
 -- Swap Isaac and Swapper positions on successful hit
 function mod:swapperHit(target, damageAmount, damageFlags, damageSource, damageCountdownFrames)
-	if damageSource.Type == EntityType.ENTITY_BABY and damageSource.Variant == EntityVariant.SWAPPER and damageFlags & DamageFlag.DAMAGE_LASER > 0 then
+	if damageSource.Type == EntityType.ENTITY_BABY and damageSource.Variant == RestoredMonsterPack.ENTITY_INFO.SWAPPER.VARIANT and damageFlags & DamageFlag.DAMAGE_LASER > 0 then
 		if damageSource.Entity:GetData().canTP == true then
 			-- Get positions for teleporting
 			local swapToPos = damageSource.Entity.Position

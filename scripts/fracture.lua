@@ -12,8 +12,11 @@ local States = {
 	StandSpit = 2
 }
 
+local FRACTURE = RestoredMonsterPack.ENTITY_INFO.FRACTURE
+
 function mod:fractureInit(entity)
-	if entity.Variant == 1 and entity.SubType == EntityVariant.FRACTURE then
+	if entity.Variant == FRACTURE.VARIANT
+	and entity.SubType == FRACTURE.SUBTYPE then
 		local sprite = entity:GetSprite()
 		local level = game:GetLevel()
 		local stage = level:GetStage()
@@ -35,10 +38,11 @@ function mod:fractureInit(entity)
 		end
 	end
 end
-mod:AddCallback(ModCallbacks.MC_POST_NPC_INIT, mod.fractureInit, EntityType.ENTITY_HOPPER)
+mod:AddCallback(ModCallbacks.MC_POST_NPC_INIT, mod.fractureInit, FRACTURE.ID)
 
 function mod:fractureUpdate(entity)
-	if entity.Variant == 1 and entity.SubType == EntityVariant.FRACTURE then
+	if entity.Variant == FRACTURE.VARIANT
+	and entity.SubType == FRACTURE.SUBTYPE then
 		local sprite = entity:GetSprite()
 		local data = entity:GetData()
 		local level = game:GetLevel()
@@ -110,4 +114,4 @@ function mod:fractureUpdate(entity)
 		end
 	end
 end
-mod:AddCallback(ModCallbacks.MC_NPC_UPDATE, mod.fractureUpdate, EntityType.ENTITY_HOPPER)
+mod:AddCallback(ModCallbacks.MC_NPC_UPDATE, mod.fractureUpdate, FRACTURE.ID)
