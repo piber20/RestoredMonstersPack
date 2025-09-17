@@ -126,9 +126,9 @@ function mod:CorpseEaterUpdate(entity)
 
 		-- Increased speed
 		if entity.I1 == 1 then -- While charging
-			entity.Velocity = entity.Velocity * 1.08
+			entity.Velocity = entity.Velocity * 1.04
 		else
-			entity.Velocity = entity.Velocity * 1.03
+			entity.Velocity = entity.Velocity * 0.98
 		end
 
 		-- Chomp cooldown

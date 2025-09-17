@@ -6376,20 +6376,17 @@
 			<entity type="240" variant="200" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24058" name="We Strvn - [RM] - What's with these homies!" type="1" subtype="0" shape="6" width="26" height="7" difficulty="15" weight="1.0" lastTestTime="2024-08-02T19:18+00:00">
+	<room variant="24058" name="We Strvn - [RM] - What's with these homies!" type="1" subtype="0" shape="6" width="26" height="7" difficulty="10" weight="1.0" lastTestTime="2025-09-17T22:17+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
 		<door exists="True" x="19" y="-1"/>
 		<door exists="True" x="19" y="7"/>
 		<door exists="True" x="26" y="3"/>
-		<spawn x="11" y="-1">
+		<spawn x="10" y="-1">
 			<entity type="240" variant="200" subtype="0" weight="1.0"/>
 		</spawn>
-		<spawn x="12" y="-1">
-			<entity type="240" variant="200" subtype="0" weight="1.0"/>
-		</spawn>
-		<spawn x="13" y="-1">
+		<spawn x="15" y="-1">
 			<entity type="240" variant="200" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="0" y="0">
@@ -6512,13 +6509,10 @@
 		<spawn x="25" y="6">
 			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
-		<spawn x="12" y="7">
+		<spawn x="10" y="7">
 			<entity type="240" variant="200" subtype="0" weight="1.0"/>
 		</spawn>
-		<spawn x="13" y="7">
-			<entity type="240" variant="200" subtype="0" weight="1.0"/>
-		</spawn>
-		<spawn x="14" y="7">
+		<spawn x="15" y="7">
 			<entity type="240" variant="200" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
@@ -7412,7 +7406,7 @@
 			<entity type="240" variant="200" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24064" name="We Strvn - [RM] - Demoted to V. Rare" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="0.5" lastTestTime="2025-09-04T00:41+00:00">
+	<room variant="24064" name="We Strvn - [RM] - Demoted to V. Rare" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="0.5" lastTestTime="2025-09-17T22:55+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -7439,7 +7433,7 @@
 			<entity type="211" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24065" name="We Strvn - [RM] - Horse mobile game" type="1" subtype="0" shape="6" width="26" height="7" difficulty="10" weight="0.5" lastTestTime="2025-09-04T00:41+00:00">
+	<room variant="24065" name="We Strvn - [RM] - Horse mobile game" type="1" subtype="0" shape="6" width="26" height="7" difficulty="10" weight="0.5" lastTestTime="2025-09-17T22:55+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="False" x="6" y="7"/>
@@ -7468,7 +7462,7 @@
 			<entity type="1900" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="6" y="4">
-			<entity type="210" variant="0" subtype="0" weight="1.0"/>
+			<entity type="832" variant="1" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="8" y="4">
 			<entity type="1900" variant="0" subtype="0" weight="1.0"/>
@@ -7477,7 +7471,7 @@
 			<entity type="1900" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="19" y="4">
-			<entity type="210" variant="0" subtype="0" weight="1.0"/>
+			<entity type="832" variant="1" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="21" y="4">
 			<entity type="1900" variant="0" subtype="0" weight="1.0"/>
@@ -7582,7 +7576,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24066" name="We Strvn - [RM] - I put my dog on the science diet" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="0.5" lastTestTime="2025-09-04T00:41+00:00">
+	<room variant="24066" name="We Strvn - [RM] - I put my dog on the science diet" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="0.5" lastTestTime="2025-09-17T22:55+00:00">
 		<door exists="False" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -7633,7 +7627,7 @@
 			<entity type="1940" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24067" name="We Strvn - [RM] - Modded Humor enemy" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="0.5" lastTestTime="2025-09-04T00:41+00:00">
+	<room variant="24067" name="We Strvn - [RM] - Modded Humor enemy" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="0.5" lastTestTime="2025-09-17T22:55+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="False" x="6" y="7"/>
@@ -7687,7 +7681,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24068" name="We Strvn - [RM] - Beastmaster or Artificer" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="0.5" lastTestTime="2025-09-04T00:41+00:00">
+	<room variant="24068" name="We Strvn - [RM] - Beastmaster or Artificer" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="0.5" lastTestTime="2025-09-17T22:55+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -7732,7 +7726,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24069" name="We Strvn - [RM] - Pog Man Pog Dots?" type="1" subtype="0" shape="9" width="26" height="14" difficulty="10" weight="0.5">
+	<room variant="24069" name="We Strvn - [RM] - Pog Man Pog Dots?" type="1" subtype="0" shape="9" width="26" height="14" difficulty="10" weight="0.5" lastTestTime="2025-09-17T22:55+00:00">
 		<door exists="True" x="-1" y="10"/>
 		<door exists="True" x="6" y="6"/>
 		<door exists="True" x="6" y="14"/>
@@ -7838,7 +7832,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24070" name="We Strvn - [RM] - Lil vruddy's got Kritz" type="1" subtype="0" shape="4" width="13" height="14" difficulty="10" weight="0.5">
+	<room variant="24070" name="We Strvn - [RM] - Lil vruddy's got Kritz" type="1" subtype="0" shape="4" width="13" height="14" difficulty="10" weight="0.5" lastTestTime="2025-09-17T22:55+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="-1" y="10"/>
 		<door exists="True" x="6" y="-1"/>
@@ -7891,7 +7885,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24071" name="We Strvn - [RM] - We the barn are not responsible for any injuries you may experience during the trail ride" type="1" subtype="0" shape="6" width="26" height="7" difficulty="10" weight="0.5">
+	<room variant="24071" name="We Strvn - [RM] - We the barn are not responsible for any injuries you may experience during the trail ride" type="1" subtype="0" shape="6" width="26" height="7" difficulty="10" weight="0.5" lastTestTime="2025-09-17T22:55+00:00">
 		<door exists="False" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -8058,7 +8052,7 @@
 			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24072" name="We Strvn - [RM] - Shitcanip Ave" type="1" subtype="0" shape="4" width="13" height="14" difficulty="10" weight="0.5">
+	<room variant="24072" name="We Strvn - [RM] - Shitcanip Ave" type="1" subtype="0" shape="4" width="13" height="14" difficulty="10" weight="0.5" lastTestTime="2025-09-17T22:55+00:00">
 		<door exists="False" x="-1" y="3"/>
 		<door exists="True" x="-1" y="10"/>
 		<door exists="False" x="6" y="-1"/>
@@ -8264,7 +8258,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24073" name="We Strvn - [RM] - Candicronch" type="1" subtype="0" shape="4" width="13" height="14" difficulty="10" weight="0.5">
+	<room variant="24073" name="We Strvn - [RM] - Candicronch" type="1" subtype="0" shape="4" width="13" height="14" difficulty="10" weight="0.5" lastTestTime="2025-09-17T22:55+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="-1" y="10"/>
 		<door exists="True" x="6" y="-1"/>
@@ -8344,7 +8338,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24074" name="We Strvn - [RM] - Students must keep a safe distance from the enclosure to ensure that they are not ripped to shreds" type="1" subtype="0" shape="8" width="26" height="14" difficulty="10" weight="0.5">
+	<room variant="24074" name="We Strvn - [RM] - Students must keep a safe distance from the enclosure to ensure that they are not ripped to shreds" type="1" subtype="0" shape="8" width="26" height="14" difficulty="10" weight="0.5" lastTestTime="2025-09-17T22:55+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="-1" y="10"/>
 		<door exists="True" x="6" y="-1"/>
@@ -8633,7 +8627,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24075" name="We Strvn - [RM] - Ravager Spawn Egg" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="0.5">
+	<room variant="24075" name="We Strvn - [RM] - Ravager Spawn Egg" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="0.5" lastTestTime="2025-09-17T22:55+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="False" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -8684,7 +8678,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24076" name="We Strvn - [RM] - Untrained Pooch" type="1" subtype="0" shape="6" width="26" height="7" difficulty="10" weight="0.5">
+	<room variant="24076" name="We Strvn - [RM] - Untrained Pooch" type="1" subtype="0" shape="6" width="26" height="7" difficulty="10" weight="0.5" lastTestTime="2025-09-17T22:55+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="False" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -8809,7 +8803,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24077" name="We Strvn - [RM] - Knights ride at dusk" type="1" subtype="0" shape="6" width="26" height="7" difficulty="10" weight="0.5">
+	<room variant="24077" name="We Strvn - [RM] - Knights ride at dusk" type="1" subtype="0" shape="6" width="26" height="7" difficulty="10" weight="0.5" lastTestTime="2025-09-17T22:55+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -8871,7 +8865,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24078" name="We Strvn - [RM] - You only lose if you hold w" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="0.5">
+	<room variant="24078" name="We Strvn - [RM] - You only lose if you hold w" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="0.5" lastTestTime="2025-09-17T22:55+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -8928,7 +8922,7 @@
 			<entity type="239" variant="201" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24079" name="We Strvn - [RM] - Probably not the best guy to pocket" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="0.5">
+	<room variant="24079" name="We Strvn - [RM] - Probably not the best guy to pocket" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="0.5" lastTestTime="2025-09-17T22:55+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="False" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -8988,7 +8982,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24080" name="We Strvn - [RM] - Purple Simpsons 3" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="0.5">
+	<room variant="24080" name="We Strvn - [RM] - Purple Simpsons 3" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="0.5" lastTestTime="2025-09-17T22:55+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -9033,7 +9027,7 @@
 			<entity type="248" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24081" name="We Strvn - [RM] - Deadlock is like a second job" type="1" subtype="0" shape="1" width="13" height="7" difficulty="15" weight="0.5">
+	<room variant="24081" name="We Strvn - [RM] - Deadlock is like a second job" type="1" subtype="0" shape="1" width="13" height="7" difficulty="15" weight="0.5" lastTestTime="2025-09-17T22:55+00:00">
 		<door exists="False" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -9084,7 +9078,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24082" name="We Strvn - [RM] - Post Mortum update" type="1" subtype="0" shape="10" width="26" height="14" difficulty="5" weight="0.5">
+	<room variant="24082" name="We Strvn - [RM] - Post Mortum update" type="1" subtype="0" shape="10" width="26" height="14" difficulty="5" weight="0.5" lastTestTime="2025-09-17T22:55+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="-1" y="10"/>
 		<door exists="True" x="6" y="-1"/>
@@ -9196,7 +9190,7 @@
 			<entity type="1002" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24083" name="We Strvn - [RM] - Peanut Retribution" type="1" subtype="0" shape="4" width="13" height="14" difficulty="10" weight="0.5">
+	<room variant="24083" name="We Strvn - [RM] - Peanut Retribution" type="1" subtype="0" shape="4" width="13" height="14" difficulty="10" weight="0.5" lastTestTime="2025-09-17T22:55+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="-1" y="10"/>
 		<door exists="True" x="6" y="-1"/>
@@ -9363,7 +9357,7 @@
 			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24084" name="We Strvn - [RM] - Coinsurer Passive" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="0.5">
+	<room variant="24084" name="We Strvn - [RM] - Coinsurer Passive" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="0.5" lastTestTime="2025-09-17T22:55+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -23759,7 +23753,7 @@
 			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24181" name="Pixel - [RM] - Corpse Eaters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-08-02T19:18+00:00">
+	<room variant="24181" name="Pixel - [RM] - Corpse Eaters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2025-09-17T22:17+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -23792,7 +23786,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24182" name="Pixel - [RM] - Corpse Eaters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-08-02T19:18+00:00">
+	<room variant="24182" name="Pixel - [RM] - Corpse Eaters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2025-09-17T22:17+00:00">
 		<door exists="False" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -23852,7 +23846,7 @@
 			<entity type="1002" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24183" name="Pixel - [RM] - Corpse Eaters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-08-02T19:18+00:00">
+	<room variant="24183" name="Pixel - [RM] - Corpse Eaters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2025-09-17T22:17+00:00">
 		<door exists="False" x="-1" y="3"/>
 		<door exists="False" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -23875,12 +23869,6 @@
 		<spawn x="6" y="0">
 			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
-		<spawn x="7" y="0">
-			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
-		</spawn>
-		<spawn x="8" y="0">
-			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
-		</spawn>
 		<spawn x="9" y="0">
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
@@ -23899,15 +23887,6 @@
 		<spawn x="4" y="1">
 			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
-		<spawn x="5" y="1">
-			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
-		</spawn>
-		<spawn x="6" y="1">
-			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
-		</spawn>
-		<spawn x="7" y="1">
-			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
-		</spawn>
 		<spawn x="0" y="2">
 			<entity type="3009" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
@@ -23920,15 +23899,6 @@
 		<spawn x="3" y="2">
 			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
-		<spawn x="4" y="2">
-			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
-		</spawn>
-		<spawn x="5" y="2">
-			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
-		</spawn>
-		<spawn x="6" y="2">
-			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
-		</spawn>
 		<spawn x="0" y="3">
 			<entity type="3009" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
@@ -23936,15 +23906,6 @@
 			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="2" y="3">
-			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
-		</spawn>
-		<spawn x="3" y="3">
-			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
-		</spawn>
-		<spawn x="4" y="3">
-			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
-		</spawn>
-		<spawn x="5" y="3">
 			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="7" y="3">
@@ -23959,12 +23920,6 @@
 		<spawn x="2" y="4">
 			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
-		<spawn x="3" y="4">
-			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
-		</spawn>
-		<spawn x="4" y="4">
-			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
-		</spawn>
 		<spawn x="0" y="5">
 			<entity type="3009" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
@@ -23974,23 +23929,20 @@
 		<spawn x="2" y="5">
 			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
-		<spawn x="3" y="5">
-			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
-		</spawn>
 		<spawn x="0" y="6">
 			<entity type="3009" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="1" y="6">
 			<entity type="1009" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
-		<spawn x="3" y="6">
+		<spawn x="2" y="6">
 			<entity type="1002" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="12" y="6">
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24184" name="Pixel - [RM] - Corpse Eaters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="15" weight="1.0" lastTestTime="2024-08-02T19:18+00:00">
+	<room variant="24184" name="Pixel - [RM] - Corpse Eaters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="15" weight="1.0" lastTestTime="2025-09-17T22:17+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -24041,19 +23993,16 @@
 			<entity type="211" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24185" name="Pixel - [RM] - Corpse Eaters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-08-02T19:18+00:00">
+	<room variant="24185" name="Pixel - [RM] - Corpse Eaters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2025-09-17T22:17+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
 		<door exists="True" x="13" y="3"/>
-		<spawn x="0" y="0">
-			<entity type="1000" variant="0" subtype="0" weight="2.0"/>
-		</spawn>
-		<spawn x="1" y="0">
-			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
-		</spawn>
 		<spawn x="5" y="2">
 			<entity type="212" variant="2" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="8" y="2">
+			<entity type="32" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="9" y="2">
 			<entity type="1002" variant="0" subtype="0" weight="1.0"/>
@@ -24064,17 +24013,14 @@
 		<spawn x="3" y="4">
 			<entity type="1002" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
+		<spawn x="4" y="4">
+			<entity type="32" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
 		<spawn x="7" y="4">
 			<entity type="212" variant="2" subtype="0" weight="1.0"/>
 		</spawn>
-		<spawn x="11" y="6">
-			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
-		</spawn>
-		<spawn x="12" y="6">
-			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
-		</spawn>
 	</room>
-	<room variant="24186" name="Pixel - [RM] - Corpse Eaters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="15" weight="1.0" lastTestTime="2024-08-02T19:18+00:00">
+	<room variant="24186" name="Pixel - [RM] - Corpse Eaters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2025-09-17T22:17+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -24095,7 +24041,7 @@
 			<entity type="840" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24187" name="Pixel - [RM] - Corpse Eaters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="15" weight="1.0" lastTestTime="2024-08-02T19:18+00:00">
+	<room variant="24187" name="Pixel - [RM] - Corpse Eaters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="15" weight="1.0" lastTestTime="2025-09-17T22:17+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -24146,13 +24092,13 @@
 			<entity type="1000" variant="0" subtype="0" weight="2.0"/>
 		</spawn>
 	</room>
-	<room variant="24188" name="Pixel - [RM] - Corpse Eaters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2024-08-02T19:18+00:00">
+	<room variant="24188" name="Pixel - [RM] - Corpse Eaters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2025-09-17T22:17+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
 		<door exists="True" x="13" y="3"/>
 		<spawn x="0" y="0">
-			<entity type="211" variant="0" subtype="0" weight="2.0"/>
+			<entity type="832" variant="1" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="11" y="0">
 			<entity type="1901" variant="0" subtype="0" weight="2.0"/>
@@ -24176,10 +24122,10 @@
 			<entity type="1901" variant="0" subtype="0" weight="2.0"/>
 		</spawn>
 		<spawn x="12" y="6">
-			<entity type="211" variant="0" subtype="0" weight="2.0"/>
+			<entity type="832" variant="1" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24189" name="Pixel - [RM] - Corpse Eaters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="15" weight="1.0" lastTestTime="2024-08-02T19:18+00:00">
+	<room variant="24189" name="Pixel - [RM] - Corpse Eaters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="15" weight="1.0" lastTestTime="2025-09-17T22:17+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="False" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -24248,7 +24194,7 @@
 			<entity type="3000" variant="0" subtype="0" weight="2.0"/>
 		</spawn>
 	</room>
-	<room variant="24190" name="Pixel - [RM] - Corpse Eaters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="15" weight="1.0" lastTestTime="2024-08-02T19:18+00:00">
+	<room variant="24190" name="Pixel - [RM] - Corpse Eaters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="15" weight="1.0" lastTestTime="2025-09-17T22:17+00:00">
 		<door exists="False" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -24329,7 +24275,7 @@
 			<entity type="1930" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24191" name="Pixel - [RM] - Corpse Eaters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="15" weight="1.0" lastTestTime="2024-08-02T19:18+00:00">
+	<room variant="24191" name="Pixel - [RM] - Corpse Eaters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="15" weight="1.0" lastTestTime="2025-09-17T22:55+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="False" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -24416,7 +24362,7 @@
 			<entity type="1940" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24192" name="Pixel - [RM] - Corpse Eaters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="15" weight="1.0" lastTestTime="2024-08-02T19:18+00:00">
+	<room variant="24192" name="Pixel - [RM] - Corpse Eaters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2025-09-17T22:17+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -24430,17 +24376,14 @@
 		<spawn x="12" y="1">
 			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
-		<spawn x="7" y="2">
-			<entity type="41" variant="2" subtype="0" weight="1.0"/>
-		</spawn>
 		<spawn x="4" y="3">
-			<entity type="41" variant="2" subtype="0" weight="1.0"/>
+			<entity type="832" variant="1" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="6" y="3">
 			<entity type="239" variant="200" subtype="0" weight="1.0"/>
 		</spawn>
-		<spawn x="8" y="4">
-			<entity type="41" variant="2" subtype="0" weight="1.0"/>
+		<spawn x="8" y="3">
+			<entity type="832" variant="1" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="0" y="5">
 			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
@@ -24452,7 +24395,7 @@
 			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24193" name="Pixel - [RM] - Corpse Eaters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="15" weight="1.0" lastTestTime="2024-08-02T19:18+00:00">
+	<room variant="24193" name="Pixel - [RM] - Corpse Eaters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="15" weight="1.0" lastTestTime="2025-09-17T22:17+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -24497,7 +24440,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24194" name="Pixel - [RM] - Corpse Eaters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-08-02T19:18+00:00">
+	<room variant="24194" name="Pixel - [RM] - Corpse Eaters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2025-09-17T22:17+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="False" x="6" y="7"/>
@@ -24510,9 +24453,6 @@
 		</spawn>
 		<spawn x="9" y="0">
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
-		</spawn>
-		<spawn x="11" y="0">
-			<entity type="239" variant="200" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="0" y="1">
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
@@ -24566,7 +24506,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24195" name="Pixel - [RM] - Corpse Eaters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-08-02T19:18+00:00">
+	<room variant="24195" name="Pixel - [RM] - Corpse Eaters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2025-09-17T22:17+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -24611,7 +24551,7 @@
 			<entity type="1002" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24196" name="Pixel - [RM] - Corpse Eaters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-08-02T19:18+00:00">
+	<room variant="24196" name="Pixel - [RM] - Corpse Eaters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2025-09-17T22:17+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="False" x="6" y="-1"/>
 		<door exists="False" x="6" y="7"/>
@@ -24656,7 +24596,7 @@
 			<entity type="1002" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24197" name="Pixel - [RM] - Corpse Eaters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="15" weight="1.0" lastTestTime="2024-08-02T19:18+00:00">
+	<room variant="24197" name="Pixel - [RM] - Corpse Eaters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2025-09-17T22:17+00:00">
 		<door exists="False" x="-1" y="3"/>
 		<door exists="False" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -24863,7 +24803,7 @@
 			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24198" name="Pixel - [RM] - Corpse Eaters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="15" weight="1.0" lastTestTime="2024-08-02T19:18+00:00">
+	<room variant="24198" name="Pixel - [RM] - Corpse Eaters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="15" weight="1.0" lastTestTime="2025-09-17T22:17+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -24896,7 +24836,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24199" name="Pixel - [RM] - Corpse Eaters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="15" weight="1.0" lastTestTime="2024-08-02T19:18+00:00">
+	<room variant="24199" name="Pixel - [RM] - Corpse Eaters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="15" weight="1.0" lastTestTime="2025-09-17T22:17+00:00">
 		<door exists="False" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -24965,12 +24905,12 @@
 			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24200" name="Pixel - [RM] - Corpse Eaters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="15" weight="1.0" lastTestTime="2024-08-02T19:18+00:00">
+	<room variant="24200" name="Pixel - [RM] - Corpse Eaters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2025-09-17T22:17+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
 		<door exists="True" x="13" y="3"/>
-		<spawn x="0" y="0">
+		<spawn x="2" y="0">
 			<entity type="32" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="11" y="0">
@@ -25000,11 +24940,11 @@
 		<spawn x="1" y="6">
 			<entity type="239" variant="200" subtype="0" weight="1.0"/>
 		</spawn>
-		<spawn x="12" y="6">
+		<spawn x="10" y="6">
 			<entity type="32" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24201" name="Pixel - [RM] - Corpse Eaters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-08-02T19:18+00:00">
+	<room variant="24201" name="Pixel - [RM] - Corpse Eaters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2025-09-17T22:17+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -25076,7 +25016,7 @@
 			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24202" name="Pixel - [RM] - Corpse Eaters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="15" weight="1.0" lastTestTime="2024-08-02T19:18+00:00">
+	<room variant="24202" name="Pixel - [RM] - Corpse Eaters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="15" weight="1.0" lastTestTime="2025-09-17T22:17+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -25115,7 +25055,7 @@
 			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24203" name="Pixel - [RM] - Corpse Eaters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-08-02T19:18+00:00">
+	<room variant="24203" name="Pixel - [RM] - Corpse Eaters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2025-09-17T22:17+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -25163,7 +25103,7 @@
 			<entity type="32" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24204" name="Pixel - [RM] - Corpse Eaters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="15" weight="1.0" lastTestTime="2024-08-02T19:18+00:00">
+	<room variant="24204" name="Pixel - [RM] - Corpse Eaters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="15" weight="1.0" lastTestTime="2025-09-17T22:17+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -25199,7 +25139,7 @@
 			<entity type="1901" variant="0" subtype="0" weight="2.0"/>
 		</spawn>
 	</room>
-	<room variant="24205" name="Pixel - [RM] - Corpse Eaters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2024-08-02T19:18+00:00">
+	<room variant="24205" name="Pixel - [RM] - Corpse Eaters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2025-09-17T22:17+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -25226,7 +25166,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24206" name="Pixel - [RM] - Corpse Eaters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-08-02T19:18+00:00">
+	<room variant="24206" name="Pixel - [RM] - Corpse Eaters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2025-09-17T22:17+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -25259,7 +25199,7 @@
 			<entity type="239" variant="200" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24207" name="Pixel - [RM] - Corpse Eaters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-08-02T19:18+00:00">
+	<room variant="24207" name="Pixel - [RM] - Corpse Eaters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2025-09-17T22:17+00:00">
 		<door exists="False" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -25334,7 +25274,7 @@
 			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24208" name="Pixel - [RM] - Corpse Eaters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-08-02T19:18+00:00">
+	<room variant="24208" name="Pixel - [RM] - Corpse Eaters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2025-09-17T22:17+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="False" x="6" y="-1"/>
 		<door exists="False" x="6" y="7"/>
@@ -25391,7 +25331,7 @@
 			<entity type="32" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24209" name="Pixel - [RM] - Corpse Eaters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-08-02T19:18+00:00">
+	<room variant="24209" name="Pixel - [RM] - Corpse Eaters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2025-09-17T22:17+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -25451,7 +25391,7 @@
 			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24210" name="Pixel - [RM] - Corpse Eaters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-08-02T19:18+00:00">
+	<room variant="24210" name="Pixel - [RM] - Corpse Eaters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2025-09-17T22:17+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="False" x="6" y="-1"/>
 		<door exists="False" x="6" y="7"/>
@@ -25505,7 +25445,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24211" name="Pixel - [RM] - Corpse Eaters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="15" weight="1.0" lastTestTime="2024-08-02T19:18+00:00">
+	<room variant="24211" name="Pixel - [RM] - Corpse Eaters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="15" weight="1.0" lastTestTime="2025-09-17T22:17+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -25538,7 +25478,7 @@
 			<entity type="239" variant="200" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24212" name="Pixel - [RM] - Corpse Eaters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-08-02T19:18+00:00">
+	<room variant="24212" name="Pixel - [RM] - Corpse Eaters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2025-09-17T22:17+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -25574,7 +25514,7 @@
 			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24213" name="Pixel - [RM] - Corpse Eaters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-08-02T19:18+00:00">
+	<room variant="24213" name="Pixel - [RM] - Corpse Eaters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2025-09-17T22:17+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="False" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -25625,7 +25565,7 @@
 			<entity type="883" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24214" name="Pixel - [RM] - Corpse Eaters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-08-02T19:18+00:00">
+	<room variant="24214" name="Pixel - [RM] - Corpse Eaters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2025-09-17T22:17+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -25664,7 +25604,7 @@
 			<entity type="239" variant="200" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24215" name="Pixel - [RM] - Corpse Eaters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="15" weight="0.5" lastTestTime="2024-08-02T19:18+00:00">
+	<room variant="24215" name="Pixel - [RM] - Corpse Eaters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="15" weight="0.5" lastTestTime="2025-09-17T22:55+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="False" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -25715,7 +25655,7 @@
 			<entity type="227" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24216" name="Pixel - [RM] - Corpse Eaters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2024-08-02T19:18+00:00">
+	<room variant="24216" name="Pixel - [RM] - Corpse Eaters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2025-09-17T22:17+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -25742,34 +25682,28 @@
 			<entity type="1940" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24217" name="Pixel - [RM] - Corpse Eaters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-08-02T19:18+00:00">
+	<room variant="24217" name="Pixel - [RM] - Corpse Eaters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2025-09-17T22:17+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="False" x="6" y="-1"/>
 		<door exists="False" x="6" y="7"/>
 		<door exists="True" x="13" y="3"/>
-		<spawn x="0" y="0">
-			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
-		</spawn>
 		<spawn x="6" y="0">
 			<entity type="306" variant="1" subtype="0" weight="1.0"/>
 		</spawn>
-		<spawn x="12" y="0">
+		<spawn x="4" y="3">
 			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="6" y="3">
 			<entity type="239" variant="200" subtype="0" weight="1.0"/>
 		</spawn>
-		<spawn x="0" y="6">
+		<spawn x="8" y="3">
 			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="6" y="6">
 			<entity type="306" variant="1" subtype="0" weight="1.0"/>
 		</spawn>
-		<spawn x="12" y="6">
-			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
-		</spawn>
 	</room>
-	<room variant="24218" name="Pixel - [RM] - Corpse Eaters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="15" weight="1.0" lastTestTime="2024-08-02T19:18+00:00">
+	<room variant="24218" name="Pixel - [RM] - Corpse Eaters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="15" weight="1.0" lastTestTime="2025-09-17T22:17+00:00">
 		<door exists="False" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -25826,7 +25760,7 @@
 			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24219" name="Pixel - [RM] - Corpse Eaters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-08-02T19:18+00:00">
+	<room variant="24219" name="Pixel - [RM] - Corpse Eaters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2025-09-17T22:17+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -25850,7 +25784,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24220" name="Pixel - [RM] - Corpse Eaters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="15" weight="0.5" lastTestTime="2024-08-02T19:18+00:00">
+	<room variant="24220" name="Pixel - [RM] - Corpse Eaters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="15" weight="0.5" lastTestTime="2025-09-17T22:55+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -25883,7 +25817,7 @@
 			<entity type="805" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24221" name="Pixel - [RM] - Corpse Eaters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-08-02T19:18+00:00">
+	<room variant="24221" name="Pixel - [RM] - Corpse Eaters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2025-09-17T22:17+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -25937,21 +25871,21 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24222" name="Pixel - [RM] - Corpse Eaters - Short" type="1" subtype="0" shape="2" width="13" height="7" difficulty="15" weight="1.0" lastTestTime="2024-08-02T19:18+00:00">
+	<room variant="24222" name="Pixel - [RM] - Corpse Eaters - Short" type="1" subtype="0" shape="2" width="13" height="7" difficulty="15" weight="1.0" lastTestTime="2025-09-17T22:17+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="13" y="3"/>
 		<spawn x="6" y="3">
 			<entity type="239" variant="200" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24223" name="Pixel - [RM] - Corpse Eaters - Thin" type="1" subtype="0" shape="3" width="13" height="7" difficulty="15" weight="1.0" lastTestTime="2024-08-02T19:18+00:00">
+	<room variant="24223" name="Pixel - [RM] - Corpse Eaters - Thin" type="1" subtype="0" shape="3" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2025-09-17T22:17+00:00">
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
 		<spawn x="4" y="3">
 			<entity type="239" variant="200" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24224" name="Pixel - [RM] - Corpse Eaters - Long short" type="1" subtype="0" shape="7" width="26" height="7" difficulty="10" weight="1.0" lastTestTime="2024-08-02T19:18+00:00">
+	<room variant="24224" name="Pixel - [RM] - Corpse Eaters - Long short" type="1" subtype="0" shape="7" width="26" height="7" difficulty="10" weight="1.0" lastTestTime="2025-09-17T22:17+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="26" y="3"/>
 		<spawn x="0" y="2">
@@ -25982,7 +25916,7 @@
 			<entity type="1002" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24225" name="Pixel - [RM] - Corpse Eaters - Tall" type="1" subtype="0" shape="4" width="13" height="14" difficulty="10" weight="1.0" lastTestTime="2024-08-02T19:18+00:00">
+	<room variant="24225" name="Pixel - [RM] - Corpse Eaters - Tall" type="1" subtype="0" shape="4" width="13" height="14" difficulty="10" weight="1.0" lastTestTime="2025-09-17T22:17+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="-1" y="10"/>
 		<door exists="True" x="6" y="-1"/>
@@ -26080,7 +26014,7 @@
 			<entity type="1901" variant="0" subtype="0" weight="2.0"/>
 		</spawn>
 	</room>
-	<room variant="24226" name="Pixel - [RM] - Corpse Eaters - Tall" type="1" subtype="0" shape="4" width="13" height="14" difficulty="10" weight="1.0" lastTestTime="2024-08-02T19:18+00:00">
+	<room variant="24226" name="Pixel - [RM] - Corpse Eaters - Tall" type="1" subtype="0" shape="4" width="13" height="14" difficulty="10" weight="1.0" lastTestTime="2025-09-17T22:17+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="-1" y="10"/>
 		<door exists="True" x="6" y="-1"/>
@@ -26169,7 +26103,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24227" name="Pixel - [RM] - Corpse Eaters - Tall" type="1" subtype="0" shape="4" width="13" height="14" difficulty="10" weight="0.5" lastTestTime="2024-08-02T19:18+00:00">
+	<room variant="24227" name="Pixel - [RM] - Corpse Eaters - Tall" type="1" subtype="0" shape="4" width="13" height="14" difficulty="10" weight="0.5" lastTestTime="2025-09-17T22:55+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="-1" y="10"/>
 		<door exists="True" x="6" y="-1"/>
@@ -26225,7 +26159,7 @@
 			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24228" name="Pixel - [RM] - Corpse Eaters - Tall" type="1" subtype="0" shape="4" width="13" height="14" difficulty="15" weight="1.0" lastTestTime="2024-08-02T19:18+00:00">
+	<room variant="24228" name="Pixel - [RM] - Corpse Eaters - Tall" type="1" subtype="0" shape="4" width="13" height="14" difficulty="15" weight="1.0" lastTestTime="2025-09-17T22:17+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="-1" y="10"/>
 		<door exists="True" x="6" y="-1"/>
@@ -26311,7 +26245,7 @@
 			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24229" name="Pixel - [RM] - Corpse Eaters - Long" type="1" subtype="0" shape="6" width="26" height="7" difficulty="10" weight="1.0" lastTestTime="2024-08-02T19:18+00:00">
+	<room variant="24229" name="Pixel - [RM] - Corpse Eaters - Long" type="1" subtype="0" shape="6" width="26" height="7" difficulty="10" weight="1.0" lastTestTime="2025-09-17T22:17+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -26403,7 +26337,7 @@
 			<entity type="1900" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24230" name="Pixel - [RM] - Corpse Eaters - Long" type="1" subtype="0" shape="6" width="26" height="7" difficulty="15" weight="1.0" lastTestTime="2024-08-02T19:18+00:00">
+	<room variant="24230" name="Pixel - [RM] - Corpse Eaters - Long" type="1" subtype="0" shape="6" width="26" height="7" difficulty="15" weight="1.0" lastTestTime="2025-09-17T22:17+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -26501,7 +26435,7 @@
 			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24231" name="Pixel - [RM] - Corpse Eaters - Long" type="1" subtype="0" shape="6" width="26" height="7" difficulty="10" weight="0.5" lastTestTime="2024-08-02T19:18+00:00">
+	<room variant="24231" name="Pixel - [RM] - Corpse Eaters - Long" type="1" subtype="0" shape="6" width="26" height="7" difficulty="10" weight="0.5" lastTestTime="2025-09-17T22:55+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -26602,7 +26536,7 @@
 			<entity type="1940" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24232" name="Pixel - [RM] - Corpse Eaters - Long" type="1" subtype="0" shape="6" width="26" height="7" difficulty="5" weight="1.0" lastTestTime="2024-08-02T19:18+00:00">
+	<room variant="24232" name="Pixel - [RM] - Corpse Eaters - Long" type="1" subtype="0" shape="6" width="26" height="7" difficulty="5" weight="1.0" lastTestTime="2025-09-17T22:17+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -26643,7 +26577,7 @@
 			<entity type="33" variant="3" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24233" name="Pixel - [RM] - Corpse Eaters - Long" type="1" subtype="0" shape="6" width="26" height="7" difficulty="10" weight="1.0" lastTestTime="2024-08-02T19:18+00:00">
+	<room variant="24233" name="Pixel - [RM] - Corpse Eaters - Long" type="1" subtype="0" shape="6" width="26" height="7" difficulty="10" weight="1.0" lastTestTime="2025-09-17T22:17+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -26753,7 +26687,7 @@
 			<entity type="1002" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24234" name="Pixel - [RM] - Corpse Eaters - Large" type="1" subtype="0" shape="8" width="26" height="14" difficulty="5" weight="1.0" lastTestTime="2024-08-02T19:18+00:00">
+	<room variant="24234" name="Pixel - [RM] - Corpse Eaters - Large" type="1" subtype="0" shape="8" width="26" height="14" difficulty="5" weight="1.0" lastTestTime="2025-09-17T22:17+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="-1" y="10"/>
 		<door exists="True" x="6" y="-1"/>
@@ -26880,7 +26814,7 @@
 			<entity type="33" variant="2" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24235" name="Pixel - [RM] - Corpse Eaters - Large" type="1" subtype="0" shape="8" width="26" height="14" difficulty="5" weight="1.0" lastTestTime="2024-08-02T19:18+00:00">
+	<room variant="24235" name="Pixel - [RM] - Corpse Eaters - Large" type="1" subtype="0" shape="8" width="26" height="14" difficulty="5" weight="1.0" lastTestTime="2025-09-17T22:17+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="-1" y="10"/>
 		<door exists="True" x="6" y="-1"/>
@@ -26908,12 +26842,6 @@
 			<entity type="1930" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="15" y="0">
-			<entity type="1930" variant="0" subtype="0" weight="1.0"/>
-		</spawn>
-		<spawn x="16" y="0">
-			<entity type="1930" variant="0" subtype="0" weight="1.0"/>
-		</spawn>
-		<spawn x="17" y="0">
 			<entity type="1900" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="23" y="0">
@@ -26956,12 +26884,6 @@
 			<entity type="1930" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="7" y="6">
-			<entity type="1930" variant="0" subtype="0" weight="1.0"/>
-		</spawn>
-		<spawn x="8" y="6">
-			<entity type="1930" variant="0" subtype="0" weight="1.0"/>
-		</spawn>
-		<spawn x="9" y="6">
 			<entity type="1900" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="11" y="6">
@@ -26970,14 +26892,8 @@
 		<spawn x="14" y="7">
 			<entity type="24" variant="3" subtype="0" weight="1.0"/>
 		</spawn>
-		<spawn x="16" y="7">
-			<entity type="1900" variant="0" subtype="0" weight="1.0"/>
-		</spawn>
-		<spawn x="17" y="7">
-			<entity type="1930" variant="0" subtype="0" weight="1.0"/>
-		</spawn>
 		<spawn x="18" y="7">
-			<entity type="1930" variant="0" subtype="0" weight="1.0"/>
+			<entity type="1900" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="19" y="7">
 			<entity type="1930" variant="0" subtype="0" weight="1.0"/>
@@ -27028,12 +26944,6 @@
 			<entity type="1930" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="11" y="13">
-			<entity type="1930" variant="0" subtype="0" weight="1.0"/>
-		</spawn>
-		<spawn x="12" y="13">
-			<entity type="1930" variant="0" subtype="0" weight="1.0"/>
-		</spawn>
-		<spawn x="13" y="13">
 			<entity type="1900" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="23" y="13">
@@ -27046,7 +26956,7 @@
 			<entity type="33" variant="3" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24236" name="Pixel - [RM] - Corpse Eaters - Large" type="1" subtype="0" shape="8" width="26" height="14" difficulty="10" weight="0.5" lastTestTime="2024-08-02T19:18+00:00">
+	<room variant="24236" name="Pixel - [RM] - Corpse Eaters - Large" type="1" subtype="0" shape="8" width="26" height="14" difficulty="10" weight="0.5" lastTestTime="2025-09-17T22:55+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="-1" y="10"/>
 		<door exists="True" x="6" y="-1"/>
@@ -27334,7 +27244,7 @@
 			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24237" name="Pixel - [RM] - Corpse Eaters - Large" type="1" subtype="0" shape="8" width="26" height="14" difficulty="10" weight="1.0" lastTestTime="2024-08-02T19:18+00:00">
+	<room variant="24237" name="Pixel - [RM] - Corpse Eaters - Large" type="1" subtype="0" shape="8" width="26" height="14" difficulty="10" weight="1.0" lastTestTime="2025-09-17T22:17+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="-1" y="10"/>
 		<door exists="True" x="6" y="-1"/>
@@ -27503,7 +27413,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24238" name="Pixel - [RM] - Corpse Eaters - LTL" type="1" subtype="0" shape="9" width="26" height="14" difficulty="15" weight="1.0" lastTestTime="2024-08-02T19:18+00:00">
+	<room variant="24238" name="Pixel - [RM] - Corpse Eaters - LTL" type="1" subtype="0" shape="9" width="26" height="14" difficulty="15" weight="1.0" lastTestTime="2025-09-17T22:17+00:00">
 		<door exists="True" x="-1" y="10"/>
 		<door exists="True" x="6" y="6"/>
 		<door exists="True" x="6" y="14"/>
@@ -27570,10 +27480,13 @@
 		<spawn x="9" y="9">
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
+		<spawn x="13" y="9">
+			<entity type="834" variant="2" subtype="0" weight="1.0"/>
+		</spawn>
 		<spawn x="8" y="10">
 			<entity type="239" variant="200" subtype="0" weight="1.0"/>
 		</spawn>
-		<spawn x="15" y="10">
+		<spawn x="16" y="10">
 			<entity type="834" variant="2" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="7" y="11">
@@ -27621,7 +27534,7 @@
 			<entity type="5" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24239" name="Pixel - [RM] - Corpse Eaters - LTR" type="1" subtype="0" shape="10" width="26" height="14" difficulty="10" weight="1.0" lastTestTime="2024-08-02T19:18+00:00">
+	<room variant="24239" name="Pixel - [RM] - Corpse Eaters - LTR" type="1" subtype="0" shape="10" width="26" height="14" difficulty="10" weight="1.0" lastTestTime="2025-09-17T22:17+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="-1" y="10"/>
 		<door exists="True" x="6" y="-1"/>
@@ -27727,7 +27640,7 @@
 			<entity type="239" variant="200" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24240" name="Pixel - [RM] - Corpse Eaters - LBL" type="1" subtype="0" shape="11" width="26" height="14" difficulty="10" weight="0.5" lastTestTime="2024-08-02T19:18+00:00">
+	<room variant="24240" name="Pixel - [RM] - Corpse Eaters - LBL" type="1" subtype="0" shape="11" width="26" height="14" difficulty="10" weight="0.5" lastTestTime="2025-09-17T22:55+00:00">
 		<door exists="False" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -27872,7 +27785,7 @@
 			<entity type="1002" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24241" name="Pixel - [RM] - Corpse Eaters - LBR" type="1" subtype="0" shape="12" width="26" height="14" difficulty="10" weight="1.0" lastTestTime="2024-08-02T19:18+00:00">
+	<room variant="24241" name="Pixel - [RM] - Corpse Eaters - LBR" type="1" subtype="0" shape="12" width="26" height="14" difficulty="10" weight="1.0" lastTestTime="2025-09-17T22:17+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="-1" y="10"/>
 		<door exists="True" x="6" y="-1"/>
@@ -28020,7 +27933,7 @@
 			<entity type="1002" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24242" name="Pixel - [RM] - Corpse Eaters - LBR" type="1" subtype="0" shape="12" width="26" height="14" difficulty="10" weight="1.0" lastTestTime="2024-08-02T19:18+00:00">
+	<room variant="24242" name="Pixel - [RM] - Corpse Eaters - LBR" type="1" subtype="0" shape="12" width="26" height="14" difficulty="10" weight="1.0" lastTestTime="2025-09-17T22:17+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="-1" y="10"/>
 		<door exists="True" x="6" y="-1"/>
@@ -37211,7 +37124,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24343" name="InfiniteCosmos - [RM] - Chew on this!" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-08-02T19:18+00:00">
+	<room variant="24343" name="InfiniteCosmos - [RM] - Chew on this!" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2025-09-17T22:17+00:00">
 		<door exists="False" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -92921,7 +92834,7 @@
 			<entity type="969" variant="8" subtype="0" weight="2.0"/>
 		</spawn>
 	</room>
-	<room variant="24808" name="P.E.N.I.S. - [RM] - Antibirth" type="1" subtype="0" shape="8" width="26" height="14" difficulty="10" weight="0.5" lastTestTime="2025-05-20T19:54+00:00">
+	<room variant="24808" name="P.E.N.I.S. - [RM] - Antibirth" type="1" subtype="0" shape="8" width="26" height="14" difficulty="10" weight="0.5" lastTestTime="2025-09-17T22:55+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="-1" y="10"/>
 		<door exists="True" x="6" y="-1"/>
@@ -94439,7 +94352,7 @@
 			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24819" name="P.E.N.I.S. - [RM] - Antibirth" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2024-08-03T19:06+00:00">
+	<room variant="24819" name="P.E.N.I.S. - [RM] - Antibirth" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2025-09-17T22:17+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -94487,7 +94400,7 @@
 			<entity type="1500" variant="0" subtype="1" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24820" name="P.E.N.I.S. - [RM] - Antibirth" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2024-08-03T19:06+00:00">
+	<room variant="24820" name="P.E.N.I.S. - [RM] - Antibirth" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2025-09-17T22:17+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -94523,7 +94436,7 @@
 			<entity type="239" variant="200" subtype="0" weight="2.0"/>
 		</spawn>
 	</room>
-	<room variant="24821" name="P.E.N.I.S. - [RM] - Antibirth" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2024-08-03T19:06+00:00">
+	<room variant="24821" name="P.E.N.I.S. - [RM] - Antibirth" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2025-09-17T22:17+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -94538,7 +94451,7 @@
 			<entity type="210" variant="0" subtype="0" weight="2.0"/>
 		</spawn>
 	</room>
-	<room variant="24822" name="P.E.N.I.S. - [RM] - Antibirth" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-08-03T19:06+00:00">
+	<room variant="24822" name="P.E.N.I.S. - [RM] - Antibirth" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2025-09-17T22:17+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="False" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -94577,7 +94490,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24823" name="P.E.N.I.S. - [RM] - Antibirth" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-08-03T19:06+00:00">
+	<room variant="24823" name="P.E.N.I.S. - [RM] - Antibirth" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2025-09-17T22:17+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -94593,7 +94506,7 @@
 			<entity type="239" variant="200" subtype="0" weight="2.0"/>
 		</spawn>
 	</room>
-	<room variant="24824" name="P.E.N.I.S. - [RM] - Antibirth" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-08-03T19:06+00:00">
+	<room variant="24824" name="P.E.N.I.S. - [RM] - Antibirth" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2025-09-17T22:17+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -94620,7 +94533,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="2.0"/>
 		</spawn>
 	</room>
-	<room variant="24825" name="P.E.N.I.S. - [RM] - Antibirth" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-08-03T19:06+00:00">
+	<room variant="24825" name="P.E.N.I.S. - [RM] - Antibirth" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2025-09-17T22:17+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -94647,7 +94560,7 @@
 			<entity type="239" variant="200" subtype="0" weight="2.0"/>
 		</spawn>
 	</room>
-	<room variant="24826" name="P.E.N.I.S. - [RM] - Antibirth" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-08-03T19:06+00:00">
+	<room variant="24826" name="P.E.N.I.S. - [RM] - Antibirth" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2025-09-17T22:17+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -94665,7 +94578,7 @@
 			<entity type="239" variant="200" subtype="0" weight="2.0"/>
 		</spawn>
 	</room>
-	<room variant="24827" name="P.E.N.I.S. - [RM] - Antibirth" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2024-08-03T19:06+00:00">
+	<room variant="24827" name="P.E.N.I.S. - [RM] - Antibirth" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2025-09-17T22:17+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="False" x="6" y="-1"/>
 		<door exists="False" x="6" y="7"/>
@@ -94746,7 +94659,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="2.0"/>
 		</spawn>
 	</room>
-	<room variant="24828" name="P.E.N.I.S. - [RM] - Antibirth" type="1" subtype="0" shape="1" width="13" height="7" difficulty="15" weight="1.0" lastTestTime="2024-08-03T19:06+00:00">
+	<room variant="24828" name="P.E.N.I.S. - [RM] - Antibirth" type="1" subtype="0" shape="1" width="13" height="7" difficulty="15" weight="1.0" lastTestTime="2025-09-17T22:17+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="False" x="6" y="7"/>
@@ -94800,7 +94713,7 @@
 			<entity type="239" variant="200" subtype="0" weight="2.0"/>
 		</spawn>
 	</room>
-	<room variant="24829" name="P.E.N.I.S. - [RM] - Antibirth" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2024-08-03T19:06+00:00">
+	<room variant="24829" name="P.E.N.I.S. - [RM] - Antibirth" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2025-09-17T22:17+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -94818,7 +94731,7 @@
 			<entity type="210" variant="0" subtype="0" weight="2.0"/>
 		</spawn>
 	</room>
-	<room variant="24830" name="P.E.N.I.S. - [RM] - Antibirth" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-08-03T19:06+00:00">
+	<room variant="24830" name="P.E.N.I.S. - [RM] - Antibirth" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2025-09-17T22:17+00:00">
 		<door exists="False" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="False" x="6" y="7"/>
@@ -94971,7 +94884,7 @@
 			<entity type="3000" variant="0" subtype="0" weight="2.0"/>
 		</spawn>
 	</room>
-	<room variant="24831" name="P.E.N.I.S. - [RM] - Antibirth" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2024-08-03T19:06+00:00">
+	<room variant="24831" name="P.E.N.I.S. - [RM] - Antibirth" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2025-09-17T22:17+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -95004,7 +94917,7 @@
 			<entity type="33" variant="1" subtype="0" weight="2.0"/>
 		</spawn>
 	</room>
-	<room variant="24832" name="P.E.N.I.S. - [RM] - Antibirth" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2024-08-03T19:06+00:00">
+	<room variant="24832" name="P.E.N.I.S. - [RM] - Antibirth" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2025-09-17T22:17+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -95043,7 +94956,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="2.0"/>
 		</spawn>
 	</room>
-	<room variant="24833" name="P.E.N.I.S. - [RM] - Antibirth" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2024-08-03T19:06+00:00">
+	<room variant="24833" name="P.E.N.I.S. - [RM] - Antibirth" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2025-09-17T22:17+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="False" x="6" y="7"/>
@@ -95094,7 +95007,7 @@
 			<entity type="841" variant="0" subtype="0" weight="2.0"/>
 		</spawn>
 	</room>
-	<room variant="24834" name="P.E.N.I.S. - [RM] - Antibirth" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-08-03T19:06+00:00">
+	<room variant="24834" name="P.E.N.I.S. - [RM] - Antibirth" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2025-09-17T22:17+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -95148,7 +95061,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="2.0"/>
 		</spawn>
 	</room>
-	<room variant="24835" name="P.E.N.I.S. - [RM] - Antibirth" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2024-08-03T19:06+00:00">
+	<room variant="24835" name="P.E.N.I.S. - [RM] - Antibirth" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2025-09-17T22:17+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -95160,7 +95073,7 @@
 			<entity type="239" variant="200" subtype="0" weight="2.0"/>
 		</spawn>
 	</room>
-	<room variant="24836" name="P.E.N.I.S. - [RM] - Antibirth" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2024-08-03T19:06+00:00">
+	<room variant="24836" name="P.E.N.I.S. - [RM] - Antibirth" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2025-09-17T22:17+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -95196,7 +95109,7 @@
 			<entity type="24" variant="3" subtype="0" weight="2.0"/>
 		</spawn>
 	</room>
-	<room variant="24837" name="P.E.N.I.S. - [RM] - Antibirth (wide)" type="1" subtype="0" shape="6" width="26" height="7" difficulty="5" weight="1.0" lastTestTime="2024-08-03T19:06+00:00">
+	<room variant="24837" name="P.E.N.I.S. - [RM] - Antibirth (wide)" type="1" subtype="0" shape="6" width="26" height="7" difficulty="5" weight="1.0" lastTestTime="2025-09-17T22:17+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -95315,7 +95228,7 @@
 			<entity type="3000" variant="0" subtype="0" weight="2.0"/>
 		</spawn>
 	</room>
-	<room variant="24838" name="P.E.N.I.S. - [RM] - Antibirth" type="1" subtype="0" shape="6" width="26" height="7" difficulty="5" weight="1.0" lastTestTime="2024-08-03T19:06+00:00">
+	<room variant="24838" name="P.E.N.I.S. - [RM] - Antibirth" type="1" subtype="0" shape="6" width="26" height="7" difficulty="5" weight="1.0" lastTestTime="2025-09-17T22:17+00:00">
 		<door exists="False" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -95479,7 +95392,7 @@
 			<entity type="3000" variant="0" subtype="0" weight="2.0"/>
 		</spawn>
 	</room>
-	<room variant="24839" name="P.E.N.I.S. - [RM] - Antibirth (tall)" type="1" subtype="0" shape="4" width="13" height="14" difficulty="5" weight="1.0" lastTestTime="2024-08-03T19:06+00:00">
+	<room variant="24839" name="P.E.N.I.S. - [RM] - Antibirth (tall)" type="1" subtype="0" shape="4" width="13" height="14" difficulty="5" weight="1.0" lastTestTime="2025-09-17T22:17+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="-1" y="10"/>
 		<door exists="True" x="6" y="-1"/>
@@ -95562,7 +95475,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="2.0"/>
 		</spawn>
 	</room>
-	<room variant="24840" name="P.E.N.I.S. - [RM] - Antibirth (lorg) (copy)" type="1" subtype="0" shape="8" width="26" height="14" difficulty="5" weight="1.0" lastTestTime="2024-08-03T19:06+00:00">
+	<room variant="24840" name="P.E.N.I.S. - [RM] - Antibirth (lorg) (copy)" type="1" subtype="0" shape="8" width="26" height="14" difficulty="5" weight="1.0" lastTestTime="2025-09-17T22:17+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="-1" y="10"/>
 		<door exists="True" x="6" y="-1"/>
@@ -95662,7 +95575,7 @@
 			<entity type="1901" variant="0" subtype="0" weight="2.0"/>
 		</spawn>
 	</room>
-	<room variant="24841" name="P.E.N.I.S. - [RM] - Antibirth" type="1" subtype="0" shape="1" width="13" height="7" difficulty="15" weight="0.5" lastTestTime="2024-08-03T19:06+00:00">
+	<room variant="24841" name="P.E.N.I.S. - [RM] - Antibirth" type="1" subtype="0" shape="1" width="13" height="7" difficulty="15" weight="0.5" lastTestTime="2025-09-17T22:55+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -96961,7 +96874,7 @@
 			<entity type="200" variant="2410" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24005" name="[RM] - Challenge Wave 6" type="11" subtype="10" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-08-02T21:58+00:00">
+	<room variant="24005" name="[RM] - Challenge Wave 6" type="11" subtype="10" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2025-09-17T22:17+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -96976,7 +96889,7 @@
 			<entity type="239" variant="200" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24006" name="[RM] - Challenge Wave 7" type="11" subtype="10" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2024-08-02T21:58+00:00">
+	<room variant="24006" name="[RM] - Challenge Wave 7" type="11" subtype="10" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2025-09-17T22:17+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -96991,7 +96904,7 @@
 			<entity type="32" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24007" name="[RM] - Challenge Wave 8" type="11" subtype="10" shape="1" width="13" height="7" difficulty="15" weight="0.5" lastTestTime="2024-08-02T21:58+00:00">
+	<room variant="24007" name="[RM] - Challenge Wave 8" type="11" subtype="10" shape="1" width="13" height="7" difficulty="15" weight="0.5" lastTestTime="2025-09-17T22:55+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
