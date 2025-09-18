@@ -58,9 +58,9 @@
 <!-- RM Vessel -->
 <entity Image="resources/Vessel (RM).png" Name="Vessel (RM)" ID="858" Subtype="0" Variant="1" baseHP="60" Tags="Champion" Group="Monsters" Kind="Restored Monsters Pack"/>
 <!-- Corse Eater -->
-<entity Image="resources/Corpse Eater.png" Name="Corpse Eater (RM)" ID="239" Subtype="0" Variant="200" Metadata="1" BaseHP="48" Group="Monsters" Kind="Restored Monsters Pack"/>
+<entity Image="resources/Corpse Eater.png" Name="Corpse Eater (RM)" ID="239" Subtype="0" Variant="200" Metadata="1" BaseHP="30" Group="Monsters" Kind="Restored Monsters Pack"/>
 <!-- Carrion Rider -->
-<entity Image="resources/Carrion Rider.png" Name="Carrion Rider (RM)" ID="239" Variant="201" Subtype="0" Metadata="1" BaseHP="48"   Group="Monsters" Kind="Restored Monsters Pack"/>
+<entity Image="resources/Carrion Rider.png" Name="Carrion Rider (RM)" ID="239" Variant="201" Subtype="0" Metadata="1" BaseHP="30"   Group="Monsters" Kind="Restored Monsters Pack"/>
 <!-- Blind Bat -->
 <entity Image="resources/Blind Bat.png" Name="Blind Bat (RM)" ID="803" Variant="200" Subtype="3" BaseHP="10" Group="Monsters" Kind="Restored Monsters Pack">
 		<bitfield Key="Subtype">
