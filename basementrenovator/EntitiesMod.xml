@@ -8,7 +8,7 @@
 <!-- Scorchling -->
 <entity Image="resources/Scorchling.png" Name="Scorchling" ID="800" Subtype="0" Variant="3" BaseHP="7" StageHP="2" Tags="Champion" Group="Monsters" Kind="Restored Monsters Pack"/>
 <!-- Mortling -->
-<entity Image="resources/Mortling.png" Name="Mortling" ID="800" Subtype="0" Variant="4" BaseHP="36" Armor="5" Tags="Champion" Group="Monsters" Kind="Restored Monsters Pack"/>
+<entity Image="resources/Mortling.png" Name="Mortling" ID="800" Subtype="0" Variant="4" BaseHP="36" StageHP="2" Armor="5" Tags="Champion" Group="Monsters" Kind="Restored Monsters Pack"/>
 <!-- Tainted Dumpling -->
 <entity Image="resources/Tainted Dumpling.png" Name="Tainted Dumpling" ID="800" Subtype="0" Variant="5" BaseHP="100" Armor="30" Tags="Champion" Group="Monsters" Kind="Restored Monsters Pack"/>
 <!-- Gilded Dumpling -->
@@ -58,9 +58,9 @@
 <!-- RM Vessel -->
 <entity Image="resources/Vessel (RM).png" Name="Vessel (RM)" ID="858" Subtype="0" Variant="1" baseHP="60" Tags="Champion" Group="Monsters" Kind="Restored Monsters Pack"/>
 <!-- Corse Eater -->
-<entity Image="resources/Corpse Eater.png" Name="Corpse Eater (RM)" ID="239" Subtype="0" Variant="200" Metadata="1" BaseHP="30" Group="Monsters" Kind="Restored Monsters Pack"/>
+<entity Image="resources/Corpse Eater.png" Name="Corpse Eater (RM)" ID="239" Subtype="0" Variant="200" Metadata="1" BaseHP="30" StageHP="2.5" Armor="3" Group="Monsters" Kind="Restored Monsters Pack"/>
 <!-- Carrion Rider -->
-<entity Image="resources/Carrion Rider.png" Name="Carrion Rider (RM)" ID="239" Variant="201" Subtype="0" Metadata="1" BaseHP="30"   Group="Monsters" Kind="Restored Monsters Pack"/>
+<entity Image="resources/Carrion Rider.png" Name="Carrion Rider (RM)" ID="239" Variant="201" Subtype="0" Metadata="1" BaseHP="30" StageHP="2.5" Armor="3"  Group="Monsters" Kind="Restored Monsters Pack"/>
 <!-- Blind Bat -->
 <entity Image="resources/Blind Bat.png" Name="Blind Bat (RM)" ID="803" Variant="200" Subtype="3" BaseHP="10" Group="Monsters" Kind="Restored Monsters Pack">
 		<bitfield Key="Subtype">

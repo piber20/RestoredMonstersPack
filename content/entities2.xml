@@ -185,13 +185,13 @@
 	</entity>
 <!-- Antibirth enemy Variants for Bestiary -->
     <!-- Corpse Eater -->
-    <entity anm2path="monsters\restored\corpseeater\corpse_eater.anm2" name="​Corpse Eater" id="239" variant="200" baseHP="30" stageHP="2.5" boss="0" champion="0" portrait="28" collisionDamage="1" collisionMass="14" collisionRadius="13" friction="1" numGridCollisionPoints="12" shadowSize="21">
+    <entity anm2path="monsters\restored\corpseeater\corpse_eater.anm2" name="​Corpse Eater" id="239" variant="200" baseHP="30" stageHP="2.5" shieldStrength="3" boss="0" champion="0" portrait="28" collisionDamage="1" collisionMass="14" collisionRadius="13" friction="1" numGridCollisionPoints="12" shadowSize="21">
         <bestiary anim="Bestiary" transform="0,0,1"/>
         <gibs amount="10" blood="1" bone="0" eye="0" gut="1" large="0"/>
     	<devolve id="23.0.0" weight="1" />
     </entity>
     <!-- Carrion Rider -->
-    <entity anm2path="monsters\restored\corpseeater\carrion_rider.anm2" name="​Carrion Rider" id="239" variant="201" baseHP="30" stageHP="2.5" boss="0" champion="0" portrait="29" collisionDamage="1" collisionMass="14" collisionRadius="13" friction="1" numGridCollisionPoints="12" shadowSize="21">
+    <entity anm2path="monsters\restored\corpseeater\carrion_rider.anm2" name="​Carrion Rider" id="239" variant="201" baseHP="30" stageHP="2.5" shieldStrength="3" boss="0" champion="0" portrait="29" collisionDamage="1" collisionMass="14" collisionRadius="13" friction="1" numGridCollisionPoints="12" shadowSize="21">
         <bestiary anim="Bestiary" transform="0,0,1"/>
         <gibs amount="10" blood="1" bone="0" eye="0" gut="1" large="0"/>
     	<devolve id="23.3.0" weight="1" />
