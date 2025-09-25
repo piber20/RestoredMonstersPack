@@ -14,9 +14,9 @@ local Settings = {
 	ChompDMG = 40,
 	ChompCooldown = 10,
 	BloodLength = 150,
-	BonyCooldown = 25,
+	BonyCooldown = 35,
 	BonyRange = 200,
-	BonyShotSpeed = 11,
+	BonyShotSpeed = 8,
 	ExtraProjectileCount = 3
 }
 

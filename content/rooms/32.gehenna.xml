@@ -8008,7 +8008,76 @@
 			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24099" name="Pixel - [RM] - Corpse Eaters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0">
+	<room variant="24099" name="We Strvn - [RM] - What's happening to these Sandlot kids" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0">
+		<door exists="True" x="-1" y="3"/>
+		<door exists="True" x="6" y="-1"/>
+		<door exists="False" x="6" y="7"/>
+		<door exists="True" x="13" y="3"/>
+		<spawn x="0" y="0">
+			<entity type="4500" variant="10" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="12" y="0">
+			<entity type="4500" variant="10" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="1" y="1">
+			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="11" y="1">
+			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="4" y="3">
+			<entity type="227" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="8" y="3">
+			<entity type="227" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="6" y="4">
+			<entity type="841" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="2" y="5">
+			<entity type="841" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="4" y="5">
+			<entity type="969" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="5" y="5">
+			<entity type="1009" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="6" y="5">
+			<entity type="1009" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="7" y="5">
+			<entity type="1009" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="8" y="5">
+			<entity type="969" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="10" y="5">
+			<entity type="841" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="1" y="6">
+			<entity type="33" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="3" y="6">
+			<entity type="1009" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="4" y="6">
+			<entity type="1009" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="6" y="6">
+			<entity type="239" variant="200" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="8" y="6">
+			<entity type="1009" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="9" y="6">
+			<entity type="1009" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="11" y="6">
+			<entity type="33" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+	</room>
+	<room variant="24100" name="Pixel - [RM] - Corpse Eaters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -8029,7 +8098,7 @@
 			<entity type="1900" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24100" name="Pixel - [RM] - Corpse Eaters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0">
+	<room variant="24101" name="Pixel - [RM] - Corpse Eaters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -8065,7 +8134,7 @@
 			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24101" name="Pixel - [RM] - Corpse Eaters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0">
+	<room variant="24102" name="Pixel - [RM] - Corpse Eaters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -8092,7 +8161,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24102" name="Pixel - [RM] - Corpse Eaters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="15" weight="1.0">
+	<room variant="24103" name="Pixel - [RM] - Corpse Eaters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="15" weight="1.0">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -8131,7 +8200,7 @@
 			<entity type="893" variant="0" subtype="308" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24103" name="Pixel - [RM] - Corpse Eaters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0">
+	<room variant="24104" name="Pixel - [RM] - Corpse Eaters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0">
 		<door exists="False" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -8182,7 +8251,7 @@
 			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24104" name="Pixel - [RM] - Corpse Eaters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="15" weight="0.5">
+	<room variant="24105" name="Pixel - [RM] - Corpse Eaters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="15" weight="0.5">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -8227,7 +8296,7 @@
 			<entity type="863" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24105" name="Pixel - [RM] - Corpse Eaters - Tall" type="1" subtype="0" shape="4" width="13" height="14" difficulty="10" weight="1.0">
+	<room variant="24106" name="Pixel - [RM] - Corpse Eaters - Tall" type="1" subtype="0" shape="4" width="13" height="14" difficulty="10" weight="1.0">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="-1" y="10"/>
 		<door exists="True" x="6" y="-1"/>
@@ -8331,7 +8400,7 @@
 			<entity type="1901" variant="0" subtype="0" weight="2.0"/>
 		</spawn>
 	</room>
-	<room variant="24106" name="Pixel - [RM] - Corpse Eaters - Tall" type="1" subtype="0" shape="4" width="13" height="14" difficulty="10" weight="1.0">
+	<room variant="24107" name="Pixel - [RM] - Corpse Eaters - Tall" type="1" subtype="0" shape="4" width="13" height="14" difficulty="10" weight="1.0">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="-1" y="10"/>
 		<door exists="True" x="6" y="-1"/>
@@ -8414,7 +8483,7 @@
 			<entity type="239" variant="200" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24107" name="Pixel - [RM] - Corpse Eaters - Long" type="1" subtype="0" shape="6" width="26" height="7" difficulty="10" weight="1.0">
+	<room variant="24108" name="Pixel - [RM] - Corpse Eaters - Long" type="1" subtype="0" shape="6" width="26" height="7" difficulty="10" weight="1.0">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -8494,7 +8563,7 @@
 			<entity type="1900" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24108" name="Pixel - [RM] - Corpse Eaters - Large" type="1" subtype="0" shape="8" width="26" height="14" difficulty="10" weight="1.0">
+	<room variant="24109" name="Pixel - [RM] - Corpse Eaters - Large" type="1" subtype="0" shape="8" width="26" height="14" difficulty="10" weight="1.0">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="-1" y="10"/>
 		<door exists="True" x="6" y="-1"/>
@@ -8621,7 +8690,7 @@
 			<entity type="33" variant="1" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24109" name="Pixel - [RM] - Corpse Eaters - LTL" type="1" subtype="0" shape="9" width="26" height="14" difficulty="10" weight="1.0">
+	<room variant="24110" name="Pixel - [RM] - Corpse Eaters - LTL" type="1" subtype="0" shape="9" width="26" height="14" difficulty="10" weight="1.0">
 		<door exists="True" x="-1" y="10"/>
 		<door exists="True" x="6" y="6"/>
 		<door exists="True" x="6" y="14"/>
@@ -8742,7 +8811,7 @@
 			<entity type="1002" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24110" name="Pixel - [RM] - Strifers" type="1" subtype="0" shape="1" width="13" height="7" difficulty="1" weight="1.0">
+	<room variant="24111" name="Pixel - [RM] - Strifers" type="1" subtype="0" shape="1" width="13" height="7" difficulty="1" weight="1.0">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -8781,7 +8850,7 @@
 			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24111" name="Pixel - [RM] - Strifers" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0">
+	<room variant="24112" name="Pixel - [RM] - Strifers" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -8826,7 +8895,7 @@
 			<entity type="839" variant="200" subtype="1" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24112" name="Pixel - [RM] - Strifers" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0">
+	<room variant="24113" name="Pixel - [RM] - Strifers" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0">
 		<door exists="False" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -8907,7 +8976,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24113" name="Pixel - [RM] - Strifers" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0">
+	<room variant="24114" name="Pixel - [RM] - Strifers" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -8958,7 +9027,7 @@
 			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24114" name="Pixel - [RM] - Strifers" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0">
+	<room variant="24115" name="Pixel - [RM] - Strifers" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="False" x="6" y="-1"/>
 		<door exists="False" x="6" y="7"/>
@@ -9003,7 +9072,7 @@
 			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24115" name="Pixel - [RM] - Strifers" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0">
+	<room variant="24116" name="Pixel - [RM] - Strifers" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0">
 		<door exists="False" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -9063,7 +9132,7 @@
 			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24116" name="Pixel - [RM] - Strifers" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0">
+	<room variant="24117" name="Pixel - [RM] - Strifers" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="False" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -9153,7 +9222,7 @@
 			<entity type="1002" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24117" name="Pixel - [RM] - Strifers" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0">
+	<room variant="24118" name="Pixel - [RM] - Strifers" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0">
 		<door exists="False" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -9252,7 +9321,7 @@
 			<entity type="839" variant="200" subtype="1" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24118" name="Pixel - [RM] - Strifers" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0">
+	<room variant="24119" name="Pixel - [RM] - Strifers" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -9303,7 +9372,7 @@
 			<entity type="1010" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24119" name="Pixel - [RM] - Strifers" type="1" subtype="0" shape="1" width="13" height="7" difficulty="15" weight="1.0">
+	<room variant="24120" name="Pixel - [RM] - Strifers" type="1" subtype="0" shape="1" width="13" height="7" difficulty="15" weight="1.0">
 		<door exists="False" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -9372,7 +9441,7 @@
 			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24120" name="Pixel - [RM] - Strifers - Large" type="1" subtype="0" shape="8" width="26" height="14" difficulty="15" weight="1.0">
+	<room variant="24121" name="Pixel - [RM] - Strifers - Large" type="1" subtype="0" shape="8" width="26" height="14" difficulty="15" weight="1.0">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="-1" y="10"/>
 		<door exists="True" x="6" y="-1"/>
@@ -9607,7 +9676,7 @@
 			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24121" name="Pixel - [RM] - Strifers - LTR" type="1" subtype="0" shape="10" width="26" height="14" difficulty="10" weight="1.0">
+	<room variant="24122" name="Pixel - [RM] - Strifers - LTR" type="1" subtype="0" shape="10" width="26" height="14" difficulty="10" weight="1.0">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="-1" y="10"/>
 		<door exists="True" x="6" y="-1"/>
@@ -9803,7 +9872,7 @@
 			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24122" name="Pixel - [RM] - Strifers - LBL" type="1" subtype="0" shape="11" width="26" height="14" difficulty="5" weight="1.0">
+	<room variant="24123" name="Pixel - [RM] - Strifers - LBL" type="1" subtype="0" shape="11" width="26" height="14" difficulty="5" weight="1.0">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -9996,7 +10065,7 @@
 			<entity type="33" variant="1" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24123" name="Pixel - [RM] - Strifers - LBR" type="1" subtype="0" shape="12" width="26" height="14" difficulty="10" weight="1.0">
+	<room variant="24124" name="Pixel - [RM] - Strifers - LBR" type="1" subtype="0" shape="12" width="26" height="14" difficulty="10" weight="1.0">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="-1" y="10"/>
 		<door exists="False" x="6" y="-1"/>
@@ -10171,7 +10240,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24124" name="InfiniteCosmos - [RM] - Space invaders" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2023-10-31T17:11+00:00">
+	<room variant="24125" name="InfiniteCosmos - [RM] - Space invaders" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2023-10-31T17:11+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="False" x="6" y="-1"/>
 		<door exists="False" x="6" y="7"/>
@@ -10237,7 +10306,7 @@
 			<entity type="839" variant="200" subtype="1" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24125" name="InfiniteCosmos - [RM] - Double the danger..." type="1" subtype="0" shape="1" width="13" height="7" difficulty="1" weight="1.0" lastTestTime="2023-10-31T17:11+00:00">
+	<room variant="24126" name="InfiniteCosmos - [RM] - Double the danger..." type="1" subtype="0" shape="1" width="13" height="7" difficulty="1" weight="1.0" lastTestTime="2023-10-31T17:11+00:00">
 		<door exists="False" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -10276,7 +10345,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24126" name="InfiniteCosmos - [RM] - Alleyways" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2023-10-31T17:11+00:00">
+	<room variant="24127" name="InfiniteCosmos - [RM] - Alleyways" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2023-10-31T17:11+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="False" x="6" y="-1"/>
 		<door exists="False" x="6" y="7"/>
@@ -10396,7 +10465,7 @@
 			<entity type="6100" variant="3" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24127" name="InfiniteCosmos - [RM] - Necromancer's hideout" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2023-10-31T17:11+00:00">
+	<room variant="24128" name="InfiniteCosmos - [RM] - Necromancer's hideout" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2023-10-31T17:11+00:00">
 		<door exists="False" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -10483,7 +10552,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24128" name="InfiniteCosmos - [RM] - Beastmasters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2023-10-31T17:11+00:00">
+	<room variant="24129" name="InfiniteCosmos - [RM] - Beastmasters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2023-10-31T17:11+00:00">
 		<door exists="False" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -10534,7 +10603,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24129" name="InfiniteCosmos - [RM] - Not-so-good guards" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2023-10-31T17:11+00:00">
+	<room variant="24130" name="InfiniteCosmos - [RM] - Not-so-good guards" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2023-10-31T17:11+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -10588,7 +10657,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24130" name="InfiniteCosmos - [RM] - Secret passage" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2023-10-31T17:11+00:00">
+	<room variant="24131" name="InfiniteCosmos - [RM] - Secret passage" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2023-10-31T17:11+00:00">
 		<door exists="False" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -10675,7 +10744,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24131" name="InfiniteCosmos - [RM] - Uh oh" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="0.5" lastTestTime="2023-10-31T17:11+00:00">
+	<room variant="24132" name="InfiniteCosmos - [RM] - Uh oh" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="0.5" lastTestTime="2023-10-31T17:11+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -10708,7 +10777,7 @@
 			<entity type="211" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24132" name="InfiniteCosmos - [RM] - Odd one out" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2023-10-31T17:11+00:00">
+	<room variant="24133" name="InfiniteCosmos - [RM] - Odd one out" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2023-10-31T17:11+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -10759,7 +10828,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24133" name="InfiniteCosmos - [RM] - Fires" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2023-10-31T17:11+00:00">
+	<room variant="24134" name="InfiniteCosmos - [RM] - Fires" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2023-10-31T17:11+00:00">
 		<door exists="False" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -10837,7 +10906,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24134" name="InfiniteCosmos - [RM] - Extra boney" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2023-10-31T17:11+00:00">
+	<room variant="24135" name="InfiniteCosmos - [RM] - Extra boney" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2023-10-31T17:11+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -10876,7 +10945,7 @@
 			<entity type="1002" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24135" name="InfiniteCosmos - [RM] - Cursed inferno" type="1" subtype="0" shape="1" width="13" height="7" difficulty="15" weight="1.0" lastTestTime="2023-10-31T17:11+00:00">
+	<room variant="24136" name="InfiniteCosmos - [RM] - Cursed inferno" type="1" subtype="0" shape="1" width="13" height="7" difficulty="15" weight="1.0" lastTestTime="2023-10-31T17:11+00:00">
 		<door exists="False" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -10933,7 +11002,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24136" name="InfiniteCosmos - [RM] -  Wicked plans" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2023-10-31T17:11+00:00">
+	<room variant="24137" name="InfiniteCosmos - [RM] -  Wicked plans" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2023-10-31T17:11+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="False" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -10987,7 +11056,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24137" name="InfiniteCosmos - [RM] - Extra spicy" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2023-10-31T17:11+00:00">
+	<room variant="24138" name="InfiniteCosmos - [RM] - Extra spicy" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2023-10-31T17:11+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -11026,7 +11095,7 @@
 			<entity type="6100" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24138" name="InfiniteCosmos - [RM] - All-seeing grounds" type="1" subtype="0" shape="8" width="26" height="14" difficulty="15" weight="1.0" lastTestTime="2023-10-31T17:11+00:00">
+	<room variant="24139" name="InfiniteCosmos - [RM] - All-seeing grounds" type="1" subtype="0" shape="8" width="26" height="14" difficulty="15" weight="1.0" lastTestTime="2023-10-31T17:11+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="-1" y="10"/>
 		<door exists="True" x="6" y="-1"/>
@@ -11222,7 +11291,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24139" name="InfiniteCosmos - [RM] - Keeping in line with the classic &quot;Beggar in a dangerous spot&quot; seen in the alt path" type="1" subtype="0" shape="3" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2023-10-31T17:11+00:00">
+	<room variant="24140" name="InfiniteCosmos - [RM] - Keeping in line with the classic &quot;Beggar in a dangerous spot&quot; seen in the alt path" type="1" subtype="0" shape="3" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2023-10-31T17:11+00:00">
 		<door exists="False" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
 		<spawn x="5" y="0">
@@ -11247,7 +11316,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24140" name="InfiniteCosmos - [RM] - Randomly generated encounter" type="1" subtype="0" shape="1" width="13" height="7" difficulty="15" weight="1.0" lastTestTime="2023-10-31T17:11+00:00">
+	<room variant="24141" name="InfiniteCosmos - [RM] - Randomly generated encounter" type="1" subtype="0" shape="1" width="13" height="7" difficulty="15" weight="1.0" lastTestTime="2023-10-31T17:11+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -11307,7 +11376,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24141" name="InfiniteCosmos - [RM] - Defenders I think" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2023-10-31T17:11+00:00">
+	<room variant="24142" name="InfiniteCosmos - [RM] - Defenders I think" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2023-10-31T17:11+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="False" x="6" y="-1"/>
 		<door exists="False" x="6" y="7"/>
@@ -11376,7 +11445,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24142" name="InfiniteCosmos - [RM] -  idk man if you want good room names come up with them yourself" type="1" subtype="0" shape="1" width="13" height="7" difficulty="15" weight="1.0" lastTestTime="2023-10-31T17:11+00:00">
+	<room variant="24143" name="InfiniteCosmos - [RM] -  idk man if you want good room names come up with them yourself" type="1" subtype="0" shape="1" width="13" height="7" difficulty="15" weight="1.0" lastTestTime="2023-10-31T17:11+00:00">
 		<door exists="False" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -11475,7 +11544,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24143" name="InfiniteCosmos - [RM] - Void Portals (not really)" type="1" subtype="0" shape="9" width="26" height="14" difficulty="10" weight="1.0" lastTestTime="2023-10-31T17:11+00:00">
+	<room variant="24144" name="InfiniteCosmos - [RM] - Void Portals (not really)" type="1" subtype="0" shape="9" width="26" height="14" difficulty="10" weight="1.0" lastTestTime="2023-10-31T17:11+00:00">
 		<door exists="True" x="-1" y="10"/>
 		<door exists="True" x="6" y="6"/>
 		<door exists="True" x="6" y="14"/>
@@ -11662,7 +11731,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24144" name="InfiniteCosmos - [RM] -  Pillar Guards" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2023-10-31T17:11+00:00">
+	<room variant="24145" name="InfiniteCosmos - [RM] -  Pillar Guards" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2023-10-31T17:11+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -11689,7 +11758,7 @@
 			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24145" name="InfiniteCosmos - [RM] -  Carrion Rider?" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2023-10-31T17:11+00:00">
+	<room variant="24146" name="InfiniteCosmos - [RM] -  Carrion Rider?" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2023-10-31T17:11+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="False" x="6" y="-1"/>
 		<door exists="False" x="6" y="7"/>
@@ -11743,7 +11812,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24146" name="InfiniteCosmos - [RM] - And strifer makes three" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2023-10-31T17:11+00:00">
+	<room variant="24147" name="InfiniteCosmos - [RM] - And strifer makes three" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2023-10-31T17:11+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="False" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -11812,7 +11881,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24147" name="InfiniteCosmos - [RM] - Extra Spicy" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2023-10-31T17:11+00:00">
+	<room variant="24148" name="InfiniteCosmos - [RM] - Extra Spicy" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2023-10-31T17:11+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -11854,7 +11923,7 @@
 			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24148" name="InfiniteCosmos - [RM] - More like a demon summoner" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2023-10-31T17:11+00:00">
+	<room variant="24149" name="InfiniteCosmos - [RM] - More like a demon summoner" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2023-10-31T17:11+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -11893,7 +11962,7 @@
 			<entity type="883" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24149" name="InfiniteCosmos - [RM] - M" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2023-10-31T17:11+00:00">
+	<room variant="24150" name="InfiniteCosmos - [RM] - M" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2023-10-31T17:11+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="False" x="6" y="-1"/>
 		<door exists="False" x="6" y="7"/>
@@ -12103,7 +12172,7 @@
 			<entity type="6100" variant="1" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24150" name="InfiniteCosmos - [RM] - We'll protect you, Mr. President!" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2023-10-31T17:11+00:00">
+	<room variant="24151" name="InfiniteCosmos - [RM] - We'll protect you, Mr. President!" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2023-10-31T17:11+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="False" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -12169,7 +12238,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24151" name="InfiniteCosmos - [RM] - Warp Zone... kinda" type="1" subtype="0" shape="1" width="13" height="7" difficulty="15" weight="1.0" lastTestTime="2023-10-31T17:11+00:00">
+	<room variant="24152" name="InfiniteCosmos - [RM] - Warp Zone... kinda" type="1" subtype="0" shape="1" width="13" height="7" difficulty="15" weight="1.0" lastTestTime="2023-10-31T17:11+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -12244,7 +12313,7 @@
 			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24152" name="InfiniteCosmos - [RM] - Meet the Necromancer" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2024-01-05T01:57+00:00">
+	<room variant="24153" name="InfiniteCosmos - [RM] - Meet the Necromancer" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2024-01-05T01:57+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -12271,7 +12340,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24153" name="InfiniteCosmos - [RM] - Rise of the Skeletons" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-05T01:57+00:00">
+	<room variant="24154" name="InfiniteCosmos - [RM] - Rise of the Skeletons" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-05T01:57+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="False" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -12343,7 +12412,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24154" name="InfiniteCosmos - [RM] - This is some real cursed stuff" type="1" subtype="0" shape="1" width="13" height="7" difficulty="15" weight="1.0" lastTestTime="2024-01-05T01:57+00:00">
+	<room variant="24155" name="InfiniteCosmos - [RM] - This is some real cursed stuff" type="1" subtype="0" shape="1" width="13" height="7" difficulty="15" weight="1.0" lastTestTime="2024-01-05T01:57+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="False" x="6" y="7"/>
@@ -12370,7 +12439,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24155" name="InfiniteCosmos - [RM] - Skeleton Flame War" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-05T01:57+00:00">
+	<room variant="24156" name="InfiniteCosmos - [RM] - Skeleton Flame War" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-05T01:57+00:00">
 		<door exists="False" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -12433,7 +12502,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24156" name="InfiniteCosmos - [RM] - Box o' Fire 'n' bones" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-05T01:57+00:00">
+	<room variant="24157" name="InfiniteCosmos - [RM] - Box o' Fire 'n' bones" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-05T01:57+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -12493,7 +12562,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24157" name="InfiniteCosmos - [RM] - Freaky Cult" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-05T01:57+00:00">
+	<room variant="24158" name="InfiniteCosmos - [RM] - Freaky Cult" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-05T01:57+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -12556,7 +12625,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24158" name="InfiniteCosmos - [RM] - Vis Versa here, back to blow away the competition" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-05T01:57+00:00">
+	<room variant="24159" name="InfiniteCosmos - [RM] - Vis Versa here, back to blow away the competition" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-05T01:57+00:00">
 		<door exists="False" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -12637,7 +12706,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24159" name="InfiniteCosmos - [RM] - Lasers and Bones" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-05T01:57+00:00">
+	<room variant="24160" name="InfiniteCosmos - [RM] - Lasers and Bones" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-05T01:57+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -12685,7 +12754,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24160" name="InfiniteCosmos - [RM] - This one's a freebie let's be honest" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2024-01-05T01:57+00:00">
+	<room variant="24161" name="InfiniteCosmos - [RM] - This one's a freebie let's be honest" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2024-01-05T01:57+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -12736,7 +12805,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24161" name="InfiniteCosmos - [RM] - Where do the demons come from anyway?" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-05T01:57+00:00">
+	<room variant="24162" name="InfiniteCosmos - [RM] - Where do the demons come from anyway?" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-05T01:57+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -12787,7 +12856,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24162" name="InfiniteCosmos - [RM] - Dark Warp" type="1" subtype="0" shape="1" width="13" height="7" difficulty="15" weight="1.0" lastTestTime="2024-01-05T01:57+00:00">
+	<room variant="24163" name="InfiniteCosmos - [RM] - Dark Warp" type="1" subtype="0" shape="1" width="13" height="7" difficulty="15" weight="1.0" lastTestTime="2024-01-05T01:57+00:00">
 		<door exists="False" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -12856,7 +12925,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24163" name="InfiniteCosmos - [RM] - A necromancer, a minotaur, and a portal walk into a bar..." type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-05T01:57+00:00">
+	<room variant="24164" name="InfiniteCosmos - [RM] - A necromancer, a minotaur, and a portal walk into a bar..." type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-05T01:57+00:00">
 		<door exists="False" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -12913,7 +12982,7 @@
 			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24164" name="InfiniteCosmos - [RM] - Death's sidekicks" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2024-01-05T01:57+00:00">
+	<room variant="24165" name="InfiniteCosmos - [RM] - Death's sidekicks" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2024-01-05T01:57+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -12976,7 +13045,7 @@
 			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24165" name="InfiniteCosmos - [RM] - Skeletons yummy" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-05T01:57+00:00">
+	<room variant="24166" name="InfiniteCosmos - [RM] - Skeletons yummy" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-05T01:57+00:00">
 		<door exists="False" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -13036,7 +13105,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24166" name="InfiniteCosmos - [RM] - Look at him, he's all skin and bones" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-05T01:57+00:00">
+	<room variant="24167" name="InfiniteCosmos - [RM] - Look at him, he's all skin and bones" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-05T01:57+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -13081,7 +13150,7 @@
 			<entity type="6100" variant="6" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24167" name="InfiniteCosmos - [RM] - Target Practice" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-05T01:57+00:00">
+	<room variant="24168" name="InfiniteCosmos - [RM] - Target Practice" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-05T01:57+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="False" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -13126,7 +13195,7 @@
 			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24168" name="InfiniteCosmos - [RM] - Release the GOATS!" type="1" subtype="0" shape="1" width="13" height="7" difficulty="15" weight="1.0" lastTestTime="2024-01-05T01:57+00:00">
+	<room variant="24169" name="InfiniteCosmos - [RM] - Release the GOATS!" type="1" subtype="0" shape="1" width="13" height="7" difficulty="15" weight="1.0" lastTestTime="2024-01-05T01:57+00:00">
 		<door exists="False" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -13216,7 +13285,7 @@
 			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24169" name="InfiniteCosmos - [RM] - Witness my greatest creation!" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2024-01-05T01:57+00:00">
+	<room variant="24170" name="InfiniteCosmos - [RM] - Witness my greatest creation!" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2024-01-05T01:57+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="False" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -13303,7 +13372,7 @@
 			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24170" name="InfiniteCosmos - [RM] - Running in the maze" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-05T01:57+00:00">
+	<room variant="24171" name="InfiniteCosmos - [RM] - Running in the maze" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-05T01:57+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -13351,7 +13420,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24171" name="InfiniteCosmos - [RM] - Bloody Steel" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-05T01:57+00:00">
+	<room variant="24172" name="InfiniteCosmos - [RM] - Bloody Steel" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-05T01:57+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -13423,7 +13492,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24172" name="InfiniteCosmos - [RM] - Weird Bridge" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-05T01:57+00:00">
+	<room variant="24173" name="InfiniteCosmos - [RM] - Weird Bridge" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-05T01:57+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="False" x="6" y="-1"/>
 		<door exists="False" x="6" y="7"/>
@@ -13540,7 +13609,7 @@
 			<entity type="1002" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24173" name="InfiniteCosmos - [RM] - The Ol' Ball without chain" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-05T01:57+00:00">
+	<room variant="24174" name="InfiniteCosmos - [RM] - The Ol' Ball without chain" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-05T01:57+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -13591,7 +13660,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24174" name="InfiniteCosmos - [RM] - Eye See You" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-05T01:57+00:00">
+	<room variant="24175" name="InfiniteCosmos - [RM] - Eye See You" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-05T01:57+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -13648,7 +13717,7 @@
 			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24175" name="InfiniteCosmos - [RM] - Cult of Blood and Bone" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-05T01:57+00:00">
+	<room variant="24176" name="InfiniteCosmos - [RM] - Cult of Blood and Bone" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-05T01:57+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -13732,7 +13801,7 @@
 			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24176" name="InfiniteCosmos - [RM] - Shadowy Puppetmaster" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-05T01:57+00:00">
+	<room variant="24177" name="InfiniteCosmos - [RM] - Shadowy Puppetmaster" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-05T01:57+00:00">
 		<door exists="False" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -13822,7 +13891,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24177" name="InfiniteCosmos - [RM] - You interrupted me in the middle of my surgery" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-05T01:57+00:00">
+	<room variant="24178" name="InfiniteCosmos - [RM] - You interrupted me in the middle of my surgery" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-05T01:57+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -13867,7 +13936,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24178" name="InfiniteCosmos - [RM] - Release the demons!" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-05T01:57+00:00">
+	<room variant="24179" name="InfiniteCosmos - [RM] - Release the demons!" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-05T01:57+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="False" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -13921,7 +13990,7 @@
 			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24179" name="InfiniteCosmos - [RM] - Boney Grimace" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2024-01-05T01:57+00:00">
+	<room variant="24180" name="InfiniteCosmos - [RM] - Boney Grimace" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2024-01-05T01:57+00:00">
 		<door exists="False" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -14002,7 +14071,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24180" name="InfiniteCosmos - [RM] - Skull Smasher 3000" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-05T01:57+00:00">
+	<room variant="24181" name="InfiniteCosmos - [RM] - Skull Smasher 3000" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-05T01:57+00:00">
 		<door exists="False" x="-1" y="3"/>
 		<door exists="False" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -14122,7 +14191,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24181" name="InfiniteCosmos - [RM] - Skeleton Slam" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-05T15:49+00:00">
+	<room variant="24182" name="InfiniteCosmos - [RM] - Skeleton Slam" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-05T15:49+00:00">
 		<door exists="False" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -14185,7 +14254,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24182" name="InfiniteCosmos - [RM] - Enter the arena" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-05T01:57+00:00">
+	<room variant="24183" name="InfiniteCosmos - [RM] - Enter the arena" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-05T01:57+00:00">
 		<door exists="False" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -14323,7 +14392,7 @@
 			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24183" name="InfiniteCosmos - [RM] - Bone Inferno" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2024-01-05T01:57+00:00">
+	<room variant="24184" name="InfiniteCosmos - [RM] - Bone Inferno" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2024-01-05T01:57+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -14419,7 +14488,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24184" name="InfiniteCosmos - [RM] - Warped Reality" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2024-01-05T01:57+00:00">
+	<room variant="24185" name="InfiniteCosmos - [RM] - Warped Reality" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2024-01-05T01:57+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="False" x="6" y="-1"/>
 		<door exists="False" x="6" y="7"/>
@@ -14548,7 +14617,7 @@
 			<entity type="6100" variant="3" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24185" name="InfiniteCosmos - [RM] - Dodge and Weave" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-05T15:49+00:00">
+	<room variant="24186" name="InfiniteCosmos - [RM] - Dodge and Weave" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-05T15:49+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -14563,7 +14632,7 @@
 			<entity type="892" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24186" name="InfiniteCosmos - [RM] - Hollow" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2024-01-05T01:57+00:00">
+	<room variant="24187" name="InfiniteCosmos - [RM] - Hollow" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2024-01-05T01:57+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -14632,7 +14701,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24187" name="InfiniteCosmos - [RM] - Death's Visage" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-05T01:57+00:00">
+	<room variant="24188" name="InfiniteCosmos - [RM] - Death's Visage" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-05T01:57+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -14692,7 +14761,7 @@
 			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24188" name="InfiniteCosmos - [RM] - Get out of our room" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-05T01:57+00:00">
+	<room variant="24189" name="InfiniteCosmos - [RM] - Get out of our room" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-05T01:57+00:00">
 		<door exists="False" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -14800,7 +14869,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24189" name="InfiniteCosmos - [RM] - Skeleton Trio" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-05T15:49+00:00">
+	<room variant="24190" name="InfiniteCosmos - [RM] - Skeleton Trio" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-05T15:49+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -14875,7 +14944,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24190" name="InfiniteCosmos - [RM] - The pit is used for sacrifices" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-05T15:49+00:00">
+	<room variant="24191" name="InfiniteCosmos - [RM] - The pit is used for sacrifices" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-05T15:49+00:00">
 		<door exists="False" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -14995,7 +15064,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24191" name="InfiniteCosmos - [RM] - The pit is also used for sacrifices " type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2024-01-08T23:51+00:00">
+	<room variant="24192" name="InfiniteCosmos - [RM] - The pit is also used for sacrifices " type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2024-01-08T23:51+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -15127,7 +15196,7 @@
 			<entity type="969" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24192" name="InfiniteCosmos - [RM] - Sorry, room's under construction, we still need to fill these pits with the dead skeletons" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-05T15:49+00:00">
+	<room variant="24193" name="InfiniteCosmos - [RM] - Sorry, room's under construction, we still need to fill these pits with the dead skeletons" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-05T15:49+00:00">
 		<door exists="False" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -15250,7 +15319,7 @@
 			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24193" name="InfiniteCosmos - [RM] - Mystery Teleporter" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2024-01-05T15:49+00:00">
+	<room variant="24194" name="InfiniteCosmos - [RM] - Mystery Teleporter" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2024-01-05T15:49+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -15271,7 +15340,7 @@
 			<entity type="6100" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24194" name="InfiniteCosmos - [RM] - Blood Orb" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2024-01-05T15:49+00:00">
+	<room variant="24195" name="InfiniteCosmos - [RM] - Blood Orb" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2024-01-05T15:49+00:00">
 		<door exists="False" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -15352,7 +15421,7 @@
 			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24195" name="InfiniteCosmos - [RM] - Opposing Forces" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-05T15:49+00:00">
+	<room variant="24196" name="InfiniteCosmos - [RM] - Opposing Forces" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-05T15:49+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -15427,7 +15496,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24196" name="InfiniteCosmos - [RM] - Strange Pathways" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2024-01-05T15:49+00:00">
+	<room variant="24197" name="InfiniteCosmos - [RM] - Strange Pathways" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2024-01-05T15:49+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -15460,7 +15529,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24197" name="InfiniteCosmos - [RM] - Tight Squeeze" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2024-01-05T15:49+00:00">
+	<room variant="24198" name="InfiniteCosmos - [RM] - Tight Squeeze" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2024-01-05T15:49+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -15541,7 +15610,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24198" name="InfiniteCosmos - [RM] - Skeleton Jamboree" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2024-01-05T15:49+00:00">
+	<room variant="24199" name="InfiniteCosmos - [RM] - Skeleton Jamboree" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2024-01-05T15:49+00:00">
 		<door exists="False" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -15646,7 +15715,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24199" name="InfiniteCosmos - [RM] - Gather Round" type="1" subtype="0" shape="1" width="13" height="7" difficulty="15" weight="1.0" lastTestTime="2024-01-05T15:49+00:00">
+	<room variant="24200" name="InfiniteCosmos - [RM] - Gather Round" type="1" subtype="0" shape="1" width="13" height="7" difficulty="15" weight="1.0" lastTestTime="2024-01-05T15:49+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -15685,7 +15754,7 @@
 			<entity type="1900" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24200" name="InfiniteCosmos - [RM] - Necromancer's hall" type="1" subtype="0" shape="2" width="13" height="7" difficulty="10" weight="1.0">
+	<room variant="24201" name="InfiniteCosmos - [RM] - Necromancer's hall" type="1" subtype="0" shape="2" width="13" height="7" difficulty="10" weight="1.0">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="13" y="3"/>
 		<spawn x="0" y="2">
@@ -15698,7 +15767,7 @@
 			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24201" name="InfiniteCosmos - [RM] - Necromancer's closet" type="1" subtype="0" shape="3" width="13" height="7" difficulty="10" weight="1.0">
+	<room variant="24202" name="InfiniteCosmos - [RM] - Necromancer's closet" type="1" subtype="0" shape="3" width="13" height="7" difficulty="10" weight="1.0">
 		<door exists="False" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
 		<spawn x="4" y="0">
@@ -15726,7 +15795,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24202" name="InfiniteCosmos - [RM] - Domain of Danger" type="1" subtype="0" shape="4" width="13" height="14" difficulty="10" weight="1.0">
+	<room variant="24203" name="InfiniteCosmos - [RM] - Domain of Danger" type="1" subtype="0" shape="4" width="13" height="14" difficulty="10" weight="1.0">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="-1" y="10"/>
 		<door exists="True" x="6" y="-1"/>
@@ -15839,7 +15908,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24203" name="InfiniteCosmos - [RM] - Cool Shapes" type="1" subtype="0" shape="4" width="13" height="14" difficulty="10" weight="1.0">
+	<room variant="24204" name="InfiniteCosmos - [RM] - Cool Shapes" type="1" subtype="0" shape="4" width="13" height="14" difficulty="10" weight="1.0">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="-1" y="10"/>
 		<door exists="True" x="6" y="-1"/>
@@ -16063,7 +16132,7 @@
 			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24204" name="InfiniteCosmos - [RM] - A horde of bones" type="1" subtype="0" shape="4" width="13" height="14" difficulty="10" weight="1.0">
+	<room variant="24205" name="InfiniteCosmos - [RM] - A horde of bones" type="1" subtype="0" shape="4" width="13" height="14" difficulty="10" weight="1.0">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="-1" y="10"/>
 		<door exists="True" x="6" y="-1"/>
@@ -16167,7 +16236,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24205" name="InfiniteCosmos - [RM] - The long boney road" type="1" subtype="0" shape="5" width="13" height="14" difficulty="10" weight="1.0">
+	<room variant="24206" name="InfiniteCosmos - [RM] - The long boney road" type="1" subtype="0" shape="5" width="13" height="14" difficulty="10" weight="1.0">
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="14"/>
 		<spawn x="8" y="1">
@@ -16192,7 +16261,7 @@
 			<entity type="6100" variant="6" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24206" name="InfiniteCosmos - [RM] - Prepare for pain" type="1" subtype="0" shape="6" width="26" height="7" difficulty="10" weight="1.0">
+	<room variant="24207" name="InfiniteCosmos - [RM] - Prepare for pain" type="1" subtype="0" shape="6" width="26" height="7" difficulty="10" weight="1.0">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -16302,7 +16371,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24207" name="InfiniteCosmos - [RM] - Dubious Pits" type="1" subtype="0" shape="6" width="26" height="7" difficulty="10" weight="1.0">
+	<room variant="24208" name="InfiniteCosmos - [RM] - Dubious Pits" type="1" subtype="0" shape="6" width="26" height="7" difficulty="10" weight="1.0">
 		<door exists="False" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -16649,7 +16718,7 @@
 			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24208" name="InfiniteCosmos - [RM] - Miscellanious Props" type="1" subtype="0" shape="6" width="26" height="7" difficulty="10" weight="1.0">
+	<room variant="24209" name="InfiniteCosmos - [RM] - Miscellanious Props" type="1" subtype="0" shape="6" width="26" height="7" difficulty="10" weight="1.0">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -16714,7 +16783,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24209" name="InfiniteCosmos - [RM] - Tight hall" type="1" subtype="0" shape="7" width="26" height="7" difficulty="10" weight="1.0">
+	<room variant="24210" name="InfiniteCosmos - [RM] - Tight hall" type="1" subtype="0" shape="7" width="26" height="7" difficulty="10" weight="1.0">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="26" y="3"/>
 		<spawn x="0" y="2">
@@ -16745,7 +16814,7 @@
 			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24210" name="InfiniteCosmos - [RM] - What exactly is a group of necromancers called?" type="1" subtype="0" shape="8" width="26" height="14" difficulty="10" weight="1.0">
+	<room variant="24211" name="InfiniteCosmos - [RM] - What exactly is a group of necromancers called?" type="1" subtype="0" shape="8" width="26" height="14" difficulty="10" weight="1.0">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="-1" y="10"/>
 		<door exists="True" x="6" y="-1"/>
@@ -17007,7 +17076,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24211" name="InfiniteCosmos - [RM] - The Great Divide" type="1" subtype="0" shape="8" width="26" height="14" difficulty="10" weight="1.0">
+	<room variant="24212" name="InfiniteCosmos - [RM] - The Great Divide" type="1" subtype="0" shape="8" width="26" height="14" difficulty="10" weight="1.0">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="-1" y="10"/>
 		<door exists="True" x="6" y="-1"/>
@@ -17473,7 +17542,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24212" name="InfiniteCosmos - [RM] - The classic pit room" type="1" subtype="0" shape="9" width="26" height="14" difficulty="5" weight="1.0">
+	<room variant="24213" name="InfiniteCosmos - [RM] - The classic pit room" type="1" subtype="0" shape="9" width="26" height="14" difficulty="5" weight="1.0">
 		<door exists="True" x="-1" y="10"/>
 		<door exists="True" x="6" y="6"/>
 		<door exists="True" x="6" y="14"/>
@@ -17732,7 +17801,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24213" name="InfiniteCosmos - [RM] - Into the tight squeeze" type="1" subtype="0" shape="10" width="26" height="14" difficulty="10" weight="1.0" lastTestTime="2024-01-08T23:51+00:00">
+	<room variant="24214" name="InfiniteCosmos - [RM] - Into the tight squeeze" type="1" subtype="0" shape="10" width="26" height="14" difficulty="10" weight="1.0" lastTestTime="2024-01-08T23:51+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="-1" y="10"/>
 		<door exists="True" x="6" y="-1"/>
@@ -17916,7 +17985,7 @@
 			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24214" name="InfiniteCosmos - [RM] - Halls of the Damned" type="1" subtype="0" shape="11" width="26" height="14" difficulty="10" weight="1.0">
+	<room variant="24215" name="InfiniteCosmos - [RM] - Halls of the Damned" type="1" subtype="0" shape="11" width="26" height="14" difficulty="10" weight="1.0">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -18040,7 +18109,7 @@
 			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24215" name="InfiniteCosmos - [RM] - 50/50 chance" type="1" subtype="0" shape="12" width="26" height="14" difficulty="10" weight="1.0" lastTestTime="2024-01-08T23:51+00:00">
+	<room variant="24216" name="InfiniteCosmos - [RM] - 50/50 chance" type="1" subtype="0" shape="12" width="26" height="14" difficulty="10" weight="1.0" lastTestTime="2024-01-08T23:51+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="-1" y="10"/>
 		<door exists="True" x="6" y="-1"/>
@@ -18281,7 +18350,7 @@
 			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24216" name="InfiniteCosmos - [RM] - Elite Guard" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0">
+	<room variant="24217" name="InfiniteCosmos - [RM] - Elite Guard" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0">
 		<door exists="False" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -18368,7 +18437,7 @@
 			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24217" name="InfiniteCosmos - [RM] - The mere existence of brimfly reduces a rooms difficulty" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0">
+	<room variant="24218" name="InfiniteCosmos - [RM] - The mere existence of brimfly reduces a rooms difficulty" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -18455,7 +18524,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24218" name="InfiniteCosmos - [RM] - Playing with flies" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0">
+	<room variant="24219" name="InfiniteCosmos - [RM] - Playing with flies" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -18524,7 +18593,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24219" name="InfiniteCosmos - [RM] - Whoops its off center" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0">
+	<room variant="24220" name="InfiniteCosmos - [RM] - Whoops its off center" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -18551,7 +18620,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24220" name="InfiniteCosmos - [RM] - Prepare to be eaten" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2024-01-06T13:49+00:00">
+	<room variant="24221" name="InfiniteCosmos - [RM] - Prepare to be eaten" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2024-01-06T13:49+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -18599,7 +18668,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24221" name="InfiniteCosmos - [RM] - You ever just been so hungry you ate the bones off the thanksgiving turkey" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2024-01-06T13:49+00:00">
+	<room variant="24222" name="InfiniteCosmos - [RM] - You ever just been so hungry you ate the bones off the thanksgiving turkey" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2024-01-06T13:49+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="False" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -18668,7 +18737,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24222" name="InfiniteCosmos - [RM] - Endlessly repeating snack" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-06T13:49+00:00">
+	<room variant="24223" name="InfiniteCosmos - [RM] - Endlessly repeating snack" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-06T13:49+00:00">
 		<door exists="False" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -18725,7 +18794,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24223" name="InfiniteCosmos - [RM] - Skeleton Flambe" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2024-01-06T16:03+00:00">
+	<room variant="24224" name="InfiniteCosmos - [RM] - Skeleton Flambe" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2024-01-06T16:03+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -18770,7 +18839,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24224" name="InfiniteCosmos - [RM] - Super Skeleton Flambe" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-06T16:03+00:00">
+	<room variant="24225" name="InfiniteCosmos - [RM] - Super Skeleton Flambe" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-06T16:03+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -18830,7 +18899,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24225" name="InfiniteCosmos - [RM] - Cult of the worm" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2024-01-06T16:03+00:00">
+	<room variant="24226" name="InfiniteCosmos - [RM] - Cult of the worm" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2024-01-06T16:03+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -18881,7 +18950,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24226" name="InfiniteCosmos - [RM] - Who will kill who?" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-06T16:03+00:00">
+	<room variant="24227" name="InfiniteCosmos - [RM] - Who will kill who?" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-06T16:03+00:00">
 		<door exists="False" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -18950,7 +19019,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24227" name="InfiniteCosmos - [RM] - More food for me" type="1" subtype="0" shape="1" width="13" height="7" difficulty="15" weight="1.0" lastTestTime="2024-01-06T16:03+00:00">
+	<room variant="24228" name="InfiniteCosmos - [RM] - More food for me" type="1" subtype="0" shape="1" width="13" height="7" difficulty="15" weight="1.0" lastTestTime="2024-01-06T16:03+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -19001,7 +19070,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24228" name="InfiniteCosmos - [RM] - Tastes like brimstone" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-06T16:03+00:00">
+	<room variant="24229" name="InfiniteCosmos - [RM] - Tastes like brimstone" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-06T16:03+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -19034,7 +19103,7 @@
 			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24229" name="InfiniteCosmos - [RM] - Demon eater" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-06T16:03+00:00">
+	<room variant="24230" name="InfiniteCosmos - [RM] - Demon eater" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-06T16:03+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -19073,7 +19142,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24230" name="InfiniteCosmos - [RM] - Feeding Portals" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-06T16:03+00:00">
+	<room variant="24231" name="InfiniteCosmos - [RM] - Feeding Portals" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-06T16:03+00:00">
 		<door exists="False" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -19148,7 +19217,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24231" name="InfiniteCosmos - [RM] - Some skulls just can't be eaten" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-06T16:03+00:00">
+	<room variant="24232" name="InfiniteCosmos - [RM] - Some skulls just can't be eaten" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-06T16:03+00:00">
 		<door exists="False" x="-1" y="3"/>
 		<door exists="False" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -19244,7 +19313,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24232" name="InfiniteCosmos - [RM] - Yeehaw" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="0.5" lastTestTime="2024-01-06T16:03+00:00">
+	<room variant="24233" name="InfiniteCosmos - [RM] - Yeehaw" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="0.5" lastTestTime="2024-01-06T16:03+00:00">
 		<door exists="False" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -19313,7 +19382,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24233" name="InfiniteCosmos - [RM] - Prepare for pain" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="0.5" lastTestTime="2024-01-06T16:03+00:00">
+	<room variant="24234" name="InfiniteCosmos - [RM] - Prepare for pain" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="0.5" lastTestTime="2024-01-06T16:03+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="False" x="6" y="7"/>
@@ -19394,7 +19463,7 @@
 			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24234" name="InfiniteCosmos - [RM] - Juicy" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-06T16:03+00:00">
+	<room variant="24235" name="InfiniteCosmos - [RM] - Juicy" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-06T16:03+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -19427,7 +19496,7 @@
 			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24235" name="InfiniteCosmos - [RM] - Subdue the beast" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-06T16:03+00:00">
+	<room variant="24236" name="InfiniteCosmos - [RM] - Subdue the beast" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-06T16:03+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -19490,7 +19559,7 @@
 			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24236" name="InfiniteCosmos - [RM] - Feeding time" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2024-01-06T16:03+00:00">
+	<room variant="24237" name="InfiniteCosmos - [RM] - Feeding time" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2024-01-06T16:03+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="False" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -19535,7 +19604,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24237" name="InfiniteCosmos - [RM] - Hunger never ceases" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-06T16:03+00:00">
+	<room variant="24238" name="InfiniteCosmos - [RM] - Hunger never ceases" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-06T16:03+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -19598,7 +19667,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24238" name="InfiniteCosmos - [RM] - Double the taste" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-06T16:03+00:00">
+	<room variant="24239" name="InfiniteCosmos - [RM] - Double the taste" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-06T16:03+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -19634,7 +19703,7 @@
 			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24239" name="InfiniteCosmos - [RM] - A dark and tasty knight" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2024-01-06T16:03+00:00">
+	<room variant="24240" name="InfiniteCosmos - [RM] - A dark and tasty knight" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2024-01-06T16:03+00:00">
 		<door exists="False" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -19673,7 +19742,7 @@
 			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24240" name="InfiniteCosmos - [RM] - Bloodsplosion time" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-06T16:03+00:00">
+	<room variant="24241" name="InfiniteCosmos - [RM] - Bloodsplosion time" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-06T16:03+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -19688,7 +19757,7 @@
 			<entity type="892" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24241" name="InfiniteCosmos - [RM] - Maced up" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-06T16:03+00:00">
+	<room variant="24242" name="InfiniteCosmos - [RM] - Maced up" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-06T16:03+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -19733,7 +19802,7 @@
 			<entity type="6100" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24242" name="InfiniteCosmos - [RM] - Making up for the lack of eyes on the corpse eaters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-06T16:03+00:00">
+	<room variant="24243" name="InfiniteCosmos - [RM] - Making up for the lack of eyes on the corpse eaters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-06T16:03+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -19784,7 +19853,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24243" name="InfiniteCosmos - [RM] - Sacrifices" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-06T16:03+00:00">
+	<room variant="24244" name="InfiniteCosmos - [RM] - Sacrifices" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-06T16:03+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="False" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -19817,7 +19886,7 @@
 			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24244" name="InfiniteCosmos - [RM] - Blood lasers and blood eaters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-08T23:51+00:00">
+	<room variant="24245" name="InfiniteCosmos - [RM] - Blood lasers and blood eaters" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-08T23:51+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="False" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -19901,7 +19970,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24245" name="InfiniteCosmos - [RM] - Heart breaker" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-07T14:46+00:00">
+	<room variant="24246" name="InfiniteCosmos - [RM] - Heart breaker" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-07T14:46+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="False" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -19940,7 +20009,7 @@
 			<entity type="1900" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24246" name="InfiniteCosmos - [RM] - Devourer of Demons" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-07T14:46+00:00">
+	<room variant="24247" name="InfiniteCosmos - [RM] - Devourer of Demons" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-07T14:46+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -19961,7 +20030,7 @@
 			<entity type="251" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24247" name="InfiniteCosmos - [RM] - Get him! He's riding without a permit!" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="0.5" lastTestTime="2024-01-07T14:46+00:00">
+	<room variant="24248" name="InfiniteCosmos - [RM] - Get him! He's riding without a permit!" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="0.5" lastTestTime="2024-01-07T14:46+00:00">
 		<door exists="False" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -20009,7 +20078,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24248" name="InfiniteCosmos - [RM] - Spike orbit" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2024-01-07T14:46+00:00">
+	<room variant="24249" name="InfiniteCosmos - [RM] - Spike orbit" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2024-01-07T14:46+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -20030,7 +20099,7 @@
 			<entity type="211" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24249" name="InfiniteCosmos - [RM] - Roast Beast" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-07T14:46+00:00">
+	<room variant="24250" name="InfiniteCosmos - [RM] - Roast Beast" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-07T14:46+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="False" x="6" y="-1"/>
 		<door exists="False" x="6" y="7"/>
@@ -20081,7 +20150,7 @@
 			<entity type="203" variant="2500" subtype="1" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24250" name="InfiniteCosmos - [RM] - Banquet" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2024-01-07T14:46+00:00">
+	<room variant="24251" name="InfiniteCosmos - [RM] - Banquet" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2024-01-07T14:46+00:00">
 		<door exists="False" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -20132,7 +20201,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24251" name="InfiniteCosmos - [RM] - Double Devour" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-07T14:46+00:00">
+	<room variant="24252" name="InfiniteCosmos - [RM] - Double Devour" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-07T14:46+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -20165,7 +20234,7 @@
 			<entity type="239" variant="200" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24252" name="InfiniteCosmos - [RM] - The Face Off" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-07T14:46+00:00">
+	<room variant="24253" name="InfiniteCosmos - [RM] - The Face Off" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-07T14:46+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="False" x="6" y="-1"/>
 		<door exists="False" x="6" y="7"/>
@@ -20321,7 +20390,7 @@
 			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24253" name="InfiniteCosmos - [RM] - Escape, now!" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="0.5" lastTestTime="2024-01-07T14:46+00:00">
+	<room variant="24254" name="InfiniteCosmos - [RM] - Escape, now!" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="0.5" lastTestTime="2024-01-07T14:46+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -20372,7 +20441,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24254" name="InfiniteCosmos - [RM] - When in doubt, make another room" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-07T14:46+00:00">
+	<room variant="24255" name="InfiniteCosmos - [RM] - When in doubt, make another room" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-07T14:46+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -20396,7 +20465,7 @@
 			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24255" name="InfiniteCosmos - [RM] - The last slice of pizza" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-07T14:46+00:00">
+	<room variant="24256" name="InfiniteCosmos - [RM] - The last slice of pizza" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-07T14:46+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -20417,7 +20486,7 @@
 			<entity type="239" variant="200" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24256" name="InfiniteCosmos - [RM] - Yummy blood thing" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-07T14:46+00:00">
+	<room variant="24257" name="InfiniteCosmos - [RM] - Yummy blood thing" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-07T14:46+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -20453,7 +20522,7 @@
 			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24257" name="InfiniteCosmos - [RM] - Yummy blood th- oh crap" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="0.5" lastTestTime="2024-01-07T14:46+00:00">
+	<room variant="24258" name="InfiniteCosmos - [RM] - Yummy blood th- oh crap" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="0.5" lastTestTime="2024-01-07T14:46+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -20489,7 +20558,7 @@
 			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24258" name="InfiniteCosmos - [RM] - I ran out of good ideas 30 rooms ago" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2024-01-07T14:46+00:00">
+	<room variant="24259" name="InfiniteCosmos - [RM] - I ran out of good ideas 30 rooms ago" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2024-01-07T14:46+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -20516,7 +20585,7 @@
 			<entity type="1900" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24259" name="InfiniteCosmos - [RM] - Double the danger, double the food" type="1" subtype="0" shape="4" width="13" height="14" difficulty="5" weight="1.0" lastTestTime="2024-01-07T14:46+00:00">
+	<room variant="24260" name="InfiniteCosmos - [RM] - Double the danger, double the food" type="1" subtype="0" shape="4" width="13" height="14" difficulty="5" weight="1.0" lastTestTime="2024-01-07T14:46+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="-1" y="10"/>
 		<door exists="True" x="6" y="-1"/>
@@ -20560,7 +20629,7 @@
 			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24260" name="InfiniteCosmos - [RM] - Why did the Corpse Eater cross the road?" type="1" subtype="0" shape="4" width="13" height="14" difficulty="5" weight="1.0" lastTestTime="2024-01-07T14:46+00:00">
+	<room variant="24261" name="InfiniteCosmos - [RM] - Why did the Corpse Eater cross the road?" type="1" subtype="0" shape="4" width="13" height="14" difficulty="5" weight="1.0" lastTestTime="2024-01-07T14:46+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="-1" y="10"/>
 		<door exists="True" x="6" y="-1"/>
@@ -20700,7 +20769,7 @@
 			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24261" name="InfiniteCosmos - [RM] - Big battle" type="1" subtype="0" shape="4" width="13" height="14" difficulty="10" weight="0.5" lastTestTime="2024-01-07T14:46+00:00">
+	<room variant="24262" name="InfiniteCosmos - [RM] - Big battle" type="1" subtype="0" shape="4" width="13" height="14" difficulty="10" weight="0.5" lastTestTime="2024-01-07T14:46+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="-1" y="10"/>
 		<door exists="False" x="6" y="-1"/>
@@ -20867,7 +20936,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24262" name="InfiniteCosmos - [RM] - Chowdown time" type="1" subtype="0" shape="6" width="26" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-07T14:46+00:00">
+	<room variant="24263" name="InfiniteCosmos - [RM] - Chowdown time" type="1" subtype="0" shape="6" width="26" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-07T14:46+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -20959,7 +21028,7 @@
 			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24263" name="InfiniteCosmos - [RM] - Aimless wandering... until you get eaten" type="1" subtype="0" shape="6" width="26" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-07T14:46+00:00">
+	<room variant="24264" name="InfiniteCosmos - [RM] - Aimless wandering... until you get eaten" type="1" subtype="0" shape="6" width="26" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-07T14:46+00:00">
 		<door exists="False" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -21123,7 +21192,7 @@
 			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24264" name="InfiniteCosmos - [RM] - Prepare for war" type="1" subtype="0" shape="6" width="26" height="7" difficulty="10" weight="0.5" lastTestTime="2024-01-08T23:51+00:00">
+	<room variant="24265" name="InfiniteCosmos - [RM] - Prepare for war" type="1" subtype="0" shape="6" width="26" height="7" difficulty="10" weight="0.5" lastTestTime="2024-01-08T23:51+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -21200,7 +21269,7 @@
 			<entity type="211" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24265" name="InfiniteCosmos - [RM] - Endless Hunger" type="1" subtype="0" shape="8" width="26" height="14" difficulty="10" weight="1.0" lastTestTime="2024-01-07T14:46+00:00">
+	<room variant="24266" name="InfiniteCosmos - [RM] - Endless Hunger" type="1" subtype="0" shape="8" width="26" height="14" difficulty="10" weight="1.0" lastTestTime="2024-01-07T14:46+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="-1" y="10"/>
 		<door exists="True" x="6" y="-1"/>
@@ -21438,7 +21507,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24266" name="InfiniteCosmos - [RM] - Room caved in, you have to use the teleporters for now" type="1" subtype="0" shape="8" width="26" height="14" difficulty="5" weight="1.0" lastTestTime="2024-01-08T23:51+00:00">
+	<room variant="24267" name="InfiniteCosmos - [RM] - Room caved in, you have to use the teleporters for now" type="1" subtype="0" shape="8" width="26" height="14" difficulty="5" weight="1.0" lastTestTime="2024-01-08T23:51+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="-1" y="10"/>
 		<door exists="True" x="6" y="-1"/>
@@ -21988,7 +22057,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24267" name="InfiniteCosmos - [RM] - I feel like I've made this style of room a lot" type="1" subtype="0" shape="9" width="26" height="14" difficulty="10" weight="1.0" lastTestTime="2024-01-08T23:51+00:00">
+	<room variant="24268" name="InfiniteCosmos - [RM] - I feel like I've made this style of room a lot" type="1" subtype="0" shape="9" width="26" height="14" difficulty="10" weight="1.0" lastTestTime="2024-01-08T23:51+00:00">
 		<door exists="True" x="-1" y="10"/>
 		<door exists="True" x="6" y="6"/>
 		<door exists="True" x="6" y="14"/>
@@ -22139,7 +22208,7 @@
 			<entity type="1000" variant="0" subtype="1" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24268" name="InfiniteCosmos - [RM] - Hungering Halls" type="1" subtype="0" shape="10" width="26" height="14" difficulty="10" weight="0.5" lastTestTime="2024-01-07T14:46+00:00">
+	<room variant="24269" name="InfiniteCosmos - [RM] - Hungering Halls" type="1" subtype="0" shape="10" width="26" height="14" difficulty="10" weight="0.5" lastTestTime="2024-01-07T14:46+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="-1" y="10"/>
 		<door exists="True" x="6" y="-1"/>
@@ -22233,7 +22302,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24269" name="InfiniteCosmos - [RM] - Strange Places" type="1" subtype="0" shape="11" width="26" height="14" difficulty="5" weight="1.0" lastTestTime="2024-01-08T23:51+00:00">
+	<room variant="24270" name="InfiniteCosmos - [RM] - Strange Places" type="1" subtype="0" shape="11" width="26" height="14" difficulty="5" weight="1.0" lastTestTime="2024-01-08T23:51+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -22369,7 +22438,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24270" name="InfiniteCosmos - [RM] - Lost Passage" type="1" subtype="0" shape="12" width="26" height="14" difficulty="10" weight="0.5" lastTestTime="2024-01-07T14:46+00:00">
+	<room variant="24271" name="InfiniteCosmos - [RM] - Lost Passage" type="1" subtype="0" shape="12" width="26" height="14" difficulty="10" weight="0.5" lastTestTime="2024-01-07T14:46+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="-1" y="10"/>
 		<door exists="True" x="6" y="-1"/>
@@ -22544,7 +22613,7 @@
 			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24271" name="InfiniteCosmos - [RM] - Funky" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2024-01-07T14:46+00:00">
+	<room variant="24272" name="InfiniteCosmos - [RM] - Funky" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2024-01-07T14:46+00:00">
 		<door exists="False" x="-1" y="3"/>
 		<door exists="False" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -22637,7 +22706,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24272" name="InfiniteCosmos - [RM] - Hey check out this cool worm I found" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2024-01-07T14:46+00:00">
+	<room variant="24273" name="InfiniteCosmos - [RM] - Hey check out this cool worm I found" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2024-01-07T14:46+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -22667,7 +22736,7 @@
 			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24273" name="InfiniteCosmos - [RM] - No food for him here he ate it all" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2024-01-07T14:46+00:00">
+	<room variant="24274" name="InfiniteCosmos - [RM] - No food for him here he ate it all" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2024-01-07T14:46+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -22694,7 +22763,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24274" name="InfiniteCosmos - [RM] - Look out for that worm, bro!" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-07T14:46+00:00">
+	<room variant="24275" name="InfiniteCosmos - [RM] - Look out for that worm, bro!" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-07T14:46+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="False" x="6" y="7"/>
@@ -22781,7 +22850,7 @@
 			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24275" name="InfiniteCosmos - [RM] - Riding away" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="0.5" lastTestTime="2024-01-07T14:46+00:00">
+	<room variant="24276" name="InfiniteCosmos - [RM] - Riding away" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="0.5" lastTestTime="2024-01-07T14:46+00:00">
 		<door exists="False" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -22847,7 +22916,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24276" name="InfiniteCosmos - [RM] - Lost Grotto" type="1" subtype="0" shape="1" width="13" height="7" difficulty="15" weight="1.0" lastTestTime="2024-01-07T14:46+00:00">
+	<room variant="24277" name="InfiniteCosmos - [RM] - Lost Grotto" type="1" subtype="0" shape="1" width="13" height="7" difficulty="15" weight="1.0" lastTestTime="2024-01-07T14:46+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -22922,7 +22991,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24277" name="InfiniteCosmos - [RM] - Strange Bridge" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2024-01-07T14:46+00:00">
+	<room variant="24278" name="InfiniteCosmos - [RM] - Strange Bridge" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2024-01-07T14:46+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -22967,7 +23036,7 @@
 			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24278" name="InfiniteCosmos - [RM] - Bullet Time" type="1" subtype="0" shape="1" width="13" height="7" difficulty="15" weight="1.0" lastTestTime="2024-01-08T19:11+00:00">
+	<room variant="24279" name="InfiniteCosmos - [RM] - Bullet Time" type="1" subtype="0" shape="1" width="13" height="7" difficulty="15" weight="1.0" lastTestTime="2024-01-08T19:11+00:00">
 		<door exists="False" x="-1" y="3"/>
 		<door exists="False" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -23126,7 +23195,7 @@
 			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24279" name="InfiniteCosmos - [RM] - Security Box" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-08T19:11+00:00">
+	<room variant="24280" name="InfiniteCosmos - [RM] - Security Box" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-08T19:11+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="False" x="6" y="-1"/>
 		<door exists="False" x="6" y="7"/>
@@ -23240,7 +23309,7 @@
 			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24280" name="InfiniteCosmos - [RM] - Curses" type="1" subtype="0" shape="1" width="13" height="7" difficulty="15" weight="1.0" lastTestTime="2024-01-08T19:11+00:00">
+	<room variant="24281" name="InfiniteCosmos - [RM] - Curses" type="1" subtype="0" shape="1" width="13" height="7" difficulty="15" weight="1.0" lastTestTime="2024-01-08T19:11+00:00">
 		<door exists="False" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -23267,7 +23336,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24281" name="InfiniteCosmos - [RM] - Guardians of the flame" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-08T19:11+00:00">
+	<room variant="24282" name="InfiniteCosmos - [RM] - Guardians of the flame" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-08T19:11+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -23330,7 +23399,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24282" name="InfiniteCosmos - [RM] - Guardians of the hyper flame " type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-08T19:11+00:00">
+	<room variant="24283" name="InfiniteCosmos - [RM] - Guardians of the hyper flame " type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-08T19:11+00:00">
 		<door exists="False" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -23393,7 +23462,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24283" name="InfiniteCosmos - [RM] - Return of the Cultists" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-08T19:11+00:00">
+	<room variant="24284" name="InfiniteCosmos - [RM] - Return of the Cultists" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-08T19:11+00:00">
 		<door exists="False" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -23477,7 +23546,7 @@
 			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24284" name="InfiniteCosmos - [RM] - Shooting Gallery" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-08T19:11+00:00">
+	<room variant="24285" name="InfiniteCosmos - [RM] - Shooting Gallery" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-08T19:11+00:00">
 		<door exists="False" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -23567,7 +23636,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24285" name="InfiniteCosmos - [RM] - Heavy Guard" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-08T19:11+00:00">
+	<room variant="24286" name="InfiniteCosmos - [RM] - Heavy Guard" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-08T19:11+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="False" x="6" y="-1"/>
 		<door exists="False" x="6" y="7"/>
@@ -23630,7 +23699,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24286" name="InfiniteCosmos - [RM] - The good old fashioned soul sucker room" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2024-01-08T19:11+00:00">
+	<room variant="24287" name="InfiniteCosmos - [RM] - The good old fashioned soul sucker room" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2024-01-08T19:11+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -23669,7 +23738,7 @@
 			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24287" name="InfiniteCosmos - [RM] - Odd Angles" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-08T19:11+00:00">
+	<room variant="24288" name="InfiniteCosmos - [RM] - Odd Angles" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-08T19:11+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -23747,7 +23816,7 @@
 			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24288" name="InfiniteCosmos - [RM] - Portal Guard" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-08T19:11+00:00">
+	<room variant="24289" name="InfiniteCosmos - [RM] - Portal Guard" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-08T19:11+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -23816,7 +23885,7 @@
 			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24289" name="InfiniteCosmos - [RM] - Pit of Portals" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-08T19:11+00:00">
+	<room variant="24290" name="InfiniteCosmos - [RM] - Pit of Portals" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-08T19:11+00:00">
 		<door exists="False" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -23936,7 +24005,7 @@
 			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24290" name="InfiniteCosmos - [RM] - Death and Danger" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-08T19:11+00:00">
+	<room variant="24291" name="InfiniteCosmos - [RM] - Death and Danger" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-08T19:11+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="False" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -24005,7 +24074,7 @@
 			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24291" name="InfiniteCosmos - [RM] - Pop Out" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-08T19:11+00:00">
+	<room variant="24292" name="InfiniteCosmos - [RM] - Pop Out" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-08T19:11+00:00">
 		<door exists="False" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="False" x="6" y="7"/>
@@ -24131,7 +24200,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24292" name="InfiniteCosmos - [RM] - Wacky Land" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-08T19:11+00:00">
+	<room variant="24293" name="InfiniteCosmos - [RM] - Wacky Land" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-08T19:11+00:00">
 		<door exists="False" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -24188,7 +24257,7 @@
 			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24293" name="InfiniteCosmos - [RM] - Inconvienent" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-08T19:11+00:00">
+	<room variant="24294" name="InfiniteCosmos - [RM] - Inconvienent" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-08T19:11+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="False" x="6" y="7"/>
@@ -24257,7 +24326,7 @@
 			<entity type="1002" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24294" name="InfiniteCosmos - [RM] - Cornered" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-09T19:34+00:00">
+	<room variant="24295" name="InfiniteCosmos - [RM] - Cornered" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-09T19:34+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -24344,7 +24413,7 @@
 			<entity type="6100" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24295" name="InfiniteCosmos - [RM] - Dark Madness" type="1" subtype="0" shape="1" width="13" height="7" difficulty="15" weight="1.0" lastTestTime="2024-01-09T19:34+00:00">
+	<room variant="24296" name="InfiniteCosmos - [RM] - Dark Madness" type="1" subtype="0" shape="1" width="13" height="7" difficulty="15" weight="1.0" lastTestTime="2024-01-09T19:34+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -24437,7 +24506,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24296" name="InfiniteCosmos - [RM] - Confusing Landscape" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-09T19:34+00:00">
+	<room variant="24297" name="InfiniteCosmos - [RM] - Confusing Landscape" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-09T19:34+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -24491,7 +24560,7 @@
 			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24297" name="InfiniteCosmos - [RM] - Wrath of the knight" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-09T19:34+00:00">
+	<room variant="24298" name="InfiniteCosmos - [RM] - Wrath of the knight" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-09T19:34+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -24572,7 +24641,7 @@
 			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24298" name="InfiniteCosmos - [RM] - S" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-09T19:34+00:00">
+	<room variant="24299" name="InfiniteCosmos - [RM] - S" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-09T19:34+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="False" x="6" y="-1"/>
 		<door exists="False" x="6" y="7"/>
@@ -24665,7 +24734,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24299" name="InfiniteCosmos - [RM] - Why do they get to move and I don't?" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-09T19:34+00:00">
+	<room variant="24300" name="InfiniteCosmos - [RM] - Why do they get to move and I don't?" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-09T19:34+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -24701,7 +24770,7 @@
 			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24300" name="InfiniteCosmos - [RM] - Why do they get to fire and I don't? " type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-09T19:34+00:00">
+	<room variant="24301" name="InfiniteCosmos - [RM] - Why do they get to fire and I don't? " type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-09T19:34+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -24737,7 +24806,7 @@
 			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24301" name="InfiniteCosmos - [RM] - Random Pits" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2024-01-09T19:34+00:00">
+	<room variant="24302" name="InfiniteCosmos - [RM] - Random Pits" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2024-01-09T19:34+00:00">
 		<door exists="False" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -24845,7 +24914,7 @@
 			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24302" name="InfiniteCosmos - [RM] - Firing stuff gang" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2024-01-09T19:34+00:00">
+	<room variant="24303" name="InfiniteCosmos - [RM] - Firing stuff gang" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2024-01-09T19:34+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -24896,7 +24965,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24303" name="InfiniteCosmos - [RM] - Bloody Hell" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-09T19:34+00:00">
+	<room variant="24304" name="InfiniteCosmos - [RM] - Bloody Hell" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-09T19:34+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -24953,7 +25022,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24304" name="InfiniteCosmos - [RM] - Demonic Danger" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-09T19:34+00:00">
+	<room variant="24305" name="InfiniteCosmos - [RM] - Demonic Danger" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-09T19:34+00:00">
 		<door exists="False" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -25001,7 +25070,7 @@
 			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24305" name="InfiniteCosmos - [RM] - Up Up Down Down" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-09T21:35+00:00">
+	<room variant="24306" name="InfiniteCosmos - [RM] - Up Up Down Down" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-09T21:35+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="False" x="6" y="-1"/>
 		<door exists="False" x="6" y="7"/>
@@ -25049,7 +25118,7 @@
 			<entity type="1002" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24306" name="InfiniteCosmos - [RM] - Hidey Hole" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-09T19:34+00:00">
+	<room variant="24307" name="InfiniteCosmos - [RM] - Hidey Hole" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-09T19:34+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="False" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -25166,7 +25235,7 @@
 			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24307" name="InfiniteCosmos - [RM] - You can do it the normal way or the fun way" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-09T21:35+00:00">
+	<room variant="24308" name="InfiniteCosmos - [RM] - You can do it the normal way or the fun way" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-09T21:35+00:00">
 		<door exists="False" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="False" x="6" y="7"/>
@@ -25271,7 +25340,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24308" name="InfiniteCosmos - [RM] - Triple Terror" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-09T19:34+00:00">
+	<room variant="24309" name="InfiniteCosmos - [RM] - Triple Terror" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-09T19:34+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="False" x="6" y="-1"/>
 		<door exists="False" x="6" y="7"/>
@@ -25376,7 +25445,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24309" name="InfiniteCosmos - [RM] - Mace Madness" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2024-01-09T19:34+00:00">
+	<room variant="24310" name="InfiniteCosmos - [RM] - Mace Madness" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2024-01-09T19:34+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="False" x="6" y="-1"/>
 		<door exists="False" x="6" y="7"/>
@@ -25418,7 +25487,7 @@
 			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24310" name="InfiniteCosmos - [RM] - Fire up, Fire down" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2024-01-09T19:34+00:00">
+	<room variant="24311" name="InfiniteCosmos - [RM] - Fire up, Fire down" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2024-01-09T19:34+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -25463,7 +25532,7 @@
 			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24311" name="InfiniteCosmos - [RM] - I hope you get a good pattern with these guys" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2024-01-09T19:34+00:00">
+	<room variant="24312" name="InfiniteCosmos - [RM] - I hope you get a good pattern with these guys" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2024-01-09T19:34+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -25568,7 +25637,7 @@
 			<entity type="6100" variant="5" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24312" name="InfiniteCosmos - [RM] - Dodge the Inferno" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2024-01-09T19:34+00:00">
+	<room variant="24313" name="InfiniteCosmos - [RM] - Dodge the Inferno" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2024-01-09T19:34+00:00">
 		<door exists="False" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -25646,7 +25715,7 @@
 			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24313" name="InfiniteCosmos - [RM] - Trapped" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2024-01-09T19:34+00:00">
+	<room variant="24314" name="InfiniteCosmos - [RM] - Trapped" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2024-01-09T19:34+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -25745,7 +25814,7 @@
 			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24314" name="InfiniteCosmos - [RM] - Scanners" type="1" subtype="0" shape="2" width="13" height="7" difficulty="15" weight="1.0" lastTestTime="2024-01-09T19:34+00:00">
+	<room variant="24315" name="InfiniteCosmos - [RM] - Scanners" type="1" subtype="0" shape="2" width="13" height="7" difficulty="15" weight="1.0" lastTestTime="2024-01-09T19:34+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="13" y="3"/>
 		<spawn x="0" y="2">
@@ -25761,7 +25830,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24315" name="InfiniteCosmos - [RM] - Tight Passage Guard" type="1" subtype="0" shape="3" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-09T19:34+00:00">
+	<room variant="24316" name="InfiniteCosmos - [RM] - Tight Passage Guard" type="1" subtype="0" shape="3" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-09T19:34+00:00">
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
 		<spawn x="4" y="0">
@@ -25780,7 +25849,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24316" name="InfiniteCosmos - [RM] - Great Hall" type="1" subtype="0" shape="4" width="13" height="14" difficulty="10" weight="1.0" lastTestTime="2024-01-09T19:34+00:00">
+	<room variant="24317" name="InfiniteCosmos - [RM] - Great Hall" type="1" subtype="0" shape="4" width="13" height="14" difficulty="10" weight="1.0" lastTestTime="2024-01-09T19:34+00:00">
 		<door exists="False" x="-1" y="3"/>
 		<door exists="False" x="-1" y="10"/>
 		<door exists="True" x="6" y="-1"/>
@@ -25887,7 +25956,7 @@
 			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24317" name="InfiniteCosmos - [RM] - Which way are we going? You have no idea!" type="1" subtype="0" shape="4" width="13" height="14" difficulty="10" weight="1.0" lastTestTime="2024-01-09T19:34+00:00">
+	<room variant="24318" name="InfiniteCosmos - [RM] - Which way are we going? You have no idea!" type="1" subtype="0" shape="4" width="13" height="14" difficulty="10" weight="1.0" lastTestTime="2024-01-09T19:34+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="-1" y="10"/>
 		<door exists="True" x="6" y="-1"/>
@@ -25958,7 +26027,7 @@
 			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24318" name="InfiniteCosmos - [RM] - Spiral" type="1" subtype="0" shape="4" width="13" height="14" difficulty="10" weight="1.0" lastTestTime="2024-01-09T19:34+00:00">
+	<room variant="24319" name="InfiniteCosmos - [RM] - Spiral" type="1" subtype="0" shape="4" width="13" height="14" difficulty="10" weight="1.0" lastTestTime="2024-01-09T19:34+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="-1" y="10"/>
 		<door exists="True" x="6" y="-1"/>
@@ -26230,7 +26299,7 @@
 			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24319" name="InfiniteCosmos - [RM] - Strafing Knight" type="1" subtype="0" shape="6" width="26" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-09T19:34+00:00">
+	<room variant="24320" name="InfiniteCosmos - [RM] - Strafing Knight" type="1" subtype="0" shape="6" width="26" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-09T19:34+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -26325,7 +26394,7 @@
 			<entity type="1900" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24320" name="InfiniteCosmos - [RM] - Enter the BLOOD PIT" type="1" subtype="0" shape="6" width="26" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-09T19:34+00:00">
+	<room variant="24321" name="InfiniteCosmos - [RM] - Enter the BLOOD PIT" type="1" subtype="0" shape="6" width="26" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-09T19:34+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -26414,7 +26483,7 @@
 			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24321" name="InfiniteCosmos - [RM] - Strafing around..." type="1" subtype="0" shape="6" width="26" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-09T19:34+00:00">
+	<room variant="24322" name="InfiniteCosmos - [RM] - Strafing around..." type="1" subtype="0" shape="6" width="26" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-09T19:34+00:00">
 		<door exists="False" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -26635,7 +26704,7 @@
 			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24322" name="InfiniteCosmos - [RM] - Tight Hall" type="1" subtype="0" shape="7" width="26" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-09T19:34+00:00">
+	<room variant="24323" name="InfiniteCosmos - [RM] - Tight Hall" type="1" subtype="0" shape="7" width="26" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-09T19:34+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="26" y="3"/>
 		<spawn x="0" y="2">
@@ -26675,7 +26744,7 @@
 			<entity type="1000" variant="0" subtype="1" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24323" name="InfiniteCosmos - [RM] - Bullet Box" type="1" subtype="0" shape="8" width="26" height="14" difficulty="15" weight="1.0" lastTestTime="2024-01-09T19:34+00:00">
+	<room variant="24324" name="InfiniteCosmos - [RM] - Bullet Box" type="1" subtype="0" shape="8" width="26" height="14" difficulty="15" weight="1.0" lastTestTime="2024-01-09T19:34+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="-1" y="10"/>
 		<door exists="True" x="6" y="-1"/>
@@ -27177,7 +27246,7 @@
 			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24324" name="InfiniteCosmos - [RM] - Thinking with Portals" type="1" subtype="0" shape="8" width="26" height="14" difficulty="10" weight="1.0" lastTestTime="2024-01-09T19:34+00:00">
+	<room variant="24325" name="InfiniteCosmos - [RM] - Thinking with Portals" type="1" subtype="0" shape="8" width="26" height="14" difficulty="10" weight="1.0" lastTestTime="2024-01-09T19:34+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="-1" y="10"/>
 		<door exists="True" x="6" y="-1"/>
@@ -27595,7 +27664,7 @@
 			<entity type="6100" variant="2" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24325" name="InfiniteCosmos - [RM] - Strange Patterns" type="1" subtype="0" shape="5" width="13" height="14" difficulty="5" weight="1.0" lastTestTime="2024-01-09T19:34+00:00">
+	<room variant="24326" name="InfiniteCosmos - [RM] - Strange Patterns" type="1" subtype="0" shape="5" width="13" height="14" difficulty="5" weight="1.0" lastTestTime="2024-01-09T19:34+00:00">
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="14"/>
 		<spawn x="5" y="2">
@@ -27623,7 +27692,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24326" name="InfiniteCosmos - [RM] - Protected Passages" type="1" subtype="0" shape="9" width="26" height="14" difficulty="5" weight="1.0" lastTestTime="2024-01-09T19:34+00:00">
+	<room variant="24327" name="InfiniteCosmos - [RM] - Protected Passages" type="1" subtype="0" shape="9" width="26" height="14" difficulty="5" weight="1.0" lastTestTime="2024-01-09T19:34+00:00">
 		<door exists="True" x="-1" y="10"/>
 		<door exists="True" x="6" y="6"/>
 		<door exists="True" x="6" y="14"/>
@@ -27798,7 +27867,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24327" name="InfiniteCosmos - [RM] - Strafing Minions" type="1" subtype="0" shape="10" width="26" height="14" difficulty="10" weight="1.0" lastTestTime="2024-08-05T19:32+00:00">
+	<room variant="24328" name="InfiniteCosmos - [RM] - Strafing Minions" type="1" subtype="0" shape="10" width="26" height="14" difficulty="10" weight="1.0" lastTestTime="2024-08-05T19:32+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="-1" y="10"/>
 		<door exists="True" x="6" y="-1"/>
@@ -27922,7 +27991,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24328" name="InfiniteCosmos - [RM] - Sorry, this side of the room is under construction" type="1" subtype="0" shape="11" width="26" height="14" difficulty="10" weight="1.0" lastTestTime="2024-08-05T19:32+00:00">
+	<room variant="24329" name="InfiniteCosmos - [RM] - Sorry, this side of the room is under construction" type="1" subtype="0" shape="11" width="26" height="14" difficulty="10" weight="1.0" lastTestTime="2024-08-05T19:32+00:00">
 		<door exists="False" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -28145,7 +28214,7 @@
 			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24329" name="InfiniteCosmos - [RM] - What do these two sections even have in common?" type="1" subtype="0" shape="12" width="26" height="14" difficulty="10" weight="1.0" lastTestTime="2024-01-09T19:34+00:00">
+	<room variant="24330" name="InfiniteCosmos - [RM] - What do these two sections even have in common?" type="1" subtype="0" shape="12" width="26" height="14" difficulty="10" weight="1.0" lastTestTime="2024-01-09T19:34+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="-1" y="10"/>
 		<door exists="False" x="6" y="-1"/>
@@ -28326,7 +28395,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24330" name="InfiniteCosmos - [RM] - Chasms" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-09T21:28+00:00">
+	<room variant="24331" name="InfiniteCosmos - [RM] - Chasms" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-09T21:28+00:00">
 		<door exists="False" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -28425,7 +28494,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24331" name="InfiniteCosmos - [RM] - Pits of Yonder" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-09T21:28+00:00">
+	<room variant="24332" name="InfiniteCosmos - [RM] - Pits of Yonder" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-09T21:28+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="False" x="6" y="-1"/>
 		<door exists="False" x="6" y="7"/>
@@ -28473,7 +28542,7 @@
 			<entity type="1002" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24332" name="InfiniteCosmos - [RM] - Chaos Box" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2024-01-09T21:28+00:00">
+	<room variant="24333" name="InfiniteCosmos - [RM] - Chaos Box" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2024-01-09T21:28+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -28521,7 +28590,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24333" name="InfiniteCosmos - [RM] - Cowards" type="1" subtype="0" shape="1" width="13" height="7" difficulty="1" weight="1.0" lastTestTime="2024-01-09T21:28+00:00">
+	<room variant="24334" name="InfiniteCosmos - [RM] - Cowards" type="1" subtype="0" shape="1" width="13" height="7" difficulty="1" weight="1.0" lastTestTime="2024-01-09T21:28+00:00">
 		<door exists="False" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -28608,7 +28677,7 @@
 			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24334" name="InfiniteCosmos - [RM] - Prisoner of the Inferno" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-09T21:38+00:00">
+	<room variant="24335" name="InfiniteCosmos - [RM] - Prisoner of the Inferno" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-09T21:38+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -28653,7 +28722,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24335" name="InfiniteCosmos - [RM] - Flame on" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-09T21:38+00:00">
+	<room variant="24336" name="InfiniteCosmos - [RM] - Flame on" type="1" subtype="0" shape="1" width="13" height="7" difficulty="10" weight="1.0" lastTestTime="2024-01-09T21:38+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -28704,7 +28773,7 @@
 			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24336" name="InfiniteCosmos - [RM] - Legally required trap room #1" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2024-01-09T21:28+00:00">
+	<room variant="24337" name="InfiniteCosmos - [RM] - Legally required trap room #1" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2024-01-09T21:28+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -28863,7 +28932,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24337" name="InfiniteCosmos - [RM] - Legally required trap room #2" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2024-01-09T21:28+00:00">
+	<room variant="24338" name="InfiniteCosmos - [RM] - Legally required trap room #2" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2024-01-09T21:28+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
@@ -28995,7 +29064,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24338" name="InfiniteCosmos - [RM] - Legally required trap room #3" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2024-01-09T21:28+00:00">
+	<room variant="24339" name="InfiniteCosmos - [RM] - Legally required trap room #3" type="1" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2024-01-09T21:28+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="False" x="6" y="7"/>
@@ -29154,7 +29223,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24339" name="InfiniteCosmos - [RM] - Eating good tonight" type="1" subtype="0" shape="1" width="13" height="7" difficulty="1" weight="1.0" lastTestTime="2024-01-09T21:38+00:00">
+	<room variant="24340" name="InfiniteCosmos - [RM] - Eating good tonight" type="1" subtype="0" shape="1" width="13" height="7" difficulty="1" weight="1.0" lastTestTime="2024-01-09T21:38+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
