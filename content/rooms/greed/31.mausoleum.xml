@@ -68,7 +68,7 @@
 			<entity type="239" variant="200" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24004" name="[RM] - Greed Wave 5" type="11" subtype="0" shape="4" width="13" height="14" difficulty="10" weight="1.0">
+	<room variant="24004" name="[RM] - Greed Wave 5" type="11" subtype="0" shape="4" width="13" height="14" difficulty="10" weight="0.5">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="-1" y="10"/>
 		<door exists="True" x="6" y="-1"/>
@@ -93,7 +93,7 @@
 			<entity type="239" variant="200" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24006" name="[RM] - Greed Wave 7" type="11" subtype="0" shape="4" width="13" height="14" difficulty="15" weight="1.0">
+	<room variant="24006" name="[RM] - Greed Wave 7" type="11" subtype="0" shape="4" width="13" height="14" difficulty="15" weight="0.5">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="-1" y="10"/>
 		<door exists="True" x="6" y="-1"/>
@@ -204,7 +204,7 @@
 			<entity type="227" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24012" name="[RM] - Greed Wave 13" type="11" subtype="0" shape="4" width="13" height="14" difficulty="10" weight="1.0">
+	<room variant="24012" name="[RM] - Greed Wave 13" type="11" subtype="0" shape="4" width="13" height="14" difficulty="10" weight="0.5">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="-1" y="10"/>
 		<door exists="True" x="6" y="-1"/>
@@ -221,7 +221,7 @@
 			<entity type="227" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24014" name="[RM] - Greed Wave 15" type="11" subtype="0" shape="4" width="13" height="14" difficulty="10" weight="1.0">
+	<room variant="24014" name="[RM] - Greed Wave 15" type="11" subtype="0" shape="4" width="13" height="14" difficulty="10" weight="0.5">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="-1" y="10"/>
 		<door exists="True" x="6" y="-1"/>
@@ -241,7 +241,7 @@
 			<entity type="41" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24015" name="[RM] - Greed Wave 16" type="11" subtype="0" shape="4" width="13" height="14" difficulty="10" weight="1.0">
+	<room variant="24015" name="[RM] - Greed Wave 16" type="11" subtype="0" shape="4" width="13" height="14" difficulty="10" weight="0.5">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="-1" y="10"/>
 		<door exists="True" x="6" y="-1"/>
@@ -278,7 +278,7 @@
 			<entity type="239" variant="200" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24017" name="[RM] - Greed Wave 18" type="11" subtype="0" shape="4" width="13" height="14" difficulty="10" weight="1.0">
+	<room variant="24017" name="[RM] - Greed Wave 18" type="11" subtype="0" shape="4" width="13" height="14" difficulty="10" weight="0.5">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="-1" y="10"/>
 		<door exists="True" x="6" y="-1"/>
@@ -1188,10 +1188,7 @@
 		<door exists="True" x="6" y="14"/>
 		<door exists="True" x="13" y="3"/>
 		<door exists="True" x="13" y="10"/>
-		<spawn x="-1" y="3">
-			<entity type="240" variant="200" subtype="0" weight="1.0"/>
-		</spawn>
-		<spawn x="13" y="3">
+		<spawn x="6" y="-1">
 			<entity type="240" variant="200" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="-1" y="10">
@@ -1208,10 +1205,7 @@
 		<door exists="True" x="6" y="14"/>
 		<door exists="True" x="13" y="3"/>
 		<door exists="True" x="13" y="10"/>
-		<spawn x="4" y="-1">
-			<entity type="240" variant="200" subtype="0" weight="1.0"/>
-		</spawn>
-		<spawn x="8" y="-1">
+		<spawn x="6" y="-1">
 			<entity type="240" variant="200" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="4" y="14">
@@ -1332,9 +1326,6 @@
 		<spawn x="-1" y="3">
 			<entity type="240" variant="200" subtype="0" weight="1.0"/>
 		</spawn>
-		<spawn x="13" y="10">
-			<entity type="240" variant="200" subtype="0" weight="1.0"/>
-		</spawn>
 		<spawn x="1" y="12">
 			<entity type="841" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
@@ -1381,16 +1372,10 @@
 		<spawn x="1" y="1">
 			<entity type="246" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
-		<spawn x="-1" y="3">
-			<entity type="240" variant="200" subtype="0" weight="1.0"/>
-		</spawn>
 		<spawn x="13" y="3">
 			<entity type="240" variant="200" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="-1" y="10">
-			<entity type="240" variant="200" subtype="0" weight="1.0"/>
-		</spawn>
-		<spawn x="13" y="10">
 			<entity type="240" variant="200" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="11" y="12">
