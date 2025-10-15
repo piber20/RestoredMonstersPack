@@ -15,7 +15,7 @@ local States = {
 	Angry = 3
 }
 
-
+local FREEZE_DURATION = 45
 
 function mod:screamerInit(entity)
 	if entity.Variant == mod.ENTITY_INFO.SCREAMER.VARIANT then
@@ -72,7 +72,7 @@ function mod:screamerUpdate(entity)
 					for i = 0, game:GetNumPlayers() do
 						local player = Isaac.GetPlayer(i)
 
-						if entity.Position:Distance(player.Position) <= Settings.Range and not player:HasCollectible(CollectibleType.COLLECTIBLE_EVIL_CHARM) and not player:GetData().ScreamerFrozen then
+						if entity.Position:Distance(player.Position) <= Settings.Range and not player:HasCollectible(CollectibleType.COLLECTIBLE_EVIL_CHARM) and not player:GetData().ScreamerFrozenCountdown then
 							player:AddSlowing(EntityRef(entity), -1, 0.8, Color(1,1,1, 1))
 							player:SetColor(Color(0.6,0.6,0.6, 1), 1, 1, false, false)
 						end
@@ -154,7 +154,8 @@ function mod:screamerUpdate(entity)
 							local player = Isaac.GetPlayer(i)
 
 							if entity.Position:Distance(player.Position) <= Settings.Range and not player:HasCollectible(CollectibleType.COLLECTIBLE_EVIL_CHARM) then
-								player:AddFreeze(EntityRef(entity), 45)
+								player:GetData().ScreamerFrozenCountdown = FREEZE_DURATION
+								player:GetData().Screamer = entity
 							end
 						end
 					end
@@ -218,38 +219,24 @@ function mod:screamerAuraUpdate(effect)
 end
 mod:AddCallback(ModCallbacks.MC_POST_EFFECT_UPDATE, mod.screamerAuraUpdate, EffectVariant.SCREAMER_AURA)
 
-function mod:playerFreezeEffect(player)
-	local effects = player:GetEffects()
-	if player:HasEntityFlags(EntityFlag.FLAG_FREEZE) then
-		if not effects:HasNullEffect(NullItemID.ID_REVERSE_CHARIOT) then
-			effects:AddNullEffect(NullItemID.ID_REVERSE_CHARIOT, false)
-			player:AddCacheFlags(CacheFlag.CACHE_FIREDELAY)
-			player:EvaluateItems()
-		end
-		player:AddEntityFlags(EntityFlag.FLAG_NO_SPRITE_UPDATE | EntityFlag.FLAG_NO_DAMAGE_BLINK | EntityFlag.FLAG_NO_KNOCKBACK)
+function mod:playerFreezeEffect()
+	for i = 0, Game():GetNumPlayers() - 1 do
+		local player = Isaac.GetPlayer(i)
 
-		player:SetColor(Color(0.22, 0.22, 0.22, 1.0, 40/255, 40/255, 40/255), 1, 255, false, false)
-		player:SetMinDamageCooldown(60)
-		player:GetData().ScreamerFrozen = true
+		if player:GetData().ScreamerFrozenCountdown then
+			local entity = player:GetData().Screamer
+			player:AddEntityFlags(EntityFlag.FLAG_NO_SPRITE_UPDATE | EntityFlag.FLAG_NO_DAMAGE_BLINK | EntityFlag.FLAG_NO_KNOCKBACK)
+			player:GetData().ScreamerFrozenCountdown = player:GetData().ScreamerFrozenCountdown - 1
+			player:AddSlowing(EntityRef(entity), 2, 0, Color(1, 1, 1))
+			player:SetColor(Color(0.22, 0.22, 0.22, 1.0, 40/255, 40/255, 40/255), 1, 255, false, false)
 
-	elseif player:GetData().ScreamerFrozen == true then
-		effects:RemoveNullEffect(NullItemID.ID_REVERSE_CHARIOT)
-		player:AddCacheFlags(CacheFlag.CACHE_FIREDELAY)
-		player:EvaluateItems()
-
-		player:ClearEntityFlags(EntityFlag.FLAG_NO_SPRITE_UPDATE | EntityFlag.FLAG_NO_DAMAGE_BLINK | EntityFlag.FLAG_NO_KNOCKBACK)
-
-		player:GetData().ScreamerFrozen = false
-	end
-end
-mod:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, mod.playerFreezeEffect)
-
-
-function mod:reduceFakeChariotStats(player, cacheFlag)
-	if cacheFlag == cacheFlag & CacheFlag.CACHE_FIREDELAY then
-		if player:GetData().ScreamerFrozen == true then
-			player.MaxFireDelay = player.MaxFireDelay * 5 --doesnt exactly even it out but whatever close enough
+			if player:GetData().ScreamerFrozenCountdown <= 0 then
+				player:ClearEntityFlags(EntityFlag.FLAG_NO_SPRITE_UPDATE | EntityFlag.FLAG_NO_DAMAGE_BLINK | EntityFlag.FLAG_NO_KNOCKBACK)
+				player:AddSlowing(EntityRef(entity), 1, 1, Color(1, 1, 1)) --remove freeze
+				player:GetData().ScreamerFrozenCountdown = nil
+				player:GetData().Screamer = nil
+			end
 		end
 	end
 end
-mod:AddCallback(ModCallbacks.MC_EVALUATE_CACHE, mod.reduceFakeChariotStats)
+mod:AddCallback(ModCallbacks.MC_POST_UPDATE, mod.playerFreezeEffect)

@@ -546,9 +546,9 @@ function mod:nightwatchUpdate(entity)
 		-- Projectile
 		local params = ProjectileParams()
 		params.Variant = ProjectileVariant.PROJECTILE_LANTERN
-		params.FallingSpeedModifier = -4.5
+		params.FallingSpeedModifier = -13.5
 		params.FallingAccelModifier = 0.5
-		entity:FireProjectiles(entity.Position, (target.Position - entity.Position):Normalized() * 9, 0, params)
+		entity:FireProjectiles(entity.Position, Vector.Zero, 0, params)
 	end
 
 	if sprite:GetFrame() == 36 then

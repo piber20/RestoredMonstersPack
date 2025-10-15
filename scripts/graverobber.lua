@@ -103,7 +103,7 @@ function mod:grobberUpdate(entity)
 
 				for i,v in pairs(Isaac.FindInRadius(entity.Position, 1000, EntityPartition.PICKUP)) do
 					if v:ToPickup() ~= nil and v:ToPickup():IsShopItem() == false and v:ToPickup():CanReroll() == true and entity.Pathfinder:HasPathToPos(v.Position) and v.Position:Distance(entity.Position) < dist
-					and v.Variant ~= PickupVariant.PICKUP_COLLECTIBLE then -- There are some things that could be blacklisted but don't really have a reason to because they (most likey) won't ever appear along with grave robbers
+					and v.Variant ~= PickupVariant.PICKUP_COLLECTIBLE and not v:GetData().graverobber_ignore then -- There are some things that could be blacklisted but don't really have a reason to because they (most likey) won't ever appear along with grave robbers
 						local valid = true
 
 						if mod.CustomChests[tostring(v.Variant)] and mod.CustomChests[tostring(v.Variant)].cond then
@@ -426,6 +426,15 @@ local data = entity:GetData()
   end
 end
 
+local function BFChest(entity)
+local data = entity:GetData()
+  if mod.CustomChests[tostring(entity.Variant)].valid(entity) then
+    data.grobber:GetData().pickup = nil
+    battleFantasy:smokyChestPrePickupCollision(entity, Isaac.GetPlayer(0))
+    data.grobber:GetData().waitTime = 15
+  end
+end
+
 mod.CustomChests = {
   ["710"] = {cond = FiendFolio, func = FFChest, valid = FFValid},
   ["711"] = {cond = FiendFolio, func = FFChest, valid = FFValid},
@@ -456,6 +465,7 @@ mod.CustomChests = {
     func = function (entity) RCOpen(entity, RareChests.openPenitentChest) end,
     valid = function (v) return v.SubType ~= 8 end},
 	["669"] = {cond = Epiphany, func = EPIChest, valid = EPIValid}, --dusty chest
+	["590"] = {cond = battleFantasy, func = BFChest, valid = EPIValid}
   }
 
 -- Stolen pickups
@@ -490,20 +500,26 @@ function mod:grobberPickup(entity)
 			if not sprite:IsPlaying("Collect") then
 				local addTo = true
 				sprite:Play("Collect", true)
-				data.grobbed = true
 				data.grobber:GetData().pickup = nil
+				-- Check if it's not a chest
+				if sprite:IsPlaying("Collect") then
+					data.grobbed = true
 
-				-- FF compatibility
-				if FiendFolio then
-					-- Spicy keys
-					if entity.Variant == PickupVariant.PICKUP_KEY and entity.SubType >= 179 then
-						data.grobber:TakeDamage(10, DamageFlag.DAMAGE_FIRE, EntityRef(entity), 0)
+					-- FF compatibility
+					if FiendFolio then
+						-- Spicy keys
+						if entity.Variant == PickupVariant.PICKUP_KEY and entity.SubType >= 179 then
+							data.grobber:TakeDamage(10, DamageFlag.DAMAGE_FIRE, EntityRef(entity), 0)
 
-					-- Blood bags
-					elseif entity.Variant == 666 then
-						FiendFolio:bloodsackburst(entity, true)
-						addTo = false
+						-- Blood bags
+						elseif entity.Variant == 666 then
+							FiendFolio:bloodsackburst(entity, true)
+							addTo = false
+						end
 					end
+				else
+					addTo = false
+					entity:GetData().graverobber_ignore = true
 				end
 
 				if addTo == true then

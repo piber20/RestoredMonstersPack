@@ -98,7 +98,7 @@ function mod:stillbornUpdate(entity)
 			end
 
 			-- Die on room clear
-			if room:IsClear() then
+			if room:IsClear() and room:GetAliveEnemiesCount() < 1 then
 				data.state = States.Dead
 			end
 

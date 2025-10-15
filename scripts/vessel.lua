@@ -22,23 +22,21 @@ local States = {
 local vesselvar = Isaac.GetEntityVariantByName("​Vessel (Antibirth)")
 local checkvar = Isaac.GetEntityVariantByName("​Vessel (Antibirth)")
 
-function mod:vesselCheckForLegOrWhateverTheFuckDSSSays()
-    for i, entity in ipairs(Isaac.GetRoomEntities()) do
-        if entity.Type == 858 then
-            if RestoredMonsterPack.DSSavedata.vesselType == 2 then
-                checkvar = 200
-            else
-                checkvar = 1
-            end
-            if entity.Variant ~= checkvar then
-                -- print("dammit")
-                Isaac.Spawn(mod.ENTITY_INFO.VESSEL.ID, checkvar, 0, entity.Position, entity.Velocity, entity)
-                entity:Remove()
-            end
+function mod:vesselCheckForLegOrWhateverTheFuckDSSSays(type, var, stype)
+    if type == mod.ENTITY_INFO.VESSEL.ID then
+        if RestoredMonsterPack.DSSavedata.vesselType == 2 then
+            checkvar = Isaac.GetEntityVariantByName("​Vessel (Antibirth)")
+        else
+            checkvar = Isaac.GetEntityVariantByName("Vessel (RM)")
+        end
+
+        if var ~= checkvar then
+            -- print("dammit")
+            return {type, checkvar, stype}
         end
     end
 end
-mod:AddCallback(ModCallbacks.MC_POST_NEW_ROOM, mod.vesselCheckForLegOrWhateverTheFuckDSSSays)
+mod:AddCallback(ModCallbacks.MC_PRE_ROOM_ENTITY_SPAWN, mod.vesselCheckForLegOrWhateverTheFuckDSSSays)
 
 function mod:vesselInit(vessel)
 
@@ -238,7 +236,7 @@ mod:AddCallback(ModCallbacks.MC_POST_NPC_DEATH, mod.vesselDeath, mod.ENTITY_INFO
 function mod:maggotDeath(maggot)
 	if maggot.SpawnerEntity then
 		local spawner = maggot.SpawnerEntity
-		local vesselData = spawner:GetData().VesselData
+		local vesselData = spawner:GetData().VesselData or {}
 
 		if spawner.Type == mod.ENTITY_INFO.VESSEL.ID and vesselData.Maggots then
 			vesselData.Maggots = vesselData.Maggots - 1
