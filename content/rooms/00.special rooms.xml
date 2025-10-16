@@ -1278,7 +1278,7 @@
 			<entity type="1002" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24002" name="Sin - [RM]- The Coin Closet" type="4" subtype="0" shape="3" width="13" height="7" difficulty="1" weight="0.25" lastTestTime="2023-12-06T21:09+00:00">
+	<room variant="24002" name="Sin - [RM] - The Coin Closet" type="4" subtype="0" shape="3" width="13" height="7" difficulty="1" weight="0.25" lastTestTime="2023-12-06T21:09+00:00">
 		<door exists="False" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
 		<spawn x="4" y="0">
