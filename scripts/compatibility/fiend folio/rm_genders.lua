@@ -19,30 +19,26 @@ end
 RestoredMonsterPack.Nonmale = {
 	{ID = mod:SpecialEnt("Splashy Long Legs"), Affliction = "Woman"},
 	{ID = mod:SpecialEnt("Sticky Long Legs"), Affliction = "Woman"},
-	{ID = mod:SpecialEnt("Tainted Dumpling"), Affliction = "Woman"}, --fuck it
+	{ID = mod:SpecialEnt("Tainted Dumpling"), Affliction = "Woman"},
 	{ID = mod:SpecialEnt("Scab"), Affliction = "Woman"},
 	{ID = mod:SpecialEnt("Mortling"), Affliction = "Woman"},
 	{ID = mod:SpecialEnt("​Fracture"), Affliction = "Woman"},
 	{ID = mod:SpecialEnt("Echo Bat"), Affliction = "Woman"},
-	{ID = mod:SpecialEnt("Screamer"), Affliction = "Trans"},
-	--{ID = {Isaac.GetEntityTypeByName("Cell"), Isaac.GetEntityVariantByName("Cell")}, Affliction = "Woman"}, --Cell BC WESTRVN SAID SO ):
+	{ID = mod:SpecialEnt("Screamer"), Affliction = "Women"},
 	{ID = mod:SpecialEnt("Fused Cell"), Affliction = "Woman"},
-	--{ID = {Isaac.GetEntityTypeByName("Tissue"), Isaac.GetEntityVariantByName("Tissue")}, Affliction = "Woman"}, --Tissue ALSO BC WESTRVN SAID SO ):
 	{ID = mod:SpecialEnt("Grave Robber"), Affliction = "Woman"},
 	{ID = mod:SpecialEnt("​Strifer"), Affliction = "Woman"},
 	{ID = mod:SpecialEnt("Vessel (Antibirth)"), Affliction = "Woman"},
-	{ID = mod:SpecialEnt("Chubby Bunny"), Affliction = "Woman"},
-	{ID = mod:SpecialEnt("Beard Bat"), Affliction = "Non-Binary"}, --they arent women because girls dont fart
 }
 
 RestoredMonsterPack.LGBTQIA = {
-	{ID = mod:SpecialEnt("Dumpling"), Affliction = "Ace"},
-	{ID = mod:SpecialEnt("Mortling"), Affliction = "Ace"},
-	{ID = mod:SpecialEnt("Corpse Eater"), Affliction = "Bi"},
-	{ID = mod:SpecialEnt("Gilded Dumpling"), Affliction = "Gay"}, --bc pandora said they're gay as actual fuck
-	{ID = mod:SpecialEnt("Sporeling"), Affliction = "Ace"},
-	{ID = mod:SpecialEnt("Chubby Bunny"), Affliction = "Trans"},
-	{ID = mod:SpecialEnt("Beard Bat"), Affliction = "Trans"},
+	{ID = mod:SpecialEnt("Dumpling"), Affliction = "Non-Binary"},
+	{ID = mod:SpecialEnt("Mortling"), Affliction = "Non-Binary"},
+	{ID = mod:SpecialEnt("Corpse Eater"), Affliction = "Demigirl"},
+	{ID = mod:SpecialEnt("Gilded Dumpling"), Affliction = "HOLY SHIT THIS GUY'S GAY AS FUUUUUCK"}, --bc pandora said they're gay as actual fuck
+	{ID = mod:SpecialEnt("Sporeling"), Affliction = "3rd Gender"},
+	{ID = mod:SpecialEnt("Chubby Bunny"), Affliction = "3rd Gender"},
+	{ID = mod:SpecialEnt("Beard Bat"), Affliction = "3rd Gender"},
 }
 
 function mod.MixFiendFolioStuff()
