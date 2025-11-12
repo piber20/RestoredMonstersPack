@@ -207,7 +207,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="0" y="6">
-			<entity type="200" variant="2503" subtype="0" weight="1.0"/>
+			<entity type="200" variant="2503" subtype="129" weight="1.0"/>
 		</spawn>
 		<spawn x="2" y="6">
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
@@ -222,7 +222,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="12" y="6">
-			<entity type="200" variant="2503" subtype="0" weight="1.0"/>
+			<entity type="200" variant="2503" subtype="129" weight="1.0"/>
 		</spawn>
 	</room>
 	<room variant="24003" name="[RM] - We Strvn - Death Down Below" type="23" subtype="17" shape="1" width="13" height="7" difficulty="1" weight="1.0">
@@ -427,7 +427,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="1" y="1">
-			<entity type="200" variant="2503" subtype="1" weight="1.0"/>
+			<entity type="200" variant="2503" subtype="260" weight="1.0"/>
 		</spawn>
 		<spawn x="5" y="1">
 			<entity type="6" variant="10" subtype="0" weight="1.0"/>
@@ -655,13 +655,13 @@
 			<entity type="5" variant="50" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="5" y="3">
-			<entity type="200" variant="2503" subtype="0" weight="1.0"/>
+			<entity type="200" variant="2503" subtype="899" weight="1.0"/>
 		</spawn>
 		<spawn x="6" y="3">
 			<entity type="5" variant="60" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="7" y="3">
-			<entity type="200" variant="2503" subtype="0" weight="1.0"/>
+			<entity type="200" variant="2503" subtype="899" weight="1.0"/>
 		</spawn>
 		<spawn x="8" y="3">
 			<entity type="5" variant="50" subtype="0" weight="1.0"/>

@@ -25869,7 +25869,7 @@
 			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="6" y="3">
-			<entity type="200" variant="2503" subtype="0" weight="1.0"/>
+			<entity type="200" variant="2503" subtype="129" weight="1.0"/>
 		</spawn>
 		<spawn x="5" y="4">
 			<entity type="1901" variant="0" subtype="0" weight="1.0"/>

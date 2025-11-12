@@ -144,7 +144,7 @@
 			<entity type="800" variant="2" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24009" name="[RM] - Greed Wave 4" type="11" subtype="0" shape="4" width="13" height="14" difficulty="5" weight="0.0">
+	<room variant="24009" name="[RM] - Greed Wave 4" type="11" subtype="0" shape="4" width="13" height="14" difficulty="5" weight="1.0">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="-1" y="10"/>
 		<door exists="True" x="6" y="-1"/>
@@ -158,7 +158,7 @@
 			<entity type="241" variant="200" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24010" name="[RM] - Greed Wave 5" type="11" subtype="0" shape="4" width="13" height="14" difficulty="10" weight="0.0">
+	<room variant="24010" name="[RM] - Greed Wave 5" type="11" subtype="0" shape="4" width="13" height="14" difficulty="10" weight="1.0">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="-1" y="10"/>
 		<door exists="True" x="6" y="-1"/>
@@ -172,7 +172,7 @@
 			<entity type="61" variant="2" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24011" name="[RM] - Greed Wave 6" type="11" subtype="0" shape="4" width="13" height="14" difficulty="15" weight="0.0">
+	<room variant="24011" name="[RM] - Greed Wave 6" type="11" subtype="0" shape="4" width="13" height="14" difficulty="15" weight="1.0">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="-1" y="10"/>
 		<door exists="True" x="6" y="-1"/>
@@ -186,7 +186,7 @@
 			<entity type="241" variant="200" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="24012" name="[RM] - Greed Wave 7" type="11" subtype="0" shape="4" width="13" height="14" difficulty="15" weight="0.0">
+	<room variant="24012" name="[RM] - Greed Wave 7" type="11" subtype="0" shape="4" width="13" height="14" difficulty="15" weight="1.0">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="-1" y="10"/>
 		<door exists="True" x="6" y="-1"/>
