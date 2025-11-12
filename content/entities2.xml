@@ -209,7 +209,7 @@
     	<devolve id="222.0.0" weight="1" />
     </entity>
     <!-- Split Rage Creep -->
-    <entity anm2path="241.001_split rage creep.anm2" name="​Split Rage Creep" id="241" variant="200" baseHP="16" stageHP="0" boss="0" champion="1" tags="spider brimstone_soul" portrait="32" collisionDamage="1" collisionMass="14" collisionRadius="13" friction="1" numGridCollisionPoints="12" shadowSize="0">
+    <entity anm2path="monsters\restored\splitragecreep\split_rage_creep.anm2" name="​Split Rage Creep" id="241" variant="200" baseHP="16" stageHP="0" boss="0" champion="1" tags="spider brimstone_soul" portrait="32" collisionDamage="1" collisionMass="14" collisionRadius="13" friction="1" numGridCollisionPoints="12" shadowSize="0">
         <bestiary anim="Walk" transform="0,0,1"/>
         <gibs amount="4" blood="1" bone="0" eye="0" gut="1" large="0"/>
     	<devolve id="242.0.0" weight="1" />
@@ -225,7 +225,7 @@
         <preload-snd id="317"/>
     </entity>
     <!-- Nightwatch -->
-    <entity anm2path="842.000_nightwatch.anm2" name="​Nightwatch" id="842" variant="1" baseHP="25" stageHP="5" boss="0" champion="0" shutdoors="false"  tags="ghost noreroll" portrait="31" collisionDamage="0" collisionMass="100" collisionRadius="13" friction="1" numGridCollisionPoints="12" shadowSize="20" gridCollision="floor">
+    <entity anm2path="842.000_nightwatch.anm2" name="​Nightwatch" id="842" variant="1" baseHP="25" stageHP="5" boss="0" champion="0" shutdoors="false"  tags="ghost noreroll" portrait="31" collisionDamage="1" collisionMass="100" collisionRadius="13" friction="1" numGridCollisionPoints="12" shadowSize="20" gridCollision="floor">
         <bestiary anim="WalkDown" transform="0,0,1"/>
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0"/>
         <devolve id="260.10.0" weight="1" />

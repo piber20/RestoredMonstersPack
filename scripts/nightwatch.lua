@@ -93,6 +93,16 @@ function mod:nightwatchNewRoom()
 
     if game:GetRoom():IsFirstVisit() then
         local nightwatch_table = {}
+        local total_grids = game:GetRoom():GetGridWidth() * game:GetRoom():GetGridHeight()
+
+        for i = 0, total_grids do
+        	local grid = game:GetRoom():GetGridEntity(i)
+
+        	if grid and grid:GetType() == GridEntityType.GRID_PRESSURE_PLATE
+        		and grid:GetVariant() == 0 then
+        		return --Nightwatchers shouldn't respawn if the room has room clear plates
+        	end
+        end
 
         for _,v in pairs(Isaac.GetRoomEntities()) do
 			-- Get Nightwatches

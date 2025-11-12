@@ -133,3 +133,15 @@ function mod:stillbornUpdate(entity)
 	end
 end
 mod:AddCallback(ModCallbacks.MC_NPC_UPDATE, mod.stillbornUpdate, mod.ENTITY_INFO.STILLBORN.ID)
+
+function mod:stillbornDeathOnWaveStart()
+	-- Specifically in greed cuz in challenge rooms it works well enough
+	if Game().Difficulty < Difficulty.DIFFICULTY_GREED then return end
+
+	for _, stillborn in ipairs(Isaac.FindByType(mod.ENTITY_INFO.STILLBORN.ID, 
+												mod.ENTITY_INFO.STILLBORN.VARIANT)) do
+		stillborn:GetData().state = States.Dead
+	end
+end
+
+mod:AddCallback(ModCallbacks.MC_PRE_ROOM_ENTITY_SPAWN, mod.stillbornDeathOnWaveStart)

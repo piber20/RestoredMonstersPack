@@ -34,12 +34,13 @@
 <!-- Tissue -->
 <entity Image="resources/Tissue.png" Name="Tissue" ID="200" Subtype="0" Variant="2502" BaseHP="64" Group="Monsters" Kind="Restored Monsters Pack"/>
 <!-- Grave Robber -->
-<entity Image="resources/Grave Robber.png" Name="Grave Robber" ID="200" Subtype="0" Variant="2503" BaseHP="15" Tags="Champion"  >
 		<bitfield Key="Subtype">
-			<dropdown Name="When to escape after stealing item" Length="1" Offset="0">
-				<choice>Escape Instantly</choice>
-				<choice>Escape after 10 Seconds</choice>
-		</dropdown>
+			<spinner Length="7" Name="Flee Timer">
+                <tooltip>After this amount of time(in seconds) Grave Robber will escape</tooltip>
+            </spinner>
+            <spinner Length="7" Offset="7" Name="Pickup Capacity">
+                <tooltip>Amount of pickups Grave Robber will collect before starting flee timer</tooltip>
+            </spinner>
 	</bitfield>
 </entity>
 <!-- Splashy Long Legs -->
@@ -57,6 +58,8 @@
 <entity Image="resources/Blood Worm.png" Name="Blood Worm" ID="244"  Subtype="0" Variant="2500" BaseHP="100" Group="Monsters" Kind="Restored Monsters Pack"/>
 <!-- RM Vessel -->
 <entity Image="resources/Vessel (RM).png" Name="Vessel (RM)" ID="858" Subtype="0" Variant="1" baseHP="60" Tags="Champion" Group="Monsters" Kind="Restored Monsters Pack"/>
+<entity Image="resources/Receptacle.png" Name="Receptacle" ID="858" Subtype="1" Variant="1" baseHP="60" Tags="Champion" Group="Monsters" Kind="Restored Monsters Pack"/>
+<entity Image="resources/Miasma.png" Name="Miasma" ID="858" Subtype="2" Variant="1" baseHP="60" Tags="Champion" Group="Monsters" Kind="Restored Monsters Pack"/>
 <!-- Corse Eater -->
 <entity Image="resources/Corpse Eater.png" Name="Corpse Eater (RM)" ID="239" Subtype="0" Variant="200" Metadata="1" BaseHP="30" StageHP="2.5" Armor="3" Group="Monsters" Kind="Restored Monsters Pack"/>
 <!-- Carrion Rider -->

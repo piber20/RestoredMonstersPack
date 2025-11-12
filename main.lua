@@ -98,7 +98,8 @@ RestoredMonsterPack.ENTITY_INFO = {
 	GRAVEROBBER = makeEnumTable("Grave Robber"),
 	SPLASHY = makeEnumTable("Splashy Long Legs"),
 	STICKY = makeEnumTable("Sticky Long Legs"),
-	FOREVER_FRIEND = makeEnumTable("Forever Friend")
+	FOREVER_FRIEND = makeEnumTable("Forever Friend"),
+	SPLIT_RAGE_CREEP = makeEnumTable("​Split Rage Creep")
 }
 
 -- Variants of the cut monsters entity
@@ -165,6 +166,7 @@ include("scripts.vessel")
 include("scripts.screamer")
 include("scripts.redTNT")
 include("scripts.palevessel")
+include("scripts.splitRageCreep")
 
 --[[--------------------------------------------------------
     misc
@@ -575,7 +577,7 @@ function mod:MostDumbThing(ent)
 end
 mod:AddPriorityCallback(ModCallbacks.MC_PRE_NPC_UPDATE, 1000, mod.MostDumbThing)
 mod.DumbhackReplace = {
-	[EntityType.ENTITY_RAGE_CREEP] = {1, Isaac.GetEntityVariantByName("​Split Rage Creep")},
+	--[EntityType.ENTITY_RAGE_CREEP] = {1, Isaac.GetEntityVariantByName("​Split Rage Creep")},
 	[EntityType.ENTITY_WALL_CREEP] = {2, Isaac.GetEntityVariantByName("​Rag Creep")},
 }
 

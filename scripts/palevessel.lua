@@ -22,6 +22,11 @@ local States = {
   Attacking = 2
 }
 
+local GFXChange = {
+	[1] = "gfx/monsters/restored/vessel/receptacle.png",
+	[2] = "gfx/monsters/restored/vessel/miasma.png"
+}
+
 local function mathrandom(rng, a, b)
 	return rng:RandomInt(b-a) + a
 end
@@ -32,11 +37,10 @@ function mod:palevesselInit(vessel)
 	end
 	vessel.SplatColor = Color(0.4,0.8,0.4, 1, 0,0.1,0)
 	local sprite = vessel:GetSprite()
-	if vessel.SubType == 0 then
 
-	elseif vessel.SubType == 1 then
-		sprite:ReplaceSpritesheet(0, "gfx/monsters/restored/vessel/receptacle.png")
-		sprite:ReplaceSpritesheet(1, "gfx/monsters/restored/vessel/receptacle.png")
+	if GFXChange[vessel.SubType] then
+		sprite:ReplaceSpritesheet(0, GFXChange[vessel.SubType])
+		sprite:ReplaceSpritesheet(1, GFXChange[vessel.SubType])
 		sprite:LoadGraphics()
 	end
 	sprite:Play("WalkDown", true)
@@ -71,13 +75,8 @@ function mod:palevesselUpdate(vessel)
 
 	if vesselData.State == States.Moving then
 
-		if vessel.SubType == 2 then
-			--vessel:AnimWalkFrame("WalkRight", "WalkDown", 0.15)
-			if vessel:IsFrame(math.ceil(8/1.5), 0) then
-				pathfinder:MoveRandomly(false)
-				vessel.Velocity = vessel.Velocity * 0.75
-			end
-		elseif vessel.SubType == 1 then
+		if vessel.SubType == 1
+			or vessel.SubType == 2 then
 			--[[if angle <= 135 and angle >= 45 then
 					sprite:SetAnimation("WalkDown", false)
 				elseif angle >= -45 and angle < 45 then
@@ -88,7 +87,8 @@ function mod:palevesselUpdate(vessel)
 					sprite:SetAnimation("WalkLeft", false)
 				end]]
 			--vessel.Velocity = vessel.Velocity * 0.05 + (target.Position - vessel.Position):Resized(1.25)
-			local speed = Settings.MoveSpeed
+			local spdmult = vessel.SubType == 2 and 2 or 1
+			local speed = Settings.MoveSpeed * spdmult
 			if vessel:HasEntityFlags(EntityFlag.FLAG_FEAR) or vessel:HasEntityFlags(EntityFlag.FLAG_SHRINK) then
 				speed = -speed
 			end
@@ -124,12 +124,7 @@ function mod:palevesselUpdate(vessel)
 			local speed = Settings.MoveSpeed
 			if vessel:HasEntityFlags(EntityFlag.FLAG_FEAR) or vessel:HasEntityFlags(EntityFlag.FLAG_SHRINK) then
 				speed = -speed
-			end
 
-			if vessel:HasEntityFlags(EntityFlag.FLAG_CONFUSION) then
-				pathfinder:MoveRandomly(false)
-
-			else
 				if pathfinder:HasPathToPos(target.Position) then
 					if game:GetRoom():CheckLine(vessel.Position, target.Position, 0, 0, false, false) then
 						vessel.Velocity = (vessel.Velocity + ((target.Position - vessel.Position):Resized(speed) - vessel.Velocity) * 0.25)
@@ -141,6 +136,9 @@ function mod:palevesselUpdate(vessel)
 				else
 					vessel.Velocity = (vessel.Velocity + (Vector.Zero - vessel.Velocity) * 0.25)
 				end
+			else
+				vessel.Velocity = vessel.Velocity:Resized(speed)
+				pathfinder:MoveRandomly(false)
 			end
 		end
 		if angle <= 135 and angle >= 45 or angle == 0 then
@@ -212,14 +210,8 @@ function mod:palevesselUpdate(vessel)
         end
 	end
 
-
-	if vessel.SubType == 0 then
-		if sprite:GetFrame() == 16 and rng:RandomFloat() <= Settings.StepMaggotSpawnChance
-		and Isaac.CountEntities(vessel,EntityType.ENTITY_SMALL_MAGGOT) < Settings.MaxMaggots then
-			local maggot = Isaac.Spawn(EntityType.ENTITY_SMALL_MAGGOT, 0, 0, vessel.Position, Vector(0, 0), vessel)
-            maggot:ClearEntityFlags(EntityFlag.FLAG_APPEAR)
-		end
-	elseif vessel.SubType == 1 then
+	if vessel.SubType == 1
+		or vessel.SubType == 2 then
 		--if sprite:GetFrame() == 16 and math.random() <= Settings.StepMaggotSpawnChance and vesselData.Maggots < Settings.MaxMaggots then
 
 		vesselData.MaggotCountdown = vesselData.MaggotCountdown - 1
@@ -231,10 +223,10 @@ function mod:palevesselUpdate(vessel)
 			maggot.I1 = 1
 			maggot:ClearEntityFlags(EntityFlag.FLAG_APPEAR)
 			maggot.State = NpcState.STATE_SPECIAL
-			vesselData.MaggotCountdown = mathrandom(rng, Settings.AttackTime[1], Settings.AttackTime[2])
+			maggotcntdwn_mult = vessel.SubType == 2 and 30 or 0
+			vesselData.MaggotCountdown = mathrandom(rng, Settings.AttackTime[1] - maggotcntdwn_mult, Settings.AttackTime[2] - maggotcntdwn_mult)
 		end
-	--elseif vessel.SubType == 2 then
-		if vessel.FrameCount % 16 == 0 then  -- vessel:IsFrame(math.ceil(8/0.5), 0) then
+		if vessel.SubType == 2 and vessel.FrameCount % 8 == 0 then
 			local creep = Isaac.Spawn(EntityType.ENTITY_EFFECT, EffectVariant.CREEP_GREEN, 0, vessel.Position, Vector(0, 0), vessel):ToEffect()
 			creep.SpriteScale = creep.SpriteScale * 0.5
 		end
@@ -262,7 +254,7 @@ function mod:palevesselUpdate(vessel)
 		if vessel.SubType == 0 then
 			local phase2 = Isaac.Spawn(VESSEL.ID, 1, 1, vessel.Position, Vector.Zero, vessel):ToNPC()
 			phase2:ClearEntityFlags(EntityFlag.FLAG_APPEAR)
-			for i = 1, Settings.CreepsToSpawn do
+			--[[for i = 1, Settings.CreepsToSpawn do
 				table.insert(vesselData.CreepAngles, mathrandom(rng, 0, 360))
 			end
 
@@ -272,12 +264,11 @@ function mod:palevesselUpdate(vessel)
 				creep:GetSprite().Scale = Vector(2, 2)
 			else
 				creep:GetSprite().Scale = Vector(1, 1)
-			end
-		end
+			end]]
 		elseif vessel.SubType == 1 then
-			--local phase3 = Isaac.Spawn(VESSEL.ID, 1, 2, vessel.Position, Vector.Zero, vessel):ToNPC()
-			--phase3:ClearEntityFlags(EntityFlag.FLAG_APPEAR)
-			for i = 1, Settings.MaggotsToShoot do
+			local phase3 = Isaac.Spawn(VESSEL.ID, 1, 2, vessel.Position, Vector.Zero, vessel):ToNPC()
+			phase3:ClearEntityFlags(EntityFlag.FLAG_APPEAR)
+			--[[for i = 1, Settings.MaggotsToShoot do
 				if Isaac.CountEntities(vessel,EntityType.ENTITY_SMALL_MAGGOT) < Settings.MaxMaggots then
 					local maggot = Isaac.Spawn(EntityType.ENTITY_SMALL_MAGGOT, 0, 0, vessel.Position, Vector.FromAngle(mathrandom(rng, 0, 360)):Resized(mathrandom(rng, 2, 3)), vessel):ToNPC()
 					maggot.V1 = Vector(-10, 10)
@@ -288,7 +279,8 @@ function mod:palevesselUpdate(vessel)
 				else
 					break
 				end
-			end
+			end]]
+		elseif vessel.SubType == 2 then
 			for i = 1, Settings.CreepsToSpawn do
 				table.insert(vesselData.CreepAngles, mathrandom(rng, 0, 360))
 			end

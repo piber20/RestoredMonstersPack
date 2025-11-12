@@ -54,8 +54,8 @@ function mod:screamerUpdate(entity)
 				suffix = "Angry"
 
 				-- Slowing aura
-				if not data.aura or (data.aura and not data.aura:Exists()) then
-					data.aura = Isaac.Spawn(EntityType.ENTITY_EFFECT, EffectVariant.SCREAMER_AURA, 0, entity.Position, Vector.Zero, entity):ToEffect()
+				if not data.aura or not data.aura:Exists() then
+					data.aura = Isaac.Spawn(EntityType.ENTITY_EFFECT, EffectVariant.SCREAMER_AURA, 0, entity.Position, entity.Velocity, entity):ToEffect()
 					data.aura.Parent = entity
 					data.aura:GetSprite():Play("FadeIn", true)
 					data.aura.DepthOffset = -1000
@@ -141,8 +141,9 @@ function mod:screamerUpdate(entity)
 
 
 		elseif data.state == States.Scream then
+			entity.Velocity = Vector.Zero
+
 			if not sprite:IsPlaying("Scream") then
-				entity.Velocity = Vector.Zero
 				sprite:Play("Scream", true)
 			end
 

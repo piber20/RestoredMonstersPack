@@ -59,11 +59,33 @@ local function fart(npc)
 	elseif npc.Variant == RestoredMonsterPack.ENTITY_INFO.MORTLING.VARIANT then
 		Isaac.Spawn(EntityType.ENTITY_EFFECT, EffectVariant.FART, 0, npc.Position, Vector.Zero, npc) -- green fart
 
-		local params = ProjectileParams()
-		params.Scale = 2
-		params.BulletFlags = ProjectileFlags.WIGGLE
-		npc:FireProjectiles(npc.Position, Vector(3, 3), 9, params) -- in Vector(6, 6), the first 6 is the speed, second 6 is the amount of shots
+		local rng = RNG()
+		rng:SetSeed(npc.DropSeed)
+		local colors = {Color(1, 1, 1), Color(4, 4, 4)}
+		colors[1]:SetColorize(0.62, 0.85, 0.31, 1)
+		colors[2]:SetColorize(0.62, 0.85, 0.31, 1)
 
+		local startvel = Vector(0.1, 0):Rotated(math.random(360))
+
+		for i = 0, 2 do
+			for j = 0, 3 do
+				local proj = Isaac.Spawn(EntityType.ENTITY_PROJECTILE,
+										0,
+										0,
+										npc.Position,
+										startvel:Rotated(120 * i),
+										npc):ToProjectile()
+				proj.Scale = rng:RandomFloat() + 1
+				proj.ProjectileFlags = ProjectileFlags.CHANGE_FLAGS_AFTER_TIMEOUT | ProjectileFlags.CHANGE_VELOCITY_AFTER_TIMEOUT
+				proj.ChangeFlags = ProjectileFlags.MEGA_WIGGLE | ProjectileFlags.ACCELERATE
+				proj.ChangeTimeout = 2 * j
+				proj.ChangeVelocity = 3
+				proj.FallingAccel = -0.1
+				proj.Acceleration = 1.05 --approximately
+				proj.WiggleFrameOffset = -j
+				proj.Color = colors[math.random(1, 2)]
+			end
+		end
 
 		local partition = EntityPartition.PLAYER
 		if npc:HasEntityFlags(EntityFlag.FLAG_CHARM) then
@@ -91,7 +113,7 @@ local function fart(npc)
 		end
 
         local spawned_cloud = Isaac.Spawn(EntityType.ENTITY_EFFECT, EffectVariant.SMOKE_CLOUD, 0, npc.Position, Vector(0,0), npc)
-        spawned_cloud:ToEffect():SetTimeout(200)
+        spawned_cloud:ToEffect():SetTimeout(600)
 
 	-- Tainted Dumpling
 	elseif npc.Variant == RestoredMonsterPack.ENTITY_INFO.TAINTED_DUMPLING.VARIANT then
@@ -328,6 +350,14 @@ function mod:dumplingDeath(entity)
         end
         for var=0,12 do -- spawn gibs
             Isaac.Spawn(EntityType.ENTITY_EFFECT, EffectVariant.COIN_PARTICLE, 0, npc.Position, Vector((rng:RandomInt(6)-3)*6,(rng:RandomInt(6)-3)*6), npc)
+        end
+
+        if FiendFolio then
+        	Game():ShakeScreen(20)
+            SFXManager():Play(SoundEffect.SOUND_ULTRA_GREED_COIN_DESTROY, 1.5, 0, false, 1)
+            local flash = Isaac.Spawn(1000, 7004, 0, Game():GetRoom():GetCenterPos(), Vector.Zero, npc):ToEffect()
+            flash.RenderZOffset = 1000000
+            Game():GetRoom():TurnGold()
         end
     end
 end

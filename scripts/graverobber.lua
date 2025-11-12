@@ -50,6 +50,9 @@ function mod:grobberUpdate(entity)
 	if entity.Variant == mod.ENTITY_INFO.GRAVEROBBER.VARIANT then
 		local sprite = entity:GetSprite()
 		local data = entity:GetData()
+		local max_pickups = entity.SubType >> 7
+		local flee_timer = (entity.SubType - max_pickups * 2 ^ 7) * 30
+		local storedPickups = data.storedPickups and #data.storedPickups or 0
 
 
 		if data.state == States.Appear or data.state == nil then
@@ -81,7 +84,7 @@ function mod:grobberUpdate(entity)
 					end
 				end
 
-				if nearest ~= nil then
+				if nearest ~= nil and (storedPickups >= max_pickups or data.noPickups) then
 					data.scariest = nearest
 					data.state = States.Running
 					data.pickup = nil
@@ -124,16 +127,17 @@ function mod:grobberUpdate(entity)
 				if nearest ~= nil then
 					data.noPickups = false
 					data.pickup = nearest
-				end
-				if count <= 0 then
-					if data.noPickups == false then
-						if entity.SubType == 0 then -- escape instantly subtype
-							data.escapeTime = 15
-						elseif entity.SubType == 1 then-- wait to escape subtype
-							data.escapeTime = 300
-						end
+
+					if storedPickups < max_pickups then
+						data.escapeTime = nil
 					end
+				end
+				if count <= 0 and data.noPickups == false then
 					data.noPickups = true
+
+					if not data.escapeTime then
+						data.escapeTime = flee_timer
+					end
 				end
 			end
 
@@ -144,10 +148,20 @@ function mod:grobberUpdate(entity)
 				end
 			end
 
-
 			-- Escape timer
+			if data.waitTime and data.waitTime > 0 then
+				data.waitTime = data.waitTime - 1
+			elseif data.escapeTime then
+				if data.escapeTime <= 0 then
+					data.state = States.Escape
+					data.escapeTime = nil
+				else
+					data.escapeTime = data.escapeTime - 1
+				end
+			end
+
+			-- Wandering
 			if data.noPickups == true then
-				-- Wandering
 				if not data.WdrNextPoint then
 					local nextpos --= entity.Position
 					local ep = entity.Position
@@ -189,17 +203,6 @@ function mod:grobberUpdate(entity)
 						if data.WdrChTime < 0 then
 							data.WdrNextPoint = nil
 						end
-					end
-				end
-
-
-				if data.waitTime and data.waitTime > 0 then
-					data.waitTime = data.waitTime - 1
-				else
-					if data.escapeTime <= 0 then
-						data.state = States.Escape
-					else
-						data.escapeTime = data.escapeTime - 1
 					end
 				end
 			end
@@ -475,11 +478,12 @@ function mod:grobberPickup(entity)
 
   local key
 	if data.grobber then
+		local grdata = data.grobber:GetData()
     -- Open chests
 		if entity.Variant - (entity.Variant % 10) == 50 or entity.Variant == PickupVariant.PICKUP_LOCKEDCHEST or entity.Variant == PickupVariant.PICKUP_REDCHEST then
 			entity:TryOpenChest(nil)
-			data.grobber:GetData().pickup = nil
-			data.grobber:GetData().waitTime = 15
+			grdata.pickup = nil
+			grdata.waitTime = 15
 
 			if entity:CanReroll() == false then
 				-- Take damage from spiked chests
@@ -500,7 +504,7 @@ function mod:grobberPickup(entity)
 			if not sprite:IsPlaying("Collect") then
 				local addTo = true
 				sprite:Play("Collect", true)
-				data.grobber:GetData().pickup = nil
+				grdata.pickup = nil
 				-- Check if it's not a chest
 				if sprite:IsPlaying("Collect") then
 					data.grobbed = true
@@ -524,7 +528,12 @@ function mod:grobberPickup(entity)
 
 				if addTo == true then
 					local pData = {entity.Variant, entity.SubType}
-					table.insert(data.grobber:GetData().storedPickups, pData)
+					table.insert(grdata.storedPickups, pData)
+
+					if #grdata.storedPickups >= data.grobber.SubType >> 7
+						and not grdata.escapeTime then
+						grdata.escapeTime = (data.grobber.SubType - (data.grobber.SubType >> 7) * 2 ^ 7) * 30
+					end
 				end
 			end
 		end
