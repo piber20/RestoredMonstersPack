@@ -34,6 +34,7 @@
 <!-- Tissue -->
 <entity Image="resources/Tissue.png" Name="Tissue" ID="200" Subtype="0" Variant="2502" BaseHP="64" Group="Monsters" Kind="Restored Monsters Pack"/>
 <!-- Grave Robber -->
+<entity Image="resources/Grave Robber.png" Name="Grave Robber" ID="200" Subtype="0" Variant="2503" BaseHP="15" Tags="Champion" Group="Monsters" Kind="Restored Monsters Pack">
 		<bitfield Key="Subtype">
 			<spinner Length="7" Name="Flee Timer">
                 <tooltip>After this amount of time(in seconds) Grave Robber will escape</tooltip>
