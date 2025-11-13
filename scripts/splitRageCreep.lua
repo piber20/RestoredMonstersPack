@@ -35,7 +35,7 @@ mod:AddCallback(ModCallbacks.MC_NPC_UPDATE, mod.splitCreepUpdate, ENTITY.ID)
 function mod:splitCreepLaserUpdate(brim)
 	if not brim:GetData().splitragecreep_brim then return end
 
-	if brim.FrameCount % 10 == 5 and not brim.Shrink then
+	if brim.FrameCount % 15 == 5 and not brim.Shrink then
 		local rng = brim:GetDropRNG()
 		local start_pos = brim.Position + Vector(40, 0):Rotated(brim.Angle)
 		local brim_vector = brim.EndPoint - start_pos
@@ -51,7 +51,7 @@ function mod:splitCreepLaserUpdate(brim)
 									brim_vector:Resized(7):Rotated(90 - 180 * dir),
 									brim.Parent):ToProjectile()
 			proj:GetSprite().Color = Color(1, 1, 1, 1, 0.5)
-			proj.FallingAccel = -0.1
+			proj.FallingAccel = 0.01
 		end
 	end
 end
