@@ -183,12 +183,14 @@
         <gibs amount="16" blood="1" bone="1" eye="1" gut="1" large="0"/>
         <devolve id="858.200.0" weight="1" />     
 	</entity>
-    <entity anm2path="monsters\restored\vessel\receptacle.anm2" name="Receptacle" id="858" variant="1" baseHP="70" stageHP="0" boss="0" champion="0" reroll="true" portrait="24" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1" numGridCollisionPoints="12" shadowSize="16" subtype="1" >
+    <!-- Receptacle -->
+    <entity anm2path="monsters\restored\vessel\receptacle.anm2" name="Receptacle" id="858" variant="1" baseHP="70" stageHP="0" boss="0" champion="0" reroll="true" portrait="25" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1" numGridCollisionPoints="12" shadowSize="16" subtype="1" >
         <bestiary anim="WalkDown" transform="0,0,1"/>
         <gibs amount="16" blood="1" bone="1" eye="1" gut="1" large="0"/>
         <devolve id="858.200.0" weight="1" />     
     </entity>
-    <entity anm2path="monsters\restored\vessel\miasma.anm2" name="Miasma" id="858" variant="1" baseHP="70" stageHP="0" boss="0" champion="0" reroll="true" portrait="24" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1" numGridCollisionPoints="12" shadowSize="16" subtype="2" >
+    <!-- Miasma -->
+    <entity anm2path="monsters\restored\vessel\miasma.anm2" name="Miasma" id="858" variant="1" baseHP="70" stageHP="0" boss="0" champion="0" reroll="true" portrait="26" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1" numGridCollisionPoints="12" shadowSize="16" subtype="2" >
         <bestiary anim="WalkDown" transform="0,0,1"/>
         <gibs amount="16" blood="1" bone="1" eye="1" gut="1" large="0"/>
         <devolve id="858.200.0" weight="1" />     
