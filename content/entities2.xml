@@ -178,11 +178,21 @@
         <devolve id="244.0.0" weight="1" />
     </entity>
     <!-- RM Vessel -->
-	<entity anm2path="monsters\restored\vessel\vessel_rm.anm2" name="Vessel (RM)" id="858" variant="1" baseHP="70" stageHP="0" boss="0" champion="0" reroll="true" portrait="24" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1" numGridCollisionPoints="12" shadowSize="16" >
+	<entity anm2path="monsters\restored\vessel\vessel_rm.anm2" name="Vessel (RM)" id="858" variant="1" baseHP="70" stageHP="0" boss="0" champion="0" reroll="true" portrait="24" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1" numGridCollisionPoints="12" shadowSize="16" subtype="0" >
         <bestiary anim="WalkDown" transform="0,0,1"/>
         <gibs amount="16" blood="1" bone="1" eye="1" gut="1" large="0"/>
         <devolve id="858.200.0" weight="1" />     
 	</entity>
+    <entity anm2path="monsters\restored\vessel\receptacle.anm2" name="Receptacle" id="858" variant="1" baseHP="70" stageHP="0" boss="0" champion="0" reroll="true" portrait="24" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1" numGridCollisionPoints="12" shadowSize="16" subtype="1" >
+        <bestiary anim="WalkDown" transform="0,0,1"/>
+        <gibs amount="16" blood="1" bone="1" eye="1" gut="1" large="0"/>
+        <devolve id="858.200.0" weight="1" />     
+    </entity>
+    <entity anm2path="monsters\restored\vessel\miasma.anm2" name="Miasma" id="858" variant="1" baseHP="70" stageHP="0" boss="0" champion="0" reroll="true" portrait="24" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1" numGridCollisionPoints="12" shadowSize="16" subtype="2" >
+        <bestiary anim="WalkDown" transform="0,0,1"/>
+        <gibs amount="16" blood="1" bone="1" eye="1" gut="1" large="0"/>
+        <devolve id="858.200.0" weight="1" />     
+    </entity>
 <!-- Antibirth enemy Variants for Bestiary -->
     <!-- Corpse Eater -->
     <entity anm2path="monsters\restored\corpseeater\corpse_eater.anm2" name="​Corpse Eater" id="239" variant="200" baseHP="30" stageHP="2.5" shieldStrength="3" boss="0" champion="0" portrait="28" collisionDamage="1" collisionMass="14" collisionRadius="13" friction="1" numGridCollisionPoints="12" shadowSize="21">

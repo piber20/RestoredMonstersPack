@@ -22,11 +22,6 @@ local States = {
   Attacking = 2
 }
 
-local GFXChange = {
-	[1] = "gfx/monsters/restored/vessel/receptacle.png",
-	[2] = "gfx/monsters/restored/vessel/miasma.png"
-}
-
 local function mathrandom(rng, a, b)
 	return rng:RandomInt(b-a) + a
 end
@@ -38,11 +33,6 @@ function mod:palevesselInit(vessel)
 	vessel.SplatColor = Color(0.4,0.8,0.4, 1, 0,0.1,0)
 	local sprite = vessel:GetSprite()
 
-	if GFXChange[vessel.SubType] then
-		sprite:ReplaceSpritesheet(0, GFXChange[vessel.SubType])
-		sprite:ReplaceSpritesheet(1, GFXChange[vessel.SubType])
-		sprite:LoadGraphics()
-	end
 	sprite:Play("WalkDown", true)
     vessel:GetData().VesselData = {
 
