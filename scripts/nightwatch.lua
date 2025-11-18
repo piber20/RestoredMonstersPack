@@ -243,6 +243,22 @@ local function nightwatchAlert()
 		end
 	end
 
+	local total_grids = room:GetGridWidth() * room:GetGridHeight()
+
+	-- Activate all room clear plates
+    for i = 0, total_grids do
+    	local grid = room:GetGridEntity(i)
+
+    	if grid and grid:GetType() == GridEntityType.GRID_PRESSURE_PLATE
+    		and grid:GetVariant() == 0 then
+    		grid.State = 3
+
+    		if grid:GetSprite():IsPlaying("Off") then
+    			grid:GetSprite():Play("Switched", true)
+    		end
+    	end
+    end
+
 	for _,v in pairs(Isaac.GetRoomEntities()) do
 		-- Alert all other Nightwatches
 		if v.Type == mod.ENTITY_INFO.NIGHTWATCH.ID and v:GetData().state ~= States.Alert and v:GetData().state ~= States.AlertNoEffect then
@@ -263,6 +279,21 @@ local function nightwatchAlert()
 		end
 	end
 end
+
+function mod:nightwatchVanish()
+	if nightwatches[room_index] then return end
+
+	for _, entity in ipairs(Isaac.FindByType(mod.ENTITY_INFO.NIGHTWATCH.ID)) do
+		entity:Remove()
+		Isaac.Spawn(EntityType.ENTITY_EFFECT,
+					EffectVariant.POOF01,
+					0,
+					entity.Position,
+					Vector.Zero,
+					entity)
+	end
+end
+mod:AddCallback(ModCallbacks.MC_PRE_SPAWN_CLEAN_AWARD, mod.nightwatchVanish)
 
 
 
