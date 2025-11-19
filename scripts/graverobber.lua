@@ -106,7 +106,7 @@ function mod:grobberUpdate(entity)
 
 				for i,v in pairs(Isaac.FindInRadius(entity.Position, 1000, EntityPartition.PICKUP)) do
 					if v:ToPickup() ~= nil and v:ToPickup():IsShopItem() == false and v:ToPickup():CanReroll() == true and entity.Pathfinder:HasPathToPos(v.Position) and v.Position:Distance(entity.Position) < dist
-					and v.Variant ~= PickupVariant.PICKUP_COLLECTIBLE and not v:GetData().graverobber_ignore then -- There are some things that could be blacklisted but don't really have a reason to because they (most likey) won't ever appear along with grave robbers
+					and v.Variant ~= PickupVariant.PICKUP_COLLECTIBLE and v.Variant ~= PickupVariant.PICKUP_HAUNTEDCHEST and not v:GetData().graverobber_ignore then -- There are some things that could be blacklisted but don't really have a reason to because they (most likey) won't ever appear along with grave robbers
 						local valid = true
 
 						if mod.CustomChests[tostring(v.Variant)] and mod.CustomChests[tostring(v.Variant)].cond then
@@ -143,7 +143,8 @@ function mod:grobberUpdate(entity)
 
 			-- Pick up item / open chest
 			for _, pickup in pairs(Isaac.FindInRadius(entity.Position, 16, EntityPartition.PICKUP)) do
-				if not entity:IsDead() and not pickup:ToPickup():IsShopItem() and pickup:ToPickup():CanReroll() == true and pickup.Variant ~= PickupVariant.PICKUP_COLLECTIBLE then
+				if not entity:IsDead() and not pickup:ToPickup():IsShopItem() and pickup:ToPickup():CanReroll() == true 
+				and pickup.Variant ~= PickupVariant.PICKUP_COLLECTIBLE and pickup.Variant ~= PickupVariant.PICKUP_HAUNTEDCHEST then
 					pickup:GetData().grobber = entity
 				end
 			end
@@ -489,10 +490,6 @@ function mod:grobberPickup(entity)
 				-- Take damage from spiked chests
 				if entity.Variant == PickupVariant.PICKUP_SPIKEDCHEST then
 					data.grobber:TakeDamage(15, DamageFlag.DAMAGE_CHEST, EntityRef(entity), 0)
-
-				-- Spawn Polty from haunted chests
-				elseif entity.Variant == PickupVariant.PICKUP_HAUNTEDCHEST then
-					Isaac.Spawn(EntityType.ENTITY_POLTY, 0, 0, entity.Position, Vector.Zero, entity):ToNPC().State = NpcState.STATE_MOVE
 				end
 			end
     elseif mod.CustomChests[tostring(entity.Variant)] then
