@@ -4,6 +4,8 @@ SaveManager.Load()
 
 RestoredMonsterPack.DSSavedata = SaveManager.GetDeadSeaScrollsSave()
 
+include("scripts.deadseascrolls.defaultSettings")
+
 RestoredMonsterPack:AddCallback(ModCallbacks.MC_PRE_GAME_EXIT, function()
 	Isaac.DebugString("PREGAMEEXITPRESAVE")
     SaveManager.Save()
