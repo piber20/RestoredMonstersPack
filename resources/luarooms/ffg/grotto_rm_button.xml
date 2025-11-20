@@ -50,7 +50,7 @@
 			<entity type="849" variant="2731" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="6" y="2">
-			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
+			<entity type="1000" variant="0" subtype="1" weight="1.0"/>
 		</spawn>
 		<spawn x="7" y="2">
 			<entity type="849" variant="2731" subtype="0" weight="1.0"/>
@@ -110,7 +110,7 @@
 			<entity type="849" variant="2731" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="6" y="4">
-			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
+			<entity type="1000" variant="0" subtype="1" weight="1.0"/>
 		</spawn>
 		<spawn x="7" y="4">
 			<entity type="849" variant="2731" subtype="0" weight="1.0"/>
