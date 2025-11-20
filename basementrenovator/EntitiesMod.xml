@@ -327,6 +327,8 @@
 		<entity Name="Vessel (RM)"/>
 		<entity Name="Vessel (Antibirth)"/>
 		<entity Name="Lump"/>
+		<entity Name="Receptacle"/>
+		<entity Name="Miasma"/>
 	</group>
 
 	<group Name="Chapter 5 (Main Path) Enemies">
