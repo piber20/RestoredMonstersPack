@@ -34,7 +34,7 @@
         <devolve id="800.0.0" weight="1" />
     </entity>
     <!-- Mortling -->
-    <entity anm2path="monsters\restored\dumplings\mortling.anm2" name="Mortling" id="800" variant="4" baseHP="36" stageHP="0" shieldStrength="5" reroll="true" boss="0" champion="0" hasFloorAlts="true" portrait="4" collisionDamage="1" collisionMass="3" collisionRadius="16" friction="0.95"  numGridCollisionPoints="14" shadowSize="16" gridCollision="walls">
+    <entity anm2path="monsters\restored\dumplings\mortling.anm2" name="Mortling" id="800" variant="4" baseHP="35" stageHP="0" shieldStrength="5" reroll="true" boss="0" champion="0" hasFloorAlts="true" portrait="4" collisionDamage="1" collisionMass="3" collisionRadius="16" friction="0.95"  numGridCollisionPoints="14" shadowSize="16" gridCollision="walls">
 		<bestiary transform="0,0,1" anim="Idle" />
         <gibs amount="8" blood="1" bone="0" eye="2" gut="2" large="1" worm="2" />
         <devolve id="800.2.0" weight="1" />
@@ -178,19 +178,19 @@
         <devolve id="244.0.0" weight="1" />
     </entity>
     <!-- RM Vessel -->
-	<entity anm2path="monsters\restored\vessel\vessel_rm.anm2" name="Vessel (RM)" id="858" variant="1" baseHP="50" stageHP="0" shieldStrength="3" boss="0" champion="0" reroll="true" portrait="24" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1" numGridCollisionPoints="12" shadowSize="16" subtype="0" >
+	<entity anm2path="monsters\restored\vessel\vessel_rm.anm2" name="Vessel (RM)" id="858" variant="1" baseHP="35" stageHP="0" shieldStrength="3" boss="0" champion="0" reroll="true" portrait="24" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1" numGridCollisionPoints="12" shadowSize="16" subtype="0" >
         <bestiary anim="WalkDown" transform="0,0,1"/>
         <gibs amount="16" blood="1" bone="1" eye="1" gut="1" large="0"/>
         <devolve id="858.200.0" weight="1" />     
 	</entity>
     <!-- Receptacle -->
-    <entity anm2path="monsters\restored\vessel\receptacle.anm2" name="Receptacle" id="858" variant="1" baseHP="35" stageHP="0" shieldStrength="3" boss="0" champion="0" reroll="true" portrait="25" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1" numGridCollisionPoints="12" shadowSize="16" subtype="1" >
+    <entity anm2path="monsters\restored\vessel\receptacle.anm2" name="Receptacle" id="858" variant="1" baseHP="25" stageHP="0" shieldStrength="3" boss="0" champion="0" reroll="true" portrait="25" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1" numGridCollisionPoints="12" shadowSize="16" subtype="1" >
         <bestiary anim="WalkDown" transform="0,0,1"/>
         <gibs amount="16" blood="1" bone="1" eye="1" gut="1" large="0"/>
         <devolve id="858.200.0" weight="1" />     
     </entity>
     <!-- Miasma -->
-    <entity anm2path="monsters\restored\vessel\miasma.anm2" name="Miasma" id="858" variant="1" baseHP="30" stageHP="0" boss="0" shieldStrength="3" champion="0" reroll="true" portrait="26" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1" numGridCollisionPoints="12" shadowSize="16" subtype="2" >
+    <entity anm2path="monsters\restored\vessel\miasma.anm2" name="Miasma" id="858" variant="1" baseHP="20" stageHP="0" boss="0" shieldStrength="3" champion="0" reroll="true" portrait="26" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1" numGridCollisionPoints="12" shadowSize="16" subtype="2" >
         <bestiary anim="WalkDown" transform="0,0,1"/>
         <gibs amount="16" blood="1" bone="1" eye="1" gut="1" large="0"/>
         <devolve id="858.200.0" weight="1" />     

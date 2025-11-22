@@ -8,7 +8,7 @@
 <!-- Scorchling -->
 <entity Image="resources/Scorchling.png" Name="Scorchling" ID="800" Subtype="0" Variant="3" BaseHP="7" StageHP="2" Tags="Champion" Group="Monsters" Kind="Restored Monsters Pack"/>
 <!-- Mortling -->
-<entity Image="resources/Mortling.png" Name="Mortling" ID="800" Subtype="0" Variant="4" BaseHP="36" StageHP="2" Armor="5" Tags="Champion" Group="Monsters" Kind="Restored Monsters Pack"/>
+<entity Image="resources/Mortling.png" Name="Mortling" ID="800" Subtype="0" Variant="4" BaseHP="36" StageHP="2" Tags="Champion" Group="Monsters" Kind="Restored Monsters Pack"/>
 <!-- Tainted Dumpling -->
 <entity Image="resources/Tainted Dumpling.png" Name="Tainted Dumpling" ID="800" Subtype="0" Variant="5" BaseHP="100" Armor="30" Tags="Champion" Group="Monsters" Kind="Restored Monsters Pack"/>
 <!-- Gilded Dumpling -->
@@ -58,9 +58,9 @@
 <!-- Blood Worm -->
 <entity Image="resources/Blood Worm.png" Name="Blood Worm" ID="244"  Subtype="0" Variant="2500" BaseHP="100" Group="Monsters" Kind="Restored Monsters Pack"/>
 <!-- RM Vessel -->
-<entity Image="resources/Vessel (RM).png" Name="Vessel (RM)" ID="858" Subtype="0" Variant="1" baseHP="50" Armor="3" Tags="Champion" Group="Monsters" Kind="Restored Monsters Pack"/>
-<entity Image="resources/Receptacle.png" Name="Receptacle" ID="858" Subtype="1" Variant="1" baseHP="30" Armor="3" Tags="Champion" Group="Monsters" Kind="Restored Monsters Pack"/>
-<entity Image="resources/Miasma.png" Name="Miasma" ID="858" Subtype="2" Variant="1" baseHP="35" Armor="3" Tags="Champion" Group="Monsters" Kind="Restored Monsters Pack"/>
+<entity Image="resources/Vessel (RM).png" Name="Vessel (RM)" ID="858" Subtype="0" Variant="1" baseHP="35" Armor="3" Tags="Champion" Group="Monsters" Kind="Restored Monsters Pack"/>
+<entity Image="resources/Receptacle.png" Name="Receptacle" ID="858" Subtype="1" Variant="1" baseHP="25" Armor="3" Tags="Champion" Group="Monsters" Kind="Restored Monsters Pack"/>
+<entity Image="resources/Miasma.png" Name="Miasma" ID="858" Subtype="2" Variant="1" baseHP="20" Armor="3" Tags="Champion" Group="Monsters" Kind="Restored Monsters Pack"/>
 <!-- Corse Eater -->
 <entity Image="resources/Corpse Eater.png" Name="Corpse Eater (RM)" ID="239" Subtype="0" Variant="200" Metadata="1" BaseHP="30" StageHP="2.5" Armor="3" Group="Monsters" Kind="Restored Monsters Pack"/>
 <!-- Carrion Rider -->
@@ -325,10 +325,10 @@
 		<entity Name="Stillborn (RM)"/>
 		<entity Name="Barfy"/>
 		<entity Name="Vessel (RM)"/>
-		<entity Name="Vessel (Antibirth)"/>
-		<entity Name="Lump"/>
 		<entity Name="Receptacle"/>
 		<entity Name="Miasma"/>
+		<entity Name="Vessel (Antibirth)"/>
+		<entity Name="Lump"/>
 	</group>
 
 	<group Name="Chapter 5 (Main Path) Enemies">
