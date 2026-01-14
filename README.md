@@ -9,12 +9,14 @@ Forgotten enemies have returned to the basement! Restored Monsters Pack is a mod
 A new TNT variant
 Many new rooms, with some from the original Antibirth mod
 Reworks and polishing of some of the enemies from their previous iterations (No more Dumplings camping rocks!)
-Compatibility, The enemies from this mod also show up on modded floors, such as Boiler and Glacier. Some modded floors even have unique crossover enemies! (It has no overlap with Last Judgement)
+Compatibility: This mod has extra compatibility with Last Judgement, Revelations, Fall from Grace, and THE FUTURE. 
 You can read more about the enemies added by this mod on our wiki! ( https://moddingofisaac.wiki.gg/wiki/Restored_Mods )
 
-[h2]Works with Repentance+![/h2] 
-
 ## Caution!
+REPENTOGON is required for this mod to function. It will (probably) not work without it!
+
+Don't want to use REPENTOGON+ or Last Judgement? Try Restored Monsters: Judgement Free!
+
 The following mods are included in some form within Restored Monsters Pack, and should not be used in conjunction with it:
     
 Cut Monsters 
