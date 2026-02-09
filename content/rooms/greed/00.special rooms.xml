@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <rooms>
-	<room variant="24000" name="[RM] - We Strvn - Dumpy Decent" type="23" subtype="17" shape="1" width="13" height="7" difficulty="1" weight="1.0">
+	<room variant="24000" name="[RM] - We Strvn - Rumpy Decent" type="23" subtype="17" shape="1" width="13" height="7" difficulty="1" weight="1.0">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
