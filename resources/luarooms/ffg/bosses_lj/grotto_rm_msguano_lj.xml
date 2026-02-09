@@ -17,7 +17,7 @@
 			<entity type="199" variant="30" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="0" y="6">
-			<entity type="803" variant="200" subtype="1" weight="1.0"/>
+			<entity type="745" variant="0" subtype="0" weight="1.0"/>
 			<entity type="199" variant="20" subtype="2" weight="1.0"/>
 		</spawn>
 		<spawn x="12" y="6">

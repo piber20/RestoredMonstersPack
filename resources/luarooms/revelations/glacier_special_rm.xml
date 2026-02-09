@@ -251,7 +251,7 @@
 			<entity type="1002" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="28003" name="We Strvn - [RM] - Secret Dumpy Hockey Rink" type="7" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2024-06-23T17:55+00:00">
+	<room variant="28003" name="We Strvn - [RM] - Secret Rumpy Hockey Rink" type="7" subtype="0" shape="1" width="13" height="7" difficulty="5" weight="1.0" lastTestTime="2024-06-23T17:55+00:00">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
