@@ -1,8 +1,8 @@
 <AnimatedActor>
-	<Info CreatedBy="Unknown" CreatedOn="9/8/2024 3:31:45 PM" Version="16" Fps="30"/>
+	<Info CreatedBy="Unknown" CreatedOn="2/10/2026 6:11:34 PM" Version="17" Fps="30"/>
 	<Content>
 		<Spritesheets>
-			<Spritesheet Path="tainted_dumpling.png" Id="0"/>
+			<Spritesheet Path="tainted_rumpling.png" Id="0"/>
 		</Spritesheets>
 		<Layers>
 			<Layer Name="body" Id="0" SpritesheetId="0"/>

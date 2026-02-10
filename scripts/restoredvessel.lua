@@ -26,7 +26,7 @@ local function mathrandom(rng, a, b)
 	return rng:RandomInt(b-a) + a
 end
 
-function mod:palevesselInit(vessel)
+function mod:restoredvesselInit(vessel)
 	if vessel.Variant ~= 1 then
 	return
 	end
@@ -46,11 +46,11 @@ function mod:palevesselInit(vessel)
 		MaggotCountdown = mathrandom(vessel:GetDropRNG(), Settings.AttackTime[1], Settings.AttackTime[2]),
     }
 end
-mod:AddCallback(ModCallbacks.MC_POST_NPC_INIT, mod.palevesselInit, VESSEL.ID)
+mod:AddCallback(ModCallbacks.MC_POST_NPC_INIT, mod.restoredvesselInit, VESSEL.ID)
 
 
 
-function mod:palevesselUpdate(vessel)
+function mod:restoredvesselUpdate(vessel)
 	if vessel.Variant ~= 1 then
 	return
 	end
@@ -289,9 +289,9 @@ function mod:palevesselUpdate(vessel)
 	end
 end
 
-mod:AddCallback(ModCallbacks.MC_NPC_UPDATE, mod.palevesselUpdate, VESSEL.ID)
+mod:AddCallback(ModCallbacks.MC_NPC_UPDATE, mod.restoredvesselUpdate, VESSEL.ID)
 
-function mod:palevesselDeath(vessel)
+function mod:restoredvesselDeath(vessel)
 	if vessel.Variant ~= 1 or vessel.SubType ~= 2 then
 		return
 	end
@@ -304,9 +304,9 @@ function mod:palevesselDeath(vessel)
         maggot.State = NpcState.STATE_SPECIAL
     end
 end
-mod:AddCallback(ModCallbacks.MC_POST_NPC_DEATH, mod.palevesselDeath, VESSEL.ID)
+mod:AddCallback(ModCallbacks.MC_POST_NPC_DEATH, mod.restoredvesselDeath, VESSEL.ID)
 
-function mod:palevesselDamage(vessel, damageAmount, damageFlags, damageSource, damageCountdownFrames)
+function mod:restoredvesselDamage(vessel, damageAmount, damageFlags, damageSource, damageCountdownFrames)
 	local vesselData = vessel:GetData().VesselData
 	local targetPos = damageSource.Entity
 	if vessel.Variant ~= 1 or vessel.SubType >= 1 or damageAmount == 0 then
@@ -333,10 +333,10 @@ function mod:palevesselDamage(vessel, damageAmount, damageFlags, damageSource, d
     maggot.State = NpcState.STATE_SPECIAL
 	vesselData.Maggots = vesselData.Maggots + 1
 end
-mod:AddCallback(ModCallbacks.MC_ENTITY_TAKE_DMG, mod.palevesselDamage, VESSEL.ID)
+mod:AddCallback(ModCallbacks.MC_ENTITY_TAKE_DMG, mod.restoredvesselDamage, VESSEL.ID)
 
 
-function mod:maggotDeathpale(maggot)
+function mod:maggotDeathrestored(maggot)
 	if maggot.SpawnerEntity then
 		local spawner = maggot.SpawnerEntity
 		local vesselData = spawner:GetData().VesselData
@@ -346,4 +346,4 @@ function mod:maggotDeathpale(maggot)
 		end
 	end
 end
---mod:AddCallback(ModCallbacks.MC_POST_NPC_DEATH, mod.maggotDeathpale, EntityType.ENTITY_SMALL_MAGGOT)
+--mod:AddCallback(ModCallbacks.MC_POST_NPC_DEATH, mod.maggotDeathrestored, EntityType.ENTITY_SMALL_MAGGOT)

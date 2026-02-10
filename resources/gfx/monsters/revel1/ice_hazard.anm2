@@ -1,9 +1,9 @@
 <AnimatedActor>
-	<Info CreatedBy="Unknown" CreatedOn="03.11.2024 19:18:25" Version="12" Fps="30"/>
+	<Info CreatedBy="Unknown" CreatedOn="2/10/2026 6:12:54 PM" Version="13" Fps="30"/>
 	<Content>
 		<Spritesheets>
 			<Spritesheet Path="ice_hazard_overlay_top.png" Id="0"/>
-			<Spritesheet Path="ice_hazard_dumpling.png" Id="1"/>
+			<Spritesheet Path="ice_hazard_rumpling.png" Id="1"/>
 			<Spritesheet Path="ice_hazard_overlay_bottom.png" Id="2"/>
 		</Spritesheets>
 		<Layers>

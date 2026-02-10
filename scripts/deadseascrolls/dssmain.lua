@@ -127,24 +127,6 @@ local restoreddirectory = {
                         tooltip = {strset = {'replaces', 'vessels with', 'their legacy', 'version','','disabled by', 'default'}}
         
                     },
-                    {str = '', fsize=2, nosel = true},
-                    {str = 'echo bat', nosel = true},
-                    {
-                        str = 'scream effect',
-                        fsize=2,
-                        increment = 1, max = 5,
-                        variable = "blindBatScreamInc",
-                        slider = true,
-                        setting = 3,
-                        load = function()
-                            return RestoredMonsterPack.DSSavedata.blindBatScreamInc or 3
-                        end,
-                        store = function(var)
-                            RestoredMonsterPack.DSSavedata.blindBatScreamInc = var
-                        end,
-                        tooltip = {strset = {'changes how', 'strong the', 'blind bat','effect is','','at 3 by', 'default'}}
-        
-                    },
                 }
     },
 

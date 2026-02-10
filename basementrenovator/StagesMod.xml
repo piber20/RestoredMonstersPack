@@ -2,18 +2,17 @@
     <stage Name="Scarred Womb">
         <Gfx>
             <Entity ID="29" Variant="1" SubType="801" Image="resources/Fracture Scarred.png"/>
-            <Entity ID="200" Variant="2409" SubType="0" Image="resources/Stillborn Scarred.png"/>
         </Gfx>
     </stage>
     <stage Name="Downpour">
         <Gfx>
-            <Entity ID="800" Variant="0" SubType="0" Image="resources/Dumpling Downpour.png"/>
+            <Entity ID="800" Variant="0" SubType="0" Image="resources/Rumpling Downpour.png"/>
             <Entity ID="29" Variant="1" SubType="801" Image="resources/Fracture Downpour.png"/>
         </Gfx>
     </stage>
     <stage Name="Dross">
         <Gfx>
-            <Entity ID="800" Variant="0" SubType="0" Image="resources/Dumpling Dross.png"/>
+            <Entity ID="800" Variant="0" SubType="0" Image="resources/Rumpling Dross.png"/>
             <Entity ID="29" Variant="1" SubType="801" Image="resources/Fracture Dross.png"/>
         </Gfx>
     </stage>
@@ -24,8 +23,6 @@
     </stage>
     <stage Name="Gehenna">
         <Gfx>
-            <Entity ID="239" Variant="200" SubType="0" Image="resources/Corpse Eater Gehenna.png"/>
-            <Entity ID="239" Variant="201" SubType="0" Image="resources/Carrion Rider Gehenna.png"/>
             <Entity ID="839" Variant="200" SubType="0" Image="resources/Strifer (Left) Gehenna.png"/>
             <Entity ID="839" Variant="200" SubType="1" Image="resources/Strifer (Up) Gehenna.png"/>
             <Entity ID="839" Variant="200" SubType="2" Image="resources/Strifer (Right) Gehenna.png"/>
@@ -38,30 +35,22 @@
 
         </Gfx>
     </stage>
-    <stage Name="Corpse">
-        <Gfx>
-            <Entity ID="239" Variant="200" SubType="0" Image="resources/Corpse Eater Corpse.png"/>
-            <Entity ID="239" Variant="201" SubType="0" Image="resources/Carrion Rider Corpse.png"/>
-            <Entity ID="200" Variant="2409" SubType="0" Image="resources/Stillborn Corpse.png"/>
-        </Gfx>
-    </stage>
     <!-- <stage Name="Glacier">
         <Gfx>
-            <Entity ID="800" Variant="0" SubType="0" Image="resources/rev1/Dumpling Glacier.png"/>
+            <Entity ID="800" Variant="0" SubType="0" Image="resources/rev1/Rumpling Glacier.png"/>
             <Entity ID="29" Variant="1" SubType="801" Image="resources/rev1/Fracture Glacier.png"/>
             <Entity ID="200" Variant="2503" SubType="0" Image="resources/rev1/Grave Robber Glacier.png"/>
         </Gfx>
     </stage>
     <stage Name="Tomb">
         <Gfx>
-            <Entity ID="800" Variant="0" SubType="0" Image="resources/rev2/Dumpling Tomb.png"/>
+            <Entity ID="800" Variant="0" SubType="0" Image="resources/rev2/Rumpling Tomb.png"/>
             <Entity ID="800" Variant="1" SubType="0" Image="resources/rev2/Skinling Tomb.png"/>
-            <Entity ID="803" Variant="200" Subtype="3" Image="resources/rev2/Blind Bat Tomb.png"/>
         </Gfx>
     </stage>  
     <stage Name="Boiler">
         <Gfx>
-            <Entity ID="800" Variant="0" SubType="0" Image="resources/ffg/Dumpling Boiler.png"/>
+            <Entity ID="800" Variant="0" SubType="0" Image="resources/ffg/Rumpling Boiler.png"/>
         </Gfx>
     </stage>  -->
 </data>

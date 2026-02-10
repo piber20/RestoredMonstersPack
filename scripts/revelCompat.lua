@@ -84,7 +84,7 @@ mod:AddPriorityCallback(ModCallbacks.MC_POST_GAME_STARTED, CallbackPriority.IMPO
         [800] = {
             [0] = {
                 SPRITESHEET = {
-                    [0] = "dumpling_glacier",
+                    [0] = "rumpling_glacier",
                 }
             },
         },
@@ -95,7 +95,7 @@ mod:AddPriorityCallback(ModCallbacks.MC_POST_GAME_STARTED, CallbackPriority.IMPO
         [800] = {
             [0] = {
                 SPRITESHEET = {
-                    [0] = "dumpling_tomb",
+                    [0] = "rumpling_tomb",
                 }
             },
             [1] = {
@@ -109,8 +109,8 @@ mod:AddPriorityCallback(ModCallbacks.MC_POST_GAME_STARTED, CallbackPriority.IMPO
 end)
 
 -- Ice Hazards
-function mod:DumplingIceHazards(npc)
-  if npc.Variant == RestoredMonsterPack.ENTITY_INFO.DUMPLING.ID then
+function mod:RumplingIceHazards(npc)
+  if npc.Variant == RestoredMonsterPack.ENTITY_INFO.RUMPLING.ID then
     local sprite = npc:GetSprite()
     local data = npc:GetData()
     if not data.RevIceHazard then
@@ -119,17 +119,17 @@ function mod:DumplingIceHazards(npc)
     sprite:SetLayerFrame(1, data.RevIceHazard)
   end
 end
-mod:AddCallback(ModCallbacks.MC_NPC_UPDATE, mod.DumplingIceHazards, 481)
+mod:AddCallback(ModCallbacks.MC_NPC_UPDATE, mod.RumplingIceHazards, 481)
 
 function mod:RemoveIceHazards(npc)
-  if npc.Variant == RestoredMonsterPack.ENTITY_INFO.DUMPLING.ID then
+  if npc.Variant == RestoredMonsterPack.ENTITY_INFO.RUMPLING.ID then
     local sprite = npc:GetSprite()
     local data = npc:GetData()
     if npc.FrameCount < 5 then
         return
     end
     if data.RevIceHazard then
-        local entity = Isaac.Spawn(RestoredMonsterPack.ENTITY_INFO.DUMPLING.ID,0, 0, npc.Position, Vector(0,0), npc.SpawnerEntity or npc):ToNPC()
+        local entity = Isaac.Spawn(RestoredMonsterPack.ENTITY_INFO.RUMPLING.ID,0, 0, npc.Position, Vector(0,0), npc.SpawnerEntity or npc):ToNPC()
         entity:ClearEntityFlags(EntityFlag.FLAG_APPEAR)
         entity:Update()
         data.FromIceHazard = true

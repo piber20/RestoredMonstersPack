@@ -19,11 +19,10 @@ end
 RestoredMonsterPack.Nonmale = {
 	{ID = mod:SpecialEnt("Splashy Long Legs"), Affliction = "Woman"},
 	{ID = mod:SpecialEnt("Sticky Long Legs"), Affliction = "Woman"},
-	{ID = mod:SpecialEnt("Tainted Dumpling"), Affliction = "Woman"},
-	{ID = mod:SpecialEnt("Scab"), Affliction = "Woman"},
+	{ID = mod:SpecialEnt("Tainted Rumpling"), Affliction = "Woman"},
+	{ID = mod:SpecialEnt("Scabling"), Affliction = "Woman"},
 	{ID = mod:SpecialEnt("Mortling"), Affliction = "Woman"},
 	{ID = mod:SpecialEnt("​Fracture"), Affliction = "Woman"},
-	{ID = mod:SpecialEnt("Echo Bat"), Affliction = "Woman"},
 	{ID = mod:SpecialEnt("Screamer"), Affliction = "Women"},
 	{ID = mod:SpecialEnt("Fused Cell"), Affliction = "Woman"},
 	{ID = mod:SpecialEnt("Grave Robber"), Affliction = "Woman"},
@@ -32,10 +31,9 @@ RestoredMonsterPack.Nonmale = {
 }
 
 RestoredMonsterPack.LGBTQIA = {
-	{ID = mod:SpecialEnt("Dumpling"), Affliction = "Non-Binary"},
+	{ID = mod:SpecialEnt("Rumpling"), Affliction = "Non-Binary"},
 	{ID = mod:SpecialEnt("Mortling"), Affliction = "Non-Binary"},
-	{ID = mod:SpecialEnt("Corpse Eater"), Affliction = "Demigirl"},
-	{ID = mod:SpecialEnt("Gilded Dumpling"), Affliction = "HOLY SHIT THIS GUY'S GAY AS FUUUUUCK"}, --bc pandora said they're gay as actual fuck
+	{ID = mod:SpecialEnt("Gilded Rumpling"), Affliction = "HOLY SHIT THIS GUY'S GAY AS FUUUUUCK"}, --bc pandora said they're gay as actual fuck
 	{ID = mod:SpecialEnt("Sporeling"), Affliction = "3rd Gender"},
 	{ID = mod:SpecialEnt("Chubby Bunny"), Affliction = "3rd Gender"},
 	{ID = mod:SpecialEnt("Beard Bat"), Affliction = "3rd Gender"},

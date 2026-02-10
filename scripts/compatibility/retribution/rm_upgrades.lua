@@ -4,18 +4,15 @@ local vc = include("scripts.compatibility.retribution.vanilla_entities")
 
 
 local data = {
-    {c.Dumpling,		c.Skinling},
-    {c.Dumpling,		c.Scorchling},
-    {c.Skinling,		c.Scab},
-    {c.Scab,		c.Mortling},
-    {c.Mortling,		c.TaintedDumpling},
+    {c.Rumpling,		c.Skinling},
+    {c.Rumpling,		c.Scorchling},
+    {c.Skinling,		c.Scabling},
+    {c.Scabling,		c.Mortling},
+    {c.Mortling,		c.TaintedRumpling},
     {c.Scorchling,		c.Skinling},
     {vc.Level2Spider,          c.FractureRM},
     {c.FractureRM,          vc.Ragling},
     {c.FractureRM,          vc.Blister},
-    {vc.Baby,          c.Stillborn},
-    {vc.OneTooth,          c.EchoBat},
-    {vc.FatBat,          c.EchoBat},
     {vc.Fanatic,          c.Necromancer},
     {c.Swapper,          vc.AngelicBaby},
     {vc.BigBony,          c.Barfy},
@@ -29,14 +26,11 @@ local data = {
     {c.SplashyLongLegs,          c.StickyLongLegs},
     {vc.BigBony,          c.VesselRM},
     {c.VesselRM,          vc.GuttedFatty},
-    -- {c.CorpseEater,        c.CarrionRider}, Too wacky
-    -- {vc.Grub,        c.CorpseEater},
     {vc.RageCreep,          c.SplitRageCreep},
     {vc.WallCreep,          c.RagCreep},
-    {c.BlindBat,          vc.FatBat},
     {c.Strifer,          vc.MazeRoamer},
     {vc.Cyclopia,          c.Strifer},
-    {c.VesselAntibirth,          c.GildedDumpling},
+    {c.VesselAntibirth,          c.GildedRumpling},
     
 }
 

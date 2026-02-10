@@ -5,48 +5,48 @@
 	<entity anm2path="projectiles\echo_projectile.anm2" name="Echo Projectile" id="9" variant="104" baseHP="0" collisionDamage="0" collisionMass="8" collisionRadius="10" friction="1" numGridCollisionPoints="60" shadowSize="15" />
     <!-- For Nightwatch -->
 	<entity anm2path="projectiles\lantern_projectile.anm2" name="Lantern Projectile" id="9" variant="106" baseHP="0" collisionDamage="0" collisionMass="8" collisionRadius="5"  friction="1"   numGridCollisionPoints="60" shadowSize="10" />
-    <!-- For Tainted Dumpling -->
+    <!-- For Tainted Rumpling -->
 	<entity anm2path="projectiles\staple_projectile.anm2" name="Staple Projectile" id="9" variant="108" baseHP="10" collisionDamage="0" collisionMass="8" collisionRadius="10" friction="1" numGridCollisionPoints="8" shadowSize="15"/>
 
 <!-- Enemies -->
-    <!-- Dumpling -->
-	<entity anm2path="monsters\restored\dumplings\dumpling.anm2" name="Dumpling" id="800" variant="0" baseHP="7" stageHP="2" reroll="true" boss="0" champion="1" hasFloorAlts="true" portrait="0" collisionDamage="1" collisionMass="3" collisionRadius="13" friction="0.95" numGridCollisionPoints="12" shadowSize="12" gridCollision="walls">
+    <!-- Rumpling -->
+	<entity anm2path="monsters\restored\rumplings\rumpling.anm2" name="Rumpling" id="800" variant="0" baseHP="7" stageHP="2" reroll="true" boss="0" champion="1" hasFloorAlts="true" portrait="0" collisionDamage="1" collisionMass="3" collisionRadius="13" friction="0.95" numGridCollisionPoints="12" shadowSize="12" gridCollision="walls">
 		<bestiary transform="0,0,1" anim="Idle" />
         <gibs amount="6" blood="1" bone="0" eye="1" gut="1" large="0" />
         <devolve id="77.0.0" weight="1" />
     </entity>
     <!-- Skinling -->
-    <entity anm2path="monsters\restored\dumplings\skinling.anm2" name="Skinling" id="800" variant="1" baseHP="8" stageHP="2" reroll="true" boss="0" champion="1" hasFloorAlts="true" portrait="1" collisionDamage="1" collisionMass="3" collisionRadius="13" friction="0.95" numGridCollisionPoints="12" shadowSize="12" gridCollision="walls">
+    <entity anm2path="monsters\restored\rumplings\skinling.anm2" name="Skinling" id="800" variant="1" baseHP="8" stageHP="2" reroll="true" boss="0" champion="1" hasFloorAlts="true" portrait="1" collisionDamage="1" collisionMass="3" collisionRadius="13" friction="0.95" numGridCollisionPoints="12" shadowSize="12" gridCollision="walls">
 		<bestiary transform="0,0,1" anim="Idle" />
         <gibs amount="6" blood="1" bone="0" eye="0" gut="1" large="0" />
         <devolve id="800.0.0" weight="1" />
     </entity>
     <!-- Scab -->
-    <entity anm2path="monsters\restored\dumplings\scab.anm2" name="Scab" id="800" variant="2" baseHP="10" stageHP="2" reroll="true"  boss="0" champion="1" hasFloorAlts="false" portrait="2" collisionDamage="1" collisionMass="3" collisionRadius="13" friction="0.95"   numGridCollisionPoints="12" shadowSize="12" gridCollision="walls">
+    <entity anm2path="monsters\restored\rumplings\scab.anm2" name="Scab" id="800" variant="2" baseHP="10" stageHP="2" reroll="true"  boss="0" champion="1" hasFloorAlts="false" portrait="2" collisionDamage="1" collisionMass="3" collisionRadius="13" friction="0.95"   numGridCollisionPoints="12" shadowSize="12" gridCollision="walls">
 		<bestiary transform="0,0,1" anim="Idle" />
         <gibs amount="6" blood="1" bone="0" eye="0" gut="1" large="0" />
         <devolve id="800.1.0" weight="1" />
     </entity>
     <!-- Scorchling -->
-	<entity anm2path="monsters\restored\dumplings\scorchling.anm2" name="Scorchling" id="800" variant="3" baseHP="7" stageHP="2" reroll="true" boss="0" champion="1" hasFloorAlts="true" portrait="3" collisionDamage="1" collisionMass="3" collisionRadius="13" friction="0.95"   numGridCollisionPoints="12" shadowSize="12"  gridCollision="walls">
+	<entity anm2path="monsters\restored\rumplings\scorchling.anm2" name="Scorchling" id="800" variant="3" baseHP="7" stageHP="2" reroll="true" boss="0" champion="1" hasFloorAlts="true" portrait="3" collisionDamage="1" collisionMass="3" collisionRadius="13" friction="0.95"   numGridCollisionPoints="12" shadowSize="12"  gridCollision="walls">
 		<bestiary transform="0,0,1" anim="Idle" />
         <gibs amount="6" blood="1" bone="0" eye="1" gut="1" large="0" />
         <devolve id="800.0.0" weight="1" />
     </entity>
     <!-- Mortling -->
-    <entity anm2path="monsters\restored\dumplings\mortling.anm2" name="Mortling" id="800" variant="4" baseHP="35" stageHP="0" shieldStrength="5" reroll="true" boss="0" champion="0" hasFloorAlts="true" portrait="4" collisionDamage="1" collisionMass="3" collisionRadius="16" friction="0.95"  numGridCollisionPoints="14" shadowSize="16" gridCollision="walls">
+    <entity anm2path="monsters\restored\rumplings\mortling.anm2" name="Mortling" id="800" variant="4" baseHP="35" stageHP="0" shieldStrength="5" reroll="true" boss="0" champion="0" hasFloorAlts="true" portrait="4" collisionDamage="1" collisionMass="3" collisionRadius="16" friction="0.95"  numGridCollisionPoints="14" shadowSize="16" gridCollision="walls">
 		<bestiary transform="0,0,1" anim="Idle" />
         <gibs amount="8" blood="1" bone="0" eye="2" gut="2" large="1" worm="2" />
         <devolve id="800.2.0" weight="1" />
     </entity>
-    <!-- Tainted Dumpling -->
-    <entity anm2path="monsters\restored\dumplings\tainted_dumpling.anm2" name="Tainted Dumpling" id="800" variant="5" baseHP="70" stageHP="0" shieldStrength="5" reroll="true" boss="0" champion="0" hasFloorAlts="true" portrait="5" collisionDamage="1" collisionMass="3" collisionRadius="18" friction="0.98"  numGridCollisionPoints="14" shadowSize="18"  gridCollision="walls">
+    <!-- Tainted Rumpling -->
+    <entity anm2path="monsters\restored\rumplings\tainted_rumpling.anm2" name="Tainted Rumpling" id="800" variant="5" baseHP="70" stageHP="0" shieldStrength="5" reroll="true" boss="0" champion="0" hasFloorAlts="true" portrait="5" collisionDamage="1" collisionMass="3" collisionRadius="18" friction="0.98"  numGridCollisionPoints="14" shadowSize="18"  gridCollision="walls">
 		<bestiary transform="0,0,1" anim="Idle" />
         <gibs amount="12" blood="3" bone="1" eye="2" gut="2" large="2" worm="1" />
         <devolve id="800.0.0" weight="1" />
     </entity>
-    <!-- Gilded Dumpling -->
-	<entity anm2path="monsters\restored\dumplings\gilded_dumpling.anm2" name="Gilded Dumpling" id="800" variant="6" baseHP="60" stageHP="2" reroll="true"  boss="0" champion="0" portrait="6" collisionDamage="1" collisionMass="3" collisionRadius="16" friction="0.95" numGridCollisionPoints="14" shadowSize="16" gridCollision="walls">
+    <!-- Gilded Rumpling -->
+	<entity anm2path="monsters\restored\rumplings\gilded_rumpling.anm2" name="Gilded Rumpling" id="800" variant="6" baseHP="60" stageHP="2" reroll="true"  boss="0" champion="0" portrait="6" collisionDamage="1" collisionMass="3" collisionRadius="16" friction="0.95" numGridCollisionPoints="14" shadowSize="16" gridCollision="walls">
 		<bestiary transform="0,0,1" anim="Idle" />
         <gibs amount="8" blood="1" bone="0" eye="2" gut="2" large="1" worm="2" />
         <devolve id="800.0.0" weight="1" />
@@ -151,8 +151,8 @@
 	<entity anm2path="grid/grid_redtnt.anm2" name="Red TNT" id="292" variant="3400" baseHP="4" stageHP="0" boss="0" champion="0" tags="noreroll" shutdoors="false" portrait="21" collisionDamage="0" collisionMass="20" collisionRadius="20" friction="1" numGridCollisionPoints="12" shadowSize="0">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" worm="0"/>
     </entity>
-    <!-- Rev Ice Hazard (Dumpling) -->
-    <entity anm2path="monsters\revel1\ice_hazard.anm2" name="Ice Hazard Dumpling" id="481" variant="800" baseHP="20" stageHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1" collisionRadius="20" friction="0.98" numGridCollisionPoints="0" shadowSize="0" shutdoors="false" tags="noreroll">
+    <!-- Rev Ice Hazard (Rumpling) -->
+    <entity anm2path="monsters\revel1\ice_hazard.anm2" name="Ice Hazard Rumpling" id="481" variant="800" baseHP="20" stageHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1" collisionRadius="20" friction="0.98" numGridCollisionPoints="0" shadowSize="0" shutdoors="false" tags="noreroll">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
     </entity>
 

@@ -4,17 +4,15 @@ local vc = include("scripts.compatibility.retribution.vanilla_entities")
 
 
 local data = {
-    {c.Dumpling,		vc.Embryo},
-    {c.Skinling,		c.Dumpling},
-    {c.Scorchling,		c.Dumpling},
-    {c.Scab,		c.Skinling},
-    {c.Mortling,		c.Scab},
-    {c.TaintedDumpling,		c.Dumpling},
+    {c.Rumpling,		vc.Embryo},
+    {c.Skinling,		c.Rumpling},
+    {c.Scorchling,		c.Rumpling},
+    {c.Scabling,		c.Skinling},
+    {c.Mortling,		c.Scabling},
+    {c.TaintedRumpling,		c.Rumpling},
     {c.FractureRM,          vc.Level2Spider},
     {vc.Ragling,          c.FractureRM},
     {vc.Blister,          c.FractureRM},
-    {c.EchoBat,          vc.OneTooth},
-    {c.EchoBat,          vc.FatBat},
     {c.Necromancer,          vc.Fanatic},
     {vc.AngelicBaby,          c.Swapper},
     {c.Barfy,          vc.BigBony},
@@ -29,8 +27,6 @@ local data = {
     {c.StickyLongLegs,          c.SplashyLongLegs},
     {c.VesselRM,          vc.BigBony},
     {vc.GuttedFatty,          c.VesselRM},
-    -- {c.CarrionRider,        c.CorpseEater}, Too wacky
-    {c.CorpseEater,        vc.Grub},
     {c.SplitRageCreep,          vc.RageCreep},
     {c.RagCreep,          vc.WallCreep},
     {vc.MazeRoamer,          c.Strifer},

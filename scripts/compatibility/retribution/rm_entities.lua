@@ -1,16 +1,14 @@
 local GED = BaptismalPreloader.GenerateEntityDataset
 
 return {
-	Dumpling		= GED("Dumpling"),
+	Rumpling		= GED("Rumpling"),
 	Skinling	= GED("Skinling"),
-	Scab	= GED("Scab"),
+	Scabling	= GED("Scabling"),
 	Scorchling	= GED("Scorchling"),
 	Mortling	= GED("Mortling"),
-	TaintedDumpling	= GED("Tainted Dumpling"),
-	GildedDumpling	= GED("Gilded Dumpling"),
+	TaintedRumpling	= GED("Tainted Rumpling"),
+	GildedRumpling	= GED("Gilded Rumpling"),
 	FractureRM	= GED("​Fracture"),
-	Stillborn	= GED("Stillborn"),
-	EchoBat	= GED("Echo Bat"),
 	Necromancer	= GED("Necromancer"),
 	Swapper = GED("Swapper"),
 	SwapperGehenna = GED("Swapper (Gehenna)"),
@@ -25,12 +23,8 @@ return {
 	FireGrimace = GED("Fire Grimace"),
 	Bloodworm = GED("Bloodworm"),
 	VesselRM = GED("Vessel (RM)"),
-	CorpseEater = GED("​Corpse Eater"),
-	CarrionRider = GED("​Carrion Rider"),
-	BlindBat = GED("​Blind Bat"),
 	SplitRageCreep = GED("​Split Rage Creep"),
 	RagCreep = GED("​Rag Creep"),
-	Nightwatch = GED("​Nightwatch"),
 	VesselAntibirth = GED("​Vessel (Antibirth)"),
 	Strifer = GED("​Strifer"),
 }

@@ -1,24 +1,20 @@
 <data>
-<!-- Dumpling -->
-<entity Image="resources/Dumpling.png" Name="Dumpling" ID="800" Subtype="0" Variant="0" BaseHP="7" StageHP="2" Tags="Champion" Group="Monsters" Kind="Restored Monsters Pack"/>
+<!-- Rumpling -->
+<entity Image="resources/Rumpling.png" Name="Rumpling" ID="800" Subtype="0" Variant="0" BaseHP="7" StageHP="2" Tags="Champion" Group="Monsters" Kind="Restored Monsters Pack"/>
 <!-- Skinling -->
 <entity Image="resources/Skinling.png" Name="Skinling" ID="800" Subtype="0" Variant="1" BaseHP="8" StageHP="2" Tags="Champion"  Group="Monsters" Kind="Restored Monsters Pack"/>
-<!-- Scab -->
-<entity Image="resources/Scab.png" Name="Scab" ID="800" Subtype="0" Variant="2" BaseHP="12" StageHP="2" Tags="Champion" Group="Monsters" Kind="Restored Monsters Pack"/>
+<!-- Scabling -->
+<entity Image="resources/Scabling.png" Name="Scabling" ID="800" Subtype="0" Variant="2" BaseHP="12" StageHP="2" Tags="Champion" Group="Monsters" Kind="Restored Monsters Pack"/>
 <!-- Scorchling -->
 <entity Image="resources/Scorchling.png" Name="Scorchling" ID="800" Subtype="0" Variant="3" BaseHP="7" StageHP="2" Tags="Champion" Group="Monsters" Kind="Restored Monsters Pack"/>
 <!-- Mortling -->
 <entity Image="resources/Mortling.png" Name="Mortling" ID="800" Subtype="0" Variant="4" BaseHP="36" StageHP="2" Tags="Champion" Group="Monsters" Kind="Restored Monsters Pack"/>
-<!-- Tainted Dumpling -->
-<entity Image="resources/Tainted Dumpling.png" Name="Tainted Dumpling" ID="800" Subtype="0" Variant="5" BaseHP="100" Armor="30" Tags="Champion" Group="Monsters" Kind="Restored Monsters Pack"/>
-<!-- Gilded Dumpling -->
-<entity Image="resources/Gilded Dumpling.png" Name="Gilded Dumpling" ID="800" Subtype="0" Variant="6" BaseHP="60" Tags="Champion" Group="Monsters" Kind="Restored Monsters Pack"/>
+<!-- Tainted Rumpling -->
+<entity Image="resources/Tainted Rumpling.png" Name="Tainted Rumpling" ID="800" Subtype="0" Variant="5" BaseHP="100" Armor="30" Tags="Champion" Group="Monsters" Kind="Restored Monsters Pack"/>
+<!-- Gilded Rumpling -->
+<entity Image="resources/Gilded Rumpling.png" Name="Gilded Rumpling" ID="800" Subtype="0" Variant="6" BaseHP="60" Tags="Champion" Group="Monsters" Kind="Restored Monsters Pack"/>
 <!-- Fracture -->
 <entity Image="resources/Fracture.png" Name="Fracture (RM)" ID="29" Subtype="801" Variant="1" Metadata="1" BaseHP="15" Tags="Champion" Group="Monsters" Kind="Restored Monsters Pack"/>
-<!-- Stillborn -->
-<entity Image="resources/Stillborn.png" Name="Stillborn (RM)" ID="200" Subtype="0" Variant="2409" BaseHP="10" Group="Monsters" Kind="Restored Monsters Pack"/>
-<!-- Echo Bat -->
-<entity Image="resources/Echo Bat.png" Name="Echo Bat" ID="200" Subtype="0" Variant="2407" BaseHP="20" Tags="Champion" Group="Monsters" Kind="Restored Monsters Pack"/>
 <!-- Necromancer -->
 <entity Image="resources/Necromancer.png" Name="Necromancer" ID="200" Subtype="0" Variant="2410" BaseHP="25" Tags="Champion" Group="Monsters" Kind="Restored Monsters Pack"/>
 <!-- Swapper -->
@@ -61,18 +57,6 @@
 <entity Image="resources/Vessel (RM).png" Name="Vessel (RM)" ID="858" Subtype="0" Variant="1" baseHP="35" Armor="3" Tags="Champion" Group="Monsters" Kind="Restored Monsters Pack"/>
 <entity Image="resources/Receptacle.png" Name="Receptacle" ID="858" Subtype="1" Variant="1" baseHP="25" Armor="3" Tags="Champion" Group="Monsters" Kind="Restored Monsters Pack"/>
 <entity Image="resources/Miasma.png" Name="Miasma" ID="858" Subtype="2" Variant="1" baseHP="20" Armor="3" Tags="Champion" Group="Monsters" Kind="Restored Monsters Pack"/>
-<!-- Corse Eater -->
-<entity Image="resources/Corpse Eater.png" Name="Corpse Eater (RM)" ID="239" Subtype="0" Variant="200" Metadata="1" BaseHP="30" StageHP="2.5" Armor="3" Group="Monsters" Kind="Restored Monsters Pack"/>
-<!-- Carrion Rider -->
-<entity Image="resources/Carrion Rider.png" Name="Carrion Rider (RM)" ID="239" Variant="201" Subtype="0" Metadata="1" BaseHP="30" StageHP="2.5" Armor="3"  Group="Monsters" Kind="Restored Monsters Pack"/>
-<!-- Blind Bat -->
-<entity Image="resources/Blind Bat.png" Name="Blind Bat (RM)" ID="803" Variant="200" Subtype="3" BaseHP="10" Group="Monsters" Kind="Restored Monsters Pack">
-		<bitfield Key="Subtype">
-			<spinner Length="5" Minimum="1" Maximum="5" Name="Secondary Bats">
-                <tooltip>The amount of bats that are initially hidden and appear after the first bat is alerted</tooltip>
-            </spinner>
-	</bitfield>
-</entity>
 <!-- Split Rage Creep -->
 <entity Image="resources/Split Rage Creep.png" Name="Split Rage Creep (RM)" ID="241" Variant="200" Subtype="0" BaseHP="16" Tags="Champion" PlaceVisual="WallSnap" Group="Monsters" Kind="Restored Monsters Pack"/>
 <!-- Rag Creep -->
@@ -95,91 +79,9 @@
 <entity Image="resources/future/Forever Friend (Left-right).png" Name="Forever Friend (Left-right)" ID="839" Variant="201" Subtype="4" BaseHP="25" Metadata="1" Tags="Champion" Group="THE FUTURE" Kind="Restored Monsters Pack"/>
 <entity Image="resources/future/Forever Friend (Up-down).png" Name="Forever Friend (Up-down)" ID="839" Variant="201" Subtype="5" BaseHP="25" Metadata="1" Tags="Champion" Group="THE FUTURE" Kind="Restored Monsters Pack"/>
 <entity Image="resources/future/Forever Friend (All).png" Name="Forever Friend (All)" ID="839" Variant="201" Subtype="6" BaseHP="25" Metadata="1" Tags="Champion" Group="THE FUTURE" Kind="Restored Monsters Pack"/>
-<!-- Nightwatch -->
-			<group Name="Nightwatches" Label="-- Nightwatches --">
-				<defaults>
-					<entity>
-						<tag>InNonCombatRooms</tag>
-					</entity>
-				</defaults>
-				<group Name="Nightwatch Events" Label="- Events -">
-					<defaults>
-						<entity>
-							<tag>Grid</tag>
-							<tag>InEmptyRooms</tag>
-						</entity>
-					</defaults>
-					<entity ID="969" Image="resources/Event (Nightwatch Alarm).png" Name="Event (Nightwatch Alarm)" Subtype="0" Variant="8" Metadata="1" Group="Nightwatch" Kind="Restored Monsters Pack"/>
-					<entity ID="969" Image="resources/Remove (Nightwatch Alarm).png" Name="Remove (Nightwatch Alarm)" Subtype="0" Variant="7" Metadata="1" Group="Nightwatch" Kind="Restored Monsters Pack"/>
-				</group>
-
-				<group Name="Nightwatches (Regular)" Label="- Regular -">
-					<entity BaseHP="25" ID="842" Image="resources/Nightwatch (Bounce Left).png" Name="Nightwatch (Bounce Left)" Subtype="0" Variant="1" Metadata="1" Group="Nightwatch" Kind="Restored Monsters Pack"/>
-					<entity BaseHP="25" ID="842" Image="resources/Nightwatch (Bounce Up).png" Name="Nightwatch (Bounce Up)" Subtype="1" Variant="1" Metadata="1" Group="Nightwatch" Kind="Restored Monsters Pack"/>
-					<entity BaseHP="25" ID="842" Image="resources/Nightwatch (Bounce Right).png" Name="Nightwatch (Bounce Right)" Subtype="2" Variant="1" Metadata="1" Group="Nightwatch" Kind="Restored Monsters Pack"/>
-					<entity BaseHP="25" ID="842" Image="resources/Nightwatch (Bounce Down).png" Name="Nightwatch (Bounce Down)" Subtype="3" Variant="1" Metadata="1" Group="Nightwatch" Kind="Restored Monsters Pack"/>
-
-					<entity BaseHP="25" ID="842" Image="resources/Nightwatch (Rotate Clockwise Left).png" Name="Nightwatch (Rotate Clockwise Left)" Subtype="30" Variant="1" Metadata="1" Group="Nightwatch" Kind="Restored Monsters Pack"/>
-					<entity BaseHP="25" ID="842" Image="resources/Nightwatch (Rotate Clockwise Up).png" Name="Nightwatch (Rotate Clockwise Up)" Subtype="31" Variant="1" Metadata="1" Group="Nightwatch" Kind="Restored Monsters Pack"/>
-					<entity BaseHP="25" ID="842" Image="resources/Nightwatch (Rotate Clockwise Right).png" Name="Nightwatch (Rotate Clockwise Right)" Subtype="32" Variant="1" Metadata="1" Group="Nightwatch" Kind="Restored Monsters Pack"/>
-					<entity BaseHP="25" ID="842" Image="resources/Nightwatch (Rotate Clockwise Down).png" Name="Nightwatch (Rotate Clockwise Down)" Subtype="33" Variant="1" Metadata="1" Group="Nightwatch" Kind="Restored Monsters Pack"/>
-
-					<entity BaseHP="25" ID="842" Image="resources/Nightwatch (Rotate CounterClockwise Left).png" Name="Nightwatch (Rotate CounterClockwise Left)" Subtype="40" Variant="1" Metadata="1" Group="Nightwatch" Kind="Restored Monsters Pack"/>
-					<entity BaseHP="25" ID="842" Image="resources/Nightwatch (Rotate CounterClockwise Up).png" Name="Nightwatch (Rotate CounterClockwise Up)" Subtype="41" Variant="1" Metadata="1" Group="Nightwatch" Kind="Restored Monsters Pack"/>
-					<entity BaseHP="25" ID="842" Image="resources/Nightwatch (Rotate CounterClockwise Right).png" Name="Nightwatch (Rotate CounterClockwise Right)" Subtype="42" Variant="1" Metadata="1" Group="Nightwatch" Kind="Restored Monsters Pack"/>
-					<entity BaseHP="25" ID="842" Image="resources/Nightwatch (Rotate CounterClockwise Down).png" Name="Nightwatch (Rotate CounterClockwise Down)" Subtype="43" Variant="1" Metadata="1" Group="Nightwatch" Kind="Restored Monsters Pack"/>
-
-					<entity BaseHP="25" ID="842" Image="resources/Nightwatch (Stationary Left).png" Name="Nightwatch (Stationary Left)" Subtype="50" Variant="1" Metadata="1" Group="Nightwatch" Kind="Restored Monsters Pack"/>
-					<entity BaseHP="25" ID="842" Image="resources/Nightwatch (Stationary Up).png" Name="Nightwatch (Stationary Up)" Subtype="51" Variant="1" Metadata="1" Group="Nightwatch" Kind="Restored Monsters Pack"/>
-					<entity BaseHP="25" ID="842" Image="resources/Nightwatch (Stationary Right).png" Name="Nightwatch (Stationary Right)" Subtype="52" Variant="1" Metadata="1" Group="Nightwatch" Kind="Restored Monsters Pack"/>
-					<entity BaseHP="25" ID="842" Image="resources/Nightwatch (Stationary Down).png" Name="Nightwatch (Stationary Down)" Subtype="53" Variant="1" Metadata="1" Group="Nightwatch" Kind="Restored Monsters Pack"/>
-
-					<entity BaseHP="25" ID="842" Image="resources/Nightwatch (Flip Left).png" Name="Nightwatch (Flip Left)" Subtype="70" Variant="1" Metadata="1" Group="Nightwatch" Kind="Restored Monsters Pack"/>
-					<entity BaseHP="25" ID="842" Image="resources/Nightwatch (Flip Up).png" Name="Nightwatch (Flip Up)" Subtype="71" Variant="1" Metadata="1" Group="Nightwatch" Kind="Restored Monsters Pack"/>
-					<entity BaseHP="25" ID="842" Image="resources/Nightwatch (Flip Right).png" Name="Nightwatch (Flip Right)" Subtype="72" Variant="1" Metadata="1" Group="Nightwatch" Kind="Restored Monsters Pack"/>
-					<entity BaseHP="25" ID="842" Image="resources/Nightwatch (Flip Down).png" Name="Nightwatch (Flip Down)" Subtype="73" Variant="1" Metadata="1" Group="Nightwatch" Kind="Restored Monsters Pack"/>
-				</group>
-
-				<group Name="Nightwatch Paths" Label="- Custom Paths -">
-					<group Label="(Middle-click to edit group)">
-						<entity BaseHP="25" ID="842" Image="resources/Nightwatch (Path Left).png" Name="Nightwatch (Path Left)" Subtype="60" Variant="1" Metadata="1" Group="Nightwatch" Kind="Restored Monsters Pack">
-							<bitfield Key="Variant"> <spinner Name="Group ID" Length="4"/> </bitfield> </entity>
-						<entity BaseHP="25" ID="842" Image="resources/Nightwatch (Path Up).png" Name="Nightwatch (Path Up)" Subtype="61" Variant="1" Metadata="1" Group="Nightwatch" Kind="Restored Monsters Pack">
-							<bitfield Key="Variant"> <spinner Name="Group ID" Length="4"/> </bitfield> </entity>
-						<entity BaseHP="25" ID="842" Image="resources/Nightwatch (Path Right).png" Name="Nightwatch (Path Right)" Subtype="62" Variant="1" Metadata="1" Group="Nightwatch" Kind="Restored Monsters Pack">
-							<bitfield Key="Variant"> <spinner Name="Group ID" Length="4"/> </bitfield> </entity>
-						<entity BaseHP="25" ID="842" Image="resources/Nightwatch (Path Down).png" Name="Nightwatch (Path Down)" Subtype="63" Variant="1" Metadata="1" Group="Nightwatch" Kind="Restored Monsters Pack">
-							<bitfield Key="Variant"> <spinner Name="Group ID" Length="4"/> </bitfield> </entity>
-
-						<group Label="(Paths with different groups will">
-							<group Label="all spawn if on top of each other)">
-								<defaults>
-									<entity>
-										<tag>Grid</tag>
-										<tag>InEmptyRooms</tag>
-									</entity>
-								</defaults>
-								<entity ID="970" Image="resources/Nightwatch Path - Left.png" Name="Nightwatch Path - Left" Subtype="1" Variant="60" Metadata="1" Group="Nightwatch" Kind="Restored Monsters Pack">
-									<bitfield Key="Subtype"> <spinner Name="Group ID" Length="4"/> </bitfield> </entity>
-								<entity ID="970" Image="resources/Nightwatch Path - Up.png" Name="Nightwatch Path - Up" Subtype="1" Variant="61" Metadata="1" Group="Nightwatch" Kind="Restored Monsters Pack">
-									<bitfield Key="Subtype"> <spinner Name="Group ID" Length="4"/> </bitfield> </entity>
-								<entity ID="970" Image="resources/Nightwatch Path - Right.png" Name="Nightwatch Path - Right" Subtype="1" Variant="62" Metadata="1" Group="Nightwatch" Kind="Restored Monsters Pack">
-									<bitfield Key="Subtype"> <spinner Name="Group ID" Length="4"/> </bitfield> </entity>
-								<entity ID="970" Image="resources/Nightwatch Path - Down.png" Name="Nightwatch Path - Down" Subtype="1" Variant="63" Metadata="1" Group="Nightwatch" Kind="Restored Monsters Pack">
-									<bitfield Key="Subtype"> <spinner Name="Group ID" Length="4"/> </bitfield> </entity>
-								<entity ID="970" Image="resources/Nightwatch Path - Stop.png" Name="Nightwatch Path - Stop" Subtype="1" Variant="64" Metadata="1" Group="Nightwatch" Kind="Restored Monsters Pack">
-									<bitfield Key="Subtype"> <spinner Name="Group ID" Length="4"/> </bitfield> </entity>
-								<entity ID="970" Image="resources/Nightwatch Path - Change Group.png" Name="Nightwatch Path - Change Group" Subtype="1" Variant="65" Metadata="1" Group="Nightwatch" Kind="Restored Monsters Pack">
-									<bitfield Key="Subtype"> <spinner Name="From" Length="4"/> <spinner Name="To" Length="4"/> </bitfield> </entity>
-							</group>
-						</group>
-					</group>
-				</group>
-			</group>
-<!-- Nightwatch -->
 
 <!-- Rev -->
-<entity Image="resources/rev1/Ice Hazard Dumpling.png" Name="Ice Hazard (Dumpling)" ID="481" Subtype="0" Variant="800" BaseHP="20" Group="Revelations" Kind="Restored Monsters Pack"/>
+<entity Image="resources/rev1/Ice Hazard Rumpling.png" Name="Ice Hazard (Rumpling)" ID="481" Subtype="0" Variant="800" BaseHP="20" Group="Revelations" Kind="Restored Monsters Pack"/>
 
 <!-- FFG -->
 
@@ -205,7 +107,7 @@
 	</group>
 
 	<group Name="Chapter 1 (Main Path) Enemies">
-		<entity Name="Dumpling"/>
+		<entity Name="Rumpling"/>
 	</group>
 
 	<group Name="Cellar Enemies">
@@ -217,13 +119,12 @@
 	</group>
 
 	<group Name="Chapter 1 (Alt Path) Enemies">
-		<entity Name="Dumpling"/>
+		<entity Name="Rumpling"/>
 	</group>
 
 	<group Name="Chapter 2 (Main Path) Enemies">
-		<entity Name="Dumpling"/>
+		<entity Name="Rumpling"/>
 		<entity Name="Skinling"/>
-		<entity Name="Blind Bat (RM)"/>
 	</group>
 
 	<group Name="Catacombs Enemies">
@@ -248,15 +149,13 @@
 	</group>
 
 	<group Name="Mines Enemies">
-		<entity Name="Blind Bat (RM)"/>
-		<entity Name="Echo Bat"/>
-		<entity Name="Dumpling"/>
+		<entity Name="Rumpling"/>
 	</group>
 
 	<group Name="Chapter 3 (Main Path) Enemies">
-		<entity Name="Dumpling"/>
+		<entity Name="Rumpling"/>
 		<entity Name="Skinling"/>
-		<entity Name="Scab"/>
+		<entity Name="Scabling"/>
 	</group>
 
 	<group Name="Necropolis Enemies">
@@ -269,9 +168,7 @@
 	</group>
 
 	<group Name="Chapter 3 (Alt Path) Enemies">
-		<entity Name="Corpse Eater (RM)"/>
-		<entity Name="Carrion Rider (RM)"/>
-		<entity Name="Scab"/>
+		<entity Name="Scabling"/>
 		<entity Name="Necromancer"/>
 		<entity Name="Strifer (Left)"/>
 		<entity Name="Strifer (Up)"/>
@@ -285,7 +182,6 @@
 	<group Name="Mausoleum Enemies">
 		<entity Name="Swapper"/>
 		<entity Name="Screamer"/>
-		<entity Name="Fanatic"/>
 		<entity Name="Rag Creep (RM)"/>
 	</group>
 
@@ -298,41 +194,32 @@
 
 	<group Name="Chapter 4 (Main Path) Enemies">
 		<entity Name="Stillborn (RM)"/>
-		<entity Name="Scab"/>
+		<entity Name="Scabling"/>
 	</group>
 
 	<group Name="Womb Enemies">
-		<entity Name="Dumpling"/>
+		<entity Name="Rumpling"/>
 	</group>
 
 	<group Name="Utero Enemies">
     	<entity Name="Cell"/>
 		<entity Name="Fused Cells"/>
 		<entity Name="Tissue"/>
-		<entity Name="Dumpling"/>
+		<entity Name="Rumpling"/>
 		<entity Name="Fracture (RM)"/>
 	</group>
-
-	<group Name="Scarred Womb Enemies">
-		<entity Name="Fracture (RM)"/>
-	</group>
-
 
 	<group Name="Corpse Enemies">
-		<entity Name="Corpse Eater (RM)"/>
-		<entity Name="Carrion Rider (RM)"/>
 		<entity Name="Mortling"/>
-		<entity Name="Stillborn (RM)"/>
 		<entity Name="Barfy"/>
 		<entity Name="Vessel (RM)"/>
 		<entity Name="Receptacle"/>
 		<entity Name="Miasma"/>
 		<entity Name="Vessel (Antibirth)"/>
-		<entity Name="Lump"/>
 	</group>
 
 	<group Name="Chapter 5 (Main Path) Enemies">
-		<entity Name="Scab" />
+		<entity Name="Scabling" />
 	</group>
 
 	<group Name="Sheol Enemies">
@@ -346,13 +233,13 @@
 
 	<group Name="Ascent Enemies">
     	<entity Name="Blood Worm"/>
-		<entity Name="Tainted Dumpling"/>
+		<entity Name="Tainted Rumpling"/>
 	</group>
 
 	<!-- rev
 
 	<group Name="Restored Monsters Ice Hazards" >
-	<entity Name="Ice Hazard (Dumpling)" />
+	<entity Name="Ice Hazard (Rumpling)" />
 	<entity Name="Ice Hazard (Fracture)" />
 	</group>
 	<group Name="(Rev) Glacier Ice Hazards" Label="Ice Hazards">
@@ -362,7 +249,7 @@
 	<group Name="Restored Monsters Ice Hazards" />
 
 	<group Name="Boiler RM" >
-		<entity Name="Dumpling" />
+		<entity Name="Rumpling" />
 	</group> -->
 
 	
