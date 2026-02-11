@@ -29,7 +29,7 @@ end
 RestoredMonsterPack.ENTITY_INFO = {
 	RUMPLING = makeEnumTable("Rumpling"),
 	SKINLING = makeEnumTable("Skinling"),
-	SCABLING = makeEnumTable("Scab"),
+	SCABLING = makeEnumTable("Scabling"),
 	SCORCHLING = makeEnumTable("Scorchling"),
 	MORTLING = makeEnumTable("Mortling"),
 	TAINTED_RUMPLING = makeEnumTable("Tainted Rumpling"),
@@ -112,6 +112,8 @@ include("scripts.splitRageCreep")
     misc
 --]]--------------------------------------------------------
 
+mod.compatibilityReplace = {}
+
 include("scripts.revelCompat")
 include("scripts.compatibility.retribution.baptismal_preloader")
 include("scripts.compatibility.retribution.rm_downgrades")
@@ -162,7 +164,7 @@ function mod:RMblacklistentry(blacklist, Type, Variant, SubType, operation)
 	for i,entry in pairs(checkList) do
 		if operation == "add" then
 			if entry[1] == Type and entry[2] == Variant and entry[3] == SubType then
-				print("[CMP] Error adding blacklist entry:\n   Entry already exists")
+				print("[RM] Error adding blacklist entry:\n   Entry already exists")
 				return false
 			end
 
@@ -179,7 +181,7 @@ function mod:RMblacklistentry(blacklist, Type, Variant, SubType, operation)
 		return true
 
 	elseif operation == "remove" then
-		print("[CMP] Error removing blacklist entry:\n   Entry doesn't exist")
+		print("[RM] Error removing blacklist entry:\n   Entry doesn't exist")
 		return false
 	end
 end
@@ -187,7 +189,7 @@ end
 -- Check if the entity is in the blacklist or not
 function mod:inAMLblacklist(blacklist, checkType, checkVariant, checkSubType)
 	if blacklist ~= "Necromancer" then
-		print("[CMP] Error checking blacklist:\n   Incorrect blacklist: " .. blacklist)
+		print("[RM] Error checking blacklist:\n   Incorrect blacklist: " .. blacklist)
 		return
 	end
 
@@ -195,16 +197,8 @@ function mod:inAMLblacklist(blacklist, checkType, checkVariant, checkSubType)
 	if blacklist == "Necromancer" then
 		checkList = necromancer_blacklist
 	end
-
-	for i,entry in pairs(checkList) do
-		if checkType == entry[1] and (entry[2] == -1 or checkVariant == entry[2]) and (entry[3] == -1 or checkSubType == entry[3]) then
-			return true
-		end
-	end
-	return false
 end
 
-mod:AddCallback(ModCallbacks.MC_PRE_ROOM_ENTITY_SPAWN, mod.replaceID)
 
 function mod:replaceByDummy(Type, Variant, SubType, _, _, _, Seed)
 	if REPENTOGON and Isaac.GetPersistentGameData():Unlocked(Achievement.THE_GATE_IS_OPEN) == false and mod.UnlockReplace[Type.." "..Variant.." "..SubType] or mod.UnlockReplace[Type.." "..Variant] then
@@ -216,6 +210,11 @@ function mod:replaceByDummy(Type, Variant, SubType, _, _, _, Seed)
 		if mod.DummyReplace[Type][Variant] then
 			return {Type, mod.DummyReplace[Type][Variant], SubType, Seed}
 		end
+	end
+	
+	if mod.CompatibilityReplace[Type.." "..Variant.." "..SubType] or mod.CompatibilityReplace[Type.." "..Variant] then
+		local t = mod.CompatibilityReplace[Type.." "..Variant.." "..SubType] or mod.CompatibilityReplace[Type.." "..Variant]
+		return {t[1], t[2], t[3], Seed}
 	end
 end
 mod:AddCallback(ModCallbacks.MC_PRE_ENTITY_SPAWN, mod.replaceByDummy)

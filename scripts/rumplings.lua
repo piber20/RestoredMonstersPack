@@ -41,7 +41,7 @@ local function fart(npc)
 			end
 		end
 
-	-- Scab
+	-- Scabling
 	elseif npc.Variant == RestoredMonsterPack.ENTITY_INFO.SCABLING.VARIANT then
 		Isaac.Spawn(EntityType.ENTITY_EFFECT, EffectVariant.FART, 1, npc.Position, Vector.Zero, npc) -- red fart
 

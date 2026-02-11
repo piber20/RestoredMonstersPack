@@ -17,8 +17,8 @@
         <gibs amount="6" blood="1" bone="0" eye="0" gut="1" large="0" />
         <devolve id="800.0.0" weight="1" />
     </entity>
-    <!-- Scab -->
-    <entity anm2path="monsters\restored\rumplings\scab.anm2" name="Scab" id="800" variant="2" baseHP="10" stageHP="2" reroll="true"  boss="0" champion="1" hasFloorAlts="false" portrait="2" collisionDamage="1" collisionMass="3" collisionRadius="13" friction="0.95"   numGridCollisionPoints="12" shadowSize="12" gridCollision="walls">
+    <!-- Scabling -->
+    <entity anm2path="monsters\restored\rumplings\scabling.anm2" name="Scabling" id="800" variant="2" baseHP="10" stageHP="2" reroll="true"  boss="0" champion="1" hasFloorAlts="false" portrait="2" collisionDamage="1" collisionMass="3" collisionRadius="13" friction="0.95"   numGridCollisionPoints="12" shadowSize="12" gridCollision="walls">
 		<bestiary transform="0,0,1" anim="Idle" />
         <gibs amount="6" blood="1" bone="0" eye="0" gut="1" large="0" />
         <devolve id="800.1.0" weight="1" />
