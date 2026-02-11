@@ -112,7 +112,7 @@ include("scripts.splitRageCreep")
     misc
 --]]--------------------------------------------------------
 
-mod.compatibilityReplace = {}
+mod.CompatibilityReplace = {}
 
 include("scripts.revelCompat")
 include("scripts.compatibility.retribution.baptismal_preloader")
@@ -223,10 +223,10 @@ mod.DummyReplace = {
 	[mod.ENTITY_INFO.VESSEL.ID] = {[0] = mod.ENTITY_INFO.VESSEL_ANTIBIRTH.VARIANT}, --200},
 	[EntityType.ENTITY_RAGE_CREEP] = {[1] = Isaac.GetEntityVariantByName("​Split Rage Creep")}, --200},
 	[EntityType.ENTITY_WALL_CREEP] = {[2] = Isaac.GetEntityVariantByName("​Rag Creep")}, --200},
-	},
+}
 
 -- Replaces Fractures if The Lamb has not been defeated
-mod.UnlockReplace == {
+mod.UnlockReplace = {
 	[EntityType.ENTITY_HOPPER.." ".. 1 .." "..RestoredMonsterPack.ENTITY_INFO.FRACTURE.SUBTYPE] = {EntityType.ENTITY_HOPPER, 1, -1}, --trite
 	[RestoredMonsterPack.ENTITY_INFO.FRACTURE.SUBTYPE.." ".. 0 .." ".. 0] = {EntityType.ENTITY_HOPPER, 1, -1}, --trite
 }
