@@ -53,7 +53,7 @@ RestoredMonsterPack.ENTITY_INFO = {
 	GRAVEROBBER = makeEnumTable("Grave Robber"),
 	SPLASHY = makeEnumTable("Splashy Long Legs"),
 	STICKY = makeEnumTable("Sticky Long Legs"),
-	SPLIT_RAGE_CREEP = makeEnumTable("​Split Rage Creep")
+	SPLIT_RAGE_CREEP = makeEnumTable("​Split Rage Creep"),
 	-- Mod Compact Enemies
 	CHUBBY_BUNNY = makeEnumTable("Chubby Bunny"),
 	BEARD_BAT = makeEnumTable("Beard Bat"),
@@ -227,7 +227,7 @@ mod.DummyReplace = {
 	},
 
 -- Replaces Fractures if The Lamb has not been defeated
-mod.UnlockReplace = {
+mod.UnlockReplace == {
 	[EntityType.ENTITY_HOPPER.." ".. 1 .." "..RestoredMonsterPack.ENTITY_INFO.FRACTURE.SUBTYPE] = {EntityType.ENTITY_HOPPER, 1, -1}, --trite
 	[RestoredMonsterPack.ENTITY_INFO.FRACTURE.SUBTYPE.." ".. 0 .." ".. 0] = {EntityType.ENTITY_HOPPER, 1, -1}, --trite
 }

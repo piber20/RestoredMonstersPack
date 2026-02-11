@@ -67,3 +67,4 @@ if FFGRACE then
     for key, entry in pairs(FFGRACE.SkeeterEntData["RestoredMonsterPack"]) do
       FFGRACE.SkeeterEntData[key] = entry
     end
+  end

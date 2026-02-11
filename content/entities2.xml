@@ -1,10 +1,6 @@
 <entities anm2root="gfx/" version="5" deathanm2="gfx/death_enemies.anm2">
 
 <!-- Projectiles -->
-    <!-- For Echo Bat -->
-	<entity anm2path="projectiles\echo_projectile.anm2" name="Echo Projectile" id="9" variant="104" baseHP="0" collisionDamage="0" collisionMass="8" collisionRadius="10" friction="1" numGridCollisionPoints="60" shadowSize="15" />
-    <!-- For Nightwatch -->
-	<entity anm2path="projectiles\lantern_projectile.anm2" name="Lantern Projectile" id="9" variant="106" baseHP="0" collisionDamage="0" collisionMass="8" collisionRadius="5"  friction="1"   numGridCollisionPoints="60" shadowSize="10" />
     <!-- For Tainted Rumpling -->
 	<entity anm2path="projectiles\staple_projectile.anm2" name="Staple Projectile" id="9" variant="108" baseHP="10" collisionDamage="0" collisionMass="8" collisionRadius="10" friction="1" numGridCollisionPoints="8" shadowSize="15"/>
 
@@ -62,18 +58,6 @@
     	<bestiary transform="0,0,1" anim="Hop" />
         <gibs amount="6" blood="1" bone="1" eye="1" gut="1" large="0" />
         <devolve id="29.1.0" weight="1" />
-    </entity>
-    <!-- Stillborn -->
-	<entity anm2path="monsters\restored\stillborn\stillborn.anm2" name="Stillborn" id="200" variant="2409" baseHP="10" stageHP="0" reroll="true" shutdoors="false" boss="0" champion="0" hasFloorAlts="true" portrait="8" collisionDamage="1" collisionMass="30" collisionRadius="13" friction="1" numGridCollisionPoints="12" shadowSize="14" gridCollision="walls">
-		<bestiary transform="0,0,1" anim="Death" />
-        <gibs amount="6" blood="1" bone="0" eye="0" gut="1" large="0" />
-        <devolve id="38.0.0" weight="1" />
-    </entity>
-    <!-- Echo Bat -->
-	<entity anm2path="monsters\restored\echobat\echo_bat.anm2" name="Echo Bat" id="200" variant="2407" baseHP="20" stageHP="0" reroll="true" boss="0" champion="1" portrait="13" collisionDamage="1" collisionMass="14" collisionRadius="13" friction="1" numGridCollisionPoints="12"  shadowSize="18" gridCollision="walls" >
-        <bestiary anim="Idle" transform="0,-16,1"/>
-		<gibs amount="6" blood="1" bone="0" eye="0" gut="1" large="0" />
-        <devolve id="234.0.0" weight="1" />
     </entity>
     <!-- Chubby Bunny -->
     <entity anm2path="monsters\grotto\chubbybunny\chubby_bunny.anm2" name="Chubby Bunny" id="200" variant="2408" subtype="0" baseHP="25" stageHP="0" reroll="true" boss="0" champion="1" portrait="36" collisionDamage="1" collisionMass="14" collisionRadius="13" friction="1" numGridCollisionPoints="12" shadowSize="18" gridCollision="walls" >
@@ -159,8 +143,6 @@
 <!-- Effects -->
 	<!-- Screamer Ring -->
     <entity anm2path="monsters\restored\screamer\screamer_ring.anm2" name="Screamer Ring" id="1000" variant="164" subtype="867" collisionDamage="0" collisionMass="0" collisionRadius="0" friction="1" numGridCollisionPoints="1" shadowSize="0"/>
-    <!-- Nightwatch Spotlight -->
-	<entity anm2path="monsters\restored\nightwatch\nightwatch_spotlight.anm2"   name="Nightwatch Spotlight" id="1000" variant="842" subtype="0" collisionDamage="0" collisionMass="0" collisionRadius="0" friction="1" numGridCollisionPoints="0" shadowSize="0"/>
     <!-- Screamer Aura -->
 	<entity anm2path="monsters\restored\screamer\screamer_aura.anm2" 		   name="Screamer Aura" id="1000" variant="867" subtype="0" collisionDamage="0" collisionMass="0" collisionRadius="0" friction="1" numGridCollisionPoints="0" shadowSize="0" />
 
@@ -196,24 +178,6 @@
         <devolve id="853.0.0" weight="1" />     
     </entity>
 <!-- Antibirth enemy Variants for Bestiary -->
-    <!-- Corpse Eater -->
-    <entity anm2path="monsters\restored\corpseeater\corpse_eater.anm2" name="​Corpse Eater" id="239" variant="200" baseHP="30" stageHP="2.5" shieldStrength="3" boss="0" champion="0" portrait="28" collisionDamage="1" collisionMass="14" collisionRadius="13" friction="1" numGridCollisionPoints="12" shadowSize="21">
-        <bestiary anim="Bestiary" transform="0,0,1"/>
-        <gibs amount="10" blood="1" bone="0" eye="0" gut="1" large="0"/>
-    	<devolve id="23.0.0" weight="1" />
-    </entity>
-    <!-- Carrion Rider -->
-    <entity anm2path="monsters\restored\corpseeater\carrion_rider.anm2" name="​Carrion Rider" id="239" variant="201" baseHP="30" stageHP="2.5" shieldStrength="3" boss="0" champion="0" portrait="29" collisionDamage="1" collisionMass="14" collisionRadius="13" friction="1" numGridCollisionPoints="12" shadowSize="21">
-        <bestiary anim="Bestiary" transform="0,0,1"/>
-        <gibs amount="10" blood="1" bone="0" eye="0" gut="1" large="0"/>
-    	<devolve id="23.3.0" weight="1" />
-    </entity>
-    <!-- Blind Bat -->
-    <entity anm2path="803.000_blindbat.anm2" name="​Blind Bat" id="803" variant="200" baseHP="10" stageHP="0" boss="0" champion="0" portrait="12" collisionDamage="1" collisionMass="14" collisionRadius="13" friction="1" numGridCollisionPoints="32" shadowSize="18" gridCollision="walls">
-        <bestiary anim="Wake" transform="0,0,1"/>
-        <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0"/> 
-    	<devolve id="222.0.0" weight="1" />
-    </entity>
     <!-- Beard Bat -->
     <entity anm2path="monsters\grotto\beardbat\beard_bat.anm2" name="Beard Bat" id="803" variant="201" baseHP="15" stageHP="0" boss="0" champion="0" portrait="35" collisionDamage="1" collisionMass="14" collisionRadius="13" friction="1" numGridCollisionPoints="32" shadowSize="18" gridCollision="walls">
         <bestiary anim="Wake" transform="0,0,1"/>
@@ -235,12 +199,6 @@
         <gibs amount="4" blood="1" bone="0" eye="0" gut="1" large="0"/>
         <devolve id="240.0.0" weight="1" />
         <preload-snd id="317"/>
-    </entity>
-    <!-- Nightwatch -->
-    <entity anm2path="842.000_nightwatch.anm2" name="​Nightwatch" id="842" variant="1" baseHP="25" stageHP="5" boss="0" champion="0" shutdoors="false"  tags="ghost noreroll" portrait="31" collisionDamage="0" collisionMass="100" collisionRadius="13" friction="1" numGridCollisionPoints="12" shadowSize="20" gridCollision="floor">
-        <bestiary anim="WalkDown" transform="0,0,1"/>
-        <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0"/>
-        <devolve id="260.10.0" weight="1" />
     </entity>
     <!-- Vessel -->
     <entity anm2path="858.000_vessel.anm2" name="​Vessel (Antibirth)" id="858" variant="200" baseHP="70" stageHP="0" boss="0" champion="1" portrait="27" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1" numGridCollisionPoints="12" shadowSize="15">
