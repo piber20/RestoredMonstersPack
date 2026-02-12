@@ -27,8 +27,21 @@ if FFGRACE then
       table.insert(FFGRACE.Rooms.Grotto, include("resources.luarooms.ffg.grotto_rm_ff"))
     end
 
+    if LastJudgement then
+    table.insert(FFGRACE.Rooms.Grotto, include("resources.luarooms.ffg.lj.grotto_rm_lj"))
+    table.insert(FFGRACE.Rooms.GrottoRailButton, include("resources.luarooms.ffg.lj.grotto_rm_lj_button"))
+    table.insert(FFGRACE.Rooms.GrottoChallenge, include("resources.luarooms.ffg.lj.grotto_rm_lj_challenge"))
+    table.insert(FFGRACE.Rooms.GrottoMineshaftEntrance, include("resources.luarooms.ffg.lj.grotto_rm_lj_mineshaft_entrance"))
+    StageAPI.GetBossData("FFGRACE Ms. Guano").Rooms:AddRooms(require("resources.luarooms.ffg.bosses_lj.grotto_rm_msguano_lj"))
+    end
+
+    if LastJudgement and FiendFolio then
+    table.insert(FFGRACE.Rooms.Grotto, include("resources.luarooms.ffg.ff_lj.grotto_rm_ff_lj"))
+    end
+
+
     StageAPI.GetBossData("FFGRACE Stub").Rooms:AddRooms(require("resources.luarooms.ffg.bosses.grotto_rm_stub"))
-    StageAPI.GetBossData("FFGRACE Ms. Guano").Rooms:AddRooms(require("resources.luarooms.ffg.bosses.grotto_rm_msguano"))
+
     StageAPI.GetBossData("FFGRACE Plumpod II").Rooms:AddRooms(require("resources.luarooms.ffg.bosses.grotto_rm_plumpod"))
 
 
@@ -55,7 +68,7 @@ if FFGRACE then
 
       [mod.ENTITY_INFO.STICKY.ID.." "..mod.ENTITY_INFO.STICKY.VARIANT] = "Tar",
 
-      [mod.ENTITY_INFO.RUMPLING.ID.." "..CutMonsterVariants.SCORCHLING] = "Fire",
+      [mod.ENTITY_INFO.RUMPLING.ID.." "..mod.ENTITY_INFO.SCORCHLING.VARIANT] = "Fire",
 
 
       -- Insert FFG Bats here as Spore

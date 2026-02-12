@@ -124,13 +124,13 @@ if StageAPI then
 	include("scripts.compatibility.fiend folio.rm_genders")
 end
 
-mod:AddCallback(ModCallbacks.MC_POST_UPDATE, function()
-	if not mod.fiendfolioTablesMixed then
-		if FiendFolio then
-			mod.MixFiendFolioStuff()
-		end
-	end
-end)
+-- mod:AddCallback(ModCallbacks.MC_POST_UPDATE, function()
+-- 	if not mod.fiendfolioTablesMixed then
+-- 		if FiendFolio then
+-- 			mod.MixFiendFolioStuff()
+-- 		end
+-- 	end
+-- end)
 
 --[[--------------------------------------------------------
     Blacklists
@@ -187,7 +187,7 @@ function mod:RMblacklistentry(blacklist, Type, Variant, SubType, operation)
 end
 
 -- Check if the entity is in the blacklist or not
-function mod:inAMLblacklist(blacklist, checkType, checkVariant, checkSubType)
+function mod:inRMblacklist(blacklist, checkType, checkVariant, checkSubType)
 	if blacklist ~= "Necromancer" then
 		print("[RM] Error checking blacklist:\n   Incorrect blacklist: " .. blacklist)
 		return
@@ -197,6 +197,28 @@ function mod:inAMLblacklist(blacklist, checkType, checkVariant, checkSubType)
 	if blacklist == "Necromancer" then
 		checkList = necromancer_blacklist
 	end
+end
+
+--if an entity is a listed entry in a table
+function mod:EntityInList(entity, list)
+	for _, entry in pairs(list) do
+		if entity.Type == entry[1] and (entry[2] == -1 or entity.Variant == entry[2]) and (entry[3] == -1 or entity.SubType == entry[3]) then
+			return true
+		end
+	end
+	return false
+end
+
+function mod:MixTables(input, table)
+    if input and table then
+        for k, v in pairs(table) do
+            if type(input[k]) == "table" and type(v) == "table" then
+                mod:MixTables(input[k], v)
+            else
+                input[k] = v
+            end
+        end
+    end
 end
 
 
