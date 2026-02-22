@@ -1,19 +1,19 @@
 <data>
     <stage Name="Scarred Womb">
         <Gfx>
-            <Entity ID="29" Variant="1" SubType="801" Image="resources/Fracture Scarred.png"/>
+            <Entity ID="29" Variant="1" SubType="181" Image="resources/Fracture Scarred.png"/>
         </Gfx>
     </stage>
     <stage Name="Downpour">
         <Gfx>
             <Entity ID="800" Variant="0" SubType="0" Image="resources/Rumpling Downpour.png"/>
-            <Entity ID="29" Variant="1" SubType="801" Image="resources/Fracture Downpour.png"/>
+            <Entity ID="29" Variant="1" SubType="181" Image="resources/Fracture Downpour.png"/>
         </Gfx>
     </stage>
     <stage Name="Dross">
         <Gfx>
             <Entity ID="800" Variant="0" SubType="0" Image="resources/Rumpling Dross.png"/>
-            <Entity ID="29" Variant="1" SubType="801" Image="resources/Fracture Dross.png"/>
+            <Entity ID="29" Variant="1" SubType="181" Image="resources/Fracture Dross.png"/>
         </Gfx>
     </stage>
     <stage Name="Ashpit">
@@ -38,7 +38,7 @@
     <!-- <stage Name="Glacier">
         <Gfx>
             <Entity ID="800" Variant="0" SubType="0" Image="resources/rev1/Rumpling Glacier.png"/>
-            <Entity ID="29" Variant="1" SubType="801" Image="resources/rev1/Fracture Glacier.png"/>
+            <Entity ID="29" Variant="1" SubType="181 Image="resources/rev1/Fracture Glacier.png"/>
             <Entity ID="200" Variant="2503" SubType="0" Image="resources/rev1/Grave Robber Glacier.png"/>
         </Gfx>
     </stage>

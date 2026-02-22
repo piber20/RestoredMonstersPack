@@ -50,9 +50,7 @@ if FFGRACE then
       {EntityType.ENTITY_ONE_TOOTH, -1, -1},
       {EntityType.ENTITY_FAT_BAT, -1, -1},
       {EntityType.ENTITY_BOOMFLY, 3, -1}, --dragon fly
-
-      -- Put LJ Bats here
-
+      
       {FFGRACE.ENT.POPCAP_CLUSTER.id, FFGRACE.ENT.POPCAP_CLUSTER.variant, -1},
       {FFGRACE.ENT.MUD_FLY.id, FFGRACE.ENT.MUD_FLY.variant, -1},
       {FFGRACE.ENT.ROBERT.id, FFGRACE.ENT.ROBERT.variant, -1},
@@ -62,6 +60,12 @@ if FFGRACE then
       {666, 40, -1}, --ff foamy
 
     }
+
+    -- LJ Bats
+    if LastJudgement then
+      table.insert(mod.sporeTransformable, {LastJudgement.ENT.BlindBat.ID, LastJudgement.ENT.BlindBat.Var, LastJudgement.ENT.BlindBat.Sub})
+      table.insert(mod.sporeTransformable, {LastJudgement.ENT.EchoBat.ID, LastJudgement.ENT.EchoBat.Var, LastJudgement.ENT.EchoBat.Sub})
+    end
 
     FFGRACE.SkeeterEntData["RestoredMonsterPack"] = {
       [EntityType.ENTITY_BRIMSTONE_HEAD.." "..mod.ENTITY_INFO.FIRE_GRIMACE.VARIANT] = "Hard",

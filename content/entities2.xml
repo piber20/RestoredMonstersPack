@@ -54,7 +54,7 @@
         <devolve id="800.0.0" weight="1" />
     </entity>
     <!-- Fracture (Name uses a nil character to not conflict with Fiend Folio) -->
-	<entity anm2path="monsters\restored\fracture\fracture.anm2" name="​Fracture" id="29" variant="1" subtype="801" baseHP="15" stageHP="0" reroll="true" boss="0" champion="1" hasFloorAlts="true" tags="spider" portrait="7" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1" numGridCollisionPoints="0" shadowSize="28">
+	<entity anm2path="monsters\restored\fracture\fracture.anm2" name="​Fracture" id="29" variant="1" subtype="181" baseHP="15" stageHP="0" reroll="true" boss="0" champion="1" hasFloorAlts="true" tags="spider" portrait="7" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1" numGridCollisionPoints="0" shadowSize="28">
     	<bestiary transform="0,0,1" anim="Hop" />
         <gibs amount="6" blood="1" bone="1" eye="1" gut="1" large="0" />
         <devolve id="29.1.0" weight="1" />

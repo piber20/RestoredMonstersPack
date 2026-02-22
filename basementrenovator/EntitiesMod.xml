@@ -14,7 +14,7 @@
 <!-- Gilded Rumpling -->
 <entity Image="resources/Gilded Rumpling.png" Name="Gilded Rumpling" ID="800" Subtype="0" Variant="6" BaseHP="60" Tags="Champion" Group="Monsters" Kind="Restored Monsters Pack"/>
 <!-- Fracture -->
-<entity Image="resources/Fracture.png" Name="Fracture (RM)" ID="29" Subtype="801" Variant="1" Metadata="1" BaseHP="15" Tags="Champion" Group="Monsters" Kind="Restored Monsters Pack"/>
+<entity Image="resources/Fracture.png" Name="Fracture (RM)" ID="29" Subtype="181" Variant="1" Metadata="1" BaseHP="15" Tags="Champion" Group="Monsters" Kind="Restored Monsters Pack"/>
 <!-- Necromancer -->
 <entity Image="resources/Necromancer.png" Name="Necromancer" ID="200" Subtype="0" Variant="2410" BaseHP="25" Tags="Champion" Group="Monsters" Kind="Restored Monsters Pack"/>
 <!-- Swapper -->

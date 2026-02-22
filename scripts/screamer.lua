@@ -164,11 +164,27 @@ function mod:screamerUpdate(entity)
 					entity:PlaySound(Isaac.GetSoundIdByName("Screamer Scream"), 2, 0, false, 1)
 					game:ShakeScreen(36)
 
-					-- Alert Nightwatches (state 2 = Alert, state 3 = AlertNoEffect)
-					for _,v in pairs(Isaac.GetRoomEntities()) do
-						if v.Type == mod.ENTITY_INFO.NIGHTWATCH.ID and v:GetData().state ~= 2 and v:GetData().state ~= 3 then
-							v:GetData().state = 2
-							break
+					-- Alert LJ Nightwatches
+					if LastJudgement then
+						local lj = LastJudgement
+						lj:ShutDoors()
+						for _, nightwatch in pairs(Isaac.FindByType(lj.ENT.Nightwatch.ID, lj.ENT.Nightwatch.Var)) do
+							nightwatch:GetData().LoseTheLight = true
+							nightwatch:GetData().State = "Alert"
+						end
+						local wokeUpGapers = false
+						for _, restlessGaper in pairs(Isaac.FindByType(lj.ENT.RestlessGaper.ID, lj.ENT.RestlessGaper.Var)) do
+							if restlessGaper:GetData().State == "Sleeping" then
+								restlessGaper:ToNPC().CanShutDoors = true
+								restlessGaper:GetData().State = "WakeUp"
+								wokeUpGapers = true
+							end
+						end
+						if wokeUpGapers then
+							lj:ScheduleForUpdate(function()
+								game:ShakeScreen(8)
+								lj:PlaySound(SoundEffect.SOUND_BOO_MAD, _, 0.8, 0.75)
+							end, 60)
 						end
 					end
 				end

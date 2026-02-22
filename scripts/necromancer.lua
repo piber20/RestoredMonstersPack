@@ -63,7 +63,6 @@ function mod:necromancerUpdate(entity)
 						if v ~= nil and (entity:GetChampionColorIdx() == ChampionColor.TRANSPARENT or entity.Pathfinder:HasPathToPos(v[4], false)) then -- Ghost champions can go to any of them
 							data.state = States.HasReviveTarget
 							data.reviveIndex = i
-							data.reviveIdentifier = v[5]
 						end
 					end
 				else
@@ -79,7 +78,7 @@ function mod:necromancerUpdate(entity)
 
 
 				-- Spawn Bony
-				if entity.Child == nil then
+				if entity.Child == nil and data.state ~= States.HasReviveTarget then
 					if data.bonyCooldown <= 0 then
 						data.state = States.Spawn
 						data.bonyCooldown = Settings.SpawnCooldown
@@ -92,7 +91,7 @@ function mod:necromancerUpdate(entity)
 
 			elseif data.state == States.HasReviveTarget then
 				-- Move where the enemy died
-				if necromancerSpawns[data.reviveIndex] ~= nil and data.reviveIdentifier == necromancerSpawns[data.reviveIndex][5] then
+				if necromancerSpawns[data.reviveIndex] ~= nil then
 					if entity.Position:Distance(necromancerSpawns[data.reviveIndex][4]) > 20 then
 						-- If it doesn't have a direct path
 						if game:GetRoom():CheckLine(entity.Position, necromancerSpawns[data.reviveIndex][4], 0, 0, false, false) == false
@@ -127,7 +126,7 @@ function mod:necromancerUpdate(entity)
 				-- Revive target
 				if data.state == States.Revive then
 					-- If it hasn't been revived yet then revive + remove it from the table
-					if necromancerSpawns[data.reviveIndex] ~= nil and data.reviveIdentifier == necromancerSpawns[data.reviveIndex][5] then
+					if necromancerSpawns[data.reviveIndex] ~= nil then
 						SFXManager():Play(SoundEffect.SOUND_SUMMONSOUND, 1, 0, false, 1, 0)
 
 						local revived = Isaac.Spawn(necromancerSpawns[data.reviveIndex][1], necromancerSpawns[data.reviveIndex][2],necromancerSpawns[data.reviveIndex][3], Vector(entity.Position.X, entity.Position.Y + 15), Vector.Zero, entity)
@@ -160,41 +159,33 @@ mod:AddCallback(ModCallbacks.MC_NPC_UPDATE, mod.necromancerUpdate, mod.ENTITY_IN
 
 -- Add dead enemies that aren't blacklisted to the revive table
 function mod:necromancerInRoom(entity)
-	if entity.Type < 1000 and entity.Type > 9 and mod:inRMblacklist("Necromancer", entity.Type, entity.Variant, entity.SubType) == false then
-		local room = game:GetRoom()
-		local getType = entity.Type
-		local getVariant = entity.Variant
-		local getSubType = entity.SubType
-
-		-- Necromancers and Exorcists turn into Bonys when revived
-		if (entity.Type == mod.ENTITY_INFO.NECROMANCER.ID and entity.Variant == mod.ENTITY_INFO.NECROMANCER.VARIANT) or (entity.Type == EntityType.ENTITY_EXORCIST and entity.Variant == 0) then
-			getType = EntityType.ENTITY_BONY
-			getVariant = 0
-			getSubType = 0
-
-		-- Turn Cursed Globins into ones that don't split
-		elseif entity.Type == 24 and entity.Variant == 3 then
-			getSubType = 1
-		end
-
-		local ent_data = {getType, getVariant, getSubType, room:FindFreeTilePosition(entity.Position, 40), entity.Index}
-		table.insert(necromancerSpawns, ent_data)
+	if #Isaac.FindByType(mod.ENTITY_INFO.NECROMANCER.ID, mod.ENTITY_INFO.NECROMANCER.VARIANT) > 0 
+		and entity.Type < 1000 and entity.Type > 9 
+		and not mod:inRMblacklist("Necromancer", entity.Type, entity.Variant, entity.SubType) then
+		return
 	end
+	local room = game:GetRoom()
+	local getType = entity.Type
+	local getVariant = entity.Variant
+	local getSubType = entity.SubType
+
+	-- Necromancers and Exorcists turn into Bonys when revived
+	if (entity.Type == mod.ENTITY_INFO.NECROMANCER.ID and entity.Variant == mod.ENTITY_INFO.NECROMANCER.VARIANT) or (entity.Type == EntityType.ENTITY_EXORCIST and entity.Variant == 0) then
+		getType = EntityType.ENTITY_BONY
+		getVariant = 0
+		getSubType = 0
+
+	-- Turn Cursed Globins into ones that don't split
+	elseif entity.Type == 24 and entity.Variant == 3 then
+		getSubType = 1
+	end
+
+	local ent_data = {getType, getVariant, getSubType, room:FindFreeTilePosition(entity.Position, 40)}
+	table.insert(necromancerSpawns, ent_data)
 end
 
-
-
--- Reset revive table and callback on new room, add callback if there are any Necromancers in the room
+-- Reset revive table on new room
 function mod:necromancerNewRoom()
 	necromancerSpawns = {}
-	mod:RemoveCallback(ModCallbacks.MC_POST_NPC_DEATH, mod.necromancerInRoom)
-
-	-- Remove any existing callback and add a new one so they don't execute code in it multiple times
-	for _,v in pairs(Isaac.GetRoomEntities()) do
-		if v.Type == mod.ENTITY_INFO.NECROMANCER.ID and v.Variant == mod.ENTITY_INFO.NECROMANCER.VARIANT then
-			mod:AddCallback(ModCallbacks.MC_POST_NPC_DEATH, mod.necromancerInRoom)
-			break
-		end
-	end
 end
 mod:AddCallback(ModCallbacks.MC_POST_NEW_ROOM, mod.necromancerNewRoom)
