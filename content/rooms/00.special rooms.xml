@@ -2668,7 +2668,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="4" y="3">
-			<entity type="29" variant="1" subtype="801" weight="1.0"/>
+			<entity type="29" variant="1" subtype="181" weight="1.0"/>
 		</spawn>
 		<spawn x="6" y="3">
 			<entity type="405" variant="0" subtype="0" weight="1.0"/>
@@ -2826,7 +2826,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="6" y="2">
-			<entity type="29" variant="1" subtype="801" weight="1.0"/>
+			<entity type="29" variant="1" subtype="181" weight="1.0"/>
 		</spawn>
 	</room>
 	<room variant="24011" name="We Strvn - [RM] - Hidden jumpscare" type="5" subtype="36" shape="1" width="13" height="7" difficulty="1" weight="0.5" lastTestTime="2023-12-06T21:09+00:00">
@@ -2847,7 +2847,7 @@
 			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="6" y="4">
-			<entity type="29" variant="1" subtype="801" weight="1.0"/>
+			<entity type="29" variant="1" subtype="181" weight="1.0"/>
 		</spawn>
 		<spawn x="6" y="6">
 			<entity type="100" variant="1" subtype="0" weight="1.0"/>
@@ -3667,7 +3667,7 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="5" y="3">
-			<entity type="29" variant="1" subtype="801" weight="1.0"/>
+			<entity type="29" variant="1" subtype="181" weight="1.0"/>
 		</spawn>
 		<spawn x="7" y="3">
 			<entity type="901" variant="0" subtype="0" weight="1.0"/>
