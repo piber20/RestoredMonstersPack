@@ -109,6 +109,13 @@ include("scripts.restoredvessel")
 include("scripts.splitRageCreep")
 
 --[[--------------------------------------------------------
+    Monster variants from other mods
+--]]--------------------------------------------------------
+
+include("scripts.compatibility.last judgement.beardBat")
+include("scripts.compatibility.last judgement.chubbyBunny")
+
+--[[--------------------------------------------------------
     misc
 --]]--------------------------------------------------------
 
