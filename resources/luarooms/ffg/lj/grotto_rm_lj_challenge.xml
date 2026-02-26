@@ -84,7 +84,7 @@
 		<door exists="True" x="6" y="7"/>
 		<door exists="True" x="13" y="3"/>
 		<spawn x="6" y="3">
-			<entity type="803" variant="201" subtype="5" weight="1.0"/>
+			<entity type="803" variant="201" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
 </rooms>
