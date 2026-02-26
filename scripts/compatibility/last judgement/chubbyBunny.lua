@@ -57,6 +57,7 @@ function mod:chubbyBunnyUpdate(npc)
 		sprite:Play("Transform",true)
 		d.Trans = true
 		d.state = "transform"
+		npc.PositionOffset = Vector.Zero
 	end
 	if sprite:IsFinished("Death") then
 		FFGRACE:MakeSporeExplosion(npc.Position, npc.SpawnerEntity, .75)

@@ -127,17 +127,10 @@ include("scripts.compatibility.retribution.rm_downgrades")
 include("scripts.compatibility.retribution.rm_upgrades")
 include("scripts.compatibility.fallfromgrace")
 include("scripts.compatibility.thefuture.futurecompact")
-if StageAPI then
-	include("scripts.compatibility.fiend folio.rm_genders")
-end
-
--- mod:AddCallback(ModCallbacks.MC_POST_UPDATE, function()
--- 	if not mod.fiendfolioTablesMixed then
--- 		if FiendFolio then
--- 			mod.MixFiendFolioStuff()
--- 		end
--- 	end
--- end)
+include("scripts.compatibility.fiend folio.rm_genders")
+--[[if StageAPI then
+	StageAPI.AddEntities2Function(require("scripts.compatibility.entities2"))
+end]]
 
 --[[--------------------------------------------------------
     Blacklists
