@@ -60,7 +60,7 @@
         <devolve id="29.1.0" weight="1" />
     </entity>
     <!-- Chubby Bunny -->
-    <entity anm2path="monsters\grotto\chubbybunny\chubby_bunny.anm2" name="Chubby Bunny" id="200" variant="2408" subtype="0" baseHP="25" stageHP="0" reroll="true" boss="0" champion="1" portrait="36" collisionDamage="1" collisionMass="14" collisionRadius="13" friction="1" numGridCollisionPoints="12" shadowSize="18" gridCollision="walls" >
+    <entity anm2path="monsters\grotto\chubbybunny\chubby_bunny.anm2" name="Chubby Bunny" id="200" variant="2408" subtype="0" baseHP="26" stageHP="0" reroll="true" boss="0" champion="1" portrait="36" collisionDamage="1" collisionMass="14" collisionRadius="13" friction="1" numGridCollisionPoints="12" shadowSize="18" gridCollision="walls" >
         <bestiary anim="Idle" transform="0,-16,1"/>
 		<gibs amount="6" blood="1" bone="0" eye="0" gut="1" large="0" />
         <devolve id="200.2407.0" weight="1" />
@@ -179,7 +179,7 @@
     </entity>
 <!-- Antibirth enemy Variants for Bestiary -->
     <!-- Beard Bat -->
-    <entity anm2path="monsters\grotto\beardbat\beard_bat.anm2" name="Beard Bat" id="803" variant="201" baseHP="15" stageHP="0" boss="0" champion="0" portrait="35" collisionDamage="1" collisionMass="14" collisionRadius="13" friction="1" numGridCollisionPoints="32" shadowSize="18" gridCollision="walls">
+    <entity anm2path="monsters\grotto\beardbat\beard_bat.anm2" name="Beard Bat" id="803" variant="201" baseHP="18" stageHP="0" boss="0" champion="1" portrait="35" collisionDamage="1" collisionMass="14" collisionRadius="13" friction="1" numGridCollisionPoints="32" shadowSize="18" gridCollision="walls" shutdoors="false">
         <bestiary anim="Wake" transform="0,0,1"/>
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0"/>
     	<devolve id="222.0.0" weight="1" />

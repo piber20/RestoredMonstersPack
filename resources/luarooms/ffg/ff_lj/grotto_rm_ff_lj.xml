@@ -57,9 +57,6 @@
 		<spawn x="12" y="1">
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
-		<spawn x="9" y="2">
-			<entity type="800" variant="7" subtype="0" weight="1.0"/>
-		</spawn>
 		<spawn x="11" y="2">
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
@@ -72,6 +69,9 @@
 		<spawn x="8" y="3">
 			<entity type="451" variant="130" subtype="1" weight="1.0"/>
 		</spawn>
+		<spawn x="9" y="3">
+			<entity type="800" variant="7" subtype="0" weight="1.0"/>
+		</spawn>
 		<spawn x="10" y="3">
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
@@ -80,9 +80,6 @@
 		</spawn>
 		<spawn x="12" y="3">
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
-		</spawn>
-		<spawn x="9" y="4">
-			<entity type="800" variant="7" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="11" y="4">
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
@@ -201,9 +198,6 @@
 		<spawn x="2" y="1">
 			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
-		<spawn x="10" y="1">
-			<entity type="745" variant="10" subtype="0" weight="1.0"/>
-		</spawn>
 		<spawn x="13" y="1">
 			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
@@ -231,7 +225,7 @@
 		<spawn x="12" y="3">
 			<entity type="800" variant="7" subtype="0" weight="1.0"/>
 		</spawn>
-		<spawn x="18" y="3">
+		<spawn x="14" y="3">
 			<entity type="745" variant="10" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="9" y="4">

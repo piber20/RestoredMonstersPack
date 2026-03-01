@@ -86,9 +86,9 @@
 <!-- FFG -->
 
 <!-- Chubby Bunny -->
-<entity Image="resources/ffg/Chubby Bunny.png" Name="Chubby Bunny" ID="200" Subtype="0" Variant="2408" BaseHP="25" Tags="Champion" Group="FFG" Kind="Restored Monsters Pack"/>
+<entity Image="resources/ffg/Chubby Bunny.png" Name="Chubby Bunny" ID="200" Subtype="0" Variant="2408" BaseHP="26" Tags="Champion" Group="FFG" Kind="Restored Monsters Pack"/>
 <!-- Beard Bat -->
-<entity Image="resources/ffg/Beard Bat.png" Name="Beard Bat" ID="803" Variant="201" Subtype="0" BaseHP="15" Group="FFG" Kind="Restored Monsters Pack"/>
+<entity Image="resources/ffg/Beard Bat.png" Name="Beard Bat" ID="803" Variant="201" Subtype="0" BaseHP="18" Group="FFG" Kind="Restored Monsters Pack"/>
 <!-- Sporeling -->
 <entity Image="resources/ffg/Sporeling.png" Name="Sporeling" ID="800" Subtype="0" Variant="7" BaseHP="8" StageHP="2" Tags="Champion" Group="FFG" Kind="Restored Monsters Pack"/>
 

@@ -74,8 +74,9 @@ if FFGRACE then
 
       [mod.ENTITY_INFO.RUMPLING.ID.." "..mod.ENTITY_INFO.SCORCHLING.VARIANT] = "Fire",
 
+      [mod.ENTITY_INFO.BEARD_BAT.ID.." "..mod.ENTITY_INFO.BEARD_BAT.VARIANT] = "Spore",
 
-      -- Insert FFG Bats here as Spore
+      [mod.ENTITY_INFO.CHUBBY_BUNNY.ID.." "..mod.ENTITY_INFO.CHUBBY_BUNNY.VARIANT] = "Spore",
 
       [mod.ENTITY_INFO.RUMPLING.ID.." "..mod.ENTITY_INFO.SPORELING.VARIANT] = "Spore",
 
