@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metadata>
-    <name>Restored Monsters Pack Dev</name>
+    <name>Restored Monsters Pack</name>
     <directory>restoredmonsterspack</directory>
     <id>3239551710</id>
     <description>Forgotten enemies have returned to the basement! Restored Monsters Pack is a mod that adds enemies ranging from unused monsters left in Repentance to new enemies based of developer concepts
@@ -18,7 +18,7 @@ You can read more about the enemies added by this mod on our wiki! ( https://mod
 [h2]Caution![/h2]
 [b][u][url=https://repentogon.com]REPENTOGON[/url] is required for this mod to function. It will (probably) not work without it![/u][/b]
 
-Don't want to use REPENTOGON+ or Last Judgement? Try [url=]Restored Monsters: Judgement Free[/url]!
+Don't want to use REPENTOGON+ or Last Judgement? Try [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3676828785]Restored Monsters: Judgement Free[/url]!
 
 [h2]Contributors[/h2] 
 We Strvn, Sillst, Redstinger, Pandora, InfiniteCosmos, Kittenchilly, Mr. R, Kerkel, vor_kakisha, Acexolotl, Goganidze, Michael8587, Watchmeojo, Skelej64, Lesser_Star, ENFOR, PixelPls, Lazarus, Firework, Brakedude, Orange Ice Pop, Reixen, steve2552, Pinchalin, TheReturnofGarnk, and JaRo7126.
@@ -32,7 +32,7 @@ We Strvn, Sillst, Redstinger, Pandora, InfiniteCosmos, Kittenchilly, Mr. R, Kerk
 https://discord.gg/BYGmAhgG8k
 
 </description>
-    <version>1.13</version>
+    <version>1.14</version>
     <visibility>Public</visibility>
     <tag id="Rooms"/>
     <tag id="Floors"/>
